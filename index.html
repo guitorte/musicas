@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Adicionar manifest para PWA -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Ícone Apple Touch (opcional, mas bom para PWA) -->
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <!-- Cor do tema para mobile (opcional) -->
+    <meta name="theme-color" content="#6C5CE7">
+</head>
+<body>
+    <header class="header">
+        <!-- SEU ESPAÇO PARA FOTO E TEXTO -->
+        <div class="artist-profile">
+            <img src="foto-perfil.jpg" alt="Guilherme" class="artist-photo">
+            <div class="artist-info">
+                <h1>Guilherme</h1>
+                <p class="artist-bio">Letras autorais musicadas por IA</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="music-library">
+            <h2 class="section-title"><i class="fas fa-music"></i> Minhas Músicas</h2>
+            <div id="todas-musicas" class="music-grid">
+                <!-- Músicas serão carregadas aqui pelo JavaScript -->
+                <p>Carregando músicas...</p> 
+            </div>
+        </section>
+    </main>
+
+    <div class="music-player">
+        <div class="player-controls">
+            <!-- Botões de controle de reprodução -->
+            <button id="prevTrack" class="control-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="playPause" class="control-btn play-btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="nextTrack" class="control-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+
+            <div class="progress-container">
+                <div class="song-info">
+                    <span id="currentSong">Nenhuma música selecionada</span>
+                    <span id="currentArtist">Guilherme</span>
+                </div>
+                <input type="range" id="progress" value="0" min="0" max="100" class="progress-bar">
+                <div class="time-info">
+                    <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
+                </div>
+            </div>
+
+            <!-- Controle de Volume -->
+            <div class="volume-control">
+                 <button id="volumeIcon" class="control-btn volume-btn">
+                     <i class="fas fa-volume-up"></i>
+                 </button>
+                 <input type="range" id="volume" value="100" min="0" max="100" class="volume-slider">
+            </div>
+            
+            <!-- Botão de Compartilhar (mantido, mas pode ser funcionalizado) -->
+            <button id="share" class="control-btn share-btn">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

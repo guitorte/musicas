@@ -1,0 +1,310 @@
+{
+  "musicas": [
+    {
+      "titulo": "O mercadinho",
+      "arquivo": "audio/mercadinho.mp3",
+      "genero": "sertanejo",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Sumi de fininho",
+      "arquivo": "audio/sumi-de-fininho.mp3",
+      "genero": "sertanejo",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Tilanga",
+      "arquivo": "audio/tilanga.mp3",
+      "genero": "sertanejo",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Só tô aceitando pix",
+      "arquivo": "audio/so-to-aceitando-pix.mp3",
+      "genero": "sertanejo",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "A prima",
+      "arquivo": "audio/a-prima.mp3",
+      "genero": "sertanejo",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Flagrante covarde",
+      "arquivo": "audio/flagrante-covarde.mp3",
+      "genero": "sertanejo",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Eu sou incêndio",
+      "arquivo": "audio/eu-sou-incendio.mp3",
+      "genero": "sertanejo",
+      "thumbnail": "thumbnails/default.jpg"
+    },  
+    {
+      "titulo": "Não passou da mamada",
+      "arquivo": "audio/nao-passou-da-mamada-v5.mp3",
+      "genero": "funk",
+      "thumbnail": "thumbnails/default.jpg"
+    },    
+    {
+      "titulo": "Cupido de Wall Street",
+      "arquivo": "audio/cupido-de-wall-street.mp3",
+      "genero": "forró vaquejada, pisadinha",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Tô fumando crack",
+      "arquivo": "audio/to-fumando-crack.mp3",
+      "genero": "arrocha",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Motoboy do iFood",
+      "arquivo": "audio/motoboy-do-ifood.mp3",
+      "genero": "pisadinha, forró eletrônico",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Motoboy do iFood (70s)",
+      "arquivo": "audio/motoboy-70s.mp3",
+      "genero": "sophisti-pop, smooth soul",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Te faltou mãe",
+      "arquivo": "audio/te-faltou-mae.mp3",
+      "genero": "sertanejo",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "O bar do primo",
+      "arquivo": "audio/o-bar-do-primo.mp3",
+      "genero": "sertanejo",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Vitamina C",
+      "arquivo": "audio/vitamina-c.mp3",
+      "genero": "sertanejo",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Bololô",
+      "arquivo": "audio/bololo.mp3",
+      "genero": "sertanejo",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "18 meses",
+      "arquivo": "audio/18-meses.mp3",
+      "genero": "sertanejo",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Não compra não",
+      "arquivo": "audio/nao-compra-nao.mp3",
+      "genero": "sertanejo",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "O morto tá de lancha",
+      "arquivo": "audio/o-morto-ta-de-lancha.mp3",
+      "genero": "sertanejo, pop",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Aprendi com você",
+      "arquivo": "audio/aprendi-com-voce.mp3",
+      "genero": "sertanejo, forró",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Ô, azar!",
+      "arquivo": "audio/oh-azar.mp3",
+      "genero": "sertanejo, forró",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Última cerveja",
+      "arquivo": "audio/ultima-cerveja.mp3",
+      "genero": "sertanejo romântico",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Saudades",
+      "arquivo": "audio/saudades.mp3",
+      "genero": "sertanejo, reggaeton",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "O doutor",
+      "arquivo": "audio/o-doutor.mp3",
+      "genero": "brega",
+      "thumbnail": "thumbnails/default.jpg"
+    }, 
+    {
+      "titulo": "Negão organizado",
+      "arquivo": "audio/negao-organizado.mp3",
+      "genero": "pagode",
+      "thumbnail": "thumbnails/default.jpg"
+    },   
+    {
+      "titulo": "Vou te ignorar",
+      "arquivo": "audio/vou-te-ignorar-live.mp3",
+      "genero": "pagode",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Marcar de marcar",
+      "arquivo": "audio/marcar-de-marcar.mp3",
+      "genero": "pagode",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Eu quero de volta",
+      "arquivo": "audio/eu-quero-de-volta.mp3",
+      "genero": "emo/pop punk",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Vai chorar",
+      "arquivo": "audio/vai-chorar-pp.mp3",
+      "genero": "emo/pop punk",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Cerveja e porrada",
+      "arquivo": "audio/cerveja-porradaria.mp3",
+      "genero": "rock/hard rock",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "O bar explodiu",
+      "arquivo": "audio/o-bar-explodiu.mp3",
+      "genero": "rock/hard rock",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Golpe",
+      "arquivo": "audio/golpe.mp3",
+      "genero": "mpb",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Gramática do Elevador",
+      "arquivo": "audio/gramatica-do-elevador.mp3",
+      "genero": "mpb, boogie",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Meio inimigos",
+      "arquivo": "audio/meio-inimigos.mp3",
+      "genero": "mpb, folk",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Geometria da Espera",
+      "arquivo": "audio/geometria-da-espera.mp3",
+      "genero": "mpb, folk",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Azul",
+      "arquivo": "audio/azul.mp3",
+      "genero": "mpb, milonga",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Pro tigrinho, o pai tem dinheiro",
+      "arquivo": "audio/pro-tigrinho-o-pai-tem-dinheiro.mp3",
+      "genero": "rap, trap, funk",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "The Life Snake (A Vida Cobra)",
+      "arquivo": "audio/the-life-snake.mp3",
+      "genero": "rap, trap",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Olhadinha",
+      "arquivo": "audio/olhadinha.mp3",
+      "genero": "pop rap",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Leão",
+      "arquivo": "audio/leao.mp3",
+      "genero": "pop rap, trap",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Manequim",
+      "arquivo": "audio/manequim.mp3",
+      "genero": "pop, city pop",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Vidro",
+      "arquivo": "audio/vidro.mp3",
+      "genero": "pop, dance rap",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Cafajeste",
+      "arquivo": "audio/cafajeste.mp3",
+      "genero": "rap, dance rap",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Eu esperei",
+      "arquivo": "audio/esperei-v3.mp3",
+      "genero": "post punk, dub",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Não escondo nada",
+      "arquivo": "audio/nao-escondo-nada.mp3",
+      "genero": "post punk, dub",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Tóx",
+      "arquivo": "audio/tox.mp3",
+      "genero": "rock, indie",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "fucking Love drogas",
+      "arquivo": "audio/fucking-love-drogas.mp3",
+      "genero": "R&B/Alt R&B",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Se der errado",
+      "arquivo": "audio/se-der-errado.mp3",
+      "genero": "R&B/pop",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Era eu",
+      "arquivo": "audio/era-eu.mp3",
+      "genero": "R&B/pagode/pop",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Putz",
+      "arquivo": "audio/putz.mp3",
+      "genero": "R&B romântico",
+      "thumbnail": "thumbnails/default.jpg"
+    },
+    {
+      "titulo": "Que nem eu a máquina",
+      "arquivo": "audio/que-nem-eu-a-maquina.mp3",
+      "genero": "latin rock, dance rap",
+      "thumbnail": "thumbnails/default.jpg"
+    }
+  ]
+}
