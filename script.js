@@ -15,6 +15,7 @@ const totalTimeDisplay = document.getElementById('totalTime');
 const volumeSlider = document.getElementById('volume');
 const volumeIconBtn = document.getElementById('volumeIcon');
 const musicGrid = document.getElementById('todas-musicas');
+const mainShareBtn = document.getElementById('share');
 
 // --- Utility Functions ---
 
@@ -43,7 +44,7 @@ async function fetchMusicData() {
         }
         const data = await response.json();
         musicData = data.musicas;
-        playlists = data.playlists || {}; // Load playlists, default to empty object if not found
+        playlists = data.playlists || {}; // Load playlists, default to empty object
 
         applyFilterFromURL(); // Filter songs based on URL parameters
         initPlayerControls(); // Set up all event listeners for the player
@@ -57,239 +58,137 @@ async function fetchMusicData() {
 
 /**
  * Reads URL parameters and filters the music list to be displayed.
+ * Also checks for a song to autoplay.
  */
 function applyFilterFromURL() {
     const params = new URLSearchParams(window.location.search);
     const genre = params.get('genre');
     const tag = params.get('tag');
     const playlist = params.get('playlist');
+    const songToPlay = params.get('play');
 
     let filteredMusic = musicData; // Default to showing all songs
 
     if (genre) {
-        // Filter by a single genre (case-insensitive)
         filteredMusic = musicData.filter(song => song.genero.toLowerCase().includes(genre.toLowerCase()));
         console.log(`Filtrando por gênero: ${genre}`);
     } else if (tag) {
-        // Filter by a single tag (case-insensitive)
         filteredMusic = musicData.filter(song => song.tags && song.tags.some(t => t.toLowerCase() === tag.toLowerCase()));
         console.log(`Filtrando por tag: ${tag}`);
     } else if (playlist && playlists[playlist]) {
-        // Filter by a predefined playlist from the JSON
         const playlistTitles = playlists[playlist];
         filteredMusic = musicData.filter(song => playlistTitles.includes(song.titulo));
         console.log(`Carregando playlist: ${playlist}`);
     }
 
     loadMusicListUI(filteredMusic);
+
+    // If a 'play' parameter exists, find and play that song
+    if (songToPlay) {
+        const songIndex = musicData.findIndex(song => song.titulo === songToPlay);
+        if (songIndex !== -1) {
+            // A short delay can help ensure the audio context is ready
+            setTimeout(() => playTrack(songIndex), 100);
+        }
+    }
 }
 
 /**
- * Renders the provided list of songs into the HTML.
+ * Renders the provided list of songs into the HTML grid.
  * @param {Array} songsToDisplay - The array of song objects to show.
  */
 function loadMusicListUI(songsToDisplay) {
-    musicGrid.innerHTML = ''; // Clear any existing content
+    musicGrid.innerHTML = '';
 
     if (!songsToDisplay || songsToDisplay.length === 0) {
-         musicGrid.innerHTML = '<p>Nenhuma música encontrada para esta seleção.</p>';
-         return;
+        musicGrid.innerHTML = '<p>Nenhuma música encontrada para esta seleção.</p>';
+        return;
     }
 
     songsToDisplay.forEach((musica) => {
-        // Find the song's original index in the full musicData array.
-        // This is crucial for the player to always know which file to play.
         const originalIndex = musicData.findIndex(item => item.arquivo === musica.arquivo);
-        if (originalIndex === -1) return; // Skip if song not found in original data
+        if (originalIndex === -1) return;
 
         const musicItem = document.createElement('div');
         musicItem.className = 'music-item';
         musicItem.setAttribute('data-index', originalIndex);
 
+        // Note the updated innerHTML to match your new CSS classes
         musicItem.innerHTML = `
             <div class="music-info">
                 <div>
                     <h3>${musica.titulo}</h3>
                     <span class="genre">${musica.genero}</span>
                 </div>
-                <button class="download-btn" onclick="downloadTrack(event, '${musica.arquivo}')">
-                    <i class="fas fa-download"></i>
-                </button>
-            </div>
-        `;
+                <div class="music-actions">
+                    <button class="share-music-btn" title="Copiar link da música" onclick="shareSingleTrackLink(event, '${musica.titulo}')">
+                        <i class="fas fa-link"></i>
+                    </button>
+                    <button class="download-btn" title="Baixar música" onclick="downloadTrack(event, '${musica.arquivo}')">
+                        <i class="fas fa-download"></i>
+                    </button>
+                </div>
+            </div>`;
         musicGrid.appendChild(musicItem);
     });
 }
 
 // --- Player Control Functions ---
 
-/**
- * Plays a track based on its original index in the musicData array.
- * @param {number} index - The original index of the song.
- */
 function playTrack(index) {
-    if (index < 0 || index >= musicData.length) {
-        console.error("Índice de música inválido:", index);
-        return;
-    }
-
+    if (index < 0 || index >= musicData.length) return;
     currentTrackIndex = index;
     const musica = musicData[currentTrackIndex];
-
     audio.src = musica.arquivo;
     audio.play();
-
     currentSongDisplay.textContent = musica.titulo;
     updatePlayButton(true);
     updatePlayingIndicator(currentTrackIndex);
-
     progressBar.value = 0;
     currentTimeDisplay.textContent = '0:00';
-    totalTimeDisplay.textContent = '0:00'; // Will be updated on 'loadedmetadata'
-
-    console.log(`Tocando: ${musica.titulo}`);
+    totalTimeDisplay.textContent = '...'; // Placeholder until metadata loads
 }
 
 function togglePlayPause() {
     if (audio.paused) {
-        if (currentTrackIndex === -1 && musicData.length > 0) {
-            // If nothing has been played yet, play the first song from the *visible* list
-            const firstVisibleItem = musicGrid.querySelector('.music-item');
-            if (firstVisibleItem) {
-                const firstIndex = parseInt(firstVisibleItem.getAttribute('data-index'));
-                playTrack(firstIndex);
-            }
-        } else if (currentTrackIndex !== -1) {
+        if (currentTrackIndex === -1) {
+            const firstItem = musicGrid.querySelector('.music-item');
+            if (firstItem) playTrack(parseInt(firstItem.dataset.index));
+        } else {
             audio.play();
-            updatePlayButton(true);
-            updatePlayingIndicator(currentTrackIndex);
         }
     } else {
         audio.pause();
-        updatePlayButton(false);
-        updatePlayingIndicator(-1); // Remove highlight on pause
     }
+    updatePlayButton(!audio.paused);
 }
 
 function updatePlayButton(isPlaying) {
     const icon = playPauseBtn.querySelector('i');
     icon.className = isPlaying ? 'fas fa-pause' : 'fas fa-play';
+    updatePlayingIndicator(isPlaying ? currentTrackIndex : -1);
 }
 
-/**
- * Plays the next track *in the currently visible list*.
- */
 function nextTrack() {
     const displayedItems = Array.from(musicGrid.querySelectorAll('.music-item'));
-    if (displayedItems.length === 0) return;
-
+    if (displayedItems.length <= 1) return;
     const currentGridIndex = displayedItems.findIndex(item => parseInt(item.dataset.index) === currentTrackIndex);
-    
-    let nextGridIndex = (currentGridIndex === -1) ? 0 : currentGridIndex + 1;
-    if (nextGridIndex >= displayedItems.length) {
-        nextGridIndex = 0; // Loop to the start of the visible list
-    }
-    
-    const nextOriginalIndex = parseInt(displayedItems[nextGridIndex].dataset.index);
-    playTrack(nextOriginalIndex);
+    const nextGridIndex = (currentGridIndex + 1) % displayedItems.length;
+    playTrack(parseInt(displayedItems[nextGridIndex].dataset.index));
 }
 
-/**
- * Plays the previous track *in the currently visible list*.
- */
 function prevTrack() {
     const displayedItems = Array.from(musicGrid.querySelectorAll('.music-item'));
-    if (displayedItems.length === 0) return;
-
+    if (displayedItems.length <= 1) return;
     const currentGridIndex = displayedItems.findIndex(item => parseInt(item.dataset.index) === currentTrackIndex);
-
-    let prevGridIndex = (currentGridIndex === -1) ? 0 : currentGridIndex - 1;
-    if (prevGridIndex < 0) {
-        prevGridIndex = displayedItems.length - 1; // Loop to the end of the visible list
-    }
-    
-    const prevOriginalIndex = parseInt(displayedItems[prevGridIndex].dataset.index);
-    playTrack(prevOriginalIndex);
+    const prevGridIndex = (currentGridIndex - 1 + displayedItems.length) % displayedItems.length;
+    playTrack(parseInt(displayedItems[prevGridIndex].dataset.index));
 }
 
 function updatePlayingIndicator(playingIndex) {
-    document.querySelectorAll('.music-item').forEach((item) => {
-        const itemIndex = parseInt(item.getAttribute('data-index'));
-        if (itemIndex === playingIndex) {
-            item.classList.add('active');
-        } else {
-            item.classList.remove('active');
-        }
+    document.querySelectorAll('.music-item').forEach(item => {
+        item.classList.toggle('active', parseInt(item.dataset.index) === playingIndex);
     });
-}
-
-// --- Initialization and Event Listeners ---
-
-function initPlayerControls() {
-    // Click listener for the song list
-    musicGrid.addEventListener('click', function(event) {
-        const musicItem = event.target.closest('.music-item');
-        if (!musicItem || event.target.closest('.download-btn')) return;
-
-        const index = parseInt(musicItem.getAttribute('data-index'));
-        if (index === currentTrackIndex) {
-            togglePlayPause(); // If clicking the same song, toggle play/pause
-        } else {
-            playTrack(index); // Play the new song
-        }
-    });
-
-    // Player controls
-    playPauseBtn.addEventListener('click', togglePlayPause);
-    prevTrackBtn.addEventListener('click', prevTrack);
-    nextTrackBtn.addEventListener('click', nextTrack);
-
-    // Audio element events
-    audio.addEventListener('timeupdate', () => {
-        if (!isNaN(audio.duration)) {
-            progressBar.value = (audio.currentTime / audio.duration) * 100 || 0;
-            currentTimeDisplay.textContent = formatTime(audio.currentTime);
-        }
-    });
-
-    audio.addEventListener('loadedmetadata', () => {
-         totalTimeDisplay.textContent = formatTime(audio.duration);
-    });
-
-    audio.addEventListener('ended', nextTrack);
-
-    audio.addEventListener('error', (e) => {
-        console.error("Erro de áudio:", e);
-        currentSongDisplay.textContent = "Erro ao carregar a música";
-        updatePlayButton(false);
-        updatePlayingIndicator(-1);
-    });
-
-    // Progress bar seeking
-    progressBar.addEventListener('input', () => {
-        if (!isNaN(audio.duration)) {
-            const seekTime = (progressBar.value / 100) * audio.duration;
-            audio.currentTime = seekTime;
-        }
-    });
-
-    // Volume controls
-    volumeSlider.addEventListener('input', () => {
-        audio.volume = volumeSlider.value / 100;
-        audio.muted = false; // Unmute when user adjusts volume
-        updateVolumeIcon();
-    });
-
-    volumeIconBtn.addEventListener('click', () => {
-        audio.muted = !audio.muted;
-        updateVolumeIcon();
-    });
-
-    audio.addEventListener('volumechange', updateVolumeIcon); // Sync icon if volume changes elsewhere
-
-    // Initialize volume
-    audio.volume = volumeSlider.value / 100;
-    updateVolumeIcon();
 }
 
 function updateVolumeIcon() {
@@ -303,6 +202,109 @@ function updateVolumeIcon() {
     }
 }
 
+// --- Event Handlers and Initialization ---
+
+function initPlayerControls() {
+    musicGrid.addEventListener('click', (event) => {
+        const musicItem = event.target.closest('.music-item');
+        if (!musicItem || event.target.closest('.music-actions')) return;
+        const index = parseInt(musicItem.dataset.index);
+        if (index === currentTrackIndex) togglePlayPause();
+        else playTrack(index);
+    });
+
+    playPauseBtn.addEventListener('click', togglePlayPause);
+    prevTrackBtn.addEventListener('click', prevTrack);
+    nextTrackBtn.addEventListener('click', nextTrack);
+
+    audio.addEventListener('play', () => updatePlayButton(true));
+    audio.addEventListener('pause', () => updatePlayButton(false));
+    audio.addEventListener('ended', nextTrack);
+    audio.addEventListener('timeupdate', () => {
+        if (!isNaN(audio.duration)) {
+            progressBar.value = (audio.currentTime / audio.duration) * 100 || 0;
+            currentTimeDisplay.textContent = formatTime(audio.currentTime);
+        }
+    });
+    audio.addEventListener('loadedmetadata', () => {
+        totalTimeDisplay.textContent = formatTime(audio.duration);
+    });
+    audio.addEventListener('error', () => {
+        currentSongDisplay.textContent = "Erro ao carregar música";
+        updatePlayButton(false);
+    });
+
+    progressBar.addEventListener('input', () => {
+        if (!isNaN(audio.duration)) audio.currentTime = (progressBar.value / 100) * audio.duration;
+    });
+
+    volumeSlider.addEventListener('input', () => {
+        audio.muted = false;
+        audio.volume = volumeSlider.value / 100;
+    });
+    volumeIconBtn.addEventListener('click', () => {
+        audio.muted = !audio.muted;
+    });
+    audio.addEventListener('volumechange', () => {
+        if (!audio.muted) volumeSlider.value = audio.volume * 100;
+        updateVolumeIcon();
+    });
+
+    // Initialize volume
+    audio.volume = volumeSlider.value / 100;
+    updateVolumeIcon();
+    
+    // Main Share Button (Web Share API)
+    if (navigator.share) {
+        mainShareBtn.addEventListener('click', async () => {
+            if (currentTrackIndex === -1) {
+                alert("Selecione uma música para compartilhar.");
+                return;
+            }
+            const musica = musicData[currentTrackIndex];
+            try {
+                await navigator.share({
+                    title: `Ouvindo: ${musica.titulo} - Guilherme`,
+                    text: `Ouça "${musica.titulo}" de Guilherme!`,
+                    url: window.location.href,
+                });
+            } catch (error) {
+                console.error('Erro ao compartilhar:', error);
+            }
+        });
+    } else {
+        mainShareBtn.style.display = 'none';
+    }
+}
+
+/**
+ * Copies a direct link to a specific song to the clipboard.
+ * @param {Event} event - The click event.
+ * @param {string} songTitle - The title of the song to share.
+ */
+function shareSingleTrackLink(event, songTitle) {
+    event.stopPropagation();
+    const url = new URL(window.location);
+    url.search = `?play=${encodeURIComponent(songTitle)}`;
+    
+    navigator.clipboard.writeText(url.href).then(() => {
+        const button = event.currentTarget;
+        const icon = button.querySelector('i');
+        const originalIconClass = icon.className;
+        
+        // Visual feedback
+        icon.className = 'fas fa-check';
+        button.style.color = '#4CAF50'; // Green success color
+        
+        setTimeout(() => {
+            icon.className = originalIconClass;
+            button.style.color = ''; // Revert to original color
+        }, 2000);
+    }).catch(err => {
+        console.error('Falha ao copiar o link:', err);
+        alert('Não foi possível copiar o link.');
+    });
+}
 
 /**
  * Handles the download button click.
@@ -310,10 +312,10 @@ function updateVolumeIcon() {
  * @param {string} filepath - The path to the audio file.
  */
 function downloadTrack(event, filepath) {
-    event.stopPropagation(); // Prevent the click from triggering playTrack
+    event.stopPropagation();
     const link = document.createElement('a');
     link.href = filepath;
-    link.download = filepath.split('/').pop(); // Suggests a filename to the browser
+    link.download = filepath.split('/').pop();
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
