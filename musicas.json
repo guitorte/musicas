@@ -1,64 +1,77 @@
 {
+  "playlists": {
+    "selecao_especial": [
+      "Eu esperei",
+      "Manequim",
+      "Golpe",
+      "Azul"
+    ],
+    "agitadas": [
+      "Que nem eu a máquina",
+      "Tox",
+      "Manequim"
+    ]
+  },
   "musicas": [
     {
       "titulo": "Eu esperei",
       "arquivo": "audios/eu-esperei-v3.mp3",
       "genero": "post punk, trip hop, dub",
-      "thumbnail": "thumbnails/default.jpg"
+      "tags": ["reflexivo", "noite", "calmo"]
     },
     {
       "titulo": "Que nem eu a máquina",
       "arquivo": "audios/que-nem-eu-a-maquina.mp3",
       "genero": "latin, rock, disco",
-      "thumbnail": "thumbnails/default.jpg"
+      "tags": ["dançante", "alegre", "verão"]
     },
-        {
+    {
       "titulo": "Golpe",
       "arquivo": "audios/golpe.mp3",
       "genero": "MPB",
-      "thumbnail": "thumbnails/default.jpg"
+      "tags": ["acústico", "calmo", "poético"]
     },
-         {
+    {
       "titulo": "Tô fumando pedra",
       "arquivo": "audios/to-fumando-pedra-blues.mp3",
       "genero": "blues",
-      "thumbnail": "thumbnails/default.jpg"
+      "tags": ["intenso", "noite"]
     },
-         {
+    {
       "titulo": "Cupido de Wall Street",
       "arquivo": "audios/cupido-ws-blues.mp3",
-      "genero": "bom, folk",
-      "thumbnail": "thumbnails/default.jpg"
+      "genero": "blues, folk",
+      "tags": ["acústico", "narrativa"]
     },
-             {
+    {
       "titulo": "Azul",
       "arquivo": "audios/azul64.mp3",
       "genero": "milonga",
-      "thumbnail": "thumbnails/default.jpg"
+      "tags": ["regional", "calmo", "poético"]
     },
-         {
+    {
       "titulo": "fucking Love drogas",
       "arquivo": "audios/fucking-love-drogas-v5.mp3",
       "genero": "Alt R&B",
-      "thumbnail": "thumbnails/default.jpg"
+      "tags": ["intenso", "noite", "moderno"]
     },
-             {
+    {
       "titulo": "Se der errado",
       "arquivo": "audios/se-der-errado.mp3",
       "genero": "Alt R&B",
-      "thumbnail": "thumbnails/default.jpg"
+      "tags": ["moderno", "reflexivo"]
     },
-                 {
+    {
       "titulo": "Tox",
       "arquivo": "audios/tox.mp3",
       "genero": "Alt Rock",
-      "thumbnail": "thumbnails/default.jpg"
+      "tags": ["intenso", "rock"]
     },
-                 {
+    {
       "titulo": "Manequim",
       "arquivo": "audios/manequim.mp3",
       "genero": "city pop, retro funk, eletronica",
-      "thumbnail": "thumbnails/default.jpg"
+      "tags": ["dançante", "verão", "retrô"]
     }
   ]
 }
