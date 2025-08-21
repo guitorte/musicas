@@ -150,6 +150,9 @@
 
         .current-track-info {
             font-size: 14px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
         .current-track-title { font-weight: 600; }
         .current-track-artist { font-weight: 400; color: var(--secondary-text); }
@@ -248,7 +251,7 @@
         </div>
 
         <ol class="music-list">
-            <!-- As músicas serão injetadas aqui pelo JavaScript -->
+            <!-- As músicas são injetadas aqui pelo JavaScript -->
         </ol>
     </div>
 
@@ -299,10 +302,10 @@
             const songs = {
                 song1: { title: "Vem com tudo, pisa!", src: "/audios/vem-com-tudo-pisa.mp3" },
                 song2: { title: "A gente não tem nada", src: "/audios/a-gente-nao-tem-nada.mp3" },
-                song3: { title: "Queima", src: "/audios/queima-v5.mp3" },
-                song4: { title: "Tô fumando pedra", src: "/audios/to-fumando-pedra.mp3" },
-                song5: { title: "Esperei", src: "/audios/eu-esperei-v3.mp3" },
-                song6: { title: "Santo de Estuque", src: "/audios/santo-estuque.mp3" }
+                song3: { title: "Queima", src: "/audios/queima.mp3" },
+                song4: { title: "Tô fumando crack", src: "/audios/to-fumando-crack.mp3" },
+                song5: { title: "Esperei", src: "/audios/esperei.mp3" },
+                song6: { title: "Santo de Estuque", src: "/audios/santo-de-estuque.mp3" }
             };
 
             // DOM Elements
@@ -318,6 +321,7 @@
             const volumeBtn = document.getElementById('volumeBtn');
             const volumePopup = document.getElementById('volumePopup');
             const volumeSlider = document.getElementById('volumeSlider');
+            const volumeControl = document.querySelector('.volume-control');
             const currentTrackTitle = document.querySelector('.current-track-title');
             const musicList = document.querySelector('.music-list');
 
@@ -328,10 +332,8 @@
             let currentIndex = -1;
             const songKeys = Object.keys(songs);
             
-            // --- Initialization ---
             function init() {
                 renderMusicList();
-                loadTrackDurations();
                 attachEventListeners();
                 audioPlayer.volume = 0.7;
             }
@@ -351,41 +353,28 @@
                             <span class="song-duration">--:--</span>
                             <div class="playing-indicator">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="${getComputedStyle(document.documentElement).getPropertyValue('--accent')}">
-                                    <rect class="eq-bar" x="4" y="8" width="4" height="12" rx="1"><animate attributeName="height" values="12;6;14;8;12" dur="1s" repeatCount="indefinite" /></rect>
-                                    <rect class="eq-bar" x="10" y="4" width="4" height="16" rx="1"><animate attributeName="height" values="16;10;18;6;16" dur="1.2s" repeatCount="indefinite" /></rect>
-                                    <rect class="eq-bar" x="16" y="10" width="4" height="10" rx="1"><animate attributeName="height" values="10;14;6;12;10" dur="0.8s" repeatCount="indefinite" /></rect>
+                                    <rect x="4" y="8" width="4" height="12" rx="1"><animate attributeName="height" values="12;6;14;8;12" dur="1s" repeatCount="indefinite" /></rect>
+                                    <rect x="10" y="4" width="4" height="16" rx="1"><animate attributeName="height" values="16;10;18;6;16" dur="1.2s" repeatCount="indefinite" /></rect>
+                                    <rect x="16" y="10" width="4" height="10" rx="1"><animate attributeName="height" values="10;14;6;12;10" dur="0.8s" repeatCount="indefinite" /></rect>
                                 </svg>
                             </div>
                         </div>
                     `;
                     li.addEventListener('click', () => {
-                        loadSong(key, index);
+                        loadSong(key);
                         playSong();
                     });
                     musicList.appendChild(li);
                 });
             }
 
-            function loadTrackDurations() {
-                songKeys.forEach(key => {
-                    const audio = new Audio();
-                    audio.src = songs[key].src;
-                    audio.addEventListener('loadedmetadata', () => {
-                        const li = musicList.querySelector(`[data-song-id="${key}"]`);
-                        if (li) {
-                            li.querySelector('.song-duration').textContent = formatTime(audio.duration);
-                        }
-                    });
-                });
-            }
+            function loadSong(songId) {
+                currentIndex = songKeys.indexOf(songId);
+                if (currentIndex === -1) return;
 
-            // --- Core Functions ---
-            function loadSong(songId, index) {
                 currentSongId = songId;
-                currentIndex = index;
-                const song = songs[songId];
-                audioPlayer.src = song.src;
-                currentTrackTitle.textContent = song.title;
+                audioPlayer.src = songs[songId].src;
+                currentTrackTitle.textContent = songs[songId].title;
 
                 document.querySelectorAll('.music-list-item').forEach(item => {
                     item.classList.remove('active', 'playing');
@@ -393,43 +382,43 @@
                 const activeLi = musicList.querySelector(`[data-song-id="${songId}"]`);
                 if (activeLi) activeLi.classList.add('active');
             }
+            
+            function updatePlayPauseIcon(playing) {
+                isPlaying = playing;
+                playIcon.style.display = playing ? 'none' : 'block';
+                pauseIcon.style.display = playing ? 'block' : 'none';
+                
+                const currentLi = musicList.querySelector(`[data-song-id="${currentSongId}"]`);
+                if (currentLi) currentLi.classList.toggle('playing', playing);
+            }
 
             function playSong() {
                 if (!currentSongId) return;
-                audioPlayer.play();
-                isPlaying = true;
-                playIcon.style.display = 'none';
-                pauseIcon.style.display = 'block';
-                const playingLi = musicList.querySelector(`[data-song-id="${currentSongId}"]`);
-                if (playingLi) playingLi.classList.add('playing');
+                audioPlayer.play().then(() => updatePlayPauseIcon(true));
             }
 
             function pauseSong() {
                 audioPlayer.pause();
-                isPlaying = false;
-                playIcon.style.display = 'block';
-                pauseIcon.style.display = 'none';
-                document.querySelectorAll('.music-list-item').forEach(item => item.classList.remove('playing'));
+                updatePlayPauseIcon(false);
             }
 
             function togglePlay() {
                 if (!currentSongId) {
-                    loadSong(songKeys[0], 0);
+                    loadSong(songKeys[0]);
                 }
                 isPlaying ? pauseSong() : playSong();
             }
 
             function changeSong(direction) {
                 const newIndex = (currentIndex + direction + songKeys.length) % songKeys.length;
-                loadSong(songKeys[newIndex], newIndex);
-                if (isPlaying) playSong();
+                loadSong(songKeys[newIndex]);
+                playSong();
             }
             
-            // --- UI Updates ---
             function updateProgress() {
                 if (audioPlayer.duration) {
                     const percentage = (audioPlayer.currentTime / audioPlayer.duration) * 100;
-                    progress.style.width = percentage + '%';
+                    progress.style.width = `${percentage}%`;
                 }
             }
 
@@ -452,7 +441,6 @@
                 return isNaN(mins) || isNaN(secs) ? "--:--" : `${mins}:${secs.toString().padStart(2, '0')}`;
             }
 
-            // --- Event Listeners ---
             function attachEventListeners() {
                 playBtn.addEventListener('click', togglePlay);
                 prevBtn.addEventListener('click', () => changeSong(-1));
@@ -461,7 +449,16 @@
                 
                 audioPlayer.addEventListener('timeupdate', updateProgress);
                 audioPlayer.addEventListener('ended', () => {
-                    isRepeating ? playSong() : changeSong(1);
+                    if (isRepeating) {
+                        audioPlayer.currentTime = 0;
+                        playSong();
+                    } else {
+                        changeSong(1);
+                    }
+                });
+                audioPlayer.addEventListener('loadedmetadata', () => {
+                    const li = musicList.querySelector(`[data-song-id="${currentSongId}"]`);
+                    if(li) li.querySelector('.song-duration').textContent = formatTime(audioPlayer.duration);
                 });
                 
                 progressContainer.addEventListener('click', setProgress);
@@ -481,7 +478,6 @@
                 });
             }
             
-            const volumeControl = document.querySelector('.volume-control');
             init();
         });
     </script>
