@@ -134,11 +134,10 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const songs = [
-                // *** CAMINHOS CORRIGIDOS AQUI ***
                 { id: 'song1', title: "Vem com tudo, pisa!", src: "audios/vem-com-tudo-pisa.mp3" },
-                { id: 'song2', title: "A gente não tem nada", src: "audios/a-gente-nao-tem-nada.mp3" },
+                { id: 'song2', title: "A gente se peg", src: "audios/a-gente-se-pega.mp3" },
                 { id: 'song3', title: "Queima", src: "audios/queima.mp3" },
-                { id: 'song4', title: "Tô fumando crack", src: "audios/to-fumando-crack.mp3" },
+                { id: 'song4', title: "Tô fumando pedra", src: "audios/to-fumando-pedra.mp3" },
                 { id: 'song5', title: "Esperei", src: "audios/esperei.mp3" },
                 { id: 'song6', title: "Santo de Estuque", src: "audios/santo-de-estuque.mp3" }
             ];
@@ -166,6 +165,22 @@
                 isPlaying: false,
                 isRepeating: false,
             };
+
+            // *** NOVA FUNÇÃO ADICIONADA ***
+            // Carrega os metadados de todas as músicas em segundo plano para obter suas durações.
+            function loadTrackDurations() {
+                songs.forEach(song => {
+                    const tempAudio = new Audio(song.src);
+                    tempAudio.addEventListener('loadedmetadata', () => {
+                        const durationEl = document.querySelector(`.song-duration[data-song-id="${song.id}"]`);
+                        if (durationEl && !isNaN(tempAudio.duration)) {
+                            const minutes = Math.floor(tempAudio.duration / 60);
+                            const seconds = Math.floor(tempAudio.duration % 60);
+                            durationEl.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                        }
+                    });
+                });
+            }
 
             function playTrack(index) {
                 if (index < 0 || index >= songs.length) return;
@@ -242,6 +257,10 @@
                             </div>
                         </div>
                     </li>`).join('');
+                
+                // *** CHAMADA DA NOVA FUNÇÃO ***
+                // Inicia o carregamento das durações de todas as faixas.
+                loadTrackDurations();
 
                 // Attach Event Listeners
                 DOMElements.musicList.addEventListener('click', e => {
@@ -264,15 +283,10 @@
                 DOMElements.audioPlayer.addEventListener('ended', () => {
                     state.isRepeating ? playTrack(state.currentIndex) : changeTrack(1);
                 });
-                DOMElements.audioPlayer.addEventListener('loadedmetadata', () => {
-                    const durationEl = document.querySelector(`.song-duration[data-song-id="${songs[state.currentIndex].id}"]`);
-                    if(durationEl) {
-                         const seconds = DOMElements.audioPlayer.duration;
-                         const mins = Math.floor(seconds / 60);
-                         const secs = Math.floor(seconds % 60);
-                         durationEl.textContent = isNaN(mins) ? "--:--" : `${mins}:${secs.toString().padStart(2, '0')}`;
-                    }
-                });
+
+                // *** BLOCO DE CÓDIGO ANTERIOR REMOVIDO DAQUI ***
+                // O listener 'loadedmetadata' foi movido para a função loadTrackDurations
+                // para funcionar para todas as músicas, e não apenas para a que está tocando.
 
                 DOMElements.progressContainer.addEventListener('click', setProgress);
                 DOMElements.volumeBtn.addEventListener('click', e => {
