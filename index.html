@@ -40,21 +40,34 @@
             padding: 16px 12px;
             border-bottom: 1px solid var(--border-color);
             cursor: pointer;
-            transition: background 0.2s ease-in-out;
+            transition: background 0.2s ease-in-out, border-left 0.2s ease-in-out, padding-left 0.2s ease-in-out;
+            position: relative; /* Para a borda à esquerda */
         }
 
         .music-list-item:hover { background: var(--surface); }
+
+        /* Estilos para a música selecionada/ativa */
+        .music-list-item.active {
+            background-color: var(--surface); /* Fundo sutil */
+            border-left: 3px solid var(--accent); /* Barra de destaque à esquerda */
+            padding-left: 9px; /* Ajusta o padding para compensar a borda */
+        }
+        .music-list-item.active .track-title,
+        .music-list-item.active .track-number { 
+            color: var(--accent); 
+            font-weight: 600; 
+        }
+        /* Fim dos estilos de destaque */
+
+
         .track-info { display: flex; align-items: center; }
         .track-number { font-size: 14px; font-weight: 500; color: var(--secondary-text); width: 30px; text-align: center; margin-right: 15px; }
         .track-title { font-size: 16px; font-weight: 500; }
-
-        .music-list-item.active .track-title,
-        .music-list-item.active .track-number { color: var(--accent); font-weight: 600; }
         
         .track-meta { 
             display: flex; 
             align-items: center; 
-            gap: 15px; /* Espaçamento entre os elementos de metadados */
+            gap: 15px; 
         }
         .song-duration { font-size: 14px; color: var(--secondary-text); }
 
@@ -69,17 +82,17 @@
             color: var(--secondary-text);
             cursor: pointer;
             transition: color 0.2s ease;
-            padding: 0; /* Remover padding padrão do botão */
-            display: flex; /* Para centralizar o SVG */
+            padding: 0; 
+            display: flex; 
             align-items: center;
             justify-content: center;
-            margin-left: 10px; /* Adicionar um pouco de margem para separar da duração */
+            margin-left: 10px; 
         }
         .share-btn:hover {
             color: var(--accent);
         }
         .share-btn svg {
-            width: 18px; /* Tamanho do ícone */
+            width: 18px; 
             height: 18px;
         }
 
@@ -117,7 +130,7 @@
 
         .extra-controls { display: flex; justify-content: flex-end; align-items: center; gap: 15px; }
         .volume-control { position: relative; }
-        .volume-popup { position: absolute; bottom: 45px; right: -25px; background: var(--surface); padding: 15px 12px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.2s ease; }
+        .volume-popup { position: absolute; bottom: 45px; right: -25px; background: var(--surface); padding: 15px 12px; border-radius: 8px; /* Corrigido de 88px para 8px */ box-shadow: 0 4px 20px rgba(0,0,0,0.5); opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.2s ease; }
         .volume-popup.active { opacity: 1; visibility: visible; transform: translateY(0); }
         .volume-slider { -webkit-appearance: none; width: 100px; height: 4px; background: #444; border-radius: 2px; outline: none; }
         .volume-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; background: var(--accent); border-radius: 50%; cursor: pointer; }
@@ -199,7 +212,7 @@
                 volumeControl: document.querySelector('.volume-control'),
                 currentTrackTitle: document.querySelector('.current-track-title'),
                 musicList: document.querySelector('.music-list'),
-                body: document.body, // Adicionado para exibir mensagens de 'toast'
+                body: document.body, 
             };
 
             let state = {
@@ -222,41 +235,83 @@
                 });
             }
 
-            function playTrack(index) {
-                if (index < 0 || index >= songs.length) return;
-                
-                state.currentIndex = index;
-                const song = songs[index];
-
-                DOMElements.audioPlayer.src = song.src;
-                DOMElements.audioPlayer.play().then(() => {
-                    updateUIForPlayback(true);
-                }).catch(error => {
-                    console.error("Erro ao tocar a música:", error);
-                    updateUIForPlayback(false);
+            // *** FUNÇÃO NOVA/MODIFICADA: Atualiza apenas o estado de SELEÇÃO na lista e o título do player ***
+            function updateSelectedTrackUI(index) {
+                state.currentIndex = index; // Atualiza o índice da música atual
+                document.querySelectorAll('.music-list-item').forEach((item, i) => {
+                    // Adiciona/remove a classe 'active' (destaque de seleção)
+                    item.classList.toggle('active', i === index);
+                    // Garante que a classe 'playing' seja removida até que a reprodução seja confirmada
+                    item.classList.toggle('playing', false); 
                 });
+
+                if (index !== -1) {
+                    DOMElements.currentTrackTitle.textContent = songs[index].title;
+                } else {
+                    DOMElements.currentTrackTitle.textContent = "Selecione uma música";
+                }
             }
 
-            function updateUIForPlayback(isPlaying) {
+            // *** FUNÇÃO NOVA: Atualiza o estado de REPRODUÇÃO (play/pause) e o indicador visual ***
+            function updatePlayingStateUI(isPlaying) {
                 state.isPlaying = isPlaying;
                 DOMElements.playIcon.style.display = isPlaying ? 'none' : 'block';
                 DOMElements.pauseIcon.style.display = isPlaying ? 'block' : 'none';
 
-                DOMElements.currentTrackTitle.textContent = songs[state.currentIndex].title;
+                if (state.currentIndex !== -1) {
+                    const currentTrackItem = document.querySelector(`.music-list-item[data-index="${state.currentIndex}"]`);
+                    if (currentTrackItem) {
+                        currentTrackItem.classList.toggle('playing', isPlaying);
+                    }
+                }
+            }
+
+            function playTrack(index) {
+                if (index < 0 || index >= songs.length) return;
                 
-                document.querySelectorAll('.music-list-item').forEach((item, index) => {
-                    const isActive = index === state.currentIndex;
-                    item.classList.toggle('active', isActive);
-                    item.classList.toggle('playing', isActive && isPlaying);
+                // Primeiro, atualiza o UI para mostrar a música como SELECIONADA
+                updateSelectedTrackUI(index); 
+                const song = songs[index];
+
+                DOMElements.audioPlayer.src = song.src;
+                DOMElements.audioPlayer.load(); // Carrega a nova fonte de áudio
+
+                // Tenta tocar a música. Isso PODE ser bloqueado pelo navegador (políticas de autoplay).
+                DOMElements.audioPlayer.play().then(() => {
+                    // Se o autoplay foi bem-sucedido, atualiza o UI para o estado 'tocando'
+                    updatePlayingStateUI(true); 
+                }).catch(error => {
+                    console.warn("Autoplay foi prevenido pelo navegador:", error);
+                    // Se o autoplay falhou ou foi bloqueado, atualiza o UI para o estado 'pausado'
+                    // e informa o usuário que ele precisa clicar no play.
+                    updatePlayingStateUI(false); 
+                    if (error.name === "NotAllowedError") {
+                        showToast("Clique no botão Play para iniciar a música.");
+                    }
                 });
             }
             
             function togglePlay() {
                 if (state.currentIndex === -1) {
+                    // Se nenhuma música estiver selecionada, toca a primeira por padrão
                     playTrack(0);
-                    return;
+                } else {
+                    // Alterna play/pause para a música atual
+                    if (state.isPlaying) {
+                        DOMElements.audioPlayer.pause();
+                    } else {
+                        // Tenta tocar. Mesmo um clique do usuário pode falhar em casos extremos.
+                        DOMElements.audioPlayer.play().then(() => {
+                            updatePlayingStateUI(true);
+                        }).catch(error => {
+                            console.warn("Erro ao tocar a música (click do usuário):", error);
+                            updatePlayingStateUI(false); 
+                            if (error.name === "NotAllowedError") {
+                                showToast("Clique no botão Play para iniciar a música.");
+                            }
+                        });
+                    }
                 }
-                state.isPlaying ? DOMElements.audioPlayer.pause() : DOMElements.audioPlayer.play();
             }
 
             function changeTrack(direction) {
@@ -278,7 +333,7 @@
                 }
             }
 
-            // NOVA FUNÇÃO: Manipula parâmetros da URL para tocar uma música específica
+            // FUNÇÃO: Manipula parâmetros da URL para tocar uma música específica
             function handleURLParams() {
                 const urlParams = new URLSearchParams(window.location.search);
                 const songId = urlParams.get('songId');
@@ -286,30 +341,31 @@
                 if (songId) {
                     const songIndex = songs.findIndex(song => song.id === songId);
                     if (songIndex !== -1) {
-                        playTrack(songIndex);
+                        // Toca a música encontrada. A lógica de autoplay será tratada dentro de playTrack.
+                        playTrack(songIndex); 
                     }
                 }
             }
 
-            // NOVA FUNÇÃO: Exibe uma mensagem temporária na tela (tipo "toast")
+            // FUNÇÃO: Exibe uma mensagem temporária na tela (tipo "toast")
             function showToast(message) {
                 const toast = document.createElement('div');
                 toast.textContent = message;
-                toast.classList.add('toast-message'); // Adiciona a classe para estilização
+                toast.classList.add('toast-message'); 
                 DOMElements.body.appendChild(toast);
 
                 setTimeout(() => {
-                    toast.style.opacity = '1'; // Faz aparecer suavemente
+                    toast.style.opacity = '1'; 
                 }, 10); 
 
                 setTimeout(() => {
-                    toast.style.opacity = '0'; // Faz desaparecer suavemente
-                    toast.addEventListener('transitionend', () => toast.remove()); // Remove do DOM após a transição
-                }, 3000); // 3 segundos
+                    toast.style.opacity = '0'; 
+                    toast.addEventListener('transitionend', () => toast.remove()); 
+                }, 3000); 
             }
             
             function init() {
-                // Render List com o botão de compartilhar
+                // Renderiza a lista de músicas com o botão de compartilhar
                 DOMElements.musicList.innerHTML = songs.map((song, index) => `
                     <li class="music-list-item" data-index="${index}">
                         <div class="track-info">
@@ -331,6 +387,7 @@
                         </div>
                     </li>`).join('');
                 
+                // Carrega as durações de todas as faixas em segundo plano
                 loadTrackDurations();
 
                 // Adiciona o event listener para os itens da lista (para tocar a música)
@@ -347,10 +404,8 @@
                     btn.addEventListener('click', (e) => {
                         e.stopPropagation(); // Impede que o clique no botão ative o clique do item da lista pai
                         const songIdToShare = btn.dataset.songId;
-                        // Constrói o link completo com o parâmetro songId
                         const shareLink = `${window.location.origin}${window.location.pathname}?songId=${songIdToShare}`;
                         
-                        // Usa a API Clipboard para copiar o link
                         if (navigator.clipboard && navigator.clipboard.writeText) {
                             navigator.clipboard.writeText(shareLink).then(() => {
                                 showToast("Link copiado!");
@@ -359,7 +414,7 @@
                                 showToast("Erro ao copiar o link.");
                             });
                         } else {
-                            // Fallback para navegadores mais antigos (menos comum hoje em dia)
+                            // Fallback para navegadores mais antigos
                             const textArea = document.createElement("textarea");
                             textArea.value = shareLink;
                             textArea.style.position = "fixed"; 
@@ -379,7 +434,7 @@
                     });
                 });
 
-
+                // Listeners para os controles do player
                 DOMElements.playBtn.addEventListener('click', togglePlay);
                 DOMElements.prevBtn.addEventListener('click', () => changeTrack(-1));
                 DOMElements.nextBtn.addEventListener('click', () => changeTrack(1));
@@ -389,8 +444,9 @@
                     DOMElements.repeatBtn.classList.toggle('active', state.isRepeating);
                 });
                 
-                DOMElements.audioPlayer.addEventListener('play', () => updateUIForPlayback(true));
-                DOMElements.audioPlayer.addEventListener('pause', () => updateUIForPlayback(false));
+                // Os event listeners do audioPlayer agora chamam as funções separadas de atualização de UI
+                DOMElements.audioPlayer.addEventListener('play', () => updatePlayingStateUI(true));
+                DOMElements.audioPlayer.addEventListener('pause', () => updatePlayingStateUI(false));
                 DOMElements.audioPlayer.addEventListener('timeupdate', updateProgress);
                 DOMElements.audioPlayer.addEventListener('ended', () => {
                     state.isRepeating ? playTrack(state.currentIndex) : changeTrack(1);
