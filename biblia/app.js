@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // --- VARIÁVEIS E ESTADO GLOBAL ---
+    // ---AS VARIÁVEIS E ESTADO GLOBAL ---
     const appContent = document.getElementById('app-content');
     const themeToggle = document.getElementById('theme-toggle');
     const sunIcon = document.querySelector('.icon-sun');
