@@ -1,722 +1,516 @@
 [
   {
     "ID": "SON-001",
-    "Nome": "Paleta de Impacto (Uso de Consoantes Plosivas)",
+    "Nome": "Consoantes Plosivas",
     "Categoria": "Engenharia Sônica",
-    "ProblemaQueResolve": [
-      "Versos sem força ou impacto.",
-      "Expressão de raiva, confronto ou afirmação categórica."
-    ],
+    "ProblemaQueResolve": ["Criar impacto e ritmo.", "Expressar raiva ou afirmação."],
     "Mecanica": {
-      "Funcao": "Criar um efeito sonoro percussivo, marcado e agressivo.",
-      "Mecanismo": "Utiliza a 'explosão' de ar dos fonemas plosivos (/p/, /b/, /t/, /d/, /k/, /g/). Essa interrupção e liberação do fluxo de ar funciona como uma pontuação rítmica, dando peso às palavras.",
-      "InstrucaoPrescritiva": "Para um efeito de força, concentre palavras com essas consoantes no início das sílabas tônicas. Use em sequência para um ritmo 'socado' e marcado."
+      "Funcao": "Produzir um som percussivo e marcado.",
+      "Mecanismo": "Uso dos fonemas /p/, /b/, /t/, /d/, /k/, /g/, que interrompem o fluxo de ar para criar uma 'explosão' sonora.",
+      "InstrucaoPrescritiva": "Concentre palavras com estes sons em momentos de clímax ou em sílabas tônicas para dar peso rítmico."
     },
     "Aplicacao": {
-      "Analise": "As plosivas funcionam como a 'batida na mesa' verbal. São eficazes para criar o clímax de uma estrofe ou dar peso ao título da canção no refrão. No Rock e no Rap, são usadas para confronto.",
-      "Exemplos": [
-        {
-          "Titulo": "Confronto (Charlie Brown Jr. - 'Papo Reto')",
-          "Verso": "Pago minhas contas, sou limpinho / Não sou como você filho da puta, viadinho",
-          "Observacao": "A alta densidade de fonemas /p/, /k/ e /t/ cria um som agressivo e cuspidor que reforça o xingamento."
-        },
-        {
-          "Titulo": "Afirmação (Zezé Di Camargo & Luciano - 'É o Amor')",
-          "Verso": "Que derrubou a base forte da minha paixão",
-          "Observacao": "A sequência de plosivas em 'derrubou a base' confere peso e fatalidade à frase, marcando a força do sentimento."
-        }
-      ]
+      "Analise": "Plosivas funcionam como pontuações sonoras. São usadas para confronto no rock/rap e para dar peso a declarações em canções românticas.",
+      "Exemplos": [{ "Titulo": "Charlie Brown Jr. - 'Papo Reto'", "Verso": "Pago minhas contas, sou limpinho / Não sou como você filho da puta, viadinho", "Observacao": "A alta densidade de /p/, /k/ e /t/ cria um som agressivo."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "O uso excessivo pode tornar a letra mecanizada ou caricata. A força vem do contraste.",
-      "Combinacao": "Funciona de forma eficaz quando contrastado com versos mais fluidos (ricos em fricativas e nasais), criando um pico de agressividade.",
-      "Contexto": "Menos eficaz para transmitir dúvida ou leveza."
-    },
-    "Conexoes": [
-      "MEC-006",
-      "ARQ-008"
-    ]
+    "PontoDeAtencao": {"Risco": "O uso excessivo pode soar mecânico. O efeito é maior quando contrastado com sons mais suaves.", "Contexto": "Menos eficaz para temas de leveza ou dúvida."},
+    "Conexoes": ["MEC-006", "ARQ-008"]
   },
   {
     "ID": "SON-003",
-    "Nome": "Paleta da Ressonância (Uso de Consoantes Nasais)",
+    "Nome": "Consoantes Nasais",
     "Categoria": "Engenharia Sônica",
-    "ProblemaQueResolve": [
-      "Criar versos com sonoridade suave, melancólica ou introspectiva.",
-      "Dar um efeito de 'eco' ou prolongamento ao final de um verso."
-    ],
+    "ProblemaQueResolve": ["Criar sonoridade suave, melancólica ou introspectiva.", "Dar um efeito de eco ou prolongamento."],
     "Mecanica": {
-      "Funcao": "Produzir um som contínuo e ressonante que prolonga a vibração das palavras.",
-      "Mecanismo": "Utiliza os fonemas /m/, /n/, /ɲ/ (nh), onde o ar sai pelo nariz. Diferente das plosivas (que cortam o som), as nasais sustentam o som, criando uma sensação de fluidez e eco.",
-      "InstrucaoPrescritiva": "Use palavras ricas em 'm', 'n' e 'nh' em finais de verso para um efeito de 'fade out' natural, ou em versos que descrevem sentimentos de saudade, sonho e memória."
+      "Funcao": "Produzir um som contínuo e ressonante.",
+      "Mecanismo": "Uso dos fonemas /m/, /n/, /ɲ/ (nh), onde o ar sai pelo nariz, sustentando o som.",
+      "InstrucaoPrescritiva": "Use palavras ricas em 'm', 'n' e 'nh' em finais de verso ou em temas de saudade, sonho e memória."
     },
     "Aplicacao": {
-      "Analise": "As nasais são o som da memória e da introspecção. Sua ressonância prolongada é acusticamente similar a um pensamento que persiste. Artistas de MPB e pagode romântico usam essa paleta para criar uma atmosfera de intimidade.",
-      "Exemplos": [
-        {
-          "Titulo": "Melancolia (Tim Maia - 'Gostava Tanto de Você')",
-          "Verso": "Não sei por que você se foi / Quantas saudades eu senti / E de tristezas vou viver",
-          "Observacao": "A repetição do fonema /n/ cria uma cadência lamentosa e contínua, reforçando a sensação de perda."
-        },
-        {
-          "Titulo": "Intimidade (Caetano Veloso - 'Sina')",
-          "Verso": "Pai e mãe, ouro de mina / Coração, desejo e sina / Tudo mais, pura rotina...",
-          "Observacao": "A predominância de /m/ e /n/ em rimas internas e finais cria uma sonoridade macia e sussurrada, ideal para o tema de sentimentos profundos."
-        }
-      ]
+      "Analise": "As nasais são o som da memória e da introspecção. Sua ressonância prolongada é acusticamente similar a um eco. Usadas para criar uma atmosfera de intimidade.",
+      "Exemplos": [{ "Titulo": "Tim Maia - 'Gostava Tanto de Você'", "Verso": "Não sei por que você se foi / Quantas saudades eu senti", "Observacao": "A repetição do fonema /n/ cria uma cadência lamentosa e contínua."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "Pode deixar a dicção menos clara se não for bem articulada. Em excesso, pode soar monótono.",
-      "Combinacao": "Excelente para contrastar com a clareza das vogais abertas, criando um movimento de interiorização/exteriorização.",
-      "Contexto": "Menos eficaz para temas de raiva, euforia ou celebração."
-    },
-    "Conexoes": [
-      "GEN-001"
-    ]
+    "PontoDeAtencao": {"Risco": "Em excesso, pode soar monótono ou anasalado, prejudicando a dicção.", "Contexto": "Menos eficaz para temas de euforia ou celebração."},
+    "Conexoes": ["GEN-001"]
   },
   {
     "ID": "SON-005",
-    "Nome": "Coloração com Vogais Abertas",
+    "Nome": "Vogais Abertas",
     "Categoria": "Engenharia Sônica",
-    "ProblemaQueResolve": [
-      "Como dar a um refrão uma sonoridade expansiva e eufórica.",
-      "Criar versos que soem 'grandes' e fáceis de cantar em coro."
-    ],
+    "ProblemaQueResolve": ["Dar a um refrão uma sonoridade expansiva e eufórica.", "Criar versos fáceis de cantar em coro."],
     "Mecanica": {
-      "Funcao": "Criar um som amplo e 'para fora', que exige maior abertura da boca e projeção da voz.",
-      "Mecanismo": "Prioriza o uso de vogais tônicas abertas como /a/, /ɛ/ (é), /ɔ/ (ó). A produção física desses sons naturalmente induz a um canto mais potente.",
-      "InstrucaoPrescritiva": "Ao escrever um refrão de clímax, selecione palavras-chave e rimas com essas vogais tônicas (ex: amar, festa, agora, coração)."
+      "Funcao": "Criar um som amplo e projetado.",
+      "Mecanismo": "Prioriza o uso de vogais tônicas abertas como /a/, /ɛ/ (é), /ɔ/ (ó).",
+      "InstrucaoPrescritiva": "Para refrões de clímax, selecione palavras e rimas com essas vogais tônicas (ex: amar, festa, agora)."
     },
     "Aplicacao": {
-      "Analise": "As vogais abertas são o som da afirmação e da emoção extrovertida. Não é coincidência que refrões de estádio e declarações de amor passionais sejam ricos nesses sons, pois carregam uma energia expansiva.",
-      "Exemplos": [
-        {
-          "Titulo": "Refrão de Arena (Gusttavo Lima - 'Balada')",
-          "Verso": "Gata, me liga, mais tarde tem balada / Quero curtir com você na madrugada",
-          "Observacao": "A esmagadora dominância da vogal /a/ tônica torna o refrão extremamente aberto, projetado e fácil de ser cantado em coro."
-        },
-        {
-          "Titulo": "Afirmação Passional (Zezé Di Camargo & Luciano - 'É o Amor')",
-          "Verso": "É o amor / Que mexe com minha cabeça e me deixa assim",
-          "Observacao": "A frase é construída em torno da vogal aberta em 'amor' e 'cabeça', dando o tom expansivo da declaração."
-        }
-      ]
+      "Analise": "As vogais abertas são o som da afirmação e da emoção extrovertida. Carregam uma energia expansiva, ideal para refrões de estádio.",
+      "Exemplos": [{ "Titulo": "Gusttavo Lima - 'Balada'", "Verso": "Gata, me liga, mais tarde tem balada / Quero curtir com você na madrugada", "Observacao": "A dominância da vogal /a/ tônica torna o refrão aberto e projetado."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "Pode soar excessivamente 'pop' ou simplista se não houver variação para vogais fechadas nos versos.",
-      "Combinacao": "Funciona melhor no refrão, contrastando com versos de sonoridade mais contida (com vogais fechadas /i/, /u/).",
-      "Contexto": "Inadequado para temas de segredo, introspecção ou tristeza sutil."
+    "PontoDeAtencao": {"Risco": "Pode soar simplista se não houver variação com vogais fechadas nos versos.", "Contexto": "Inadequado para temas de segredo ou introspecção."},
+    "Conexoes": ["ARQ-004"]
+  },
+  {
+    "ID": "SON-007",
+    "Nome": "Aliteração",
+    "Categoria": "Engenharia Sônica",
+    "ProblemaQueResolve": ["Adicionar musicalidade e ritmo a um verso.", "Tornar uma frase mais memorável (gancho fonético)."],
+    "Mecanica": {
+      "Funcao": "Criar uma textura sonora específica através da repetição de sons consonantais.",
+      "Mecanismo": "Repetir o mesmo som consonantal no início de palavras próximas ou em suas sílabas tônicas.",
+      "InstrucaoPrescritiva": "Agrupe palavras que comecem com o mesmo som para criar um efeito rítmico (ex: 'Vi você voltando')."
     },
-    "Conexoes": [
-      "ARQ-004"
-    ]
+    "Aplicacao": {
+      "Analise": "A aliteração é o 'tempero' sonoro da letra. Cria um gancho fonético que prende a atenção. A repetição de /p/ cria um ritmo 'batucado'; a de /s/ cria um 'sussurro'.",
+      "Exemplos": [{ "Titulo": "Tim Maia - 'Você'", "Verso": "Vi o tempo passar / O inverno chegar / Outra vez / Mas desta vez...", "Observacao": "A repetição do som /v/ cria uma ligação sonora entre os versos, dando uma sensação de fluxo contínuo."}]
+    },
+    "PontoDeAtencao": {"Risco": "O excesso pode soar forçado ou como um trava-língua.", "Contexto": "Presente em todos os gêneros, mas explorada com mais intencionalidade na MPB e no Rap."},
+    "Conexoes": ["SON-008"]
+  },
+  {
+    "ID": "SON-008",
+    "Nome": "Assonância",
+    "Categoria": "Engenharia Sônica",
+    "ProblemaQueResolve": ["Criar musicalidade em versos sem rimas óbvias.", "Dar um 'tom' ou 'cor' sonora a uma estrofe."],
+    "Mecanica": {
+      "Funcao": "Criar uma harmonia interna pela repetição da mesma vogal tônica em várias palavras.",
+      "Mecanismo": "Repetir o mesmo som vocálico, especialmente em sílabas tônicas (ex: 'Minha vida, minha história').",
+      "InstrucaoPrescritiva": "Escolha uma vogal que represente o 'tom' da estrofe ('a' para abertura, 'i' para dor) e use palavras-chave que compartilhem essa vogal."
+    },
+    "Aplicacao": {
+      "Analise": "Se a aliteração é o ritmo, a assonância é a melodia interna. Ela cria uma 'cor' sonora para a frase. Uma estrofe dominada por /a/ soará aberta; uma dominada por /u/ soará escura.",
+      "Exemplos": [{ "Titulo": "Jorge Ben Jor - 'País Tropical'", "Verso": "Moro num país tropical / Abençoado por Deus / E bonito por natureza", "Observacao": "A predominância da vogal /o/ cria uma sonoridade 'redonda' e relaxada."}]
+    },
+    "PontoDeAtencao": {"Risco": "Seu efeito é mais subliminar que o da rima.", "Contexto": "Ferramenta sofisticada, muito utilizada por letristas de MPB."},
+    "Conexoes": ["SON-007"]
   },
   {
     "ID": "MEC-001",
     "Nome": "Rima Emparelhada (AABB)",
     "Categoria": "Mecânica do Verso",
-    "ProblemaQueResolve": [
-      "Criar uma estrutura simples, memorável e com sonoridade direta.",
-      "Construir refrões de fácil assimilação."
-    ],
-    "Mecanica": {
-      "Funcao": "Criar pares rítmicos fechados, dando a cada par de versos uma conclusão sonora imediata.",
-      "Mecanismo": "O primeiro verso rima com o segundo (par A), e o terceiro rima com o quarto (par B).",
-      "InstrucaoPrescritiva": "Use para construir estrofes com ideias claras e diretas. É a estrutura mais intuitiva para o ouvinte acompanhar."
-    },
+    "ProblemaQueResolve": ["Criar uma estrutura simples e de fácil memorização.", "Construir refrões diretos."],
+    "Mecanica": { "Funcao": "Criar pares rítmicos fechados.", "Mecanismo": "O primeiro verso rima com o segundo (par A), e o terceiro rima com o quarto (par B).", "InstrucaoPrescritiva": "Use para construir estrofes com ideias claras. É a estrutura mais intuitiva para o ouvinte." },
     "Aplicacao": {
-      "Analise": "É a espinha dorsal de inúmeros sucessos populares. Sua previsibilidade a torna 'cantável' e fácil de lembrar. A simplicidade pode ser uma força (clareza) ou uma fraqueza (falta de sofisticação).",
-      "Exemplos": [
-        {
-          "Titulo": "Sertanejo Narrativo (Bruno & Marrone - 'Dormi na Praça')",
-          "Verso": "Caminhei sozinho pela rua (A) / Falei com as estrelas e com a Lua (A) / Deitei no banco da praça tentando te esquecer (B) / Adormeci e sonhei com você (B)",
-          "Observacao": "A estrutura AABB ajuda a contar a história de forma clara e cadenciada, como em uma cantiga popular."
-        },
-        {
-          "Titulo": "Pagode Romântico (Raça Negra - 'Cheia de Manias')",
-          "Verso": "Cheia de manias (A) / Toda dengosa (B) / Menina bonita (C) / Sabe que é gostosa (B)",
-          "Observacao": "Neste caso, uma variação XAXA, mas o princípio de rimas simples e diretas é o mesmo, criando o balanço característico do gênero."
-        }
-      ]
+      "Analise": "É a espinha dorsal de inúmeros sucessos populares. Sua previsibilidade a torna 'cantável'.",
+      "Exemplos": [{ "Titulo": "Bruno & Marrone - 'Dormi na Praça'", "Verso": "Caminhei sozinho pela rua (A) / Falei com as estrelas e com a Lua (A) / tentando te esquecer (B) / Adormeci e sonhei com você (B)", "Observacao": "A estrutura AABB ajuda a contar a história de forma clara e cadenciada." }]
     },
-    "PontoDeAtencao": {
-      "Risco": "Pode soar infantil ou previsível demais se usado sem variação ao longo da música.",
-      "Combinacao": "Funciona bem em refrões e estrofes curtas. Pode ser quebrado por uma ponte com outro esquema rímico para criar surpresa.",
-      "Contexto": "Menos comum em gêneros que valorizam a complexidade lírica, como a MPB de vanguarda."
-    },
-    "Conexoes": [
-      "ARQ-004",
-      "MET-001"
-    ]
+    "PontoDeAtencao": {"Risco": "Pode soar infantil ou previsível demais se usado sem variação.", "Contexto": "Comum em música popular, sertanejo e pagode."},
+    "Conexoes": ["ARQ-004", "MET-001"]
   },
   {
     "ID": "MEC-004",
     "Nome": "Rima Interna",
     "Categoria": "Mecânica do Verso",
-    "ProblemaQueResolve": [
-      "Versos que soam lentos ou sem ritmo.",
-      "Como acelerar a cadência verbal e criar um 'groove' lírico."
-    ],
-    "Mecanica": {
-      "Funcao": "Criar um eco sonoro dentro de um único verso ou entre o final de um verso e o meio do seguinte.",
-      "Mecanismo": "Rimar uma palavra no meio de um verso com a palavra no final do mesmo verso.",
-      "InstrucaoPrescritiva": "Use para dar mais dinamismo e musicalidade a versos longos, quebrando a monotonia e sugerindo uma entrega mais rápida e sincopada."
-    },
+    "ProblemaQueResolve": ["Dar mais ritmo a versos longos.", "Criar um 'groove' verbal."],
+    "Mecanica": { "Funcao": "Criar um eco sonoro dentro do mesmo verso.", "Mecanismo": "Rimar uma palavra no meio de um verso com a palavra no final do mesmo verso.", "InstrucaoPrescritiva": "Use para dar dinamismo a versos longos, quebrando a monotonia." },
     "Aplicacao": {
-      "Analise": "A rima interna é uma ferramenta poderosa no rap e na MPB. Ela 'costura' o verso, tornando-o mais coeso e ritmicamente interessante. Demonstra maior domínio técnico.",
-      "Exemplos": [
-        {
-          "Titulo": "MPB (Caetano Veloso - 'Qualquer Coisa')",
-          "Verso": "Berro pelo aterro, pelo desterro / Berro por seu berro, pelo seu erro",
-          "Observacao": "A rima interna tripla (aterro/desterro/berro) dentro da frase cria uma cascata sonora que acelera a leitura e dá um ritmo frenético ao verso."
-        }
-      ]
+      "Analise": "A rima interna 'costura' o verso, tornando-o mais coeso e ritmicamente interessante. Demonstra maior domínio técnico.",
+      "Exemplos": [{ "Titulo": "Caetano Veloso - 'Qualquer Coisa'", "Verso": "Berro pelo aterro, pelo desterro / Berro por seu berro, pelo seu erro", "Observacao": "A rima interna tripla (aterro/desterro/berro) cria uma cascata sonora que acelera o ritmo do verso."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "O uso forçado pode soar artificial e tirar a naturalidade da frase.",
-      "Combinacao": "Combina bem com versos de métrica mais longa e com uma entrega mais próxima da fala (rap, samba-rock).",
-      "Contexto": "Pode ser uma distração em baladas lentas que exigem uma entrega mais limpa e espaçada."
-    },
-    "Conexoes": [
-      "ART-001"
-    ]
+    "PontoDeAtencao": {"Risco": "O uso forçado pode soar artificial.", "Contexto": "Eficaz em gêneros com entrega falada, como Rap e Samba-rock."},
+    "Conexoes": ["ART-001"]
   },
   {
     "ID": "MEC-005",
     "Nome": "Rima Rica",
     "Categoria": "Mecânica do Verso",
-    "ProblemaQueResolve": [
-      "Como adicionar sofisticação e surpresa a um par de versos.",
-      "Evitar rimas óbvias e clichês (coração/paixão)."
-    ],
-    "Mecanica": {
-      "Funcao": "Criar uma conexão sonora inesperada entre palavras de universos diferentes.",
-      "Mecanismo": "Consiste em rimar palavras que pertencem a classes gramaticais distintas (ex: substantivo com verbo, adjetivo com advérbio).",
-      "InstrucaoPrescritiva": "Ao finalizar um verso, identifique a classe gramatical da última palavra. Em seguida, busque ativamente uma palavra de outra classe gramatical que possua a mesma terminação sonora."
-    },
+    "ProblemaQueResolve": ["Adicionar sofisticação e surpresa.", "Evitar rimas óbvias (coração/paixão)."],
+    "Mecanica": { "Funcao": "Criar uma conexão sonora inesperada entre palavras.", "Mecanismo": "Rimar palavras de classes gramaticais distintas (ex: substantivo com verbo).", "InstrucaoPrescritiva": "Ao finalizar um verso, busque uma palavra de outra classe gramatical com a mesma terminação sonora." },
     "Aplicacao": {
-      "Analise": "A Rima Rica é uma marca de virtuosismo lírico. Ela eleva a letra para um poema mais elaborado, pois a conexão sonora força uma conexão de significado que não é óbvia, gerando metáforas e imagens mais complexas.",
-      "Exemplos": [
-        {
-          "Titulo": "MPB (Caetano Veloso - 'Você Não Entende Nada')",
-          "Verso": "Quando eu chego em casa nada me consola (verbo) / Você traz a Coca-Cola (substantivo)",
-          "Observacao": "A rima une uma ação ('consolar') a um objeto ('Coca-Cola'), criando um contraste irônico entre a angústia existencial do eu-lírico e a banalidade da cena."
-        }
-      ]
+      "Analise": "É uma marca de virtuosismo lírico. A conexão sonora força uma conexão de significado que não é óbvia, gerando imagens mais complexas.",
+      "Exemplos": [{"Titulo": "Caetano Veloso - 'Você Não Entende Nada'", "Verso": "Quando eu chego em casa nada me consola (verbo) / Você traz a Coca-Cola (substantivo)", "Observacao": "A rima une uma ação a um objeto, criando um contraste irônico entre a angústia existencial e a banalidade da cena." }]
     },
-    "PontoDeAtencao": {
-      "Risco": "A busca pela rima rica não pode sacrificar o sentido da frase. Se a palavra escolhida soa deslocada, a rima perde seu efeito.",
-      "Combinacao": "É uma marca de gêneros como MPB, Bossa Nova e Rap Consciente.",
-      "Contexto": "Pode ser considerada excessivamente cerebral ou artificial em gêneros que prezam pela comunicação direta e simples."
-    },
-    "Conexoes": [
-      "ART-001"
-    ]
+    "PontoDeAtencao": {"Risco": "A rima não pode sacrificar o sentido da frase.", "Contexto": "Característica de gêneros como MPB, Bossa Nova e Rap."},
+    "Conexoes": ["ART-001"]
   },
   {
     "ID": "MEC-006",
-    "Nome": "O Paradoxo (Antítese)",
+    "Nome": "Paradoxo (Antítese)",
     "Categoria": "Mecânica do Verso",
-    "ProblemaQueResolve": [
-      "Expressar sentimentos conflitantes de forma memorável.",
-      "Criar tensão e profundidade em um refrão ou verso-chave."
-    ],
-    "Mecanica": {
-      "Funcao": "Criar tensão ao justapor ideias ou palavras opostas.",
-      "Mecanismo": "Apresenta conceitos contrários (dor/delícia, verdade/mentira, negar/amar) em proximidade para refletir uma dualidade emocional.",
-      "InstrucaoPrescritiva": "Identifique o conflito central (ex: 'quero e não quero'). Construa uma frase que coloque os dois polos em evidência."
-    },
+    "ProblemaQueResolve": ["Expressar sentimentos conflitantes.", "Criar tensão e profundidade em um refrão."],
+    "Mecanica": { "Funcao": "Gerar tensão ao justapor ideias ou palavras opostas.", "Mecanismo": "Apresenta conceitos contrários (dor/delícia, verdade/mentira) em proximidade para refletir uma dualidade.", "InstrucaoPrescritiva": "Identifique o conflito central (ex: 'quero e não quero') e construa uma frase que coloque os dois polos em evidência." },
     "Aplicacao": {
-      "Analise": "O paradoxo é uma das ferramentas líricas mais poderosas para expressar a complexidade humana. Permite ao compositor ir além do 'sim' ou 'não' e explorar a área cinzenta que define tantas relações.",
-      "Exemplos": [
-        {
-          "Titulo": "MPB (Caetano Veloso - 'Dom de Iludir')",
-          "Verso": "Cada um sabe a dor e a delícia / De ser o que é.",
-          "Observacao": "A antítese 'dor/delícia' sintetiza a complexidade da autoaceitação em uma única linha."
-        },
-        {
-          "Titulo": "Sertanejo (Chitãozinho & Xororó - 'Evidências')",
-          "Verso": "Quando eu digo que deixei de te amar / É porque eu te amo.",
-          "Observacao": "A música inteira é construída sobre paradoxos, estabelecendo imediatamente o conflito central: a negação como forma de afirmação."
-        }
-      ]
+      "Analise": "É uma ferramenta poderosa para expressar a complexidade humana, explorando a área cinzenta entre o 'sim' e o 'não'.",
+      "Exemplos": [{"Titulo": "Caetano Veloso - 'Dom de Iludir'", "Verso": "Cada um sabe a dor e a delícia / De ser o que é.", "Observacao": "A antítese 'dor/delícia' sintetiza a complexidade da autoaceitação."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "O uso de paradoxos muito batidos (ex: 'quente e frio') pode soar clichê.",
-      "Combinacao": "Funciona muito bem como a frase de abertura de um refrão, definindo o tom da explosão emocional.",
-      "Contexto": "Essencial para canções sobre relacionamentos complexos, dilemas morais e conflitos internos."
-    },
-    "Conexoes": [
-      "GEN-001",
-      "CASE-002"
-    ]
+    "PontoDeAtencao": {"Risco": "O uso de paradoxos muito comuns (ex: 'quente e frio') pode soar clichê.", "Contexto": "Essencial para canções sobre relacionamentos complexos e dilemas morais."},
+    "Conexoes": ["GEN-001", "CASE-002"]
   },
   {
     "ID": "MEC-007",
-    "Nome": "A Enumeração (Listagem)",
+    "Nome": "Enumeração (Listagem)",
     "Categoria": "Mecânica do Verso",
-    "ProblemaQueResolve": [
-      "Descrever um cenário ou estado de espírito de forma dinâmica.",
-      "Criar um senso de abundância, caos ou progressão."
-    ],
-    "Mecanica": {
-      "Funcao": "Criar ritmo e imagem através da sucessão rápida de substantivos, verbos ou adjetivos.",
-      "Mecanismo": "Consiste em listar uma série de elementos, um após o outro, geralmente com pouca conjunção (sem usar 'e'), criando um efeito de acúmulo e velocidade.",
-      "InstrucaoPrescritiva": "Para descrever uma cena rica, liste os objetos. Para uma ação frenética, liste os verbos. Para um estado emocional, liste os sentimentos."
-    },
+    "ProblemaQueResolve": ["Descrever um cenário de forma dinâmica.", "Criar um senso de abundância, caos ou progressão."],
+    "Mecanica": { "Funcao": "Criar ritmo e imagem através da sucessão rápida de palavras.", "Mecanismo": "Listar uma série de elementos (substantivos, verbos) com pouca ou nenhuma conjunção, criando um efeito de acúmulo.", "InstrucaoPrescritiva": "Para descrever uma cena, liste os objetos. Para uma ação, liste os verbos." },
     "Aplicacao": {
-      "Analise": "Muito usada na MPB, a enumeração pinta 'fotografias em movimento'. Quando a lista é lógica, cria uma sensação de ordem. Quando é caótica, transmite confusão ou euforia.",
+      "Analise": "A enumeração pinta 'fotografias em movimento'. Uma lista lógica cria ordem; uma lista caótica transmite confusão ou euforia.",
+      "Exemplos": [{"Titulo": "Caetano Veloso - 'Comeu'", "Verso": "Trincou, mordeu, mastigou, engoliu / (...) Mascou, moeu, triturou, deglutiu.", "Observacao": "A sucessão de verbos de destruição torna a ação cada vez mais violenta e visceral."}]
+    },
+    "PontoDeAtencao": {"Risco": "Uma lista muito longa ou sem um clímax pode se tornar tediosa.", "Contexto": "Marca registrada de letristas como Caetano Veloso e Jorge Ben Jor."},
+    "Conexoes": ["ART-001"]
+  },
+  {
+    "ID": "MEC-009",
+    "Nome": "Anáfora",
+    "Categoria": "Mecânica do Verso",
+    "ProblemaQueResolve": ["Criar um senso de insistência, obsessão ou urgência.", "Construir um argumento de forma rítmica."],
+    "Mecanica": { "Funcao": "Criar um padrão rítmico forte e enfatizar a progressão de ideias.", "Mecanismo": "Repetir a mesma palavra ou grupo de palavras no início de versos sucessivos.", "InstrucaoPrescritiva": "Inicie múltiplos versos com a mesma expressão (ex: 'Eu troco...'), mudando apenas o complemento para criar um crescendo." },
+    "Aplicacao": {
+      "Analise": "A anáfora é um 'martelo' lírico. Ela insiste, implora ou declara, focando a atenção do ouvinte na parte do verso que muda.",
+      "Exemplos": [{"Titulo": "Luan Santana - 'Tudo que Você Quiser'", "Verso": "Eu troco minha paz por um beijo seu / Eu troco meu destino pra viver o seu / Eu troco minha cama pra dormir na sua", "Observacao": "A repetição de 'Eu troco' cria uma lista crescente de sacrifícios, intensificando a declaração."}]
+    },
+    "PontoDeAtencao": {"Risco": "Pode soar repetitivo se a parte variável do verso não for interessante.", "Contexto": "Poderoso em discursos, manifestos e canções de forte apelo emocional."},
+    "Conexoes": ["MEC-007", "MEC-011"]
+  },
+  {
+    "ID": "MEC-010",
+    "Nome": "Vocativo",
+    "Categoria": "Mecânica do Verso",
+    "ProblemaQueResolve": ["Criar uma sensação de diálogo ou súplica.", "Tornar a letra mais pessoal e direta."],
+    "Mecanica": { "Funcao": "Interpelar diretamente um personagem, inserindo o ouvinte em uma conversa.", "Mecanismo": "Usar substantivos de tratamento (vocativos) no início ou meio dos versos.", "InstrucaoPrescritiva": "Insira o 'nome' ou 'título' da pessoa a quem você se dirige (ex: 'Olha, meu bem...'; 'Dona Maria...')." },
+    "Aplicacao": {
+      "Analise": "O vocativo transforma a música em uma pequena peça de teatro. A súplica se torna mais íntima ou o confronto mais direto.",
+      "Exemplos": [{"Titulo": "Thiago Brava - 'Dona Maria'", "Verso": "Dona Maria, / Deixa eu namorar a sua filha", "Observacao": "A canção é construída em torno do vocativo, transformando a sogra em personagem central."}]
+    },
+    "PontoDeAtencao": {"Risco": "Vocativos genéricos ('menina') podem soar clichê se o contexto não for original.", "Contexto": "Muito presente nos gêneros Sertanejo, Pagode e Brega."},
+    "Conexoes": ["ARQ-012", "ARQ-007"]
+  },
+  {
+    "ID": "MEC-011",
+    "Nome": "Epizeuxe (Repetição Imediata)",
+    "Categoria": "Mecânica do Verso",
+    "ProblemaQueResolve": ["Transmitir urgência, obsessão ou ênfase máxima.", "Quebrar o fluxo de um verso para destacar uma palavra."],
+    "Mecanica": { "Funcao": "Enfatizar uma palavra através de sua repetição imediata.", "Mecanismo": "Repetir a mesma palavra duas ou mais vezes em sequência (ex: 'Não, não, não...').", "InstrucaoPrescritiva": "No ponto de maior carga emocional, repita a palavra-chave para simular a insistência da fala." },
+    "Aplicacao": {
+      "Analise": "É a transcrição musical de uma emoção que não cabe em uma única palavra. É o som da obsessão, do desespero ou da celebração.",
+      "Exemplos": [{"Titulo": "Tim Maia - 'Você'", "Verso": "Sou feliz agora / Não, não vá embora / Não / Não, não, não, não não", "Observacao": "A repetição transforma um pedido em uma súplica desesperada."}]
+    },
+    "PontoDeAtencao": {"Risco": "Fora de um clímax emocional, pode parecer um maneirismo desnecessário.", "Contexto": "Universal, mas particularmente poderoso em canções de alta carga dramática."},
+    "Conexoes": ["MEC-009"]
+  },
+  {
+    "ID": "MEC-012",
+    "Nome": "Pausa Enfatica",
+    "Categoria": "Mecânica do Verso",
+    "ProblemaQueResolve": ["Criar suspense ou dar peso a uma revelação.", "Controlar o ritmo da letra de forma dramática."],
+    "Mecanica": { "Funcao": "Forçar uma pausa na entrega da letra, amplificando o impacto.", "Mecanismo": "Utilizar versos extremamente curtos (uma ou duas palavras) ou quebras de linha abruptas.", "InstrucaoPrescritiva": "Ao escrever uma revelação, coloque a palavra-chave em uma linha separada para isolá-la." },
+    "Aplicacao": {
+      "Analise": "O silêncio é uma ferramenta musical. Na letra, uma quebra de linha age como um 'respiro' dramático, isolando uma palavra e dando-lhe mais peso.",
+      "Exemplos": [{"Titulo": "Jorge Ben Jor - 'W / Brasil'", "Verso": "Eu vou chamar o síndico / (pausa) / Tim Maia / (pausa) / Tim Maia", "Observacao": "Cada repetição do nome em uma linha separada cria um ritmo de invocação, sincopado e percussivo."}]
+    },
+    "PontoDeAtencao": {"Risco": "O uso excessivo pode fragmentar a letra e dificultar o acompanhamento.", "Contexto": "Característico de letras com uma entrega mais falada ou teatral."},
+    "Conexoes": []
+  },
+  {
+    "ID": "MEC-013",
+    "Nome": "Vocabulário Temático",
+    "Categoria": "Mecânica do Verso",
+    "ProblemaQueResolve": ["Dar coesão e originalidade a uma letra.", "Abordar um tema comum de maneira única."],
+    "Mecanica": { "Funcao": "Criar uma metáfora estendida que permeia toda a canção.", "Mecanismo": "Construir a letra usando um conjunto de palavras de um mesmo 'universo' (ex: náutico, médico, culinário) para descrever o tema principal.", "InstrucaoPrescritiva": "Escolha um tema (ex: 'amor difícil') e um campo semântico para descrevê-lo (ex: 'guerra'). Use palavras como 'batalha', 'trégua', 'ferida'." },
+    "Aplicacao": {
+      "Analise": "Essa técnica transforma a canção em um universo com regras próprias, criando um sistema coeso de imagens que reforça a ideia central.",
+      "Exemplos": [{"Titulo": "Tim Maia - 'O Descobridor dos Sete Mares'", "Verso": "Uma luz azul me guia / Com a firmeza e os lampejos do farol...", "Observacao": "A letra utiliza um vocabulário náutico (farol, recifes, navegar, mares) para expressar a euforia da descoberta."}]
+    },
+    "PontoDeAtencao": {"Risco": "A metáfora deve ser consistente. Misturar muitos campos semânticos pode gerar confusão.", "Contexto": "Poderoso para criar um conceito forte para a música."},
+    "Conexoes": ["CRI-001"]
+  },
+  {
+    "ID": "MEC-015",
+    "Nome": "Quebra de Idioma",
+    "Categoria": "Mecânica do Verso",
+    "ProblemaQueResolve": ["Adicionar 'estilo' ou um sotaque cultural.", "Criar um gancho sonoro inesperado ou uma rima conveniente."],
+    "Mecanica": { "Funcao": "Inserir palavras ou frases em outro idioma dentro de uma letra em português.", "Mecanismo": "Uso pontual de termos em inglês, espanhol, etc., para ênfase ou contextualização.", "InstrucaoPrescritiva": "Use uma expressão estrangeira conhecida para pontuar uma ideia ou finalizar um verso com um som diferente." },
+    "Aplicacao": {
+      "Analise": "A quebra de idioma denota uma influência cultural, cria um efeito de 'modernidade' ou pode ser usada tematicamente.",
       "Exemplos": [
-        {
-          "Titulo": "Enumeração de Ações (Caetano Veloso - 'Comeu')",
-          "Verso": "Trincou, mordeu, mastigou, engoliu / (...) Mascou, moeu, triturou, deglutiu.",
-          "Observacao": "A sucessão de verbos de destruição torna a ação de 'comer o coração' cada vez mais violenta e visceral a cada repetição."
-        },
-        {
-          "Titulo": "Enumeração de Referências (Caetano Veloso - 'A Bossa Nova é Foda')",
-          "Verso": "Em Minotauros / Junior Cigano / Em José Aldo / Lyoto Machida / Vítor Belfort / Anderson Silva / E a coisa toda.",
-          "Observacao": "A lista de nomes de lutadores funciona como um conjunto de exemplos concretos que sustentam a tese da letra, criando o efeito de um exército de força."
-        }
+        {"Titulo": "Charlie Brown Jr. - 'Proibida Pra Mim'", "Verso": "Ela achou meu cabelo engraçado / Proibida pra mim no way", "Observacao": "A expressão em inglês 'no way' reforça o estilo 'skatista/californiano' da banda."},
+        {"Titulo": "Fernando e Sorocaba - 'Madri'", "Verso": "No puedo más mi corazón / Tá doendo aqui na solidão", "Observacao": "O espanhol é usado tematicamente, já que a música fala de alguém que está na Espanha."}
       ]
     },
-    "PontoDeAtencao": {
-      "Risco": "Uma lista muito longa ou sem um clímax pode se tornar tediosa para o ouvinte.",
-      "Combinacao": "Excelente para pontes ou versos pré-refrão, construindo energia antes da explosão.",
-      "Contexto": "É uma marca registrada de letristas como Caetano Veloso e Jorge Ben Jor."
+    "PontoDeAtencao": {"Risco": "Pode soar pretensioso ou datado se a expressão usada não for natural ao contexto.", "Contexto": "Comum em Pop, Rock e músicas com temática internacional."},
+    "Conexoes": []
+  },
+  {
+    "ID": "MEC-016",
+    "Nome": "Metalinguagem",
+    "Categoria": "Mecânica do Verso",
+    "ProblemaQueResolve": ["Adicionar uma camada de sofisticação ou confissão à letra.", "Conectar-se com o ouvinte sobre o próprio ato de fazer música."],
+    "Mecanica": { "Funcao": "Fazer a letra se referir a si mesma, ao ato de compor ou à própria música como entidade.", "Mecanismo": "Inclusão de termos como 'canção', 'verso', 'refrão' ou a descrição do contexto da performance musical dentro da letra.", "InstrucaoPrescritiva": "Escreva um verso que descreva o que a própria canção está fazendo. Ex: 'Essa canção é só pra te dizer...'." },
+    "Aplicacao": {
+      "Analise": "A metalinguagem quebra a ilusão para falar sobre o ofício do artista, criando uma conexão diferente com o público.",
+      "Exemplos": [
+        {"Titulo": "Jeito Moleque - 'Pára Tudo'", "Verso": "Para tudo / Sou eu que estou tocando no rádio / Quero saber o seu comentário", "Observacao": "A letra inteira é sobre o momento em que a própria música toca no rádio."},
+        {"Titulo": "Caetano Veloso - 'Você é Linda'", "Verso": "Esta canção é só pra dizer / E diz / Você é linda", "Observacao": "A letra anuncia sua própria função de forma explícita e imediata."}
+      ]
     },
-    "Conexoes": [
-      "ART-001"
-    ]
+    "PontoDeAtencao": {"Risco": "Pode parecer autoindulgente se não for bem executado.", "Contexto": "Frequente na MPB, Bossa Nova e em letras de compositores que refletem sobre sua arte."},
+    "Conexoes": ["ART-001"]
+  },
+  {
+    "ID": "MEC-017",
+    "Nome": "Imagem Imperfeita (Realismo)",
+    "Categoria": "Mecânica do Verso",
+    "ProblemaQueResolve": ["Evitar idealizações românticas clichês.", "Criar autenticidade e identificação com o ouvinte."],
+    "Mecanica": { "Funcao": "Ancorar a emoção em uma realidade palpável e imperfeita.", "Mecanismo": "Uso deliberado de detalhes 'feios', mundanos ou cotidianos para descrever uma pessoa ou situação, em contraste com a perfeição idealizada.", "InstrucaoPrescritiva": "Em vez de 'seus olhos são estrelas', tente descrever um hábito irritante mas cativante da pessoa. Ex: 'O jeito que você queima o arroz'." },
+    "Aplicacao": {
+      "Analise": "Gera uma forte conexão por meio da identificação com o cotidiano. Em vez de um 'conto de fadas', a letra apresenta uma emoção real.",
+      "Exemplos": [
+        {"Titulo": "Jorge & Mateus - 'Propaganda'", "Verso": "Ela queima o arroz / Quebra copo na pia / Tropeça no sofá... / Ela ronca demais", "Observacao": "A letra é uma lista de imperfeições que, paradoxalmente, reforçam o amor do eu-lírico por serem 'reais'."},
+        {"Titulo": "Atitude 67 - 'Cerveja de Garrafa'", "Verso": "Mas gosta de boteco e de cerveja de garrafa / E nunca ligou pra toda fumaça que eu faço", "Observacao": "A idealização romântica ('cê tem um jeito doce') é ancorada em um detalhe de gosto popular, o que torna a personagem mais autêntica."}
+      ]
+    },
+    "PontoDeAtencao": {"Risco": "O detalhe 'imperfeito' deve ser charmoso ou relevante, não apenas desagradável.", "Contexto": "Muito eficaz na música pop contemporânea, sertanejo universitário e pagode."},
+    "Conexoes": ["ARQ-003"]
+  },
+  {
+    "ID": "MEC-018",
+    "Nome": "Construção Hipotética",
+    "Categoria": "Mecânica do Verso",
+    "ProblemaQueResolve": ["Explorar possibilidades, medos ou desejos.", "Construir uma narrativa baseada em 'e se...'."],
+    "Mecanica": { "Funcao": "Explorar cenários condicionais para desenvolver emoções.", "Mecanismo": "Estruturar versos ou seções inteiras em torno de conjunções como 'Se', 'E se', 'Mesmo que'.", "InstrucaoPrescritiva": "Comece uma estrofe com 'Se você quisesse...' ou 'E se um dia a gente...?' e explore as consequências dessa hipótese." },
+    "Aplicacao": {
+      "Analise": "É a linguagem do sonho, do arrependimento e da esperança. Permite ao compositor explorar emoções sem se prender a uma realidade concreta.",
+      "Exemplos": [
+        {"Titulo": "Caetano Veloso - 'Tá Combinado'", "Verso": "Mas e se o amor pra nós chegar / De nós, de algum lugar / Com todo o seu tenebroso esplendor?", "Observacao": "A ponte da música é uma construção hipotética que questiona o acordo racional feito no início da letra."},
+        {"Titulo": "Cristiano Araújo - 'Caso Indefinido'", "Verso": "Se você quiser / A gente casa ou namora / A gente fica ou enrola", "Observacao": "O refrão é uma lista de hipóteses sobre o futuro, colocando a decisão nas mãos da outra pessoa."}
+      ]
+    },
+    "PontoDeAtencao": {"Risco": "A hipótese precisa ser emocionalmente relevante para o ouvinte se importar com o resultado.", "Contexto": "Poderoso em baladas românticas e canções introspectivas."},
+    "Conexoes": ["ARQ-007", "ARQ-016"]
   },
   {
     "ID": "ARQ-003",
     "Nome": "Abertura com Cena Concreta",
     "Categoria": "Arquitetura da Canção",
-    "ProblemaQueResolve": [
-      "Como começar uma música de forma a 'puxar' o ouvinte imediatamente para dentro da história.",
-      "Evitar introduções vagas ou abstratas."
-    ],
-    "Mecanica": {
-      "Funcao": "Estabelecer um cenário visual e/ou sensorial logo no primeiro verso.",
-      "Mecanismo": "Inicia a letra descrevendo um lugar, uma ação ou um detalhe físico, como se fosse a primeira cena de um filme.",
-      "InstrucaoPrescritiva": "Comece com substantivos concretos e ações, respondendo às perguntas: 'Onde o narrador está?' e 'O que ele está fazendo/vendo?'."
-    },
+    "ProblemaQueResolve": ["Imergir o ouvinte na história imediatamente.", "Evitar introduções vagas."],
+    "Mecanica": { "Funcao": "Estabelecer um cenário visual ou sensorial no primeiro verso.", "Mecanismo": "Iniciar a letra descrevendo um lugar, uma ação ou um detalhe físico, como a primeira cena de um filme.", "InstrucaoPrescritiva": "Comece com substantivos concretos e ações, respondendo 'Onde?' e 'O quê?'." },
     "Aplicacao": {
-      "Analise": "Esta técnica é poderosa para criar uma conexão imediata, pois o ouvinte visualiza a cena. É muito usada em canções narrativas (storytelling). O ouvinte se torna uma testemunha da história.",
-      "Exemplos": [
-        {
-          "Titulo": "Crônica de Bar (Bruno & Marrone - 'Boate Azul')",
-          "Verso": "Doente de amor, procurei remédio na vida noturna / Com a flor da noite em uma boate aqui na zona sul.",
-          "Observacao": "O primeiro verso já estabelece o estado do personagem e o local, criando a atmosfera da canção."
-        },
-        {
-          "Titulo": "Cena Cotidiana (Caetano Veloso - 'Você Não Entende Nada')",
-          "Verso": "Quando eu chego em casa nada me consola / Você está sempre aflita / Lágrimas nos olhos, de cortar cebola.",
-          "Observacao": "A cena é extremamente específica e visual, estabelecendo o conflito doméstico a partir de uma imagem concreta e sensorial."
-        }
-      ]
+      "Analise": "Técnica poderosa para criar uma conexão imediata, transformando o ouvinte em testemunha da história.",
+      "Exemplos": [{"Titulo": "Bruno & Marrone - 'Boate Azul'", "Verso": "Doente de amor, procurei remédio na vida noturna / Com a flor da noite em uma boate aqui na zona sul.", "Observacao": "O primeiro verso estabelece o estado do personagem e o local, criando a atmosfera."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "O detalhe inicial deve ser relevante para a história. Um detalhe aleatório pode confundir o ouvinte.",
-      "Combinacao": "Funciona muito bem com letras em primeira pessoa, criando uma sensação de diário ou confissão.",
-      "Contexto": "Fundamental para gêneros de storytelling como Sertanejo, MPB e Fado."
-    },
-    "Conexoes": [
-      "CASE-001"
-    ]
+    "PontoDeAtencao": {"Risco": "O detalhe inicial deve ser relevante para a história.", "Contexto": "Fundamental para gêneros de storytelling como Sertanejo, MPB e Fado."},
+    "Conexoes": ["CASE-001"]
   },
   {
     "ID": "ARQ-004",
     "Nome": "Refrão-Síntese",
     "Categoria": "Arquitetura da Canção",
-    "ProblemaQueResolve": [
-      "Como criar um refrão forte, claro e que resuma a mensagem central da música.",
-      "Garantir que a ideia principal da canção seja facilmente memorizada."
-    ],
-    "Mecanica": {
-      "Funcao": "Condensar a ideia principal ou o conflito da música em uma frase ou estrofe curta e repetível.",
-      "Mecanismo": "O refrão deve ser a conclusão lógica do que é apresentado nos versos. Se o verso descreve um problema, o refrão apresenta a consequência ou o sentimento central derivado dele.",
-      "InstrucaoPrescritiva": "Após escrever os versos, tente resumir o tema central em uma única frase poderosa. Essa frase é o núcleo do seu refrão."
-    },
+    "ProblemaQueResolve": ["Criar um refrão forte e que resuma a mensagem central.", "Garantir que a ideia principal seja memorizada."],
+    "Mecanica": { "Funcao": "Condensar a ideia principal da música em uma frase curta e repetível.", "Mecanismo": "O refrão deve ser a conclusão lógica do que é apresentado nos versos.", "InstrucaoPrescritiva": "Após escrever os versos, resuma o tema em uma única frase poderosa. Essa frase é o núcleo do seu refrão." },
     "Aplicacao": {
-      "Analise": "É o tipo de refrão mais comum e eficaz na música popular. Ele funciona como uma âncora temática, garantindo que o ouvinte capture a essência da música.",
-      "Exemplos": [
-        {
-          "Titulo": "Pagode (Exaltasamba - 'Me Apaixonei Pela Pessoa Errada')",
-          "Verso": "Eu me apaixonei pela pessoa errada / Ninguém sabe o quanto que estou sofrendo.",
-          "Observacao": "A primeira frase do refrão resume perfeitamente todo o dilema narrado nos versos."
-        },
-        {
-          "Titulo": "Sertanejo (Chitãozinho & Xororó - 'Evidências')",
-          "Verso": "E nessa loucura de dizer que não te quero / Vou negando as aparências, disfarçando as evidências.",
-          "Observacao": "O refrão não apenas resume, mas dá nome ao conflito da música (as 'evidências' do amor que ele tenta esconder)."
-        }
-      ]
+      "Analise": "É o tipo de refrão mais comum e eficaz na música popular. Funciona como uma âncora temática.",
+      "Exemplos": [{"Titulo": "Exaltasamba - 'Me Apaixonei Pela Pessoa Errada'", "Verso": "Eu me apaixonei pela pessoa errada / Ninguém sabe o quanto que estou sofrendo.", "Observacao": "A primeira frase do refrão resume perfeitamente todo o dilema da canção."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "Um refrão-síntese muito simplista pode tornar a música repetitiva e pouco interessante.",
-      "Combinacao": "É a base da estrutura `verso-refrão`. Para maior sofisticação, pode ser combinado com a técnica do `Falso Refrão (ARQ-009)`.",
-      "Contexto": "Onipresente em todos os gêneros populares, do Pop ao Sertanejo."
-    },
-    "Conexoes": [
-      "MEC-001",
-      "SON-005",
-      "ARQ-009"
-    ]
+    "PontoDeAtencao": {"Risco": "Um refrão muito simplista pode tornar a música repetitiva.", "Contexto": "Onipresente em todos os gêneros populares."},
+    "Conexoes": ["MEC-001", "SON-005", "ARQ-009"]
   },
   {
     "ID": "ARQ-007",
-    "Nome": "Ponte por Mudança de Perspectiva",
+    "Nome": "Ponte (Mudança de Perspectiva)",
     "Categoria": "Arquitetura da Canção",
-    "ProblemaQueResolve": [
-      "Como quebrar a repetição de `verso-refrão`.",
-      "Adicionar uma nova camada de profundidade à música antes do clímax."
-    ],
-    "Mecanica": {
-      "Funcao": "Oferecer um novo ângulo sobre o tema da canção, preparando o retorno do refrão com um significado renovado.",
-      "Mecanismo": "A ponte (bridge) altera o ponto de vista da narrativa, seja mudando o pronome (de 'eu' para 'você'), o tempo verbal (do passado para o futuro), ou introduzindo uma reflexão sobre a história.",
-      "InstrucaoPrescritiva": "Após estabelecer o conflito, escreva uma estrofe que se dirija diretamente à outra pessoa ('Diz pra mim...') ou que faça uma promessa/reflexão sobre o futuro ('Juro que vou...')."
-    },
+    "ProblemaQueResolve": ["Quebrar a repetição de `verso-refrão`.", "Adicionar profundidade antes do clímax."],
+    "Mecanica": { "Funcao": "Oferecer um novo ângulo sobre o tema, preparando o retorno do refrão com significado renovado.", "Mecanismo": "A ponte (bridge) altera o ponto de vista da narrativa (mudando o pronome, tempo verbal, etc.).", "InstrucaoPrescritiva": "Após estabelecer o conflito, escreva uma estrofe que se dirija diretamente à outra pessoa ou que faça uma promessa/reflexão." },
     "Aplicacao": {
-      "Analise": "Uma ponte bem executada é o 'plot twist' lírico. É o momento em que o narrador reflete sobre a própria história, dando ao ouvinte uma compreensão mais profunda antes da catarse final.",
-      "Exemplos": [
-        {
-          "Titulo": "Sertanejo (Chitãozinho & Xororó - 'Evidências')",
-          "Verso": "Diz que é verdade, que tem saudade / Que ainda você pensa muito em mim.",
-          "Observacao": "A narrativa sai do 'eu' e se torna um apelo direto ao 'você', mudando a dinâmica da música e aumentando a carga emocional."
-        },
-        {
-          "Titulo": "Pagode (Belo - 'Reinventar')",
-          "Verso": "Juro que vou me conter / Juro nunca mais errar / Como eu quero te mostrar / O milagre do amor.",
-          "Observacao": "A ponte sai da descrição do problema (passado) e entra na promessa (futuro), o que dá mais força e sentido ao refrão 'Recomeçar' que vem a seguir."
-        }
-      ]
+      "Analise": "Uma boa ponte é o 'plot twist' lírico. É o momento de reflexão que dá ao ouvinte uma compreensão mais profunda antes da catarse final.",
+      "Exemplos": [{"Titulo": "Chitãozinho & Xororó - 'Evidências'", "Verso": "Diz que é verdade, que tem saudade / Que ainda você pensa muito em mim.", "Observacao": "A narrativa sai do 'eu' e se torna um apelo direto ao 'você', aumentando a carga emocional."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "Uma ponte desconectada do tema central da música pode soar como um enxerto e quebrar o fluxo emocional.",
-      "Combinacao": "É a ferramenta ideal para dar mais peso ao último refrão da música.",
-      "Contexto": "Característica de composições mais elaboradas em praticamente todos os gêneros."
-    },
+    "PontoDeAtencao": {"Risco": "Uma ponte desconectada do tema pode quebrar o fluxo emocional.", "Contexto": "Característica de composições mais elaboradas em todos os gêneros."},
     "Conexoes": []
   },
   {
     "ID": "ARQ-008",
-    "Nome": "Abertura com Declaração de Fato (A Máxima)",
+    "Nome": "Abertura com Declaração de Fato",
     "Categoria": "Arquitetura da Canção",
-    "ProblemaQueResolve": [
-      "Como começar uma música com autoridade e estabelecer o tema universal.",
-      "Criar uma premissa filosófica para a história que será contada."
-    ],
-    "Mecanica": {
-      "Funcao": "Engajar o ouvinte com uma 'verdade' ou afirmação que serve de premissa para o resto da letra.",
-      "Mecanismo": "O primeiro verso funciona como uma tese ou um provérbio. Ele não descreve a cena, mas o princípio que a rege.",
-      "InstrucaoPrescritiva": "Comece a letra com frases como 'A vida é...', 'O amor é...', ou uma afirmação categórica sobre o comportamento humano."
-    },
+    "ProblemaQueResolve": ["Começar uma música com autoridade.", "Estabelecer uma premissa universal para a história."],
+    "Mecanica": { "Funcao": "Engajar o ouvinte com uma 'verdade' ou afirmação que serve de premissa para o resto da letra.", "Mecanismo": "O primeiro verso funciona como uma tese ou provérbio.", "InstrucaoPrescritiva": "Comece com frases como 'A vida é...' ou uma afirmação categórica sobre o comportamento humano." },
     "Aplicacao": {
-      "Analise": "Essa técnica confere ao letrista uma voz de 'sábio' ou 'observador experiente', criando uma conexão intelectual com o ouvinte, que passa a ver a história subsequente como um exemplo que comprova a 'máxima' inicial.",
-      "Exemplos": [
-        {
-          "Titulo": "Pagode (Ferrugem - 'Pirata e Tesouro')",
-          "Verso": "Amar é tão sagrado pra quem sabe amar / Jamais confunda amor com se acostumar.",
-          "Observacao": "A música começa com uma tese sobre a natureza do amor. Os versos seguintes ('Hipocrisia é pintar amor só de fachada...') servem como exemplos que exploram essa tese."
-        },
-        {
-          "Titulo": "Sertanejo (Leandro & Leonardo - 'Não Aprendi Dizer Adeus')",
-          "Verso": "Não aprendi dizer adeus / Não sei se vou me acostumar.",
-          "Observacao": "É uma declaração de fato sobre a condição emocional do eu-lírico, que funciona como o título e a premissa de todo o sofrimento que será descrito."
-        }
-      ]
+      "Analise": "Essa técnica confere ao letrista uma voz de 'sábio', criando uma conexão intelectual com o ouvinte.",
+      "Exemplos": [{"Titulo": "Ferrugem - 'Pirata e Tesouro'", "Verso": "Amar é tão sagrado pra quem sabe amar / Jamais confunda amor com se acostumar.", "Observacao": "A música começa com uma tese sobre o amor. O resto da letra serve para explorar e provar essa tese."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "A máxima inicial precisa ser genuína e relacionável. Uma afirmação muito complexa ou pedante pode alienar o ouvinte.",
-      "Combinacao": "Funciona bem quando seguida por uma Abertura com Cena Concreta (ARQ-003), onde a máxima é imediatamente ilustrada por uma história.",
-      "Contexto": "Comum em canções com um tom mais reflexivo ou filosófico."
-    },
-    "Conexoes": [
-      "ARQ-003",
-      "MEC-006"
-    ]
+    "PontoDeAtencao": {"Risco": "A afirmação inicial precisa ser genuína e relacionável, não pedante.", "Contexto": "Comum em canções com um tom mais reflexivo ou filosófico."},
+    "Conexoes": ["ARQ-003", "MEC-006"]
   },
   {
     "ID": "ARQ-009",
-    "Nome": "O Falso Refrão (Refrão em Evolução)",
+    "Nome": "Refrão em Evolução",
     "Categoria": "Arquitetura da Canção",
-    "ProblemaQueResolve": [
-      "Evitar a monotonia de um refrão que se repete identicamente.",
-      "Adicionar desenvolvimento narrativo ou emocional a cada repetição."
-    ],
-    "Mecanica": {
-      "Funcao": "Manter a familiaridade de um refrão, mas alterar ligeiramente uma palavra ou verso chave a cada repetição para mostrar uma evolução na história.",
-      "Mecanismo": "A estrutura do refrão é mantida, mas um detalhe crucial é modificado. Pode ser a mudança de uma palavra, a adição de uma resposta ou a alteração de um sentimento.",
-      "InstrucaoPrescritiva": "Após o segundo verso, reflita sobre o que mudou na história do personagem. Altere o refrão seguinte para refletir essa mudança."
-    },
+    "ProblemaQueResolve": ["Evitar a monotonia de um refrão repetitivo.", "Desenvolver a narrativa a cada repetição."],
+    "Mecanica": { "Funcao": "Manter a familiaridade do refrão, mas alterar uma palavra ou verso para mostrar uma evolução na história.", "Mecanismo": "A estrutura do refrão é mantida, mas um detalhe crucial é modificado.", "InstrucaoPrescritiva": "Após o segundo verso, reflita sobre o que mudou no estado do personagem. Altere o refrão seguinte para refletir essa mudança." },
     "Aplicacao": {
-      "Analise": "É uma técnica sofisticada que recompensa o ouvinte atento. Demonstra um cuidado com o arco narrativo da canção, fazendo com que a repetição não seja apenas um recurso mnemônico, mas um motor para o avanço da história.",
+      "Analise": "É uma técnica sofisticada que recompensa o ouvinte atento. A repetição não é apenas mnemônica, mas um motor para o avanço da história.",
+      "Exemplos": [{"Titulo": "Danilo e Davi - 'Apaga Apaga Apaga'", "Verso": "Estrofe 1 (raiva): '...sinto mais nada / Não! Apaga, apaga, apaga.' (Apaga meu número) | Estrofe 2 (arrependimento): '...pega o nosso fim / Apaga, apaga, apaga.' (Apaga nosso término)", "Observacao": "A mesma frase-chave tem seu significado completamente invertido, mostrando a evolução da raiva para o arrependimento."}]
+    },
+    "PontoDeAtencao": {"Risco": "A mudança deve ser clara e significativa para ser percebida.", "Contexto": "Usado por compositores que se concentram no storytelling."},
+    "Conexoes": ["ARQ-004"]
+  },
+  {
+    "ID": "ARQ-013",
+    "Nome": "Narrativa em 3ª Pessoa",
+    "Categoria": "Arquitetura da Canção",
+    "ProblemaQueResolve": ["Contar uma história com múltiplos personagens.", "Adotar um ponto de vista de observador ou cronista."],
+    "Mecanica": { "Funcao": "Posicionar o vocalista como um narrador onisciente que conta a história de outras pessoas.", "Mecanismo": "Utilizar pronomes de terceira pessoa ('ele', 'ela') e descrever as ações e sentimentos dos personagens como um observador.", "InstrucaoPrescritiva": "Em vez de 'Eu sinto...', comece com 'Ela era...' ou 'Ele fez...'. Descreva os personagens e suas ações como em um conto." },
+    "Aplicacao": {
+      "Analise": "Permite ao compositor criar personagens e arcos narrativos mais complexos, distanciando-se da confissão pessoal.",
+      "Exemplos": [{"Titulo": "Grupo Bom Gosto - 'Patricinha do Olho Azul'", "Verso": "Eu moro no morro e ela na zona sul / Sou negão e a patricinha é loira de olho azul", "Observacao": "A música narra a história de um casal, descrevendo os personagens e o cenário social em 3ª pessoa na maior parte do tempo."}]
+    },
+    "PontoDeAtencao": {"Risco": "Pode criar uma distância emocional se o ouvinte não se conectar com os personagens descritos.", "Contexto": "Fundamental para 'canções-crônica' e storytelling."},
+    "Conexoes": ["CRI-002"]
+  },
+  {
+    "ID": "ARQ-014",
+    "Nome": "Resposta Direta (Letra-Diálogo)",
+    "Categoria": "Arquitetura da Canção",
+    "ProblemaQueResolve": ["Criar um ritmo de conversação.", "Tornar a narrativa mais dinâmica e natural."],
+    "Mecanica": { "Funcao": "Estruturar a letra como um diálogo, onde um verso parece responder ao anterior.", "Mecanismo": "Justapor uma pergunta e uma resposta, ou uma afirmação e uma contra-afirmação, em versos consecutivos.", "InstrucaoPrescritiva": "Escreva uma linha como uma pergunta (ex: 'E aí, cê topa?') e a linha seguinte como a resposta ou o desenvolvimento dessa pergunta." },
+    "Aplicacao": {
+      "Analise": "Cria um ritmo de conversação, tornando a música mais dinâmica e engajante, como se o ouvinte estivesse presenciando um diálogo.",
       "Exemplos": [
-        {
-          "Titulo": "Sertanejo (Danilo e Davi - 'Apaga Apaga Apaga')",
-          "Verso": "Primeira Estrofe (com raiva): '...sinto mais nada / Não! Apaga, apaga, apaga.' (Apaga meu número) | Segunda Estrofe (arrependido): '...pega o nosso fim / Apaga, apaga, apaga.' (Apaga nosso término)",
-          "Observacao": "A mesma frase-chave ('Apaga, apaga, apaga') tem seu significado completamente invertido da primeira para a segunda vez, mostrando a evolução da raiva para o arrependimento."
-        }
+        {"Titulo": "Luan Santana - 'Cê Topa?'", "Verso": "Eu, você, dois filhos e um cachorro / (...) E aí, cê topa?", "Observacao": "O refrão é uma proposta seguida da pergunta direta, criando uma estrutura de diálogo com o ouvinte/amada."},
+        {"Titulo": "Guilherme & Santiago - 'E Daí?'", "Verso": "E daí se eu quiser farrear / (...) O que é que tem? / Foi você quem falou / Que a paixão acabou", "Observacao": "A estrutura é de confronto e resposta a uma acusação implícita."}
       ]
     },
-    "PontoDeAtencao": {
-      "Risco": "A mudança deve ser clara e significativa, caso contrário, pode passar despercebida ou parecer um erro.",
-      "Combinacao": "Especialmente poderoso no último refrão da música, para dar uma sensação de conclusão ou mudança definitiva.",
-      "Contexto": "Usado por compositores que se concentram no storytelling."
+    "PontoDeAtencao": {"Risco": "O diálogo precisa ser claro e fácil de seguir.", "Contexto": "Muito eficaz em canções sobre discussões de relacionamento (DRs) ou propostas."},
+    "Conexoes": ["MEC-010"]
+  },
+  {
+    "ID": "ARQ-015",
+    "Nome": "Título como Verso Final",
+    "Categoria": "Arquitetura da Canção",
+    "ProblemaQueResolve": ["Criar um efeito de 'revelação' ou 'fechamento circular'.", "Dar mais impacto ao título da canção."],
+    "Mecanica": { "Funcao": "Fazer com que toda a estrofe ou refrão construa a tensão para aterrissar na frase-chave, que é o título.", "Mecanismo": "Posicionar o título da música como o último verso de uma seção importante, funcionando como a conclusão da ideia.", "InstrucaoPrescritiva": "Construa uma estrofe que descreva uma situação ou sentimento, e use o título como a frase final que 'batiza' essa situação." },
+    "Aplicacao": {
+      "Analise": "Cria um efeito de 'punchline'. A estrofe prepara o terreno, e o título entrega a conclusão de forma memorável.",
+      "Exemplos": [
+        {"Titulo": "Matheus & Kauan - 'Que Sorte a Nossa'", "Verso": "Tantos sorrisos por aí, você querendo o meu / (...) Se o amor bateu na nossa porta, que sorte a nossa", "Observacao": "Toda a estrofe descreve a coincidência do encontro, que é finalmente nomeada pelo título no último verso."},
+        {"Titulo": "Jorge & Mateus - 'Aí Já Era'", "Verso": "Vai ficando bobo / Vai ficando bobo / E aí já era", "Observacao": "A expressão que dá título à canção funciona como a conclusão do processo de se apaixonar descrito nos versos anteriores."}
+      ]
     },
-    "Conexoes": [
-      "ARQ-004"
-    ]
+    "PontoDeAtencao": {"Risco": "A construção precisa ser bem feita para que o título soe como uma conclusão natural, e não forçada.", "Contexto": "Comum em música Pop e Sertanejo, onde o título-gancho é fundamental."},
+    "Conexoes": ["ARQ-004"]
+  },
+  {
+    "ID": "ARQ-016",
+    "Nome": "Deslocamento Temporal",
+    "Categoria": "Arquitetura da Canção",
+    "ProblemaQueResolve": ["Enriquecer a narrativa com contexto do passado ou projeções do futuro.", "Quebrar uma narrativa linear e criar suspense."],
+    "Mecanica": { "Funcao": "Alternar entre diferentes tempos narrativos (presente, passado, futuro).", "Mecanismo": "Uso de flashbacks (memórias) e flashforwards (projeções/desejos) para dar profundidade ao momento presente da canção.", "InstrucaoPrescritiva": "Comece narrando a situação presente. Em uma ponte ou segunda estrofe, introduza uma memória com 'Eu lembro quando...' ou uma projeção com 'Um dia a gente vai...'." },
+    "Aplicacao": {
+      "Analise": "Permite ao compositor mostrar as causas (passado) e as consequências (futuro) do momento presente, adicionando complexidade emocional à história.",
+      "Exemplos": [
+        {"Titulo": "Luan Santana - 'Te Esperando'", "Verso": "Um dia vai sentar numa cadeira de balanço / Vai lembrar do tempo que tinha vinte anos / Vai lembrar de mim...", "Observacao": "A música é um grande flashforward, onde o eu-lírico, no presente, projeta o futuro da amada para justificar sua espera."}
+      ]
+    },
+    "PontoDeAtencao": {"Risco": "As transições de tempo precisam ser claras para não confundir o ouvinte.", "Contexto": "Uma ferramenta poderosa para baladas e canções narrativas complexas."},
+    "Conexoes": ["MEC-018", "ARQ-007"]
+  },
+  {
+    "ID": "ARQ-017",
+    "Nome": "Coro Antecipatório",
+    "Categoria": "Arquitetura da Canção",
+    "ProblemaQueResolve": ["Criar energia e antecipação para o refrão.", "Adicionar um gancho extra e participativo."],
+    "Mecanica": { "Funcao": "Usar uma interjeição, palavra-chave ou frase curta em coro (backing vocals) logo antes do refrão principal.", "Mecanismo": "Funciona como um 'anúncio' ou 'aquecimento' sonoro para o clímax da música.", "InstrucaoPrescritiva": "No final do pré-refrão, adicione uma palavra ou expressão curta e de impacto (ex: 'Guerra!', 'Agora!') para ser gritada antes do refrão começar." },
+    "Aplicacao": {
+      "Analise": "É uma ferramenta de arranjo lírico eficaz para criar um pico de energia. Funciona como um sinal para o público de que o momento mais importante da música está chegando.",
+      "Exemplos": [
+        {"Titulo": "Charlie Brown Jr. - 'Proibida Pra Mim'", "Verso": "Se não eu, quem vai fazer você feliz? (backing vocal: Guerra!)", "Observacao": "A palavra 'Guerra!' é gritada, servindo como uma explosão que lança o ouvinte no refrão principal."},
+        {"Titulo": "Alexandre Pires - 'Depois do Prazer'", "Verso": "...Sempre uma saudade (Saudade!) / ...é teu nome que eu chamo (É teu nome que eu chamo!)", "Observacao": "As palavras-chave são repetidas em eco pelos backing vocals, preparando a catarse do retorno ao refrão."}
+      ]
+    },
+    "PontoDeAtencao": {"Risco": "A palavra ou frase escolhida precisa ter impacto e ser ritmicamente encaixada.", "Contexto": "Muito comum em Pop, Rock e Pagode para aumentar a energia e a participação do público."},
+    "Conexoes": ["ARQ-004"]
   },
   {
     "ID": "CRI-001",
-    "Nome": "Matriz de Combinação (Conceito + Objeto)",
+    "Nome": "Matriz de Combinação",
     "Categoria": "Laboratório Criativo",
-    "ProblemaQueResolve": [
-      "Bloqueio criativo e falta de imagens originais.",
-      "Dificuldade em criar metáforas."
-    ],
-    "Mecanica": {
-      "Funcao": "Gerar associações inesperadas para criar figuras de linguagem únicas.",
-      "Mecanismo": "Consiste em cruzar um conceito abstrato (um sentimento, uma ideia) com um objeto concreto (algo que se pode ver ou tocar). A junção força o cérebro a criar uma nova imagem poética.",
-      "InstrucaoPrescritiva": "Crie uma lista de sentimentos (Saudade, Liberdade, Medo) e outra de objetos (Copo, Janela, Chave). Combine um item de cada lista e escreva um verso a partir do resultado (ex: 'A Chave da Saudade')."
-    },
+    "ProblemaQueResolve": ["Bloqueio criativo.", "Gerar metáforas originais."],
+    "Mecanica": { "Funcao": "Gerar associações inesperadas para criar figuras de linguagem únicas.", "Mecanismo": "Cruzar um conceito abstrato (sentimento) com um objeto concreto.", "InstrucaoPrescritiva": "Crie uma lista de sentimentos (Saudade, Liberdade) e outra de objetos (Copo, Chave). Combine um item de cada e escreva um verso a partir do resultado." },
     "Aplicacao": {
-      "Analise": "Esta é uma ferramenta prática para 'desbloquear' a criatividade, provocando a inspiração em vez de esperar por ela.",
-      "Exemplos": [
-        {
-          "Titulo": "Combinação: Saudade (Abstrato) + Copo/Garrafa (Concreto)",
-          "Verso": "(Zé Neto e Cristiano - 'Largado às Traças') 'Vou beijando esse copo, abraçando as garrafas / Solidão é companheira nesse risca faca.'",
-          "Observacao": "A saudade abstrata é materializada no ato de se relacionar com os objetos concretos (copo, garrafa)."
-        },
-        {
-          "Titulo": "Combinação: Paixão (Abstrato) + Meteoro (Concreto)",
-          "Verso": "(Luan Santana - 'Meteoro') 'Você é raio de saudade / Meteoro da paixão.'",
-          "Observacao": "O sentimento abstrato da paixão ganha a imagem concreta, veloz e impactante de um meteoro."
-        }
-      ]
+      "Analise": "Ferramenta prática para provocar a inspiração em vez de esperar por ela.",
+      "Exemplos": [{"Titulo": "Combinação: Saudade (Abstrato) + Copo (Concreto)", "Verso": "(Zé Neto e Cristiano - 'Largado às Traças') 'Vou beijando esse copo, abraçando as garrafas'", "Observacao": "A saudade é materializada no ato de se relacionar com o objeto."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "A combinação pode gerar imagens sem sentido. O exercício é um ponto de partida, não um resultado final; refine a ideia.",
-      "Combinacao": "Use o resultado como primeira linha para uma Abertura com Cena Concreta (ARQ-003).",
-      "Contexto": "Ferramenta universal para qualquer gênero."
-    },
-    "Conexoes": [
-      "ARQ-003"
-    ]
+    "PontoDeAtencao": {"Risco": "A combinação pode gerar imagens sem sentido. O exercício é um ponto de partida, não um resultado final.", "Contexto": "Ferramenta universal para qualquer gênero."},
+    "Conexoes": ["ARQ-003"]
   },
   {
     "ID": "CRI-002",
-    "Nome": "Gerador de Perspectivas (Mudança de Narrador)",
+    "Nome": "Gerador de Perspectivas",
     "Categoria": "Laboratório Criativo",
-    "ProblemaQueResolve": [
-      "Letras que soam genéricas ou presas em um único ponto de vista.",
-      "Dificuldade de encontrar um ângulo original para um tema comum."
-    ],
-    "Mecanica": {
-      "Funcao": "Explorar um mesmo tema a partir de múltiplos pontos de vista para descobrir novas imagens e sentimentos.",
-      "Mecanismo": "Pega-se um evento central e narra-se a partir de diferentes 'câmeras': a 1ª pessoa ('eu'), a 2ª pessoa ('você'), um observador externo (3ª pessoa) ou até mesmo um objeto inanimado.",
-      "InstrucaoPrescritiva": "Escolha um tema, como 'um casal brigando'. Escreva um verso do ponto de vista do homem. Depois, da mulher. Agora, de um amigo. Por fim, do 'copo quebrado na pia'."
-    },
+    "ProblemaQueResolve": ["Letras genéricas ou presas em um único ponto de vista.", "Encontrar um ângulo original para um tema comum."],
+    "Mecanica": { "Funcao": "Explorar um mesmo tema a partir de múltiplos pontos de vista.", "Mecanismo": "Narrar um evento a partir de diferentes 'câmeras': 1ª pessoa, 2ª pessoa, observador externo ou até mesmo um objeto inanimado.", "InstrucaoPrescritiva": "Escolha um tema ('término'). Escreva um verso do ponto de vista de quem terminou. Depois, de quem foi deixado. Depois, de um objeto no cômodo." },
     "Aplicacao": {
-      "Analise": "Esta é uma ferramenta de brainstorming poderosa. Mudar a perspectiva força o escritor a sair de sua própria experiência e imaginar outras, gerando detalhes e emoções que seriam inacessíveis de outra forma.",
-      "Exemplos": [
-        {
-          "Titulo": "Tema: A Partida | Perspectiva: O Objeto",
-          "Verso": "(António Zambujo - 'A Casa Fechada') 'Aquela casa fechada / Não tem vasos na entrada / (...) No dia em que tu partiste / A casa ficou tão triste.'",
-          "Observacao": "Ao narrar a perda do ponto de vista da casa, a letra ganha uma dimensão melancólica e original. A casa se torna um personagem que sente a ausência."
-        },
-        {
-          "Titulo": "Tema: Conflito Amoroso | Perspectiva: O Observador Externo (Ex-namorado)",
-          "Verso": "(Henrique & Juliano - 'Cuida Bem Dela') 'Cuida bem dela / Você não vai conhecer alguém melhor que ela / Promete pra mim.'",
-          "Observacao": "A música é cantada pelo 'ex', um observador externo ao novo relacionamento, dando conselhos ao 'atual'. Essa mudança de perspectiva cria uma dinâmica única."
-        }
-      ]
+      "Analise": "Ferramenta de brainstorming que força o escritor a sair de sua própria experiência, gerando detalhes e emoções que seriam inacessíveis de outra forma.",
+      "Exemplos": [{"Titulo": "Tema: A Partida | Perspectiva: O Objeto", "Verso": "(António Zambujo - 'A Casa Fechada') 'No dia em que tu partiste / A casa ficou tão triste.'", "Observacao": "Ao narrar a perda do ponto de vista da casa, a letra ganha uma dimensão melancólica e original."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "A perspectiva escolhida deve servir à história. Um narrador-objeto, por exemplo, pode soar como um truque se não for bem justificado pelo tema.",
-      "Combinacao": "Uma excelente forma de construir a Ponte por Mudança de Perspectiva (ARQ-007).",
-      "Contexto": "Ferramenta universal, mas especialmente útil para compositores de MPB e gêneros narrativos."
-    },
-    "Conexoes": [
-      "ARQ-007"
-    ]
+    "PontoDeAtencao": {"Risco": "A perspectiva escolhida deve servir à história e ser verossímil dentro de seu contexto.", "Contexto": "Especialmente útil para compositores de MPB e gêneros narrativos."},
+    "Conexoes": ["ARQ-007"]
   },
   {
     "ID": "GEN-001",
-    "Nome": "Análise por Gênero - 'O Paradoxo Sertanejo'",
+    "Nome": "Padrão: O Paradoxo Sertanejo",
     "Categoria": "Análise Comparativa",
-    "ProblemaQueResolve": [
-      "Como construir a tensão emocional típica do gênero 'Sertanejo Romântico/Sofrência'."
-    ],
-    "Mecanica": {
-      "Funcao": "Expressar um conflito interno onde a ação do eu-lírico contradiz seu sentimento, gerando o drama central da canção.",
-      "Mecanismo": "A estrutura narrativa é baseada em uma antítese comportamental. O eu-lírico afirma uma coisa ('não te quero') mas seus sentimentos revelam o oposto ('estou sofrendo').",
-      "InstrucaoPrescritiva": "Descreva uma ação de superação (ir para o bar, beijar outra boca) e, no refrão, revele que essa ação é, na verdade, um sintoma da dor e da saudade."
-    },
+    "ProblemaQueResolve": ["Construir a tensão emocional típica do gênero 'Sertanejo Sofrência'."],
+    "Mecanica": { "Funcao": "Expressar o conflito interno onde a ação contradiz o sentimento.", "Mecanismo": "A narrativa se baseia em uma antítese comportamental: o eu-lírico afirma uma coisa ('não te quero') mas seus sentimentos revelam o oposto ('estou sofrendo').", "InstrucaoPrescritiva": "Descreva uma ação de superação (beber, sair) e, no refrão, revele que essa ação é, na verdade, um sintoma da saudade." },
     "Aplicacao": {
-      "Analise": "Este é o motor da 'sofrência'. A audiência se conecta com a falha em superar. A técnica consiste em descrever a tentativa de esquecimento como um sintoma claro de que o amor ainda vive. A análise do corpus mostra que este padrão está presente em mais de 60% das letras de sertanejo sobre término.",
-      "Exemplos": [
-        {
-          "Titulo": "Exemplo Canônico (Chitãozinho & Xororó - 'Evidências')",
-          "Verso": "E nessa loucura de dizer que não te quero / Vou negando as aparências, disfarçando as evidências... Eu sei que te amo!",
-          "Observacao": "A letra verbaliza a mecânica do paradoxo: a negação explícita é a maior evidência do amor."
-        },
-        {
-          "Titulo": "Paradoxo do Álcool (Zé Neto e Cristiano - 'Largado às Traças')",
-          "Verso": "Tô tentando apagar fogo com gasolina.",
-          "Observacao": "Esta frase é a síntese perfeita da técnica: a ação que deveria resolver o problema (beber) é o que alimenta a dor."
-        }
-      ]
+      "Analise": "Este é o motor da 'sofrência'. A audiência se conecta com a falha em superar. A análise do corpus mostra este padrão em mais de 60% das letras de sertanejo sobre término.",
+      "Exemplos": [{"Titulo": "Chitãozinho & Xororó - 'Evidências'", "Verso": "E nessa loucura de dizer que não te quero / Vou negando as aparências... Eu sei que te amo!", "Observacao": "A letra verbaliza a mecânica do paradoxo: a negação é a maior evidência do amor."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "O tema é tão recorrente no gênero que o maior desafio é encontrar uma metáfora original para o paradoxo, como 'apagar fogo com gasolina'.",
-      "Combinacao": "Frequentemente associado à Abertura com Cena Concreta (ARQ-003), geralmente um bar.",
-      "Contexto": "Elemento definidor do subgênero 'sofrência'."
-    },
-    "Conexoes": [
-      "MEC-006",
-      "ARQ-003"
-    ]
+    "PontoDeAtencao": {"Risco": "O tema é recorrente; o desafio é encontrar uma metáfora original para o paradoxo.", "Contexto": "Elemento definidor do subgênero 'sofrência'."},
+    "Conexoes": ["MEC-006", "ARQ-003"]
   },
   {
     "ID": "ART-001",
-    "Nome": "A Assinatura do Compositor - 'O Catálogo de Caetano'",
+    "Nome": "Padrão: O Catálogo de Caetano",
     "Categoria": "Análise Comparativa",
-    "ProblemaQueResolve": [
-      "Como criar letras com alta densidade de informação e referências.",
-      "Como escrever no estilo de 'crônica cultural'."
-    ],
-    "Mecanica": {
-      "Funcao": "Construir significado através da justaposição de referências culturais, nomes próprios, lugares e conceitos.",
-      "Mecanismo": "Utiliza a técnica de Enumeração (MEC-007) para listar referências (artistas, lugares, eventos históricos). A conexão entre os itens cria um mosaico de ideias.",
-      "InstrucaoPrescritiva": "Escolha um tema. Em vez de descrevê-lo diretamente, liste pessoas, lugares e obras de arte que se relacionem com ele."
-    },
+    "ProblemaQueResolve": ["Criar letras com alta densidade de informação e referências.", "Escrever no estilo de 'crônica cultural'."],
+    "Mecanica": { "Funcao": "Construir significado através da justaposição de referências culturais, nomes e lugares.", "Mecanismo": "Uso da Enumeração (MEC-007) para listar referências (artistas, lugares, eventos) que criam um mosaico de ideias.", "InstrucaoPrescritiva": "Escolha um tema. Em vez de descrevê-lo, liste pessoas, lugares e obras de arte que se relacionem com ele." },
     "Aplicacao": {
-      "Analise": "A assinatura de Caetano não está apenas no que ele diz, mas em quem e o quê ele cita. A letra se torna um hipertexto cultural. A análise do corpus mostra que 24% das suas letras usam listas de nomes próprios como elemento estrutural.",
-      "Exemplos": [
-        {
-          "Titulo": "Referências Culturais (Caetano Veloso - 'O Estrangeiro')",
-          "Verso": "O pintor Paul Gauguin... / O compositor Cole Porter... / O antropólogo Claude Lévi-Strauss...",
-          "Observacao": "A letra discute o conceito de 'ver' e 'beleza' através de uma lista de artistas, usando-os como argumentos."
-        },
-        {
-          "Titulo": "Referências Geopolíticas (Caetano Veloso - 'Haiti')",
-          "Verso": "Pense no Haiti / Reze pelo Haiti / O Haiti é aqui.",
-          "Observacao": "A letra conecta eventos no Brasil com o Haiti, Cuba e São Paulo, usando a enumeração de lugares para criar uma tese sobre a desigualdade social."
-        }
-      ]
+      "Analise": "A assinatura de Caetano está em *quem* e *o quê* ele cita. A letra se torna um hipertexto cultural. 24% de suas letras no corpus usam listas de nomes próprios como elemento estrutural.",
+      "Exemplos": [{"Titulo": "Caetano Veloso - 'O Estrangeiro'", "Verso": "O pintor Paul Gauguin... / O compositor Cole Porter... / O antropólogo Claude Lévi-Strauss...", "Observacao": "A letra discute o conceito de 'beleza' através de uma lista de artistas, usando-os como argumentos."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "O excesso de referências pode tornar a letra hermética e pedante para quem não as conhece.",
-      "Combinacao": "Combina bem com uma prosódia mais falada, quase como um ensaio ou um manifesto musicado.",
-      "Contexto": "Marca registrada da Tropicália e da MPB pós-moderna."
-    },
-    "Conexoes": [
-      "MEC-007"
-    ]
+    "PontoDeAtencao": {"Risco": "O excesso de referências pode tornar a letra hermética ou pedante.", "Contexto": "Marca registrada da Tropicália e da MPB pós-moderna."},
+    "Conexoes": ["MEC-007"]
   },
   {
     "ID": "MET-001",
-    "Nome": "Métrica de Riqueza Lexical (Type-Token Ratio - TTR)",
+    "Nome": "Métrica: Riqueza Lexical (TTR)",
     "Categoria": "Métricas e Visualizações",
-    "ProblemaQueResolve": [
-      "Como medir objetivamente a variedade e a repetitividade do vocabulário de uma letra."
-    ],
-    "Mecanica": {
-      "Funcao": "Calcular a proporção entre o número de palavras únicas (types) e o número total de palavras (tokens) em um texto.",
-      "Mecanismo": "TTR = (Nº de Palavras Únicas / Nº Total de Palavras). Um TTR próximo de 1.0 indica vocabulário variado. Próximo de 0, alta repetitividade.",
-      "InstrucaoPrescritiva": "Aplique este cálculo a uma letra para ter uma medida denotativa de sua complexidade lexical. Compare o TTR dos versos com o do refrão para medir a simplicidade relativa do refrão."
-    },
+    "ProblemaQueResolve": ["Medir objetivamente a variedade e a repetitividade do vocabulário."],
+    "Mecanica": { "Funcao": "Calcular a proporção entre palavras únicas (types) e o total de palavras (tokens).", "Mecanismo": "TTR = (Nº de Palavras Únicas / Nº Total de Palavras). Próximo de 1.0 = variado. Próximo de 0 = repetitivo.", "InstrucaoPrescritiva": "Aplique o cálculo para ter uma medida denotativa da complexidade lexical de uma letra." },
     "Aplicacao": {
-      "Analise": "O TTR não mede 'qualidade', mas sim estilo. Músicas com refrão forte tendem a ter um TTR baixo, pois a repetição é chave para a memorização. Letras narrativas tendem a ter um TTR mais alto.",
+      "Analise": "O TTR não mede 'qualidade', mas sim estilo. Músicas pop com refrão forte tendem a ter TTR baixo (repetição para memorização). Letras narrativas tendem a ter TTR alto.",
       "Exemplos": [
-        {
-          "Titulo": "TTR Alto (Maior Variedade): Caetano Veloso - 'Um Comunista'",
-          "Verso": "TTR calculado do corpus: 0.68",
-          "Observacao": "A letra é uma crônica longa com muitas palavras únicas para descrever a trajetória do personagem, resultando em baixa repetitividade."
-        },
-        {
-          "Titulo": "TTR Baixo (Maior Repetitividade): Michel Teló - 'Ai Se Eu Te Pego'",
-          "Verso": "TTR calculado do corpus: 0.22",
-          "Observacao": "A letra é construída em torno da repetição extrema do refrão, uma estratégia deliberada para criar um 'gancho' infeccioso."
-        }
+        {"Titulo": "TTR Alto: Caetano Veloso - 'Um Comunista'", "Verso": "TTR calculado: 0.68", "Observacao": "Letra longa e narrativa, com baixa repetitividade."},
+        {"Titulo": "TTR Baixo: Michel Teló - 'Ai Se Eu Te Pego'", "Verso": "TTR calculado: 0.22", "Observacao": "Construída em torno da repetição extrema do refrão, uma estratégia deliberada para criar um gancho."}
       ]
     },
-    "PontoDeAtencao": {
-      "Risco": "O TTR é sensível ao tamanho do texto. Textos curtos naturalmente têm um TTR mais alto. A comparação é mais justa entre músicas de tamanho similar.",
-      "Combinacao": "Pode ser usado para validar outras análises. Por exemplo, um TTR baixo no refrão pode confirmar a eficácia da técnica Refrão-Síntese (ARQ-004).",
-      "Contexto": "Ferramenta de análise textual aplicável a qualquer gênero."
-    },
-    "Conexoes": [
-      "MEC-001",
-      "ARQ-004"
-    ]
+    "PontoDeAtencao": {"Risco": "O TTR é sensível ao tamanho do texto (textos curtos têm TTR mais alto). A comparação é mais justa entre músicas de tamanho similar.", "Contexto": "Ferramenta de análise textual aplicável a qualquer gênero."},
+    "Conexoes": ["MEC-001", "ARQ-004"]
   },
   {
     "ID": "CASE-001",
-    "Nome": "Estudo de Caso - 'Boate Azul' (Bruno & Marrone)",
+    "Nome": "Estudo de Caso: 'Boate Azul'",
     "Categoria": "Desconstrução de Clássicos",
-    "ProblemaQueResolve": [
-      "Como as técnicas líricas se combinam para criar um clássico da 'sofrência'."
-    ],
-    "Mecanica": {
-      "Funcao": "Analisar a canção 'Boate Azul' através das lentes das técnicas catalogadas na 'Bíblia do Compositor'.",
-      "Mecanismo": "Decomposição da letra em suas partes constituintes (arquitetura, mecânica, som) para entender sua eficácia denotativa.",
-      "InstrucaoPrescritiva": "N/A (É uma análise, não uma instrução)"
-    },
+    "ProblemaQueResolve": ["Entender como técnicas líricas se combinam para criar um clássico da 'sofrência'."],
+    "Mecanica": { "Funcao": "Analisar a canção 'Boate Azul' através das técnicas catalogadas na Bíblia.", "Mecanismo": "Decomposição da letra em suas partes (arquitetura, mecânica, som).", "InstrucaoPrescritiva": "N/A" },
     "Aplicacao": {
-      "Analise": "Tese Central: Uma narrativa de melancolia urbana construída sobre uma estrutura lírica clássica, com forte apelo imagético e repetição temática.",
-      "Exemplos": [
-        {
-          "Titulo": "Análise Denotativa Aplicada",
-          "Verso": "ARQUITETURA: Uso de Cena Concreta (ARQ-003) para estabelecer o cenário ('boate aqui na zona sul').\nMECÂNICA DO VERSO: Esquema rímico XAXA (noturna/cura, sul/azul) que dá musicalidade sutil. Forte apelo visual no contraste 'vida noturna' vs 'clarão da aurora'.\nARSENAL SÔNICO: Alta frequência de vogais posteriores e nasais (/o/, /u/, /õ/, /ɐ̃/), conferindo uma sonoridade 'escura' e melancólica (SON-003).",
-          "Observacao": "A eficácia da letra reside na sua clareza narrativa, na construção de uma atmosfera visual forte e no alinhamento entre a sonoridade das palavras e o tema da solidão."
-        }
-      ]
+      "Analise": "Uma narrativa de melancolia urbana construída sobre uma estrutura lírica clássica, com forte apelo imagético e repetição temática.",
+      "Exemplos": [{"Titulo": "Análise Denotativa Aplicada", "Verso": "ARQUITETURA: Uso de Cena Concreta (ARQ-003) para estabelecer o cenário. MECÂNICA: Esquema rímico sutil (XAXA). ARSENAL SÔNICO: Alta frequência de vogais posteriores e nasais (/o/, /u/), conferindo uma sonoridade 'escura' e melancólica (SON-003).", "Observacao": "A eficácia da letra reside na clareza narrativa e no alinhamento entre a sonoridade das palavras e o tema da solidão."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "N/A",
-      "Combinacao": "N/A",
-      "Contexto": "N/A"
-    },
-    "Conexoes": [
-      "ARQ-003",
-      "SON-003"
-    ]
+    "PontoDeAtencao": {"Risco": "N/A", "Combinacao": "N/A", "Contexto": "N/A"},
+    "Conexoes": ["ARQ-003", "SON-003"]
   },
   {
     "ID": "CASE-002",
-    "Nome": "Estudo de Caso - 'Mulher de Fases' (Raimundos)",
+    "Nome": "Estudo de Caso: 'Mulher de Fases'",
     "Categoria": "Desconstrução de Clássicos",
-    "ProblemaQueResolve": [
-      "Como expressar a volatilidade de um relacionamento usando estrutura e som."
-    ],
-    "Mecanica": {
-      "Funcao": "Analisar a canção 'Mulher de Fases' através das lentes das técnicas catalogadas na 'Bíblia do Compositor'.",
-      "Mecanismo": "Decomposição da letra para identificar como o paradoxo e o contraste sonoro constroem o tema da canção.",
-      "InstrucaoPrescritiva": "N/A (É uma análise, não uma instrução)"
-    },
+    "ProblemaQueResolve": ["Entender como expressar volatilidade usando estrutura e som."],
+    "Mecanica": { "Funcao": "Analisar a canção 'Mulher de Fases' através das técnicas catalogadas na Bíblia.", "Mecanismo": "Decomposição da letra para identificar como o paradoxo e o contraste sonoro constroem o tema.", "InstrucaoPrescritiva": "N/A" },
     "Aplicacao": {
-      "Analise": "Tese Central: Crônica de um relacionamento volátil, marcada pelo uso de paradoxos comportamentais e uma explosão de energia sonora no refrão.",
-      "Exemplos": [
-        {
-          "Titulo": "Análise Denotativa Aplicada",
-          "Verso": "ARQUITETURA: Contraste entre versos narrativos e um refrão-definição. A Ponte ('Meu filho, aguenta...') funciona como um comentário externo que prepara o refrão.\nMECÂNICA DO VERSO: A letra é a própria definição de Paradoxo (MEC-006). As estrofes justapõem a mulher que 'expulsa' e a que 'não quer viver sem'. O clímax é o paradoxo do refrão: 'Complicada e perfeitinha'.\nARSENAL SÔNICO: O refrão explode com Plosivas e Vogais Abertas (SON-001, SON-005), contrastando com a sonoridade mais contida dos versos.",
-          "Observacao": "A genialidade da letra está em traduzir a instabilidade emocional em estrutura (verso vs. refrão) e som (contido vs. explosivo), com o paradoxo 'Complicada e perfeitinha' servindo como a síntese perfeita do conflito."
-        }
-      ]
+      "Analise": "Crônica de um relacionamento volátil, marcada por paradoxos comportamentais e uma explosão de energia sonora no refrão.",
+      "Exemplos": [{"Titulo": "Análise Denotativa Aplicada", "Verso": "MECÂNICA: O coração da letra é o Paradoxo (MEC-006), justapondo a mulher que 'expulsa' e a que 'não quer viver sem'. O clímax é o refrão 'Complicada e perfeitinha'. ARSENAL SÔNICO: O refrão explode com Plosivas e Vogais Abertas (SON-001, SON-005), contrastando com a sonoridade contida dos versos.", "Observacao": "A genialidade da letra está em traduzir a instabilidade emocional em estrutura e som."}]
     },
-    "PontoDeAtencao": {
-      "Risco": "N/A",
-      "Combinacao": "N/A",
-      "Contexto": "N/A"
-    },
-    "Conexoes": [
-      "MEC-006",
-      "SON-001",
-      "SON-005"
-    ]
+    "PontoDeAtencao": {"Risco": "N/A", "Combinacao": "N/A", "Contexto": "N/A"},
+    "Conexoes": ["MEC-006", "SON-001", "SON-005"]
   }
-]
+    ]
