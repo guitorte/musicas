@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
 
     const indexStructure = [
-        { title: "Parte I: O Arsenal Sônico", categories: ["Engenharia Sônica"] },
-        { title: "Parte II: A Mecânica do Verso", categories: ["Mecânica do Verso"] },
-        { title: "Parte III: A Arquitetura da Canção", categories: ["Arquitetura da Canção"] },
-        { title: "Parte IV: Análises Aplicadas e Ferramentas", categories: ["Laboratório Criativo", "Análise Comparativa", "Métricas e Visualizações", "Desconstrução de Clássicos"] }
+        { title: "Parte I: Vogais e consoantes", categories: ["Engenharia Sônica"] },
+        { title: "Parte II: Recursos de Linguagem", categories: ["Mecânica do Verso"] },
+        { title: "Parte III: Arquitetura dos Blocos", categories: ["Arquitetura da Canção"] },
+        { title: "Parte IV: Análises e Ferramentas", categories: ["Laboratório Criativo", "Análise Comparativa", "Métricas e Visualizações", "Desconstrução de Clássicos"] }
     ];
 
     // --- INICIALIZAÇÃO ---
