@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
 
     const indexStructure = [
-        { title: "Parte I: Vogais e consoantes", categories: ["Engenharia Sônica"] },
+        { title: "Parte I: Vogais e Consoantes", categories: ["Engenharia Sônica"] },
         { title: "Parte II: Recursos de Linguagem", categories: ["Mecânica do Verso"] },
         { title: "Parte III: Arquitetura dos Blocos", categories: ["Arquitetura da Canção"] },
         { title: "Parte IV: Análises e Ferramentas", categories: ["Laboratório Criativo", "Análise Comparativa", "Métricas e Visualizações", "Desconstrução de Clássicos"] }
