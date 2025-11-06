@@ -1,1 +1,478 @@
-0
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Músicas @guitorte </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background: #0A0A0A;
+            --surface: #1A1A1A;
+            --primary-text: #F5F5F5;
+            --secondary-text: #888888;
+            --accent: #FFFFFF;
+            --border-color: #2a2a2a;
+            --player-height: 80px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--background);
+            color: var(--primary-text);
+            -webkit-font-smoothing: antialiased;
+            padding-bottom: var(--player-height); 
+        }
+
+        .container { max-width: 500px; margin: 0 auto; padding: 40px 20px 60px; }
+        .header { text-align: center; margin-bottom: 50px; }
+        .header h1 { font-size: 36px; font-weight: 700; letter-spacing: -1.5px; }
+        .music-list { list-style: none; }
+
+        .music-list-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 12px;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: background 0.2s ease-in-out, border-left 0.2s ease-in-out, padding-left 0.2s ease-in-out;
+            position: relative; /* Para a borda à esquerda */
+        }
+
+        .music-list-item:hover { background: var(--surface); }
+
+        /* Estilos para a música selecionada/ativa */
+        .music-list-item.active {
+            background-color: var(--surface); /* Fundo sutil */
+            border-left: 3px solid var(--accent); /* Barra de destaque à esquerda */
+            padding-left: 9px; /* Ajusta o padding para compensar a borda */
+        }
+        .music-list-item.active .track-title,
+        .music-list-item.active .track-number { 
+            color: var(--accent); 
+            font-weight: 600; 
+        }
+        /* Fim dos estilos de destaque */
+
+
+        .track-info { display: flex; align-items: center; }
+        .track-number { font-size: 14px; font-weight: 500; color: var(--secondary-text); width: 30px; text-align: center; margin-right: 15px; }
+        .track-title { font-size: 16px; font-weight: 500; }
+        
+        .track-meta { 
+            display: flex; 
+            align-items: center; 
+            gap: 15px; 
+        }
+        .song-duration { font-size: 14px; color: var(--secondary-text); }
+
+        .playing-indicator { display: none; }
+        .music-list-item.playing .playing-indicator { display: block; }
+        .music-list-item.playing .song-duration { display: none; }
+        
+        /* Novo estilo para o botão de compartilhar */
+        .share-btn {
+            background: none;
+            border: none;
+            color: var(--secondary-text);
+            cursor: pointer;
+            transition: color 0.2s ease;
+            padding: 0; 
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px; 
+        }
+        .share-btn:hover {
+            color: var(--accent);
+        }
+        .share-btn svg {
+            width: 18px; 
+            height: 18px;
+        }
+
+        .player-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: var(--player-height);
+            background: #121212;
+            border-top: 1px solid var(--border-color);
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 100;
+        }
+        
+        .progress-container { position: absolute; top: -5px; left: 0; width: 100%; height: 5px; cursor: pointer; }
+        .progress-bar { background: var(--secondary-text); width: 100%; height: 2px; position: absolute; top: 4px; }
+        .progress { background: var(--accent); width: 0%; height: 100%; border-radius: 2px; transition: width 0.1s linear; }
+
+        .current-track-info { font-size: 14px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+        .current-track-title { font-weight: 600; }
+        .current-track-artist { font-weight: 400; color: var(--secondary-text); }
+
+        .player-controls { display: flex; justify-content: center; align-items: center; gap: 20px; }
+        .control-btn { background: none; border: none; color: var(--secondary-text); cursor: pointer; transition: all 0.2s ease; display: flex; }
+        .control-btn:hover { color: var(--accent); transform: scale(1.1); }
+        .control-btn svg { width: 24px; height: 24px; }
+        
+        .play-btn { background: var(--accent); color: var(--background); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+        .play-btn:hover { background: #e0e0e0; transform: scale(1.05); color: var(--background); }
+        .play-btn svg { width: 20px; height: 20px; }
+
+        .extra-controls { display: flex; justify-content: flex-end; align-items: center; gap: 15px; }
+        .volume-control { position: relative; }
+        .volume-popup { position: absolute; bottom: 45px; right: -25px; background: var(--surface); padding: 15px 12px; border-radius: 8px; /* Corrigido de 88px para 8px */ box-shadow: 0 4px 20px rgba(0,0,0,0.5); opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.2s ease; }
+        .volume-popup.active { opacity: 1; visibility: visible; transform: translateY(0); }
+        .volume-slider { -webkit-appearance: none; width: 100px; height: 4px; background: #444; border-radius: 2px; outline: none; }
+        .volume-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; background: var(--accent); border-radius: 50%; cursor: pointer; }
+        .control-btn.active { color: var(--accent); }
+
+        /* Estilo para a mensagem de "Link copiado!" */
+        .toast-message {
+            position: fixed;
+            bottom: 100px; /* Acima do player bar */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>escuta aí!</h1></div>
+        <ol class="music-list"></ol>
+    </div>
+
+    <div class="player-bar">
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-bar"><div class="progress" id="progress"></div></div>
+        </div>
+        <div class="current-track-info">
+            <div class="current-track-title">Selecione uma música</div>
+            <div class="current-track-artist">Guilherme</div>
+        </div>
+        <div class="player-controls">
+            <button class="control-btn" id="prevBtn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"></path></svg></button>
+            <button class="control-btn play-btn" id="playBtn">
+                <svg id="playIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+                <svg id="pauseIcon" style="display: none;" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg>
+            </button>
+            <button class="control-btn" id="nextBtn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"></path></svg></button>
+        </div>
+        <div class="extra-controls">
+            <div class="volume-control">
+                <button class="control-btn" id="volumeBtn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg></button>
+                <div class="volume-popup" id="volumePopup"><input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70"></div>
+            </div>
+            <button class="control-btn" id="repeatBtn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"></path></svg></button>
+        </div>
+    </div>
+    <audio id="audioPlayer" preload="metadata"></audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+const songs = [
+  { id: 'song1', title: "Já perdi mulheres", src: "../audios/sambas/ja-perdi-mulheres.mp3" },
+  { id: 'song2', title: "Finalmente", src: "../audios/sambas/finalmente.mp3" },
+  { id: 'song3', title: "Mandinga pra pegar mulher", src: "../audios/sambas/mandinga.mp3" },
+  { id: 'song4', title: "Pacto com o Diabo", src: "../audios/sambas/pacto-zona.mp3" },
+  { id: 'song5', title: "Apanhar", src: "../audios/sambas/apanhar.mp3" },
+  { id: 'song6', title: "O doutor da cidade", src: "../audios/sambas/doutor.mp3" },
+  { id: 'song7', title: "Desculpa à jato", src: "../audios/sambas/desculpa.mp3" },
+  { id: 'song8', title: "Golpe", src: "../audios/sambas/golpe.mp3" }
+];
+
+            const DOMElements = {
+                audioPlayer: document.getElementById('audioPlayer'),
+                playBtn: document.getElementById('playBtn'),
+                playIcon: document.getElementById('playIcon'),
+                pauseIcon: document.getElementById('pauseIcon'),
+                prevBtn: document.getElementById('prevBtn'),
+                nextBtn: document.getElementById('nextBtn'),
+                repeatBtn: document.getElementById('repeatBtn'),
+                progressContainer: document.getElementById('progressContainer'),
+                progress: document.getElementById('progress'),
+                volumeBtn: document.getElementById('volumeBtn'),
+                volumePopup: document.getElementById('volumePopup'),
+                volumeSlider: document.getElementById('volumeSlider'),
+                volumeControl: document.querySelector('.volume-control'),
+                currentTrackTitle: document.querySelector('.current-track-title'),
+                musicList: document.querySelector('.music-list'),
+                body: document.body, 
+            };
+
+            let state = {
+                currentIndex: -1,
+                isPlaying: false,
+                isRepeating: false,
+            };
+
+            function loadTrackDurations() {
+                songs.forEach(song => {
+                    const tempAudio = new Audio(song.src);
+                    tempAudio.addEventListener('loadedmetadata', () => {
+                        const durationEl = document.querySelector(`.song-duration[data-song-id="${song.id}"]`);
+                        if (durationEl && !isNaN(tempAudio.duration)) {
+                            const minutes = Math.floor(tempAudio.duration / 60);
+                            const seconds = Math.floor(tempAudio.duration % 60);
+                            durationEl.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                        }
+                    });
+                });
+            }
+
+            // *** FUNÇÃO NOVA/MODIFICADA: Atualiza apenas o estado de SELEÇÃO na lista e o título do player ***
+            function updateSelectedTrackUI(index) {
+                state.currentIndex = index; // Atualiza o índice da música atual
+                document.querySelectorAll('.music-list-item').forEach((item, i) => {
+                    // Adiciona/remove a classe 'active' (destaque de seleção)
+                    item.classList.toggle('active', i === index);
+                    // Garante que a classe 'playing' seja removida até que a reprodução seja confirmada
+                    item.classList.toggle('playing', false); 
+                });
+
+                if (index !== -1) {
+                    DOMElements.currentTrackTitle.textContent = songs[index].title;
+                } else {
+                    DOMElements.currentTrackTitle.textContent = "Selecione uma música";
+                }
+            }
+
+            // *** FUNÇÃO NOVA: Atualiza o estado de REPRODUÇÃO (play/pause) e o indicador visual ***
+            function updatePlayingStateUI(isPlaying) {
+                state.isPlaying = isPlaying;
+                DOMElements.playIcon.style.display = isPlaying ? 'none' : 'block';
+                DOMElements.pauseIcon.style.display = isPlaying ? 'block' : 'none';
+
+                if (state.currentIndex !== -1) {
+                    const currentTrackItem = document.querySelector(`.music-list-item[data-index="${state.currentIndex}"]`);
+                    if (currentTrackItem) {
+                        currentTrackItem.classList.toggle('playing', isPlaying);
+                    }
+                }
+            }
+
+            function playTrack(index) {
+                if (index < 0 || index >= songs.length) return;
+                
+                // Primeiro, atualiza o UI para mostrar a música como SELECIONADA
+                updateSelectedTrackUI(index); 
+                const song = songs[index];
+
+                DOMElements.audioPlayer.src = song.src;
+                DOMElements.audioPlayer.load(); // Carrega a nova fonte de áudio
+
+                // Tenta tocar a música. Isso PODE ser bloqueado pelo navegador (políticas de autoplay).
+                DOMElements.audioPlayer.play().then(() => {
+                    // Se o autoplay foi bem-sucedido, atualiza o UI para o estado 'tocando'
+                    updatePlayingStateUI(true); 
+                }).catch(error => {
+                    console.warn("Autoplay foi prevenido pelo navegador:", error);
+                    // Se o autoplay falhou ou foi bloqueado, atualiza o UI para o estado 'pausado'
+                    // e informa o usuário que ele precisa clicar no play.
+                    updatePlayingStateUI(false); 
+                    if (error.name === "NotAllowedError") {
+                        showToast("Clique no botão Play para iniciar a música.");
+                    }
+                });
+            }
+            
+            function togglePlay() {
+                if (state.currentIndex === -1) {
+                    // Se nenhuma música estiver selecionada, toca a primeira por padrão
+                    playTrack(0);
+                } else {
+                    // Alterna play/pause para a música atual
+                    if (state.isPlaying) {
+                        DOMElements.audioPlayer.pause();
+                    } else {
+                        // Tenta tocar. Mesmo um clique do usuário pode falhar em casos extremos.
+                        DOMElements.audioPlayer.play().then(() => {
+                            updatePlayingStateUI(true);
+                        }).catch(error => {
+                            console.warn("Erro ao tocar a música (click do usuário):", error);
+                            updatePlayingStateUI(false); 
+                            if (error.name === "NotAllowedError") {
+                                showToast("Clique no botão Play para iniciar a música.");
+                            }
+                        });
+                    }
+                }
+            }
+
+            function changeTrack(direction) {
+                const newIndex = (state.currentIndex + direction + songs.length) % songs.length;
+                playTrack(newIndex);
+            }
+
+            function updateProgress() {
+                if (!DOMElements.audioPlayer.duration) return;
+                const percentage = (DOMElements.audioPlayer.currentTime / DOMElements.audioPlayer.duration) * 100;
+                DOMElements.progress.style.width = `${percentage}%`;
+            }
+
+            function setProgress(e) {
+                const width = this.clientWidth;
+                const clickX = e.offsetX;
+                if (DOMElements.audioPlayer.duration) {
+                    DOMElements.audioPlayer.currentTime = (clickX / width) * DOMElements.audioPlayer.duration;
+                }
+            }
+
+            // FUNÇÃO: Manipula parâmetros da URL para tocar uma música específica
+            function handleURLParams() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const songId = urlParams.get('songId');
+
+                if (songId) {
+                    const songIndex = songs.findIndex(song => song.id === songId);
+                    if (songIndex !== -1) {
+                        // Toca a música encontrada. A lógica de autoplay será tratada dentro de playTrack.
+                        playTrack(songIndex); 
+                    }
+                }
+            }
+
+            // FUNÇÃO: Exibe uma mensagem temporária na tela (tipo "toast")
+            function showToast(message) {
+                const toast = document.createElement('div');
+                toast.textContent = message;
+                toast.classList.add('toast-message'); 
+                DOMElements.body.appendChild(toast);
+
+                setTimeout(() => {
+                    toast.style.opacity = '1'; 
+                }, 10); 
+
+                setTimeout(() => {
+                    toast.style.opacity = '0'; 
+                    toast.addEventListener('transitionend', () => toast.remove()); 
+                }, 3000); 
+            }
+            
+            function init() {
+                // Renderiza a lista de músicas com o botão de compartilhar
+                DOMElements.musicList.innerHTML = songs.map((song, index) => `
+                    <li class="music-list-item" data-index="${index}">
+                        <div class="track-info">
+                            <span class="track-number">${index + 1}</span>
+                            <span class="track-title">${song.title}</span>
+                        </div>
+                        <div class="track-meta">
+                            <span class="song-duration" data-song-id="${song.id}">--:--</span>
+                            <div class="playing-indicator">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="4" y="8" width="4" height="12" rx="1"><animate attributeName="height" values="12;6;14;8;12" dur="1s" repeatCount="indefinite" /></rect>
+                                    <rect x="10" y="4" width="4" height="16" rx="1"><animate attributeName="height" values="16;10;18;6;16" dur="1.2s" repeatCount="indefinite" /></rect>
+                                    <rect x="16" y="10" width="4" height="10" rx="1"><animate attributeName="height" values="10;14;6;12;10" dur="0.8s" repeatCount="indefinite" /></rect>
+                                </svg>
+                            </div>
+                            <button class="share-btn" data-song-id="${song.id}" title="Copiar link da música">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.52.48 1.2.77 1.96.77 1.65 0 3-1.35 3-3s-1.35-3-3-3-3 1.35-3 3c0 .24.04.47.09.7L7.05 11.23c-.52-.48-1.2-.77-1.96-.77-1.65 0-3 1.35-3 3s1.35 3 3 3c.76 0 1.44-.3 1.96-.77l7.05 4.11c-.05.23-.09.46-.09.7 0 1.65 1.35 3 3 3s3-1.35 3-3-1.35-3-3-3z"></path></svg>
+                            </button>
+                        </div>
+                    </li>`).join('');
+                
+                // Carrega as durações de todas as faixas em segundo plano
+                loadTrackDurations();
+
+                // Adiciona o event listener para os itens da lista (para tocar a música)
+                DOMElements.musicList.addEventListener('click', e => {
+                    const item = e.target.closest('.music-list-item');
+                    // Verifica se o clique não foi no botão de compartilhar
+                    if (item && !e.target.closest('.share-btn')) { 
+                        playTrack(parseInt(item.dataset.index));
+                    }
+                });
+
+                // Adiciona o event listener para os botões de compartilhar
+                document.querySelectorAll('.share-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Impede que o clique no botão ative o clique do item da lista pai
+                        const songIdToShare = btn.dataset.songId;
+                        const shareLink = `${window.location.origin}${window.location.pathname}?songId=${songIdToShare}`;
+                        
+                        if (navigator.clipboard && navigator.clipboard.writeText) {
+                            navigator.clipboard.writeText(shareLink).then(() => {
+                                showToast("Link copiado!");
+                            }).catch(err => {
+                                console.error('Falha ao copiar o link:', err);
+                                showToast("Erro ao copiar o link.");
+                            });
+                        } else {
+                            // Fallback para navegadores mais antigos
+                            const textArea = document.createElement("textarea");
+                            textArea.value = shareLink;
+                            textArea.style.position = "fixed"; 
+                            textArea.style.left = "-9999px";
+                            document.body.appendChild(textArea);
+                            textArea.focus();
+                            textArea.select();
+                            try {
+                                document.execCommand('copy');
+                                showToast("Link copiado! (Método fallback)");
+                            } catch (err) {
+                                console.error('Falha ao copiar o link (fallback):', err);
+                                showToast("Erro ao copiar o link. Por favor, copie manualmente: " + shareLink);
+                            }
+                            document.body.removeChild(textArea);
+                        }
+                    });
+                });
+
+                // Listeners para os controles do player
+                DOMElements.playBtn.addEventListener('click', togglePlay);
+                DOMElements.prevBtn.addEventListener('click', () => changeTrack(-1));
+                DOMElements.nextBtn.addEventListener('click', () => changeTrack(1));
+                
+                DOMElements.repeatBtn.addEventListener('click', () => {
+                    state.isRepeating = !state.isRepeating;
+                    DOMElements.repeatBtn.classList.toggle('active', state.isRepeating);
+                });
+                
+                // Os event listeners do audioPlayer agora chamam as funções separadas de atualização de UI
+                DOMElements.audioPlayer.addEventListener('play', () => updatePlayingStateUI(true));
+                DOMElements.audioPlayer.addEventListener('pause', () => updatePlayingStateUI(false));
+                DOMElements.audioPlayer.addEventListener('timeupdate', updateProgress);
+                DOMElements.audioPlayer.addEventListener('ended', () => {
+                    state.isRepeating ? playTrack(state.currentIndex) : changeTrack(1);
+                });
+
+                DOMElements.progressContainer.addEventListener('click', setProgress);
+                DOMElements.volumeBtn.addEventListener('click', e => {
+                    e.stopPropagation();
+                    DOMElements.volumePopup.classList.toggle('active');
+                });
+                DOMElements.volumeSlider.addEventListener('input', e => DOMElements.audioPlayer.volume = e.target.value / 100);
+                document.addEventListener('click', e => {
+                    if (!DOMElements.volumeControl.contains(e.target)) DOMElements.volumePopup.classList.remove('active');
+                });
+
+                DOMElements.audioPlayer.volume = 0.7;
+
+                // CHAMA A FUNÇÃO PARA VERIFICAR O PARÂMETRO DA URL AO INICIAR
+                handleURLParams();
+            }
+
+            init();
+        });
+    </script>
+</body>
+</html>
+
