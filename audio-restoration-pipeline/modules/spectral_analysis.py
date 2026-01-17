@@ -125,7 +125,7 @@ class SpectralAnalyzer:
             'band_energy': band_energy_normalized,
             'dominant_frequency': float(frequency[np.argmax(magnitude)]),
             'high_freq_cutoff': float(high_freq_cutoff),
-            'high_freq_loss': high_freq_cutoff < nyquist * 0.8,
+            'high_freq_loss': bool(high_freq_cutoff < nyquist * 0.8),
             'nyquist_frequency': float(nyquist)
         }
 
@@ -179,7 +179,7 @@ class SpectralAnalyzer:
         return {
             'snr_db': float(snr),
             'noise_floor_mean': float(np.mean(noise_floor)),
-            'has_noise': snr < 40,
+            'has_noise': bool(snr < 40),
             'noise_severity': 'high' if snr < 20 else 'medium' if snr < 40 else 'low'
         }
 
@@ -195,7 +195,7 @@ class SpectralAnalyzer:
         return {
             'clipped_samples': int(clipped_samples),
             'clip_percentage': float(clip_percentage),
-            'has_clipping': clip_percentage > 0.1
+            'has_clipping': bool(clip_percentage > 0.1)
         }
 
     def _generate_recommendations(self, analysis: Dict) -> list:

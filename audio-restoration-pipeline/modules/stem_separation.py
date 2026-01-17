@@ -352,7 +352,7 @@ class StemSeparator:
             'spectral_centroid_mean': float(np.mean(spectral_centroid)),
             'peak_amplitude': float(np.max(np.abs(y))),
             'duration': len(y) / sr,
-            'has_content': np.mean(rms) > 0.001  # Threshold para detectar se tem conteúdo
+            'has_content': bool(np.mean(rms) > 0.001)  # Threshold para detectar se tem conteúdo
         }
 
         return quality
