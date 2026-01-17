@@ -162,9 +162,13 @@ class SpectralAnalyzer:
 
         silent_frames = rms < threshold
 
-        # Calcular SNR estimado
-        signal_power = np.mean(y[~silent_frames] ** 2) if np.any(~silent_frames) else 0
-        noise_power = np.mean(y[silent_frames] ** 2) if np.any(silent_frames) else 0
+        # Calcular SNR estimado usando valores RMS
+        # Usar os valores RMS dos frames em vez do áudio bruto
+        signal_rms = rms[~silent_frames] if np.any(~silent_frames) else np.array([0])
+        noise_rms = rms[silent_frames] if np.any(silent_frames) else np.array([0])
+
+        signal_power = np.mean(signal_rms ** 2)
+        noise_power = np.mean(noise_rms ** 2)
 
         snr = 10 * np.log10((signal_power + 1e-10) / (noise_power + 1e-10))
 
