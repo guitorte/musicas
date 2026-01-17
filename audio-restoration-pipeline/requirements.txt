@@ -1,0 +1,20 @@
+# Audio Restoration Pipeline - Dependências
+
+# Processamento de áudio core
+librosa>=0.10.0
+soundfile>=0.12.0
+scipy>=1.10.0
+numpy>=1.24.0
+
+# Redução de ruído
+noisereduce>=3.0.0
+
+# Visualização
+matplotlib>=3.7.0
+
+# Separação de stems (opcional - requer mais recursos)
+# Descomente a linha abaixo se quiser usar Demucs
+# demucs>=4.0.0
+
+# Utilitários
+tqdm>=4.65.0
