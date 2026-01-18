@@ -32,58 +32,69 @@ class AudioProcessor:
         reduction_strength: float = 0.7
     ) -> np.ndarray:
         """
-        Reduz ruído do áudio usando espectral gating
+        Reduz ruído do áudio usando espectral gating melhorado
 
         Args:
             y: Sinal de áudio
             sr: Sample rate
             noise_profile: Perfil de ruído (None = auto-detect)
-            reduction_strength: Força da redução (0-1)
+            reduction_strength: Força da redução (0-1, recomendado: 0.3-0.6)
 
         Returns:
             Áudio com ruído reduzido
         """
-        # STFT
-        D = librosa.stft(y, n_fft=2048, hop_length=512)
+        # IMPORTANTE: Se reduction_strength for 0, pular processamento
+        if reduction_strength <= 0.0:
+            return y
+
+        # STFT com parâmetros otimizados
+        n_fft = 2048
+        hop_length = 512
+        D = librosa.stft(y, n_fft=n_fft, hop_length=hop_length)
         magnitude, phase = np.abs(D), np.angle(D)
 
         # Se não tiver perfil de ruído, estimar dos frames mais silenciosos
         if noise_profile is None:
             # Calcular energia por frame
             frame_energy = np.sum(magnitude, axis=0)
-            # Pegar 10% mais silencioso como ruído
-            noise_threshold = np.percentile(frame_energy, 10)
+
+            # Pegar 5% mais silencioso como ruído (era 10%, muito agressivo)
+            noise_threshold = np.percentile(frame_energy, 5)
             noise_frames = frame_energy < noise_threshold
 
             # Estimar perfil de ruído
             if np.any(noise_frames):
-                noise_profile = np.mean(magnitude[:, noise_frames], axis=1)
+                noise_profile = np.median(magnitude[:, noise_frames], axis=1)  # Median é mais robusto que mean
             else:
-                noise_profile = np.percentile(magnitude, 5, axis=1)
+                noise_profile = np.percentile(magnitude, 2, axis=1)
 
-        # Spectral gating
-        # Criar máscara baseada no perfil de ruído
-        noise_threshold = noise_profile[:, np.newaxis] * (2 - reduction_strength)
+        # Spectral gating SUAVE para preservar qualidade
+        # Ajuste conservador: multiplicador maior = menos redução
+        safety_multiplier = 3.0 - (reduction_strength * 2.0)  # Range: 3.0 a 1.0
+        noise_threshold = noise_profile[:, np.newaxis] * safety_multiplier
 
-        # Aplicar gating suave
-        mask = np.maximum(magnitude - noise_threshold, 0) / (magnitude + 1e-10)
+        # Aplicar gating MUITO suave com transição gradual
+        # Evita "cortes" abruptos que criam artefatos
+        mask = np.clip((magnitude - noise_threshold) / (noise_threshold + 1e-10), 0, 1)
 
-        # Suavizar máscara para evitar artefatos
+        # Suavizar máscara MUITO para evitar artefatos (sigma maior)
         from scipy.ndimage import gaussian_filter
-        mask = gaussian_filter(mask, sigma=1.0)
+        mask = gaussian_filter(mask, sigma=2.5)  # Era 1.0, agora muito mais suave
+
+        # Nunca remover completamente - sempre manter pelo menos 10% do sinal
+        mask = np.maximum(mask, 0.1)
 
         # Aplicar máscara
         magnitude_cleaned = magnitude * mask
 
         # Reconstruir
         D_cleaned = magnitude_cleaned * np.exp(1j * phase)
-        y_cleaned = librosa.istft(D_cleaned, hop_length=512)
+        y_cleaned = librosa.istft(D_cleaned, hop_length=hop_length, length=len(y))
 
-        # Garantir mesmo tamanho
-        if len(y_cleaned) > len(y):
-            y_cleaned = y_cleaned[:len(y)]
-        elif len(y_cleaned) < len(y):
-            y_cleaned = np.pad(y_cleaned, (0, len(y) - len(y_cleaned)))
+        # Mix wet/dry baseado em reduction_strength para preservar mais do original
+        # Quanto menor a strength, mais do original é preservado
+        mix_ratio = reduction_strength * 0.7  # Máximo 70% de wet
+        y_cleaned = y_cleaned * mix_ratio + y * (1 - mix_ratio)
 
         return y_cleaned
 
