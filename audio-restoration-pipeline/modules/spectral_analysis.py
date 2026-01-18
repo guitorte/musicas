@@ -125,7 +125,7 @@ class SpectralAnalyzer:
             'band_energy': band_energy_normalized,
             'dominant_frequency': float(frequency[np.argmax(magnitude)]),
             'high_freq_cutoff': float(high_freq_cutoff),
-            'high_freq_loss': high_freq_cutoff < nyquist * 0.8,
+            'high_freq_loss': bool(high_freq_cutoff < nyquist * 0.8),
             'nyquist_frequency': float(nyquist)
         }
 
@@ -162,9 +162,13 @@ class SpectralAnalyzer:
 
         silent_frames = rms < threshold
 
-        # Calcular SNR estimado
-        signal_power = np.mean(y[~silent_frames] ** 2) if np.any(~silent_frames) else 0
-        noise_power = np.mean(y[silent_frames] ** 2) if np.any(silent_frames) else 0
+        # Calcular SNR estimado usando valores RMS
+        # Usar os valores RMS dos frames em vez do áudio bruto
+        signal_rms = rms[~silent_frames] if np.any(~silent_frames) else np.array([0])
+        noise_rms = rms[silent_frames] if np.any(silent_frames) else np.array([0])
+
+        signal_power = np.mean(signal_rms ** 2)
+        noise_power = np.mean(noise_rms ** 2)
 
         snr = 10 * np.log10((signal_power + 1e-10) / (noise_power + 1e-10))
 
@@ -175,7 +179,7 @@ class SpectralAnalyzer:
         return {
             'snr_db': float(snr),
             'noise_floor_mean': float(np.mean(noise_floor)),
-            'has_noise': snr < 40,
+            'has_noise': bool(snr < 40),
             'noise_severity': 'high' if snr < 20 else 'medium' if snr < 40 else 'low'
         }
 
@@ -191,7 +195,7 @@ class SpectralAnalyzer:
         return {
             'clipped_samples': int(clipped_samples),
             'clip_percentage': float(clip_percentage),
-            'has_clipping': clip_percentage > 0.1
+            'has_clipping': bool(clip_percentage > 0.1)
         }
 
     def _generate_recommendations(self, analysis: Dict) -> list:

@@ -72,48 +72,85 @@ class StemSeparator:
         """
         try:
             import subprocess
+            import torch
 
             # Verificar se demucs está instalado
             try:
-                subprocess.run(['demucs', '--help'], capture_output=True, check=True)
+                result = subprocess.run(['demucs', '--help'], capture_output=True, check=True, text=True)
             except (subprocess.CalledProcessError, FileNotFoundError):
-                print("Demucs não encontrado. Instalando...")
-                subprocess.run(['pip', 'install', 'demucs'], check=True)
+                print("⚠️ Demucs não encontrado. Instalando...")
+                subprocess.run(['pip', 'install', '-U', 'demucs'], check=True)
+                print("✓ Demucs instalado!")
 
-            # Executar Demucs
-            # Modelo padrão: htdemucs (4 stems: drums, bass, other, vocals)
+            # Detectar dispositivo (GPU/CPU)
+            device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
+            # Configurar comando Demucs com melhores parâmetros
             cmd = [
                 'demucs',
-                '--two-stems', 'vocals',  # Pode ser ajustado
-                '-o', output_dir,
+                '--device', device,
+                '--two-stems', 'vocals',  # Começar com 2 stems (mais rápido)
+                '-n', 'htdemucs',  # Modelo de alta qualidade
+                '--float32',  # Melhor qualidade
+                '--out', output_dir,
                 audio_path
             ]
 
             # Se não especificar stems, usar modelo completo de 4 stems
-            if stems is None or len(stems) > 2:
+            if stems is None or (isinstance(stems, list) and len(stems) > 2):
                 cmd = [
                     'demucs',
-                    '-o', output_dir,
+                    '--device', device,
+                    '-n', 'htdemucs_ft',  # Modelo fine-tuned completo (4 stems)
+                    '--float32',
+                    '--out', output_dir,
                     audio_path
                 ]
 
-            print(f"Executando Demucs: {' '.join(cmd)}")
-            subprocess.run(cmd, check=True)
+            print(f"🎵 Executando Demucs...")
+            print(f"   Modelo: {'htdemucs_ft (4 stems)' if len(cmd) > 10 else 'htdemucs (2 stems)'}")
+            print(f"   Dispositivo: {device.upper()}")
+            if device == 'cuda':
+                print(f"   GPU: {torch.cuda.get_device_name(0)}")
+            print(f"   Comando: {' '.join(cmd)}")
+
+            # Executar com output visível
+            result = subprocess.run(cmd, check=True, capture_output=False, text=True)
 
             # Encontrar arquivos de saída
+            # Demucs salva em: output_dir / model_name / audio_name / *.wav
             audio_name = Path(audio_path).stem
-            demucs_output = Path(output_dir) / 'htdemucs' / audio_name
 
+            # Tentar diferentes nomes de modelo
+            possible_model_names = ['htdemucs_ft', 'htdemucs', 'mdx_extra', 'mdx']
+            demucs_output = None
+
+            for model_name in possible_model_names:
+                test_path = Path(output_dir) / model_name / audio_name
+                if test_path.exists():
+                    demucs_output = test_path
+                    print(f"✓ Encontrado output em: {model_name}/{audio_name}")
+                    break
+
+            if demucs_output is None:
+                raise Exception(f"Não foi possível encontrar output do Demucs em {output_dir}")
+
+            # Coletar stems
             stem_paths = {}
             for stem_file in demucs_output.glob('*.wav'):
                 stem_name = stem_file.stem
                 stem_paths[stem_name] = str(stem_file)
+                print(f"  ✓ {stem_name}: {stem_file.name}")
+
+            if not stem_paths:
+                raise Exception("Demucs não gerou nenhum arquivo de saída")
 
             return stem_paths
 
         except Exception as e:
-            print(f"Erro ao usar Demucs: {e}")
-            print("Usando método básico de separação...")
+            print(f"✗ Erro ao usar Demucs: {e}")
+            print("  Detalhes do erro:", str(e))
+            print("\n⚠️ Fallback: Usando método básico de separação...")
             return self._separate_basic(audio_path, output_dir)
 
     def _separate_basic(
@@ -352,7 +389,7 @@ class StemSeparator:
             'spectral_centroid_mean': float(np.mean(spectral_centroid)),
             'peak_amplitude': float(np.max(np.abs(y))),
             'duration': len(y) / sr,
-            'has_content': np.mean(rms) > 0.001  # Threshold para detectar se tem conteúdo
+            'has_content': bool(np.mean(rms) > 0.001)  # Threshold para detectar se tem conteúdo
         }
 
         return quality
