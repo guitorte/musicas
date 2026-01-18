@@ -76,11 +76,46 @@ class StemSeparator:
 
             # Verificar se demucs está instalado
             try:
-                result = subprocess.run(['demucs', '--help'], capture_output=True, check=True, text=True)
+                result = subprocess.run(['demucs', '--help'], capture_output=True, check=True, text=True, timeout=10)
+                print("✓ Demucs já instalado!")
             except (subprocess.CalledProcessError, FileNotFoundError):
                 print("⚠️ Demucs não encontrado. Instalando...")
-                subprocess.run(['pip', 'install', '-U', 'demucs'], check=True)
-                print("✓ Demucs instalado!")
+                print("   Instalando Demucs + torchcodec (dependência)...")
+
+                # Instalar Demucs E torchcodec (necessário para salvar arquivos)
+                install_result = subprocess.run(
+                    ['pip', 'install', '-U', 'demucs', 'torchcodec'],
+                    capture_output=True,
+                    text=True,
+                    timeout=300
+                )
+
+                if install_result.returncode != 0:
+                    print(f"⚠️ Erro na instalação: {install_result.stderr}")
+                    raise Exception("Falha ao instalar Demucs")
+
+                print("✓ Demucs + torchcodec instalados!")
+
+            # VERIFICAR E INSTALAR TORCHCODEC se não estiver presente
+            # (Necessário para Demucs salvar os arquivos WAV)
+            try:
+                import torchcodec
+                print("✓ TorchCodec verificado!")
+            except ImportError:
+                print("⚠️ TorchCodec não encontrado (necessário para Demucs salvar arquivos)")
+                print("   Instalando TorchCodec...")
+                install_result = subprocess.run(
+                    ['pip', 'install', '-U', 'torchcodec'],
+                    capture_output=True,
+                    text=True,
+                    timeout=120
+                )
+                if install_result.returncode == 0:
+                    print("✓ TorchCodec instalado!")
+                else:
+                    print(f"⚠️ Falha ao instalar torchcodec")
+                    print(f"   Erro: {install_result.stderr[:200]}")
+                    print("   Demucs pode falhar ao salvar arquivos sem ele")
 
             # Detectar dispositivo (GPU/CPU)
             device = 'cuda' if torch.cuda.is_available() else 'cpu'
