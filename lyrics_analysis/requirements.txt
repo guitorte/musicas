@@ -1,0 +1,28 @@
+# Core dependencies for Brazilian Portuguese Lyrics Analysis Pipeline
+
+# For future NLP processing (Phase 2)
+# spacy>=3.7.0
+# spacy-language-detection>=0.2.0
+
+# For Portuguese language processing
+# nltk>=3.8.1
+
+# Data manipulation and analysis (optional, for advanced features)
+# pandas>=2.0.0
+# numpy>=1.24.0
+
+# For text processing
+# unidecode>=1.3.6  # Alternative unicode normalization
+
+# Development dependencies
+# pytest>=7.4.0
+# black>=23.0.0
+# flake8>=6.0.0
+
+# Note: Phase 1 uses only Python standard library
+# Uncomment dependencies above as needed for Phase 2 (NLP analysis)
+# and Phase 3 (text generation)
+
+# Install spaCy Portuguese model with:
+# python -m spacy download pt_core_news_sm
+# python -m spacy download pt_core_news_lg  # For better accuracy
