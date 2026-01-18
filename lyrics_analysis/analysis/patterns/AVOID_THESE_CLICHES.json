@@ -1,0 +1,757 @@
+{
+  "WARNING": "These are the most overused phrases in Brazilian lyrics - AVOID THEM!",
+  "top_2word_cliches": [
+    {
+      "phrase": "que eu",
+      "uses": 7310,
+      "in_percent_of_songs": 141.69
+    },
+    {
+      "phrase": "o que",
+      "uses": 4380,
+      "in_percent_of_songs": 84.9
+    },
+    {
+      "phrase": "eu não",
+      "uses": 3800,
+      "in_percent_of_songs": 73.66
+    },
+    {
+      "phrase": "a gente",
+      "uses": 2548,
+      "in_percent_of_songs": 49.39
+    },
+    {
+      "phrase": "eu vou",
+      "uses": 2424,
+      "in_percent_of_songs": 46.99
+    },
+    {
+      "phrase": "o meu",
+      "uses": 2239,
+      "in_percent_of_songs": 43.4
+    },
+    {
+      "phrase": "que não",
+      "uses": 1991,
+      "in_percent_of_songs": 38.59
+    },
+    {
+      "phrase": "eu te",
+      "uses": 1867,
+      "in_percent_of_songs": 36.19
+    },
+    {
+      "phrase": "que é",
+      "uses": 1865,
+      "in_percent_of_songs": 36.15
+    },
+    {
+      "phrase": "que a",
+      "uses": 1864,
+      "in_percent_of_songs": 36.13
+    },
+    {
+      "phrase": "eu tô",
+      "uses": 1788,
+      "in_percent_of_songs": 34.66
+    },
+    {
+      "phrase": "que você",
+      "uses": 1713,
+      "in_percent_of_songs": 33.2
+    },
+    {
+      "phrase": "é o",
+      "uses": 1701,
+      "in_percent_of_songs": 32.97
+    },
+    {
+      "phrase": "que o",
+      "uses": 1681,
+      "in_percent_of_songs": 32.58
+    },
+    {
+      "phrase": "e eu",
+      "uses": 1656,
+      "in_percent_of_songs": 32.1
+    },
+    {
+      "phrase": "e o",
+      "uses": 1635,
+      "in_percent_of_songs": 31.69
+    },
+    {
+      "phrase": "eu sou",
+      "uses": 1543,
+      "in_percent_of_songs": 29.91
+    },
+    {
+      "phrase": "meu coração",
+      "uses": 1535,
+      "in_percent_of_songs": 29.75
+    },
+    {
+      "phrase": "sei que",
+      "uses": 1463,
+      "in_percent_of_songs": 28.36
+    },
+    {
+      "phrase": "é que",
+      "uses": 1462,
+      "in_percent_of_songs": 28.34
+    },
+    {
+      "phrase": "pra mim",
+      "uses": 1404,
+      "in_percent_of_songs": 27.21
+    },
+    {
+      "phrase": "se eu",
+      "uses": 1325,
+      "in_percent_of_songs": 25.68
+    },
+    {
+      "phrase": "não tem",
+      "uses": 1323,
+      "in_percent_of_songs": 25.64
+    },
+    {
+      "phrase": "de mim",
+      "uses": 1292,
+      "in_percent_of_songs": 25.04
+    },
+    {
+      "phrase": "você não",
+      "uses": 1280,
+      "in_percent_of_songs": 24.81
+    },
+    {
+      "phrase": "não me",
+      "uses": 1277,
+      "in_percent_of_songs": 24.75
+    },
+    {
+      "phrase": "que me",
+      "uses": 1274,
+      "in_percent_of_songs": 24.69
+    },
+    {
+      "phrase": "não é",
+      "uses": 1253,
+      "in_percent_of_songs": 24.29
+    },
+    {
+      "phrase": "com a",
+      "uses": 1213,
+      "in_percent_of_songs": 23.51
+    },
+    {
+      "phrase": "o seu",
+      "uses": 1213,
+      "in_percent_of_songs": 23.51
+    },
+    {
+      "phrase": "eu quero",
+      "uses": 1212,
+      "in_percent_of_songs": 23.49
+    },
+    {
+      "phrase": "eu sei",
+      "uses": 1208,
+      "in_percent_of_songs": 23.42
+    },
+    {
+      "phrase": "a minha",
+      "uses": 1203,
+      "in_percent_of_songs": 23.32
+    },
+    {
+      "phrase": "e a",
+      "uses": 1169,
+      "in_percent_of_songs": 22.66
+    },
+    {
+      "phrase": "o amor",
+      "uses": 1138,
+      "in_percent_of_songs": 22.06
+    },
+    {
+      "phrase": "a vida",
+      "uses": 1108,
+      "in_percent_of_songs": 21.48
+    },
+    {
+      "phrase": "você me",
+      "uses": 1105,
+      "in_percent_of_songs": 21.42
+    },
+    {
+      "phrase": "não sei",
+      "uses": 1079,
+      "in_percent_of_songs": 20.91
+    },
+    {
+      "phrase": "oh oh",
+      "uses": 1041,
+      "in_percent_of_songs": 20.18
+    },
+    {
+      "phrase": "do meu",
+      "uses": 996,
+      "in_percent_of_songs": 19.31
+    },
+    {
+      "phrase": "ai ai",
+      "uses": 987,
+      "in_percent_of_songs": 19.13
+    },
+    {
+      "phrase": "na minha",
+      "uses": 976,
+      "in_percent_of_songs": 18.92
+    },
+    {
+      "phrase": "no meu",
+      "uses": 969,
+      "in_percent_of_songs": 18.78
+    },
+    {
+      "phrase": "de amor",
+      "uses": 948,
+      "in_percent_of_songs": 18.38
+    },
+    {
+      "phrase": "te amo",
+      "uses": 919,
+      "in_percent_of_songs": 17.81
+    },
+    {
+      "phrase": "com o",
+      "uses": 916,
+      "in_percent_of_songs": 17.76
+    },
+    {
+      "phrase": "e não",
+      "uses": 911,
+      "in_percent_of_songs": 17.66
+    },
+    {
+      "phrase": "eu já",
+      "uses": 895,
+      "in_percent_of_songs": 17.35
+    },
+    {
+      "phrase": "pra você",
+      "uses": 890,
+      "in_percent_of_songs": 17.25
+    },
+    {
+      "phrase": "de um",
+      "uses": 887,
+      "in_percent_of_songs": 17.19
+    },
+    {
+      "phrase": "eu me",
+      "uses": 878,
+      "in_percent_of_songs": 17.02
+    },
+    {
+      "phrase": "o tempo",
+      "uses": 853,
+      "in_percent_of_songs": 16.53
+    },
+    {
+      "phrase": "minha vida",
+      "uses": 845,
+      "in_percent_of_songs": 16.38
+    },
+    {
+      "phrase": "não vou",
+      "uses": 839,
+      "in_percent_of_songs": 16.26
+    },
+    {
+      "phrase": "de você",
+      "uses": 829,
+      "in_percent_of_songs": 16.07
+    },
+    {
+      "phrase": "meu amor",
+      "uses": 807,
+      "in_percent_of_songs": 15.64
+    },
+    {
+      "phrase": "com você",
+      "uses": 801,
+      "in_percent_of_songs": 15.53
+    },
+    {
+      "phrase": "um dia",
+      "uses": 779,
+      "in_percent_of_songs": 15.1
+    },
+    {
+      "phrase": "não vai",
+      "uses": 757,
+      "in_percent_of_songs": 14.67
+    },
+    {
+      "phrase": "de novo",
+      "uses": 756,
+      "in_percent_of_songs": 14.65
+    },
+    {
+      "phrase": "vou te",
+      "uses": 748,
+      "in_percent_of_songs": 14.5
+    },
+    {
+      "phrase": "é só",
+      "uses": 741,
+      "in_percent_of_songs": 14.36
+    },
+    {
+      "phrase": "você é",
+      "uses": 741,
+      "in_percent_of_songs": 14.36
+    },
+    {
+      "phrase": "do que",
+      "uses": 740,
+      "in_percent_of_songs": 14.34
+    },
+    {
+      "phrase": "eu só",
+      "uses": 736,
+      "in_percent_of_songs": 14.27
+    },
+    {
+      "phrase": "mas não",
+      "uses": 727,
+      "in_percent_of_songs": 14.09
+    },
+    {
+      "phrase": "yeah yeah",
+      "uses": 721,
+      "in_percent_of_songs": 13.98
+    },
+    {
+      "phrase": "mas eu",
+      "uses": 721,
+      "in_percent_of_songs": 13.98
+    },
+    {
+      "phrase": "é a",
+      "uses": 713,
+      "in_percent_of_songs": 13.82
+    },
+    {
+      "phrase": "i m",
+      "uses": 705,
+      "in_percent_of_songs": 13.67
+    },
+    {
+      "phrase": "será que",
+      "uses": 703,
+      "in_percent_of_songs": 13.63
+    },
+    {
+      "phrase": "vai ser",
+      "uses": 693,
+      "in_percent_of_songs": 13.43
+    },
+    {
+      "phrase": "quando eu",
+      "uses": 680,
+      "in_percent_of_songs": 13.18
+    },
+    {
+      "phrase": "tudo que",
+      "uses": 675,
+      "in_percent_of_songs": 13.08
+    },
+    {
+      "phrase": "e se",
+      "uses": 662,
+      "in_percent_of_songs": 12.83
+    },
+    {
+      "phrase": "que ela",
+      "uses": 657,
+      "in_percent_of_songs": 12.74
+    },
+    {
+      "phrase": "pra te",
+      "uses": 656,
+      "in_percent_of_songs": 12.72
+    },
+    {
+      "phrase": "e você",
+      "uses": 655,
+      "in_percent_of_songs": 12.7
+    },
+    {
+      "phrase": "não quero",
+      "uses": 650,
+      "in_percent_of_songs": 12.6
+    },
+    {
+      "phrase": "em mim",
+      "uses": 644,
+      "in_percent_of_songs": 12.48
+    },
+    {
+      "phrase": "diz que",
+      "uses": 639,
+      "in_percent_of_songs": 12.39
+    },
+    {
+      "phrase": "não sou",
+      "uses": 634,
+      "in_percent_of_songs": 12.29
+    },
+    {
+      "phrase": "não se",
+      "uses": 632,
+      "in_percent_of_songs": 12.25
+    },
+    {
+      "phrase": "eu tenho",
+      "uses": 631,
+      "in_percent_of_songs": 12.23
+    },
+    {
+      "phrase": "da minha",
+      "uses": 628,
+      "in_percent_of_songs": 12.17
+    },
+    {
+      "phrase": "que se",
+      "uses": 627,
+      "in_percent_of_songs": 12.15
+    },
+    {
+      "phrase": "por que",
+      "uses": 619,
+      "in_percent_of_songs": 12.0
+    },
+    {
+      "phrase": "que te",
+      "uses": 618,
+      "in_percent_of_songs": 11.98
+    },
+    {
+      "phrase": "é um",
+      "uses": 616,
+      "in_percent_of_songs": 11.94
+    },
+    {
+      "phrase": "ah ah",
+      "uses": 607,
+      "in_percent_of_songs": 11.77
+    },
+    {
+      "phrase": "e me",
+      "uses": 587,
+      "in_percent_of_songs": 11.38
+    },
+    {
+      "phrase": "o mundo",
+      "uses": 586,
+      "in_percent_of_songs": 11.36
+    },
+    {
+      "phrase": "sem você",
+      "uses": 581,
+      "in_percent_of_songs": 11.26
+    },
+    {
+      "phrase": "do seu",
+      "uses": 568,
+      "in_percent_of_songs": 11.01
+    },
+    {
+      "phrase": "se você",
+      "uses": 560,
+      "in_percent_of_songs": 10.85
+    },
+    {
+      "phrase": "te amar",
+      "uses": 560,
+      "in_percent_of_songs": 10.85
+    },
+    {
+      "phrase": "ela é",
+      "uses": 558,
+      "in_percent_of_songs": 10.82
+    },
+    {
+      "phrase": "nosso amor",
+      "uses": 548,
+      "in_percent_of_songs": 10.62
+    },
+    {
+      "phrase": "só pra",
+      "uses": 542,
+      "in_percent_of_songs": 10.51
+    },
+    {
+      "phrase": "já não",
+      "uses": 541,
+      "in_percent_of_songs": 10.49
+    }
+  ],
+  "top_3word_cliches": [
+    {
+      "phrase": "que eu não",
+      "uses": 793,
+      "in_percent_of_songs": 15.37
+    },
+    {
+      "phrase": "ai ai ai",
+      "uses": 736,
+      "in_percent_of_songs": 14.27
+    },
+    {
+      "phrase": "o que eu",
+      "uses": 733,
+      "in_percent_of_songs": 14.21
+    },
+    {
+      "phrase": "que a gente",
+      "uses": 679,
+      "in_percent_of_songs": 13.16
+    },
+    {
+      "phrase": "eu sei que",
+      "uses": 652,
+      "in_percent_of_songs": 12.64
+    },
+    {
+      "phrase": "oh oh oh",
+      "uses": 627,
+      "in_percent_of_songs": 12.15
+    },
+    {
+      "phrase": "o que é",
+      "uses": 499,
+      "in_percent_of_songs": 9.67
+    },
+    {
+      "phrase": "que eu vou",
+      "uses": 467,
+      "in_percent_of_songs": 9.05
+    },
+    {
+      "phrase": "é que eu",
+      "uses": 419,
+      "in_percent_of_songs": 8.12
+    },
+    {
+      "phrase": "que eu tô",
+      "uses": 418,
+      "in_percent_of_songs": 8.1
+    },
+    {
+      "phrase": "eu não sei",
+      "uses": 403,
+      "in_percent_of_songs": 7.81
+    },
+    {
+      "phrase": "que eu te",
+      "uses": 391,
+      "in_percent_of_songs": 7.58
+    },
+    {
+      "phrase": "a gente se",
+      "uses": 374,
+      "in_percent_of_songs": 7.25
+    },
+    {
+      "phrase": "eu não vou",
+      "uses": 372,
+      "in_percent_of_songs": 7.21
+    },
+    {
+      "phrase": "ah ah ah",
+      "uses": 358,
+      "in_percent_of_songs": 6.94
+    },
+    {
+      "phrase": "eu vou te",
+      "uses": 353,
+      "in_percent_of_songs": 6.84
+    },
+    {
+      "phrase": "que eu sou",
+      "uses": 352,
+      "in_percent_of_songs": 6.82
+    },
+    {
+      "phrase": "yeah yeah yeah",
+      "uses": 338,
+      "in_percent_of_songs": 6.55
+    },
+    {
+      "phrase": "eu te amo",
+      "uses": 330,
+      "in_percent_of_songs": 6.4
+    },
+    {
+      "phrase": "lá lá lá",
+      "uses": 330,
+      "in_percent_of_songs": 6.4
+    },
+    {
+      "phrase": "o meu coração",
+      "uses": 329,
+      "in_percent_of_songs": 6.38
+    },
+    {
+      "phrase": "eu não sou",
+      "uses": 324,
+      "in_percent_of_songs": 6.28
+    },
+    {
+      "phrase": "uh uh uh",
+      "uses": 320,
+      "in_percent_of_songs": 6.2
+    },
+    {
+      "phrase": "ô ô ô",
+      "uses": 275,
+      "in_percent_of_songs": 5.33
+    },
+    {
+      "phrase": "eu não quero",
+      "uses": 262,
+      "in_percent_of_songs": 5.08
+    },
+    {
+      "phrase": "tudo que eu",
+      "uses": 251,
+      "in_percent_of_songs": 4.87
+    },
+    {
+      "phrase": "na na na",
+      "uses": 246,
+      "in_percent_of_songs": 4.77
+    },
+    {
+      "phrase": "o nosso amor",
+      "uses": 240,
+      "in_percent_of_songs": 4.65
+    },
+    {
+      "phrase": "não sei se",
+      "uses": 239,
+      "in_percent_of_songs": 4.63
+    },
+    {
+      "phrase": "que é que",
+      "uses": 239,
+      "in_percent_of_songs": 4.63
+    },
+    {
+      "phrase": "e eu não",
+      "uses": 234,
+      "in_percent_of_songs": 4.54
+    },
+    {
+      "phrase": "como é que",
+      "uses": 230,
+      "in_percent_of_songs": 4.46
+    },
+    {
+      "phrase": "eu sou o",
+      "uses": 221,
+      "in_percent_of_songs": 4.28
+    },
+    {
+      "phrase": "que o amor",
+      "uses": 220,
+      "in_percent_of_songs": 4.26
+    },
+    {
+      "phrase": "não dá pra",
+      "uses": 219,
+      "in_percent_of_songs": 4.25
+    },
+    {
+      "phrase": "que eu quero",
+      "uses": 218,
+      "in_percent_of_songs": 4.23
+    },
+    {
+      "phrase": "o que você",
+      "uses": 217,
+      "in_percent_of_songs": 4.21
+    },
+    {
+      "phrase": "o meu amor",
+      "uses": 215,
+      "in_percent_of_songs": 4.17
+    },
+    {
+      "phrase": "a minha vida",
+      "uses": 214,
+      "in_percent_of_songs": 4.15
+    },
+    {
+      "phrase": "tudo o que",
+      "uses": 205,
+      "in_percent_of_songs": 3.97
+    },
+    {
+      "phrase": "a vida é",
+      "uses": 205,
+      "in_percent_of_songs": 3.97
+    },
+    {
+      "phrase": "que não tem",
+      "uses": 201,
+      "in_percent_of_songs": 3.9
+    },
+    {
+      "phrase": "não não não",
+      "uses": 200,
+      "in_percent_of_songs": 3.88
+    },
+    {
+      "phrase": "mm mm mm",
+      "uses": 200,
+      "in_percent_of_songs": 3.88
+    },
+    {
+      "phrase": "da minha vida",
+      "uses": 199,
+      "in_percent_of_songs": 3.86
+    },
+    {
+      "phrase": "eu só quero",
+      "uses": 198,
+      "in_percent_of_songs": 3.84
+    },
+    {
+      "phrase": "que eu tenho",
+      "uses": 194,
+      "in_percent_of_songs": 3.76
+    },
+    {
+      "phrase": "la la la",
+      "uses": 194,
+      "in_percent_of_songs": 3.76
+    },
+    {
+      "phrase": "te amo te",
+      "uses": 193,
+      "in_percent_of_songs": 3.74
+    },
+    {
+      "phrase": "que a vida",
+      "uses": 190,
+      "in_percent_of_songs": 3.68
+    }
+  ]
+}

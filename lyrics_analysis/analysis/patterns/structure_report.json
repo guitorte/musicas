@@ -1,0 +1,655 @@
+{
+  "overview": {
+    "genres_analyzed": 5,
+    "common_templates_found": 20
+  },
+  "genre_structures": {
+    "Trap": {
+      "line_patterns": {
+        "avg_words_per_line": 7.15,
+        "median_words_per_line": 7,
+        "min_words_per_line": 1,
+        "max_words_per_line": 27,
+        "avg_lines_per_song": 58.6,
+        "line_length_distribution": {
+          "most_common_values": [
+            {
+              "value": 6,
+              "count": 8043
+            },
+            {
+              "value": 7,
+              "count": 7569
+            },
+            {
+              "value": 5,
+              "count": 7324
+            },
+            {
+              "value": 8,
+              "count": 7162
+            },
+            {
+              "value": 9,
+              "count": 5678
+            }
+          ]
+        }
+      },
+      "paragraph_patterns": {
+        "avg_paragraphs_per_song": 9.4,
+        "avg_lines_per_paragraph": 6.2,
+        "paragraph_count_distribution": {
+          "most_common_values": [
+            {
+              "value": 6,
+              "count": 120
+            },
+            {
+              "value": 7,
+              "count": 113
+            },
+            {
+              "value": 5,
+              "count": 102
+            },
+            {
+              "value": 8,
+              "count": 99
+            },
+            {
+              "value": 9,
+              "count": 79
+            }
+          ]
+        }
+      },
+      "repetition_analysis": {
+        "avg_repetition_ratio": 0.241,
+        "songs_with_chorus": 691,
+        "chorus_percentage": 69.0
+      },
+      "length_distribution": {
+        "avg_words": 418.4,
+        "median_words": 380,
+        "percentile_25": 299,
+        "percentile_75": 495,
+        "min_words": 53,
+        "max_words": 2963,
+        "avg_chars": 2137.0
+      },
+      "structure_markers": {
+        "final": {
+          "count": 277,
+          "percentage": 27.7
+        },
+        "refrão": {
+          "count": 8,
+          "percentage": 0.8
+        },
+        "verso": {
+          "count": 39,
+          "percentage": 3.9
+        },
+        "intro": {
+          "count": 7,
+          "percentage": 0.7
+        },
+        "ponte": {
+          "count": 11,
+          "percentage": 1.1
+        },
+        "instrumental": {
+          "count": 3,
+          "percentage": 0.3
+        }
+      }
+    },
+    "Sertanejo": {
+      "line_patterns": {
+        "avg_words_per_line": 5.93,
+        "median_words_per_line": 6,
+        "min_words_per_line": 1,
+        "max_words_per_line": 17,
+        "avg_lines_per_song": 40.4,
+        "line_length_distribution": {
+          "most_common_values": [
+            {
+              "value": 5,
+              "count": 2427
+            },
+            {
+              "value": 4,
+              "count": 2258
+            },
+            {
+              "value": 6,
+              "count": 2228
+            },
+            {
+              "value": 7,
+              "count": 1749
+            },
+            {
+              "value": 8,
+              "count": 1417
+            }
+          ]
+        }
+      },
+      "paragraph_patterns": {
+        "avg_paragraphs_per_song": 9.4,
+        "avg_lines_per_paragraph": 4.3,
+        "paragraph_count_distribution": {
+          "most_common_values": [
+            {
+              "value": 8,
+              "count": 44
+            },
+            {
+              "value": 10,
+              "count": 43
+            },
+            {
+              "value": 9,
+              "count": 38
+            },
+            {
+              "value": 7,
+              "count": 32
+            },
+            {
+              "value": 11,
+              "count": 29
+            }
+          ]
+        }
+      },
+      "repetition_analysis": {
+        "avg_repetition_ratio": 0.413,
+        "songs_with_chorus": 259,
+        "chorus_percentage": 76.9
+      },
+      "length_distribution": {
+        "avg_words": 239.7,
+        "median_words": 226,
+        "percentile_25": 180,
+        "percentile_75": 284,
+        "min_words": 41,
+        "max_words": 1191,
+        "avg_chars": 1205.0
+      },
+      "structure_markers": {
+        "final": {
+          "count": 59,
+          "percentage": 17.5
+        },
+        "verso": {
+          "count": 1,
+          "percentage": 0.3
+        },
+        "intro": {
+          "count": 1,
+          "percentage": 0.3
+        },
+        "ponte": {
+          "count": 1,
+          "percentage": 0.3
+        }
+      }
+    },
+    "Pagode": {
+      "line_patterns": {
+        "avg_words_per_line": 5.75,
+        "median_words_per_line": 6,
+        "min_words_per_line": 1,
+        "max_words_per_line": 23,
+        "avg_lines_per_song": 40.4,
+        "line_length_distribution": {
+          "most_common_values": [
+            {
+              "value": 5,
+              "count": 6954
+            },
+            {
+              "value": 6,
+              "count": 6815
+            },
+            {
+              "value": 4,
+              "count": 6458
+            },
+            {
+              "value": 7,
+              "count": 5069
+            },
+            {
+              "value": 3,
+              "count": 4163
+            }
+          ]
+        }
+      },
+      "paragraph_patterns": {
+        "avg_paragraphs_per_song": 8.4,
+        "avg_lines_per_paragraph": 4.8,
+        "paragraph_count_distribution": {
+          "most_common_values": [
+            {
+              "value": 4,
+              "count": 107
+            },
+            {
+              "value": 5,
+              "count": 100
+            },
+            {
+              "value": 3,
+              "count": 92
+            },
+            {
+              "value": 9,
+              "count": 82
+            },
+            {
+              "value": 6,
+              "count": 74
+            }
+          ]
+        }
+      },
+      "repetition_analysis": {
+        "avg_repetition_ratio": 0.342,
+        "songs_with_chorus": 593,
+        "chorus_percentage": 59.2
+      },
+      "length_distribution": {
+        "avg_words": 232.5,
+        "median_words": 213,
+        "percentile_25": 126,
+        "percentile_75": 302,
+        "min_words": 50,
+        "max_words": 1362,
+        "avg_chars": 1171.0
+      },
+      "structure_markers": {
+        "final": {
+          "count": 157,
+          "percentage": 15.7
+        },
+        "refrão": {
+          "count": 23,
+          "percentage": 2.3
+        },
+        "verso": {
+          "count": 18,
+          "percentage": 1.8
+        },
+        "ponte": {
+          "count": 1,
+          "percentage": 0.1
+        },
+        "intro": {
+          "count": 1,
+          "percentage": 0.1
+        }
+      }
+    },
+    "MPB": {
+      "line_patterns": {
+        "avg_words_per_line": 5.09,
+        "median_words_per_line": 5,
+        "min_words_per_line": 1,
+        "max_words_per_line": 40,
+        "avg_lines_per_song": 35.1,
+        "line_length_distribution": {
+          "most_common_values": [
+            {
+              "value": 4,
+              "count": 13135
+            },
+            {
+              "value": 5,
+              "count": 11666
+            },
+            {
+              "value": 3,
+              "count": 9370
+            },
+            {
+              "value": 6,
+              "count": 9261
+            },
+            {
+              "value": 7,
+              "count": 6064
+            }
+          ]
+        }
+      },
+      "paragraph_patterns": {
+        "avg_paragraphs_per_song": 6.8,
+        "avg_lines_per_paragraph": 5.2,
+        "paragraph_count_distribution": {
+          "most_common_values": [
+            {
+              "value": 4,
+              "count": 222
+            },
+            {
+              "value": 6,
+              "count": 209
+            },
+            {
+              "value": 5,
+              "count": 207
+            },
+            {
+              "value": 8,
+              "count": 159
+            },
+            {
+              "value": 3,
+              "count": 152
+            }
+          ]
+        }
+      },
+      "repetition_analysis": {
+        "avg_repetition_ratio": 0.254,
+        "songs_with_chorus": 987,
+        "chorus_percentage": 53.5
+      },
+      "length_distribution": {
+        "avg_words": 178.9,
+        "median_words": 161,
+        "percentile_25": 112,
+        "percentile_75": 226,
+        "min_words": 8,
+        "max_words": 831,
+        "avg_chars": 919.0
+      },
+      "structure_markers": {
+        "verso": {
+          "count": 79,
+          "percentage": 4.3
+        },
+        "final": {
+          "count": 231,
+          "percentage": 12.5
+        },
+        "ponte": {
+          "count": 19,
+          "percentage": 1.0
+        },
+        "intro": {
+          "count": 5,
+          "percentage": 0.3
+        },
+        "refrão": {
+          "count": 7,
+          "percentage": 0.4
+        },
+        "instrumental": {
+          "count": 2,
+          "percentage": 0.1
+        }
+      }
+    },
+    "Arrocha": {
+      "line_patterns": {
+        "avg_words_per_line": 6.07,
+        "median_words_per_line": 6,
+        "min_words_per_line": 1,
+        "max_words_per_line": 20,
+        "avg_lines_per_song": 30.0,
+        "line_length_distribution": {
+          "most_common_values": [
+            {
+              "value": 6,
+              "count": 4716
+            },
+            {
+              "value": 5,
+              "count": 4542
+            },
+            {
+              "value": 4,
+              "count": 4275
+            },
+            {
+              "value": 7,
+              "count": 3957
+            },
+            {
+              "value": 8,
+              "count": 3231
+            }
+          ]
+        }
+      },
+      "paragraph_patterns": {
+        "avg_paragraphs_per_song": 6.6,
+        "avg_lines_per_paragraph": 4.5,
+        "paragraph_count_distribution": {
+          "most_common_values": [
+            {
+              "value": 4,
+              "count": 158
+            },
+            {
+              "value": 3,
+              "count": 127
+            },
+            {
+              "value": 5,
+              "count": 120
+            },
+            {
+              "value": 6,
+              "count": 101
+            },
+            {
+              "value": 8,
+              "count": 89
+            }
+          ]
+        }
+      },
+      "repetition_analysis": {
+        "avg_repetition_ratio": 0.345,
+        "songs_with_chorus": 567,
+        "chorus_percentage": 58.2
+      },
+      "length_distribution": {
+        "avg_words": 182.1,
+        "median_words": 169,
+        "percentile_25": 111,
+        "percentile_75": 232,
+        "min_words": 12,
+        "max_words": 1058,
+        "avg_chars": 914.0
+      },
+      "structure_markers": {
+        "final": {
+          "count": 152,
+          "percentage": 15.6
+        },
+        "verso": {
+          "count": 9,
+          "percentage": 0.9
+        },
+        "refrão": {
+          "count": 3,
+          "percentage": 0.3
+        },
+        "ponte": {
+          "count": 2,
+          "percentage": 0.2
+        }
+      }
+    }
+  },
+  "common_templates": [
+    {
+      "template": {
+        "line_count_bucket": "10-19",
+        "paragraph_count": 3,
+        "has_repetition": false
+      },
+      "count": 213
+    },
+    {
+      "template": {
+        "line_count_bucket": "10-19",
+        "paragraph_count": 4,
+        "has_repetition": false
+      },
+      "count": 205
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 4,
+        "has_repetition": false
+      },
+      "count": 155
+    },
+    {
+      "template": {
+        "line_count_bucket": "30-39",
+        "paragraph_count": 8,
+        "has_repetition": true
+      },
+      "count": 142
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 5,
+        "has_repetition": false
+      },
+      "count": 139
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 6,
+        "has_repetition": false
+      },
+      "count": 136
+    },
+    {
+      "template": {
+        "line_count_bucket": "40-49",
+        "paragraph_count": 10,
+        "has_repetition": true
+      },
+      "count": 129
+    },
+    {
+      "template": {
+        "line_count_bucket": "40-49",
+        "paragraph_count": 11,
+        "has_repetition": true
+      },
+      "count": 122
+    },
+    {
+      "template": {
+        "line_count_bucket": "30-39",
+        "paragraph_count": 9,
+        "has_repetition": true
+      },
+      "count": 116
+    },
+    {
+      "template": {
+        "line_count_bucket": "40-49",
+        "paragraph_count": 9,
+        "has_repetition": true
+      },
+      "count": 114
+    },
+    {
+      "template": {
+        "line_count_bucket": "30-39",
+        "paragraph_count": 7,
+        "has_repetition": true
+      },
+      "count": 100
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 3,
+        "has_repetition": false
+      },
+      "count": 97
+    },
+    {
+      "template": {
+        "line_count_bucket": "40-49",
+        "paragraph_count": 12,
+        "has_repetition": true
+      },
+      "count": 91
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 5,
+        "has_repetition": true
+      },
+      "count": 90
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 6,
+        "has_repetition": true
+      },
+      "count": 89
+    },
+    {
+      "template": {
+        "line_count_bucket": "30-39",
+        "paragraph_count": 10,
+        "has_repetition": true
+      },
+      "count": 82
+    },
+    {
+      "template": {
+        "line_count_bucket": "30-39",
+        "paragraph_count": 6,
+        "has_repetition": true
+      },
+      "count": 82
+    },
+    {
+      "template": {
+        "line_count_bucket": "10-19",
+        "paragraph_count": 5,
+        "has_repetition": false
+      },
+      "count": 80
+    },
+    {
+      "template": {
+        "line_count_bucket": "40-49",
+        "paragraph_count": 8,
+        "has_repetition": true
+      },
+      "count": 76
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 7,
+        "has_repetition": true
+      },
+      "count": 73
+    }
+  ]
+}

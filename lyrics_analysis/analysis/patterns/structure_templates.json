@@ -1,0 +1,197 @@
+{
+  "description": "Common structural templates found in Brazilian lyrics",
+  "templates": [
+    {
+      "template": {
+        "line_count_bucket": "10-19",
+        "paragraph_count": 3,
+        "has_repetition": false
+      },
+      "count": 213
+    },
+    {
+      "template": {
+        "line_count_bucket": "10-19",
+        "paragraph_count": 4,
+        "has_repetition": false
+      },
+      "count": 205
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 4,
+        "has_repetition": false
+      },
+      "count": 155
+    },
+    {
+      "template": {
+        "line_count_bucket": "30-39",
+        "paragraph_count": 8,
+        "has_repetition": true
+      },
+      "count": 142
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 5,
+        "has_repetition": false
+      },
+      "count": 139
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 6,
+        "has_repetition": false
+      },
+      "count": 136
+    },
+    {
+      "template": {
+        "line_count_bucket": "40-49",
+        "paragraph_count": 10,
+        "has_repetition": true
+      },
+      "count": 129
+    },
+    {
+      "template": {
+        "line_count_bucket": "40-49",
+        "paragraph_count": 11,
+        "has_repetition": true
+      },
+      "count": 122
+    },
+    {
+      "template": {
+        "line_count_bucket": "30-39",
+        "paragraph_count": 9,
+        "has_repetition": true
+      },
+      "count": 116
+    },
+    {
+      "template": {
+        "line_count_bucket": "40-49",
+        "paragraph_count": 9,
+        "has_repetition": true
+      },
+      "count": 114
+    },
+    {
+      "template": {
+        "line_count_bucket": "30-39",
+        "paragraph_count": 7,
+        "has_repetition": true
+      },
+      "count": 100
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 3,
+        "has_repetition": false
+      },
+      "count": 97
+    },
+    {
+      "template": {
+        "line_count_bucket": "40-49",
+        "paragraph_count": 12,
+        "has_repetition": true
+      },
+      "count": 91
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 5,
+        "has_repetition": true
+      },
+      "count": 90
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 6,
+        "has_repetition": true
+      },
+      "count": 89
+    },
+    {
+      "template": {
+        "line_count_bucket": "30-39",
+        "paragraph_count": 10,
+        "has_repetition": true
+      },
+      "count": 82
+    },
+    {
+      "template": {
+        "line_count_bucket": "30-39",
+        "paragraph_count": 6,
+        "has_repetition": true
+      },
+      "count": 82
+    },
+    {
+      "template": {
+        "line_count_bucket": "10-19",
+        "paragraph_count": 5,
+        "has_repetition": false
+      },
+      "count": 80
+    },
+    {
+      "template": {
+        "line_count_bucket": "40-49",
+        "paragraph_count": 8,
+        "has_repetition": true
+      },
+      "count": 76
+    },
+    {
+      "template": {
+        "line_count_bucket": "20-29",
+        "paragraph_count": 7,
+        "has_repetition": true
+      },
+      "count": 73
+    }
+  ],
+  "genre_norms": {
+    "Trap": {
+      "avg_lines": 58.6,
+      "avg_words": 418.4,
+      "avg_paragraphs": 9.4,
+      "chorus_percentage": 69.0
+    },
+    "Sertanejo": {
+      "avg_lines": 40.4,
+      "avg_words": 239.7,
+      "avg_paragraphs": 9.4,
+      "chorus_percentage": 76.9
+    },
+    "Pagode": {
+      "avg_lines": 40.4,
+      "avg_words": 232.5,
+      "avg_paragraphs": 8.4,
+      "chorus_percentage": 59.2
+    },
+    "MPB": {
+      "avg_lines": 35.1,
+      "avg_words": 178.9,
+      "avg_paragraphs": 6.8,
+      "chorus_percentage": 53.5
+    },
+    "Arrocha": {
+      "avg_lines": 30.0,
+      "avg_words": 182.1,
+      "avg_paragraphs": 6.6,
+      "chorus_percentage": 58.2
+    }
+  }
+}
