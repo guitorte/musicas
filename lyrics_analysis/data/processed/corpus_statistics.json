@@ -1,0 +1,222 @@
+{
+  "overview": {
+    "total_songs": 5159,
+    "songs_by_file": {
+      "lyrics pagodes002.txt": 567,
+      "mpb 002.txt": 494,
+      "lyrics_ready Chico.txt": 509,
+      "mpb 001.txt": 507,
+      "trap 002.txt": 318,
+      "trap 001.txt": 331,
+      "lyrics_ready Djavan.txt": 336,
+      "arrocha_lyrics.txt": 974,
+      "trap 003.txt": 352,
+      "lyrics pagodes001.txt": 434,
+      "lyrics_marilia.txt": 337
+    },
+    "songs_with_genre": 5159,
+    "songs_with_featuring": 873,
+    "unique_artists": 588,
+    "unique_genres": 5
+  },
+  "by_genre": {
+    "Pagode": {
+      "song_count": 1001,
+      "unique_artists": 137,
+      "avg_words_per_song": 232.48751248751248,
+      "avg_chars_per_song": 1171.0679320679321
+    },
+    "MPB": {
+      "song_count": 1846,
+      "unique_artists": 176,
+      "avg_words_per_song": 178.85915492957747,
+      "avg_chars_per_song": 918.5335861321777
+    },
+    "Trap": {
+      "song_count": 1001,
+      "unique_artists": 192,
+      "avg_words_per_song": 418.42657342657344,
+      "avg_chars_per_song": 2137.057942057942
+    },
+    "Arrocha": {
+      "song_count": 974,
+      "unique_artists": 80,
+      "avg_words_per_song": 182.11909650924025,
+      "avg_chars_per_song": 914.4579055441478
+    },
+    "Sertanejo": {
+      "song_count": 337,
+      "unique_artists": 11,
+      "avg_words_per_song": 239.6587537091988,
+      "avg_chars_per_song": 1204.780415430267
+    }
+  },
+  "by_artist": {
+    "total_unique_artists": 588,
+    "top_artists": {
+      "Chico Buarque": 552,
+      "Djavan": 370,
+      "Marília Mendonça": 327,
+      "Pablo": 133,
+      "Sorriso Maroto": 76,
+      "Caetano Veloso": 67,
+      "Devinho Novaes": 62,
+      "Orochi": 61,
+      "Nadson o Ferinha": 61,
+      "Natanzinho Lima": 60,
+      "Exaltasamba": 56,
+      "ANAVITÓRIA": 55,
+      "Toque Dez": 55,
+      "Matuê": 55,
+      "Tayrone Cigano": 52,
+      "NATTAN": 52,
+      "MC Cabelinho": 52,
+      "Silvanno Salles": 51,
+      "Grupo Revelação": 49,
+      "Grupo Menos É Mais": 49
+    },
+    "artist_details": {
+      "Chico Buarque": {
+        "song_count": 552,
+        "genres": [
+          "MPB"
+        ],
+        "avg_words_per_song": 167.4764492753623
+      },
+      "Djavan": {
+        "song_count": 370,
+        "genres": [
+          "MPB"
+        ],
+        "avg_words_per_song": 139.51081081081082
+      },
+      "Marília Mendonça": {
+        "song_count": 327,
+        "genres": [
+          "Sertanejo"
+        ],
+        "avg_words_per_song": 239.19266055045873
+      },
+      "Pablo": {
+        "song_count": 133,
+        "genres": [
+          "Arrocha"
+        ],
+        "avg_words_per_song": 166.53383458646616
+      },
+      "Sorriso Maroto": {
+        "song_count": 76,
+        "genres": [
+          "Pagode"
+        ],
+        "avg_words_per_song": 244.01315789473685
+      },
+      "Caetano Veloso": {
+        "song_count": 67,
+        "genres": [
+          "MPB"
+        ],
+        "avg_words_per_song": 199.22388059701493
+      },
+      "Devinho Novaes": {
+        "song_count": 62,
+        "genres": [
+          "Arrocha"
+        ],
+        "avg_words_per_song": 175.11290322580646
+      },
+      "Orochi": {
+        "song_count": 61,
+        "genres": [
+          "Trap"
+        ],
+        "avg_words_per_song": 398.73770491803276
+      },
+      "Nadson o Ferinha": {
+        "song_count": 61,
+        "genres": [
+          "Arrocha"
+        ],
+        "avg_words_per_song": 160.39344262295083
+      },
+      "Natanzinho Lima": {
+        "song_count": 60,
+        "genres": [
+          "Arrocha"
+        ],
+        "avg_words_per_song": 197.53333333333333
+      }
+    }
+  },
+  "text_analysis": {
+    "total_words": 1239888,
+    "total_chars": 6303740,
+    "total_lines": 241565,
+    "avg_words_per_song": 240.3349486334561,
+    "avg_chars_per_song": 1221.8918395037797,
+    "avg_lines_per_song": 46.82399689862376,
+    "median_words_per_song": 207,
+    "min_words_per_song": 8,
+    "max_words_per_song": 2963,
+    "percentile_25_words": 129,
+    "percentile_75_words": 302
+  },
+  "vocabulary": {
+    "total_words": 1239888,
+    "unique_words": 56685,
+    "vocabulary_richness": 0.04571783903062212,
+    "top_50_words": {
+      "que": 41372,
+      "eu": 34211,
+      "o": 28105,
+      "de": 27211,
+      "a": 26485,
+      "e": 24995,
+      "não": 24237,
+      "é": 19626,
+      "me": 18881,
+      "pra": 15122,
+      "você": 14354,
+      "se": 13312,
+      "te": 11600,
+      "um": 11532,
+      "no": 10888,
+      "meu": 10504,
+      "do": 10061,
+      "na": 9270,
+      "com": 7785,
+      "só": 7528,
+      "mais": 7014,
+      "vai": 7008,
+      "mas": 6635,
+      "amor": 6578,
+      "da": 6503,
+      "em": 6451,
+      "minha": 6050,
+      "vou": 5684,
+      "por": 5638,
+      "ela": 5493,
+      "seu": 5170,
+      "uma": 4872,
+      "tá": 4736,
+      "tem": 4615,
+      "já": 4249,
+      "sem": 4179,
+      "tô": 4120,
+      "tudo": 4010,
+      "quem": 3815,
+      "quando": 3785,
+      "quero": 3710,
+      "como": 3705,
+      "sou": 3650,
+      "ser": 3546,
+      "sei": 3380,
+      "gente": 3373,
+      "vida": 3319,
+      "mim": 3199,
+      "nem": 3090,
+      "coração": 3012
+    },
+    "singleton_words": 24913
+  }
+}
