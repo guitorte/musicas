@@ -34,6 +34,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 
 from lyrics_generator import LyricsGenerator
+from lyrics_generator_v2 import LyricsGeneratorV2
 from innovation_controller import InnovationController
 
 # Configure logging
@@ -124,6 +125,19 @@ def parse_args():
         '--quiet',
         action='store_true',
         help='Quiet mode (less output)'
+    )
+
+    # V2 options
+    parser.add_argument(
+        '--v2',
+        action='store_true',
+        help='Use V2 generator (grammar, rhyme, coherence)'
+    )
+
+    parser.add_argument(
+        '--compare',
+        action='store_true',
+        help='Compare V1 vs V2 generation'
     )
 
     # List options
@@ -289,12 +303,24 @@ def main():
         if corpus_data:
             logger.info(f"✓ Loaded {len(corpus_data)} songs for quality scoring")
 
-    # Initialize generator
+    # Initialize generator (V1 or V2)
     try:
-        generator = LyricsGenerator(
-            analysis_dir=analysis_dir,
-            corpus_data=corpus_data
-        )
+        if args.v2 or args.compare:
+            generator = LyricsGeneratorV2(
+                analysis_dir=analysis_dir,
+                corpus_data=corpus_data,
+                enable_grammar=True,
+                enable_rhyme=True,
+                enable_patterns=True,
+                enable_coherence=True
+            )
+            if not args.quiet:
+                print("\n🚀 Using V2 Generator (Enhanced with grammar, rhyme, and coherence)")
+        else:
+            generator = LyricsGenerator(
+                analysis_dir=analysis_dir,
+                corpus_data=corpus_data
+            )
     except Exception as e:
         logger.error(f"Failed to initialize generator: {e}")
         sys.exit(1)
@@ -342,6 +368,19 @@ def main():
             print(f"\n🎯 Using profile: {profile_info['name']}")
             print(f"   {profile_info['description']}")
             controller.print_profile(target_profile)
+
+    # Handle comparison mode
+    if args.compare:
+        if not isinstance(generator, LyricsGeneratorV2):
+            logger.error("Comparison mode requires V2 generator")
+            sys.exit(1)
+
+        generator.compare_v1_v2(
+            genre=args.genre,
+            target_profile=target_profile,
+            theme=args.theme
+        )
+        return
 
     # Generate lyrics
     verbose = not args.quiet
