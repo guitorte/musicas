@@ -1,0 +1,36 @@
+{
+  "title": "Brazilian Lyrics Convention Atlas",
+  "description": "Comprehensive analysis of patterns and conventions in Brazilian music lyrics",
+  "corpus_stats": {
+    "total_songs": 5159,
+    "genres": 5,
+    "artists": 588
+  },
+  "analyses_included": [
+    "cliche_detection",
+    "pattern_detection",
+    "structure_analysis"
+  ],
+  "key_files": {
+    "cliche_detection": {
+      "full_report": "cliche_report.json",
+      "quick_reference": "AVOID_THESE_CLICHES.json",
+      "description": "Overused phrases to AVOID in new lyrics"
+    },
+    "pattern_detection": {
+      "full_report": "pattern_report.json",
+      "quick_reference": "genre_formulas.json",
+      "description": "Genre-specific patterns and distinctive features"
+    },
+    "structure_analysis": {
+      "full_report": "structure_report.json",
+      "quick_reference": "structure_templates.json",
+      "description": "Common song structures and templates"
+    }
+  },
+  "usage": {
+    "for_writers": "Use AVOID_THESE_CLICHES.json to check your lyrics for overused phrases",
+    "for_analysis": "Use genre_formulas.json to understand what makes each genre distinctive",
+    "for_generation": "Use structure_templates.json to model common song structures"
+  }
+}

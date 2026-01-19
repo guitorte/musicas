@@ -1,0 +1,4517 @@
+{
+  "overview": {
+    "total_genres": 5,
+    "genres_analyzed": [
+      "Trap",
+      "Sertanejo",
+      "Pagode",
+      "MPB",
+      "Arrocha"
+    ]
+  },
+  "genre_profiles": {
+    "Trap": {
+      "song_count": 1001,
+      "vocabulary": {
+        "total_words": 425169,
+        "unique_words": 24169,
+        "vocabulary_richness": 0.0568,
+        "avg_word_length": 3.88,
+        "top_100_words": [
+          {
+            "word": "que",
+            "count": 12238,
+            "frequency": 0.0288
+          },
+          {
+            "word": "eu",
+            "count": 11270,
+            "frequency": 0.0265
+          },
+          {
+            "word": "a",
+            "count": 8254,
+            "frequency": 0.0194
+          },
+          {
+            "word": "o",
+            "count": 7876,
+            "frequency": 0.0185
+          },
+          {
+            "word": "de",
+            "count": 7794,
+            "frequency": 0.0183
+          },
+          {
+            "word": "não",
+            "count": 7150,
+            "frequency": 0.0168
+          },
+          {
+            "word": "e",
+            "count": 6595,
+            "frequency": 0.0155
+          },
+          {
+            "word": "é",
+            "count": 6301,
+            "frequency": 0.0148
+          },
+          {
+            "word": "me",
+            "count": 6107,
+            "frequency": 0.0144
+          },
+          {
+            "word": "no",
+            "count": 5005,
+            "frequency": 0.0118
+          },
+          {
+            "word": "se",
+            "count": 4040,
+            "frequency": 0.0095
+          },
+          {
+            "word": "pra",
+            "count": 3988,
+            "frequency": 0.0094
+          },
+          {
+            "word": "na",
+            "count": 3842,
+            "frequency": 0.009
+          },
+          {
+            "word": "um",
+            "count": 3418,
+            "frequency": 0.008
+          },
+          {
+            "word": "do",
+            "count": 3103,
+            "frequency": 0.0073
+          },
+          {
+            "word": "i",
+            "count": 3031,
+            "frequency": 0.0071
+          },
+          {
+            "word": "te",
+            "count": 2855,
+            "frequency": 0.0067
+          },
+          {
+            "word": "meu",
+            "count": 2765,
+            "frequency": 0.0065
+          },
+          {
+            "word": "com",
+            "count": 2612,
+            "frequency": 0.0061
+          },
+          {
+            "word": "ela",
+            "count": 2573,
+            "frequency": 0.0061
+          },
+          {
+            "word": "só",
+            "count": 2532,
+            "frequency": 0.006
+          },
+          {
+            "word": "minha",
+            "count": 2416,
+            "frequency": 0.0057
+          },
+          {
+            "word": "mas",
+            "count": 2229,
+            "frequency": 0.0052
+          },
+          {
+            "word": "yeah",
+            "count": 2193,
+            "frequency": 0.0052
+          },
+          {
+            "word": "tá",
+            "count": 2187,
+            "frequency": 0.0051
+          },
+          {
+            "word": "mais",
+            "count": 2174,
+            "frequency": 0.0051
+          },
+          {
+            "word": "da",
+            "count": 2089,
+            "frequency": 0.0049
+          },
+          {
+            "word": "você",
+            "count": 2075,
+            "frequency": 0.0049
+          },
+          {
+            "word": "vai",
+            "count": 1919,
+            "frequency": 0.0045
+          },
+          {
+            "word": "tô",
+            "count": 1750,
+            "frequency": 0.0041
+          },
+          {
+            "word": "em",
+            "count": 1719,
+            "frequency": 0.004
+          },
+          {
+            "word": "the",
+            "count": 1564,
+            "frequency": 0.0037
+          },
+          {
+            "word": "you",
+            "count": 1441,
+            "frequency": 0.0034
+          },
+          {
+            "word": "vou",
+            "count": 1434,
+            "frequency": 0.0034
+          },
+          {
+            "word": "por",
+            "count": 1420,
+            "frequency": 0.0033
+          },
+          {
+            "word": "uma",
+            "count": 1418,
+            "frequency": 0.0033
+          },
+          {
+            "word": "tu",
+            "count": 1348,
+            "frequency": 0.0032
+          },
+          {
+            "word": "nós",
+            "count": 1346,
+            "frequency": 0.0032
+          },
+          {
+            "word": "tudo",
+            "count": 1332,
+            "frequency": 0.0031
+          },
+          {
+            "word": "tem",
+            "count": 1332,
+            "frequency": 0.0031
+          },
+          {
+            "word": "quer",
+            "count": 1185,
+            "frequency": 0.0028
+          },
+          {
+            "word": "sou",
+            "count": 1178,
+            "frequency": 0.0028
+          },
+          {
+            "word": "já",
+            "count": 1172,
+            "frequency": 0.0028
+          },
+          {
+            "word": "essa",
+            "count": 1133,
+            "frequency": 0.0027
+          },
+          {
+            "word": "cê",
+            "count": 1098,
+            "frequency": 0.0026
+          },
+          {
+            "word": "oh",
+            "count": 1090,
+            "frequency": 0.0026
+          },
+          {
+            "word": "ser",
+            "count": 1078,
+            "frequency": 0.0025
+          },
+          {
+            "word": "quem",
+            "count": 1073,
+            "frequency": 0.0025
+          },
+          {
+            "word": "os",
+            "count": 1069,
+            "frequency": 0.0025
+          },
+          {
+            "word": "como",
+            "count": 1011,
+            "frequency": 0.0024
+          },
+          {
+            "word": "vida",
+            "count": 994,
+            "frequency": 0.0023
+          },
+          {
+            "word": "seu",
+            "count": 991,
+            "frequency": 0.0023
+          },
+          {
+            "word": "isso",
+            "count": 955,
+            "frequency": 0.0022
+          },
+          {
+            "word": "sei",
+            "count": 951,
+            "frequency": 0.0022
+          },
+          {
+            "word": "sem",
+            "count": 927,
+            "frequency": 0.0022
+          },
+          {
+            "word": "quando",
+            "count": 921,
+            "frequency": 0.0022
+          },
+          {
+            "word": "sempre",
+            "count": 903,
+            "frequency": 0.0021
+          },
+          {
+            "word": "mim",
+            "count": 901,
+            "frequency": 0.0021
+          },
+          {
+            "word": "it",
+            "count": 899,
+            "frequency": 0.0021
+          },
+          {
+            "word": "t",
+            "count": 890,
+            "frequency": 0.0021
+          },
+          {
+            "word": "as",
+            "count": 874,
+            "frequency": 0.0021
+          },
+          {
+            "word": "bem",
+            "count": 865,
+            "frequency": 0.002
+          },
+          {
+            "word": "ah",
+            "count": 863,
+            "frequency": 0.002
+          },
+          {
+            "word": "ahn",
+            "count": 843,
+            "frequency": 0.002
+          },
+          {
+            "word": "la",
+            "count": 842,
+            "frequency": 0.002
+          },
+          {
+            "word": "nem",
+            "count": 827,
+            "frequency": 0.0019
+          },
+          {
+            "word": "my",
+            "count": 820,
+            "frequency": 0.0019
+          },
+          {
+            "word": "hoje",
+            "count": 813,
+            "frequency": 0.0019
+          },
+          {
+            "word": "y",
+            "count": 806,
+            "frequency": 0.0019
+          },
+          {
+            "word": "quero",
+            "count": 805,
+            "frequency": 0.0019
+          },
+          {
+            "word": "baby",
+            "count": 786,
+            "frequency": 0.0018
+          },
+          {
+            "word": "uh",
+            "count": 781,
+            "frequency": 0.0018
+          },
+          {
+            "word": "faz",
+            "count": 774,
+            "frequency": 0.0018
+          },
+          {
+            "word": "ver",
+            "count": 769,
+            "frequency": 0.0018
+          },
+          {
+            "word": "nunca",
+            "count": 765,
+            "frequency": 0.0018
+          },
+          {
+            "word": "sabe",
+            "count": 738,
+            "frequency": 0.0017
+          },
+          {
+            "word": "sua",
+            "count": 738,
+            "frequency": 0.0017
+          },
+          {
+            "word": "nada",
+            "count": 724,
+            "frequency": 0.0017
+          },
+          {
+            "word": "to",
+            "count": 723,
+            "frequency": 0.0017
+          },
+          {
+            "word": "esse",
+            "count": 704,
+            "frequency": 0.0017
+          },
+          {
+            "word": "s",
+            "count": 687,
+            "frequency": 0.0016
+          },
+          {
+            "word": "el",
+            "count": 684,
+            "frequency": 0.0016
+          },
+          {
+            "word": "m",
+            "count": 663,
+            "frequency": 0.0016
+          },
+          {
+            "word": "and",
+            "count": 653,
+            "frequency": 0.0015
+          },
+          {
+            "word": "amor",
+            "count": 651,
+            "frequency": 0.0015
+          },
+          {
+            "word": "vem",
+            "count": 639,
+            "frequency": 0.0015
+          },
+          {
+            "word": "mano",
+            "count": 637,
+            "frequency": 0.0015
+          },
+          {
+            "word": "tempo",
+            "count": 627,
+            "frequency": 0.0015
+          },
+          {
+            "word": "porque",
+            "count": 623,
+            "frequency": 0.0015
+          },
+          {
+            "word": "então",
+            "count": 617,
+            "frequency": 0.0015
+          },
+          {
+            "word": "en",
+            "count": 613,
+            "frequency": 0.0014
+          },
+          {
+            "word": "that",
+            "count": 608,
+            "frequency": 0.0014
+          },
+          {
+            "word": "foi",
+            "count": 602,
+            "frequency": 0.0014
+          },
+          {
+            "word": "on",
+            "count": 601,
+            "frequency": 0.0014
+          },
+          {
+            "word": "in",
+            "count": 594,
+            "frequency": 0.0014
+          },
+          {
+            "word": "tão",
+            "count": 584,
+            "frequency": 0.0014
+          },
+          {
+            "word": "pro",
+            "count": 584,
+            "frequency": 0.0014
+          },
+          {
+            "word": "cara",
+            "count": 580,
+            "frequency": 0.0014
+          },
+          {
+            "word": "até",
+            "count": 567,
+            "frequency": 0.0013
+          },
+          {
+            "word": "tenho",
+            "count": 566,
+            "frequency": 0.0013
+          }
+        ]
+      },
+      "themes": {
+        "natureza": {
+          "song_count": 761,
+          "percentage": 76.02
+        },
+        "familia": {
+          "song_count": 671,
+          "percentage": 67.03
+        },
+        "social": {
+          "song_count": 665,
+          "percentage": 66.43
+        },
+        "amor_romantico": {
+          "song_count": 522,
+          "percentage": 52.15
+        },
+        "ostentacao": {
+          "song_count": 451,
+          "percentage": 45.05
+        },
+        "religioso": {
+          "song_count": 448,
+          "percentage": 44.76
+        },
+        "sofrimento": {
+          "song_count": 441,
+          "percentage": 44.06
+        },
+        "urbano": {
+          "song_count": 375,
+          "percentage": 37.46
+        },
+        "traicao": {
+          "song_count": 355,
+          "percentage": 35.46
+        },
+        "sexualidade": {
+          "song_count": 349,
+          "percentage": 34.87
+        },
+        "saudade": {
+          "song_count": 256,
+          "percentage": 25.57
+        },
+        "festa": {
+          "song_count": 172,
+          "percentage": 17.18
+        }
+      },
+      "structure": {
+        "avg_lines": 58.6,
+        "avg_words": 418.4,
+        "avg_paragraphs": 9.4,
+        "avg_repetition": 0.241,
+        "line_range": [
+          8,
+          311
+        ],
+        "word_range": [
+          53,
+          2963
+        ]
+      },
+      "distinctive_features": {
+        "top_distinctive_words": [
+          {
+            "word": "ahn",
+            "genre_frequency": 0.00198,
+            "other_frequency": 0.0,
+            "distinctiveness": 1637.79
+          },
+          {
+            "word": "ayy",
+            "genre_frequency": 0.0004,
+            "other_frequency": 0.0,
+            "distinctiveness": 330.28
+          },
+          {
+            "word": "mami",
+            "genre_frequency": 0.00029,
+            "other_frequency": 0.0,
+            "distinctiveness": 242.85
+          },
+          {
+            "word": "uau",
+            "genre_frequency": 0.00029,
+            "other_frequency": 0.0,
+            "distinctiveness": 238.97
+          },
+          {
+            "word": "orochi",
+            "genre_frequency": 0.00026,
+            "other_frequency": 0.0,
+            "distinctiveness": 105.88
+          },
+          {
+            "word": "ride",
+            "genre_frequency": 0.00025,
+            "other_frequency": 0.0,
+            "distinctiveness": 104.91
+          },
+          {
+            "word": "shit",
+            "genre_frequency": 0.00038,
+            "other_frequency": 0.0,
+            "distinctiveness": 104.26
+          },
+          {
+            "word": "ain",
+            "genre_frequency": 0.00059,
+            "other_frequency": 1e-05,
+            "distinctiveness": 97.92
+          },
+          {
+            "word": "big",
+            "genre_frequency": 0.00032,
+            "other_frequency": 0.0,
+            "distinctiveness": 88.07
+          },
+          {
+            "word": "got",
+            "genre_frequency": 0.00111,
+            "other_frequency": 2e-05,
+            "distinctiveness": 65.78
+          },
+          {
+            "word": "woah",
+            "genre_frequency": 0.00027,
+            "other_frequency": 0.0,
+            "distinctiveness": 55.37
+          },
+          {
+            "word": "gang",
+            "genre_frequency": 0.00033,
+            "other_frequency": 1e-05,
+            "distinctiveness": 55.18
+          },
+          {
+            "word": "walk",
+            "genre_frequency": 0.00049,
+            "other_frequency": 1e-05,
+            "distinctiveness": 50.27
+          },
+          {
+            "word": "beat",
+            "genre_frequency": 0.00034,
+            "other_frequency": 1e-05,
+            "distinctiveness": 47.28
+          },
+          {
+            "word": "fumando",
+            "genre_frequency": 0.0005,
+            "other_frequency": 1e-05,
+            "distinctiveness": 45.55
+          },
+          {
+            "word": "huh",
+            "genre_frequency": 0.00027,
+            "other_frequency": 1e-05,
+            "distinctiveness": 45.07
+          },
+          {
+            "word": "trap",
+            "genre_frequency": 0.00035,
+            "other_frequency": 1e-05,
+            "distinctiveness": 41.35
+          },
+          {
+            "word": "yeah",
+            "genre_frequency": 0.00516,
+            "other_frequency": 0.00013,
+            "distinctiveness": 38.38
+          },
+          {
+            "word": "rap",
+            "genre_frequency": 0.00028,
+            "other_frequency": 1e-05,
+            "distinctiveness": 38.21
+          },
+          {
+            "word": "nigga",
+            "genre_frequency": 0.0004,
+            "other_frequency": 1e-05,
+            "distinctiveness": 36.48
+          },
+          {
+            "word": "boy",
+            "genre_frequency": 0.00029,
+            "other_frequency": 1e-05,
+            "distinctiveness": 34.42
+          },
+          {
+            "word": "mano",
+            "genre_frequency": 0.0015,
+            "other_frequency": 5e-05,
+            "distinctiveness": 30.94
+          },
+          {
+            "word": "cuando",
+            "genre_frequency": 0.00041,
+            "other_frequency": 1e-05,
+            "distinctiveness": 30.73
+          },
+          {
+            "word": "pero",
+            "genre_frequency": 0.00048,
+            "other_frequency": 2e-05,
+            "distinctiveness": 30.19
+          },
+          {
+            "word": "they",
+            "genre_frequency": 0.00063,
+            "other_frequency": 2e-05,
+            "distinctiveness": 27.4
+          },
+          {
+            "word": "bolso",
+            "genre_frequency": 0.00031,
+            "other_frequency": 1e-05,
+            "distinctiveness": 25.65
+          },
+          {
+            "word": "let",
+            "genre_frequency": 0.00051,
+            "other_frequency": 2e-05,
+            "distinctiveness": 23.21
+          },
+          {
+            "word": "vários",
+            "genre_frequency": 0.00057,
+            "other_frequency": 3e-05,
+            "distinctiveness": 22.48
+          },
+          {
+            "word": "tropa",
+            "genre_frequency": 0.00035,
+            "other_frequency": 2e-05,
+            "distinctiveness": 22.27
+          },
+          {
+            "word": "like",
+            "genre_frequency": 0.00123,
+            "other_frequency": 6e-05,
+            "distinctiveness": 20.7
+          },
+          {
+            "word": "grana",
+            "genre_frequency": 0.0005,
+            "other_frequency": 2e-05,
+            "distinctiveness": 20.5
+          },
+          {
+            "word": "voy",
+            "genre_frequency": 0.00025,
+            "other_frequency": 1e-05,
+            "distinctiveness": 19.07
+          },
+          {
+            "word": "vadia",
+            "genre_frequency": 0.00035,
+            "other_frequency": 2e-05,
+            "distinctiveness": 19.04
+          },
+          {
+            "word": "girl",
+            "genre_frequency": 0.00032,
+            "other_frequency": 2e-05,
+            "distinctiveness": 18.6
+          },
+          {
+            "word": "her",
+            "genre_frequency": 0.00043,
+            "other_frequency": 2e-05,
+            "distinctiveness": 17.87
+          },
+          {
+            "word": "bonde",
+            "genre_frequency": 0.00028,
+            "other_frequency": 2e-05,
+            "distinctiveness": 17.63
+          },
+          {
+            "word": "pow",
+            "genre_frequency": 0.0003,
+            "other_frequency": 2e-05,
+            "distinctiveness": 16.71
+          },
+          {
+            "word": "get",
+            "genre_frequency": 0.0007,
+            "other_frequency": 4e-05,
+            "distinctiveness": 16.03
+          },
+          {
+            "word": "man",
+            "genre_frequency": 0.00031,
+            "other_frequency": 2e-05,
+            "distinctiveness": 16.03
+          },
+          {
+            "word": "droga",
+            "genre_frequency": 0.00036,
+            "other_frequency": 2e-05,
+            "distinctiveness": 14.96
+          },
+          {
+            "word": "wanna",
+            "genre_frequency": 0.00052,
+            "other_frequency": 4e-05,
+            "distinctiveness": 14.44
+          },
+          {
+            "word": "vibe",
+            "genre_frequency": 0.00026,
+            "other_frequency": 2e-05,
+            "distinctiveness": 14.38
+          },
+          {
+            "word": "qué",
+            "genre_frequency": 0.00036,
+            "other_frequency": 3e-05,
+            "distinctiveness": 14.25
+          },
+          {
+            "word": "bala",
+            "genre_frequency": 0.00062,
+            "other_frequency": 4e-05,
+            "distinctiveness": 14.19
+          },
+          {
+            "word": "she",
+            "genre_frequency": 0.0007,
+            "other_frequency": 5e-05,
+            "distinctiveness": 14.12
+          },
+          {
+            "word": "glock",
+            "genre_frequency": 0.00026,
+            "other_frequency": 2e-05,
+            "distinctiveness": 13.48
+          },
+          {
+            "word": "feel",
+            "genre_frequency": 0.0004,
+            "other_frequency": 3e-05,
+            "distinctiveness": 12.16
+          },
+          {
+            "word": "just",
+            "genre_frequency": 0.00065,
+            "other_frequency": 5e-05,
+            "distinctiveness": 11.87
+          },
+          {
+            "word": "bunda",
+            "genre_frequency": 0.00068,
+            "other_frequency": 6e-05,
+            "distinctiveness": 11.78
+          },
+          {
+            "word": "that",
+            "genre_frequency": 0.00143,
+            "other_frequency": 0.00013,
+            "distinctiveness": 11.36
+          }
+        ]
+      },
+      "common_patterns": {
+        "structure_markers": {
+          "refrão": {
+            "count": 8,
+            "percentage": 0.8
+          },
+          "verso": {
+            "count": 39,
+            "percentage": 3.9
+          },
+          "verse": {
+            "count": 14,
+            "percentage": 1.4
+          },
+          "intro": {
+            "count": 7,
+            "percentage": 0.7
+          },
+          "ponte": {
+            "count": 10,
+            "percentage": 1.0
+          },
+          "bridge": {
+            "count": 1,
+            "percentage": 0.1
+          }
+        }
+      }
+    },
+    "Sertanejo": {
+      "song_count": 337,
+      "vocabulary": {
+        "total_words": 81253,
+        "unique_words": 5221,
+        "vocabulary_richness": 0.0643,
+        "avg_word_length": 3.9,
+        "top_100_words": [
+          {
+            "word": "que",
+            "count": 2988,
+            "frequency": 0.0368
+          },
+          {
+            "word": "eu",
+            "count": 2220,
+            "frequency": 0.0273
+          },
+          {
+            "word": "não",
+            "count": 2028,
+            "frequency": 0.025
+          },
+          {
+            "word": "de",
+            "count": 1801,
+            "frequency": 0.0222
+          },
+          {
+            "word": "e",
+            "count": 1704,
+            "frequency": 0.021
+          },
+          {
+            "word": "a",
+            "count": 1620,
+            "frequency": 0.0199
+          },
+          {
+            "word": "você",
+            "count": 1593,
+            "frequency": 0.0196
+          },
+          {
+            "word": "me",
+            "count": 1588,
+            "frequency": 0.0195
+          },
+          {
+            "word": "o",
+            "count": 1586,
+            "frequency": 0.0195
+          },
+          {
+            "word": "é",
+            "count": 1304,
+            "frequency": 0.016
+          },
+          {
+            "word": "pra",
+            "count": 1137,
+            "frequency": 0.014
+          },
+          {
+            "word": "se",
+            "count": 966,
+            "frequency": 0.0119
+          },
+          {
+            "word": "um",
+            "count": 841,
+            "frequency": 0.0104
+          },
+          {
+            "word": "te",
+            "count": 824,
+            "frequency": 0.0101
+          },
+          {
+            "word": "meu",
+            "count": 693,
+            "frequency": 0.0085
+          },
+          {
+            "word": "vai",
+            "count": 688,
+            "frequency": 0.0085
+          },
+          {
+            "word": "amor",
+            "count": 599,
+            "frequency": 0.0074
+          },
+          {
+            "word": "do",
+            "count": 547,
+            "frequency": 0.0067
+          },
+          {
+            "word": "só",
+            "count": 545,
+            "frequency": 0.0067
+          },
+          {
+            "word": "no",
+            "count": 543,
+            "frequency": 0.0067
+          },
+          {
+            "word": "por",
+            "count": 523,
+            "frequency": 0.0064
+          },
+          {
+            "word": "com",
+            "count": 508,
+            "frequency": 0.0063
+          },
+          {
+            "word": "na",
+            "count": 502,
+            "frequency": 0.0062
+          },
+          {
+            "word": "seu",
+            "count": 486,
+            "frequency": 0.006
+          },
+          {
+            "word": "tá",
+            "count": 485,
+            "frequency": 0.006
+          },
+          {
+            "word": "mais",
+            "count": 482,
+            "frequency": 0.0059
+          },
+          {
+            "word": "mas",
+            "count": 453,
+            "frequency": 0.0056
+          },
+          {
+            "word": "tô",
+            "count": 426,
+            "frequency": 0.0052
+          },
+          {
+            "word": "ela",
+            "count": 425,
+            "frequency": 0.0052
+          },
+          {
+            "word": "em",
+            "count": 407,
+            "frequency": 0.005
+          },
+          {
+            "word": "já",
+            "count": 390,
+            "frequency": 0.0048
+          },
+          {
+            "word": "you",
+            "count": 386,
+            "frequency": 0.0048
+          },
+          {
+            "word": "sua",
+            "count": 371,
+            "frequency": 0.0046
+          },
+          {
+            "word": "vou",
+            "count": 363,
+            "frequency": 0.0045
+          },
+          {
+            "word": "minha",
+            "count": 344,
+            "frequency": 0.0042
+          },
+          {
+            "word": "tem",
+            "count": 339,
+            "frequency": 0.0042
+          },
+          {
+            "word": "uma",
+            "count": 339,
+            "frequency": 0.0042
+          },
+          {
+            "word": "quem",
+            "count": 330,
+            "frequency": 0.0041
+          },
+          {
+            "word": "i",
+            "count": 325,
+            "frequency": 0.004
+          },
+          {
+            "word": "sem",
+            "count": 303,
+            "frequency": 0.0037
+          },
+          {
+            "word": "gente",
+            "count": 303,
+            "frequency": 0.0037
+          },
+          {
+            "word": "da",
+            "count": 295,
+            "frequency": 0.0036
+          },
+          {
+            "word": "coração",
+            "count": 283,
+            "frequency": 0.0035
+          },
+          {
+            "word": "mim",
+            "count": 277,
+            "frequency": 0.0034
+          },
+          {
+            "word": "tudo",
+            "count": 272,
+            "frequency": 0.0033
+          },
+          {
+            "word": "sei",
+            "count": 261,
+            "frequency": 0.0032
+          },
+          {
+            "word": "ser",
+            "count": 254,
+            "frequency": 0.0031
+          },
+          {
+            "word": "quando",
+            "count": 253,
+            "frequency": 0.0031
+          },
+          {
+            "word": "saudade",
+            "count": 253,
+            "frequency": 0.0031
+          },
+          {
+            "word": "agora",
+            "count": 238,
+            "frequency": 0.0029
+          },
+          {
+            "word": "foi",
+            "count": 238,
+            "frequency": 0.0029
+          },
+          {
+            "word": "cê",
+            "count": 238,
+            "frequency": 0.0029
+          },
+          {
+            "word": "bem",
+            "count": 237,
+            "frequency": 0.0029
+          },
+          {
+            "word": "nem",
+            "count": 230,
+            "frequency": 0.0028
+          },
+          {
+            "word": "ele",
+            "count": 227,
+            "frequency": 0.0028
+          },
+          {
+            "word": "aqui",
+            "count": 225,
+            "frequency": 0.0028
+          },
+          {
+            "word": "vida",
+            "count": 221,
+            "frequency": 0.0027
+          },
+          {
+            "word": "faz",
+            "count": 219,
+            "frequency": 0.0027
+          },
+          {
+            "word": "ai",
+            "count": 218,
+            "frequency": 0.0027
+          },
+          {
+            "word": "ver",
+            "count": 197,
+            "frequency": 0.0024
+          },
+          {
+            "word": "sou",
+            "count": 196,
+            "frequency": 0.0024
+          },
+          {
+            "word": "quero",
+            "count": 195,
+            "frequency": 0.0024
+          },
+          {
+            "word": "assim",
+            "count": 194,
+            "frequency": 0.0024
+          },
+          {
+            "word": "esse",
+            "count": 190,
+            "frequency": 0.0023
+          },
+          {
+            "word": "tão",
+            "count": 190,
+            "frequency": 0.0023
+          },
+          {
+            "word": "hoje",
+            "count": 186,
+            "frequency": 0.0023
+          },
+          {
+            "word": "tempo",
+            "count": 184,
+            "frequency": 0.0023
+          },
+          {
+            "word": "the",
+            "count": 183,
+            "frequency": 0.0023
+          },
+          {
+            "word": "quer",
+            "count": 177,
+            "frequency": 0.0022
+          },
+          {
+            "word": "como",
+            "count": 174,
+            "frequency": 0.0021
+          },
+          {
+            "word": "oh",
+            "count": 167,
+            "frequency": 0.0021
+          },
+          {
+            "word": "aí",
+            "count": 161,
+            "frequency": 0.002
+          },
+          {
+            "word": "nunca",
+            "count": 161,
+            "frequency": 0.002
+          },
+          {
+            "word": "essa",
+            "count": 154,
+            "frequency": 0.0019
+          },
+          {
+            "word": "vem",
+            "count": 153,
+            "frequency": 0.0019
+          },
+          {
+            "word": "os",
+            "count": 152,
+            "frequency": 0.0019
+          },
+          {
+            "word": "ter",
+            "count": 152,
+            "frequency": 0.0019
+          },
+          {
+            "word": "dia",
+            "count": 152,
+            "frequency": 0.0019
+          },
+          {
+            "word": "até",
+            "count": 142,
+            "frequency": 0.0017
+          },
+          {
+            "word": "as",
+            "count": 137,
+            "frequency": 0.0017
+          },
+          {
+            "word": "nada",
+            "count": 134,
+            "frequency": 0.0016
+          },
+          {
+            "word": "novo",
+            "count": 134,
+            "frequency": 0.0016
+          },
+          {
+            "word": "todo",
+            "count": 133,
+            "frequency": 0.0016
+          },
+          {
+            "word": "sabe",
+            "count": 132,
+            "frequency": 0.0016
+          },
+          {
+            "word": "ainda",
+            "count": 132,
+            "frequency": 0.0016
+          },
+          {
+            "word": "to",
+            "count": 132,
+            "frequency": 0.0016
+          },
+          {
+            "word": "sempre",
+            "count": 129,
+            "frequency": 0.0016
+          },
+          {
+            "word": "mesmo",
+            "count": 129,
+            "frequency": 0.0016
+          },
+          {
+            "word": "mundo",
+            "count": 127,
+            "frequency": 0.0016
+          },
+          {
+            "word": "casa",
+            "count": 126,
+            "frequency": 0.0016
+          },
+          {
+            "word": "era",
+            "count": 126,
+            "frequency": 0.0016
+          },
+          {
+            "word": "vez",
+            "count": 126,
+            "frequency": 0.0016
+          },
+          {
+            "word": "for",
+            "count": 126,
+            "frequency": 0.0016
+          },
+          {
+            "word": "fazer",
+            "count": 125,
+            "frequency": 0.0015
+          },
+          {
+            "word": "hora",
+            "count": 123,
+            "frequency": 0.0015
+          },
+          {
+            "word": "pro",
+            "count": 123,
+            "frequency": 0.0015
+          },
+          {
+            "word": "ficar",
+            "count": 120,
+            "frequency": 0.0015
+          },
+          {
+            "word": "demais",
+            "count": 119,
+            "frequency": 0.0015
+          },
+          {
+            "word": "isso",
+            "count": 117,
+            "frequency": 0.0014
+          },
+          {
+            "word": "deixa",
+            "count": 117,
+            "frequency": 0.0014
+          }
+        ]
+      },
+      "themes": {
+        "amor_romantico": {
+          "song_count": 251,
+          "percentage": 74.48
+        },
+        "natureza": {
+          "song_count": 191,
+          "percentage": 56.68
+        },
+        "social": {
+          "song_count": 189,
+          "percentage": 56.08
+        },
+        "familia": {
+          "song_count": 177,
+          "percentage": 52.52
+        },
+        "sofrimento": {
+          "song_count": 163,
+          "percentage": 48.37
+        },
+        "religioso": {
+          "song_count": 147,
+          "percentage": 43.62
+        },
+        "traicao": {
+          "song_count": 112,
+          "percentage": 33.23
+        },
+        "sexualidade": {
+          "song_count": 104,
+          "percentage": 30.86
+        },
+        "saudade": {
+          "song_count": 99,
+          "percentage": 29.38
+        },
+        "urbano": {
+          "song_count": 46,
+          "percentage": 13.65
+        },
+        "festa": {
+          "song_count": 42,
+          "percentage": 12.46
+        },
+        "ostentacao": {
+          "song_count": 28,
+          "percentage": 8.31
+        }
+      },
+      "structure": {
+        "avg_lines": 40.4,
+        "avg_words": 239.7,
+        "avg_paragraphs": 9.4,
+        "avg_repetition": 0.413,
+        "line_range": [
+          7,
+          210
+        ],
+        "word_range": [
+          41,
+          1191
+        ]
+      },
+      "distinctive_features": {
+        "top_distinctive_words": [
+          {
+            "word": "sálvame",
+            "genre_frequency": 0.00026,
+            "other_frequency": 0.0,
+            "distinctiveness": 302.37
+          },
+          {
+            "word": "tum",
+            "genre_frequency": 0.00079,
+            "other_frequency": 2e-05,
+            "distinctiveness": 41.89
+          },
+          {
+            "word": "infiel",
+            "genre_frequency": 0.00039,
+            "other_frequency": 1e-05,
+            "distinctiveness": 35.44
+          },
+          {
+            "word": "marília",
+            "genre_frequency": 0.00027,
+            "other_frequency": 1e-05,
+            "distinctiveness": 31.68
+          },
+          {
+            "word": "lixo",
+            "genre_frequency": 0.00089,
+            "other_frequency": 3e-05,
+            "distinctiveness": 29.62
+          },
+          {
+            "word": "words",
+            "genre_frequency": 0.0003,
+            "other_frequency": 1e-05,
+            "distinctiveness": 28.8
+          },
+          {
+            "word": "incapaz",
+            "genre_frequency": 0.00027,
+            "other_frequency": 1e-05,
+            "distinctiveness": 28.8
+          },
+          {
+            "word": "cupido",
+            "genre_frequency": 0.0003,
+            "other_frequency": 1e-05,
+            "distinctiveness": 26.58
+          },
+          {
+            "word": "because",
+            "genre_frequency": 0.00026,
+            "other_frequency": 1e-05,
+            "distinctiveness": 21.6
+          },
+          {
+            "word": "roça",
+            "genre_frequency": 0.00074,
+            "other_frequency": 4e-05,
+            "distinctiveness": 19.2
+          },
+          {
+            "word": "respeita",
+            "genre_frequency": 0.00046,
+            "other_frequency": 2e-05,
+            "distinctiveness": 19.03
+          },
+          {
+            "word": "every",
+            "genre_frequency": 0.00064,
+            "other_frequency": 3e-05,
+            "distinctiveness": 18.72
+          },
+          {
+            "word": "quién",
+            "genre_frequency": 0.00043,
+            "other_frequency": 3e-05,
+            "distinctiveness": 16.8
+          },
+          {
+            "word": "tomou",
+            "genre_frequency": 0.00074,
+            "other_frequency": 5e-05,
+            "distinctiveness": 16.3
+          },
+          {
+            "word": "traição",
+            "genre_frequency": 0.00036,
+            "other_frequency": 3e-05,
+            "distinctiveness": 11.29
+          },
+          {
+            "word": "amante",
+            "genre_frequency": 0.00066,
+            "other_frequency": 6e-05,
+            "distinctiveness": 10.95
+          },
+          {
+            "word": "corazón",
+            "genre_frequency": 0.00032,
+            "other_frequency": 3e-05,
+            "distinctiveness": 9.85
+          },
+          {
+            "word": "hackearam",
+            "genre_frequency": 0.0003,
+            "other_frequency": 3e-05,
+            "distinctiveness": 9.6
+          },
+          {
+            "word": "vergonha",
+            "genre_frequency": 0.00043,
+            "other_frequency": 5e-05,
+            "distinctiveness": 8.84
+          },
+          {
+            "word": "prova",
+            "genre_frequency": 0.00037,
+            "other_frequency": 4e-05,
+            "distinctiveness": 8.47
+          },
+          {
+            "word": "acostumar",
+            "genre_frequency": 0.00026,
+            "other_frequency": 3e-05,
+            "distinctiveness": 8.4
+          },
+          {
+            "word": "will",
+            "genre_frequency": 0.00032,
+            "other_frequency": 4e-05,
+            "distinctiveness": 7.64
+          },
+          {
+            "word": "bye",
+            "genre_frequency": 0.0003,
+            "other_frequency": 4e-05,
+            "distinctiveness": 7.51
+          },
+          {
+            "word": "amada",
+            "genre_frequency": 0.00026,
+            "other_frequency": 4e-05,
+            "distinctiveness": 6.72
+          },
+          {
+            "word": "entrega",
+            "genre_frequency": 0.00037,
+            "other_frequency": 6e-05,
+            "distinctiveness": 6.54
+          },
+          {
+            "word": "motel",
+            "genre_frequency": 0.0003,
+            "other_frequency": 5e-05,
+            "distinctiveness": 6.52
+          },
+          {
+            "word": "sozinha",
+            "genre_frequency": 0.00044,
+            "other_frequency": 8e-05,
+            "distinctiveness": 5.57
+          },
+          {
+            "word": "enganar",
+            "genre_frequency": 0.0003,
+            "other_frequency": 5e-05,
+            "distinctiveness": 5.57
+          },
+          {
+            "word": "heart",
+            "genre_frequency": 0.00031,
+            "other_frequency": 6e-05,
+            "distinctiveness": 5.45
+          },
+          {
+            "word": "brinde",
+            "genre_frequency": 0.0003,
+            "other_frequency": 5e-05,
+            "distinctiveness": 5.4
+          },
+          {
+            "word": "culpa",
+            "genre_frequency": 0.00084,
+            "other_frequency": 0.00016,
+            "distinctiveness": 5.38
+          },
+          {
+            "word": "bebe",
+            "genre_frequency": 0.00037,
+            "other_frequency": 7e-05,
+            "distinctiveness": 5.08
+          },
+          {
+            "word": "sabendo",
+            "genre_frequency": 0.00048,
+            "other_frequency": 0.0001,
+            "distinctiveness": 4.93
+          },
+          {
+            "word": "fiel",
+            "genre_frequency": 0.00031,
+            "other_frequency": 6e-05,
+            "distinctiveness": 4.93
+          },
+          {
+            "word": "indo",
+            "genre_frequency": 0.00049,
+            "other_frequency": 0.0001,
+            "distinctiveness": 4.76
+          },
+          {
+            "word": "aguenta",
+            "genre_frequency": 0.00027,
+            "other_frequency": 6e-05,
+            "distinctiveness": 4.73
+          },
+          {
+            "word": "esqueça",
+            "genre_frequency": 0.00046,
+            "other_frequency": 0.0001,
+            "distinctiveness": 4.51
+          },
+          {
+            "word": "segundo",
+            "genre_frequency": 0.00048,
+            "other_frequency": 0.00011,
+            "distinctiveness": 4.29
+          },
+          {
+            "word": "morrendo",
+            "genre_frequency": 0.00028,
+            "other_frequency": 7e-05,
+            "distinctiveness": 4.19
+          },
+          {
+            "word": "balada",
+            "genre_frequency": 0.00027,
+            "other_frequency": 6e-05,
+            "distinctiveness": 4.17
+          },
+          {
+            "word": "deixando",
+            "genre_frequency": 0.00027,
+            "other_frequency": 7e-05,
+            "distinctiveness": 4.06
+          },
+          {
+            "word": "ouvido",
+            "genre_frequency": 0.00034,
+            "other_frequency": 9e-05,
+            "distinctiveness": 3.95
+          },
+          {
+            "word": "pediu",
+            "genre_frequency": 0.00034,
+            "other_frequency": 9e-05,
+            "distinctiveness": 3.67
+          },
+          {
+            "word": "escutar",
+            "genre_frequency": 0.00028,
+            "other_frequency": 8e-05,
+            "distinctiveness": 3.64
+          },
+          {
+            "word": "saiu",
+            "genre_frequency": 0.00027,
+            "other_frequency": 7e-05,
+            "distinctiveness": 3.64
+          },
+          {
+            "word": "amiga",
+            "genre_frequency": 0.00066,
+            "other_frequency": 0.00018,
+            "distinctiveness": 3.62
+          },
+          {
+            "word": "imagina",
+            "genre_frequency": 0.00038,
+            "other_frequency": 0.00011,
+            "distinctiveness": 3.43
+          },
+          {
+            "word": "bobo",
+            "genre_frequency": 0.00028,
+            "other_frequency": 8e-05,
+            "distinctiveness": 3.38
+          },
+          {
+            "word": "take",
+            "genre_frequency": 0.0003,
+            "other_frequency": 9e-05,
+            "distinctiveness": 3.26
+          },
+          {
+            "word": "disso",
+            "genre_frequency": 0.00049,
+            "other_frequency": 0.00015,
+            "distinctiveness": 3.25
+          }
+        ]
+      },
+      "common_patterns": {
+        "structure_markers": {
+          "verso": {
+            "count": 1,
+            "percentage": 0.3
+          },
+          "intro": {
+            "count": 1,
+            "percentage": 0.3
+          },
+          "ponte": {
+            "count": 1,
+            "percentage": 0.3
+          }
+        }
+      }
+    },
+    "Pagode": {
+      "song_count": 1001,
+      "vocabulary": {
+        "total_words": 233470,
+        "unique_words": 7689,
+        "vocabulary_richness": 0.0329,
+        "avg_word_length": 3.92,
+        "top_100_words": [
+          {
+            "word": "que",
+            "count": 8690,
+            "frequency": 0.0372
+          },
+          {
+            "word": "eu",
+            "count": 8015,
+            "frequency": 0.0343
+          },
+          {
+            "word": "não",
+            "count": 5789,
+            "frequency": 0.0248
+          },
+          {
+            "word": "o",
+            "count": 5641,
+            "frequency": 0.0242
+          },
+          {
+            "word": "de",
+            "count": 5335,
+            "frequency": 0.0229
+          },
+          {
+            "word": "a",
+            "count": 5020,
+            "frequency": 0.0215
+          },
+          {
+            "word": "e",
+            "count": 4840,
+            "frequency": 0.0207
+          },
+          {
+            "word": "você",
+            "count": 4826,
+            "frequency": 0.0207
+          },
+          {
+            "word": "é",
+            "count": 4443,
+            "frequency": 0.019
+          },
+          {
+            "word": "me",
+            "count": 4187,
+            "frequency": 0.0179
+          },
+          {
+            "word": "pra",
+            "count": 3866,
+            "frequency": 0.0166
+          },
+          {
+            "word": "te",
+            "count": 3446,
+            "frequency": 0.0148
+          },
+          {
+            "word": "se",
+            "count": 2882,
+            "frequency": 0.0123
+          },
+          {
+            "word": "amor",
+            "count": 2789,
+            "frequency": 0.0119
+          },
+          {
+            "word": "meu",
+            "count": 2487,
+            "frequency": 0.0107
+          },
+          {
+            "word": "um",
+            "count": 2191,
+            "frequency": 0.0094
+          },
+          {
+            "word": "do",
+            "count": 1786,
+            "frequency": 0.0076
+          },
+          {
+            "word": "só",
+            "count": 1688,
+            "frequency": 0.0072
+          },
+          {
+            "word": "vou",
+            "count": 1667,
+            "frequency": 0.0071
+          },
+          {
+            "word": "vai",
+            "count": 1619,
+            "frequency": 0.0069
+          },
+          {
+            "word": "mais",
+            "count": 1593,
+            "frequency": 0.0068
+          },
+          {
+            "word": "no",
+            "count": 1564,
+            "frequency": 0.0067
+          },
+          {
+            "word": "com",
+            "count": 1534,
+            "frequency": 0.0066
+          },
+          {
+            "word": "mas",
+            "count": 1500,
+            "frequency": 0.0064
+          },
+          {
+            "word": "na",
+            "count": 1451,
+            "frequency": 0.0062
+          },
+          {
+            "word": "em",
+            "count": 1440,
+            "frequency": 0.0062
+          },
+          {
+            "word": "seu",
+            "count": 1264,
+            "frequency": 0.0054
+          },
+          {
+            "word": "por",
+            "count": 1228,
+            "frequency": 0.0053
+          },
+          {
+            "word": "sem",
+            "count": 1175,
+            "frequency": 0.005
+          },
+          {
+            "word": "gente",
+            "count": 1154,
+            "frequency": 0.0049
+          },
+          {
+            "word": "da",
+            "count": 1114,
+            "frequency": 0.0048
+          },
+          {
+            "word": "minha",
+            "count": 1062,
+            "frequency": 0.0045
+          },
+          {
+            "word": "coração",
+            "count": 1053,
+            "frequency": 0.0045
+          },
+          {
+            "word": "tudo",
+            "count": 1033,
+            "frequency": 0.0044
+          },
+          {
+            "word": "já",
+            "count": 1012,
+            "frequency": 0.0043
+          },
+          {
+            "word": "tem",
+            "count": 1001,
+            "frequency": 0.0043
+          },
+          {
+            "word": "sei",
+            "count": 988,
+            "frequency": 0.0042
+          },
+          {
+            "word": "quero",
+            "count": 924,
+            "frequency": 0.004
+          },
+          {
+            "word": "mim",
+            "count": 918,
+            "frequency": 0.0039
+          },
+          {
+            "word": "tá",
+            "count": 903,
+            "frequency": 0.0039
+          },
+          {
+            "word": "quando",
+            "count": 856,
+            "frequency": 0.0037
+          },
+          {
+            "word": "tô",
+            "count": 852,
+            "frequency": 0.0036
+          },
+          {
+            "word": "uma",
+            "count": 849,
+            "frequency": 0.0036
+          },
+          {
+            "word": "assim",
+            "count": 804,
+            "frequency": 0.0034
+          },
+          {
+            "word": "faz",
+            "count": 785,
+            "frequency": 0.0034
+          },
+          {
+            "word": "vida",
+            "count": 771,
+            "frequency": 0.0033
+          },
+          {
+            "word": "como",
+            "count": 770,
+            "frequency": 0.0033
+          },
+          {
+            "word": "sou",
+            "count": 766,
+            "frequency": 0.0033
+          },
+          {
+            "word": "ela",
+            "count": 759,
+            "frequency": 0.0033
+          },
+          {
+            "word": "quem",
+            "count": 751,
+            "frequency": 0.0032
+          },
+          {
+            "word": "foi",
+            "count": 746,
+            "frequency": 0.0032
+          },
+          {
+            "word": "bem",
+            "count": 744,
+            "frequency": 0.0032
+          },
+          {
+            "word": "nem",
+            "count": 704,
+            "frequency": 0.003
+          },
+          {
+            "word": "teu",
+            "count": 644,
+            "frequency": 0.0028
+          },
+          {
+            "word": "ser",
+            "count": 642,
+            "frequency": 0.0027
+          },
+          {
+            "word": "vem",
+            "count": 622,
+            "frequency": 0.0027
+          },
+          {
+            "word": "ver",
+            "count": 611,
+            "frequency": 0.0026
+          },
+          {
+            "word": "tão",
+            "count": 609,
+            "frequency": 0.0026
+          },
+          {
+            "word": "esse",
+            "count": 575,
+            "frequency": 0.0025
+          },
+          {
+            "word": "tempo",
+            "count": 566,
+            "frequency": 0.0024
+          },
+          {
+            "word": "nada",
+            "count": 558,
+            "frequency": 0.0024
+          },
+          {
+            "word": "sua",
+            "count": 555,
+            "frequency": 0.0024
+          },
+          {
+            "word": "amar",
+            "count": 546,
+            "frequency": 0.0023
+          },
+          {
+            "word": "quer",
+            "count": 531,
+            "frequency": 0.0023
+          },
+          {
+            "word": "nosso",
+            "count": 524,
+            "frequency": 0.0022
+          },
+          {
+            "word": "agora",
+            "count": 518,
+            "frequency": 0.0022
+          },
+          {
+            "word": "sempre",
+            "count": 502,
+            "frequency": 0.0022
+          },
+          {
+            "word": "deixa",
+            "count": 490,
+            "frequency": 0.0021
+          },
+          {
+            "word": "essa",
+            "count": 487,
+            "frequency": 0.0021
+          },
+          {
+            "word": "lá",
+            "count": 486,
+            "frequency": 0.0021
+          },
+          {
+            "word": "pode",
+            "count": 465,
+            "frequency": 0.002
+          },
+          {
+            "word": "aqui",
+            "count": 460,
+            "frequency": 0.002
+          },
+          {
+            "word": "até",
+            "count": 459,
+            "frequency": 0.002
+          },
+          {
+            "word": "vez",
+            "count": 458,
+            "frequency": 0.002
+          },
+          {
+            "word": "dia",
+            "count": 457,
+            "frequency": 0.002
+          },
+          {
+            "word": "dá",
+            "count": 449,
+            "frequency": 0.0019
+          },
+          {
+            "word": "nunca",
+            "count": 445,
+            "frequency": 0.0019
+          },
+          {
+            "word": "jeito",
+            "count": 440,
+            "frequency": 0.0019
+          },
+          {
+            "word": "ficar",
+            "count": 437,
+            "frequency": 0.0019
+          },
+          {
+            "word": "dizer",
+            "count": 436,
+            "frequency": 0.0019
+          },
+          {
+            "word": "ninguém",
+            "count": 430,
+            "frequency": 0.0018
+          },
+          {
+            "word": "viver",
+            "count": 424,
+            "frequency": 0.0018
+          },
+          {
+            "word": "fazer",
+            "count": 418,
+            "frequency": 0.0018
+          },
+          {
+            "word": "todo",
+            "count": 404,
+            "frequency": 0.0017
+          },
+          {
+            "word": "ai",
+            "count": 404,
+            "frequency": 0.0017
+          },
+          {
+            "word": "era",
+            "count": 400,
+            "frequency": 0.0017
+          },
+          {
+            "word": "pro",
+            "count": 391,
+            "frequency": 0.0017
+          },
+          {
+            "word": "ou",
+            "count": 389,
+            "frequency": 0.0017
+          },
+          {
+            "word": "saudade",
+            "count": 388,
+            "frequency": 0.0017
+          },
+          {
+            "word": "mundo",
+            "count": 386,
+            "frequency": 0.0017
+          },
+          {
+            "word": "alguém",
+            "count": 383,
+            "frequency": 0.0016
+          },
+          {
+            "word": "as",
+            "count": 377,
+            "frequency": 0.0016
+          },
+          {
+            "word": "sabe",
+            "count": 374,
+            "frequency": 0.0016
+          },
+          {
+            "word": "diz",
+            "count": 370,
+            "frequency": 0.0016
+          },
+          {
+            "word": "feliz",
+            "count": 365,
+            "frequency": 0.0016
+          },
+          {
+            "word": "ter",
+            "count": 359,
+            "frequency": 0.0015
+          },
+          {
+            "word": "dar",
+            "count": 359,
+            "frequency": 0.0015
+          },
+          {
+            "word": "amo",
+            "count": 357,
+            "frequency": 0.0015
+          },
+          {
+            "word": "para",
+            "count": 353,
+            "frequency": 0.0015
+          },
+          {
+            "word": "oh",
+            "count": 352,
+            "frequency": 0.0015
+          }
+        ]
+      },
+      "themes": {
+        "amor_romantico": {
+          "song_count": 838,
+          "percentage": 83.72
+        },
+        "natureza": {
+          "song_count": 633,
+          "percentage": 63.24
+        },
+        "social": {
+          "song_count": 630,
+          "percentage": 62.94
+        },
+        "religioso": {
+          "song_count": 583,
+          "percentage": 58.24
+        },
+        "familia": {
+          "song_count": 568,
+          "percentage": 56.74
+        },
+        "sofrimento": {
+          "song_count": 514,
+          "percentage": 51.35
+        },
+        "sexualidade": {
+          "song_count": 363,
+          "percentage": 36.26
+        },
+        "traicao": {
+          "song_count": 271,
+          "percentage": 27.07
+        },
+        "saudade": {
+          "song_count": 264,
+          "percentage": 26.37
+        },
+        "urbano": {
+          "song_count": 157,
+          "percentage": 15.68
+        },
+        "festa": {
+          "song_count": 108,
+          "percentage": 10.79
+        },
+        "ostentacao": {
+          "song_count": 59,
+          "percentage": 5.89
+        }
+      },
+      "structure": {
+        "avg_lines": 40.4,
+        "avg_words": 232.5,
+        "avg_paragraphs": 8.4,
+        "avg_repetition": 0.342,
+        "line_range": [
+          9,
+          246
+        ],
+        "word_range": [
+          50,
+          1362
+        ]
+      },
+      "distinctive_features": {
+        "top_distinctive_words": [
+          {
+            "word": "varrendo",
+            "genre_frequency": 0.00034,
+            "other_frequency": 0.0,
+            "distinctiveness": 348.73
+          },
+          {
+            "word": "bole",
+            "genre_frequency": 0.00075,
+            "other_frequency": 0.0,
+            "distinctiveness": 191.8
+          },
+          {
+            "word": "biro",
+            "genre_frequency": 0.0003,
+            "other_frequency": 0.0,
+            "distinctiveness": 152.57
+          },
+          {
+            "word": "pagode",
+            "genre_frequency": 0.00037,
+            "other_frequency": 1e-05,
+            "distinctiveness": 47.41
+          },
+          {
+            "word": "dim",
+            "genre_frequency": 0.00027,
+            "other_frequency": 1e-05,
+            "distinctiveness": 33.78
+          },
+          {
+            "word": "laia",
+            "genre_frequency": 0.00041,
+            "other_frequency": 3e-05,
+            "distinctiveness": 13.95
+          },
+          {
+            "word": "foge",
+            "genre_frequency": 0.00065,
+            "other_frequency": 7e-05,
+            "distinctiveness": 9.14
+          },
+          {
+            "word": "ciúme",
+            "genre_frequency": 0.00038,
+            "other_frequency": 5e-05,
+            "distinctiveness": 8.43
+          },
+          {
+            "word": "errar",
+            "genre_frequency": 0.00031,
+            "other_frequency": 5e-05,
+            "distinctiveness": 6.82
+          },
+          {
+            "word": "separar",
+            "genre_frequency": 0.00027,
+            "other_frequency": 4e-05,
+            "distinctiveness": 6.59
+          },
+          {
+            "word": "laiá",
+            "genre_frequency": 0.00078,
+            "other_frequency": 0.00012,
+            "distinctiveness": 6.54
+          },
+          {
+            "word": "emoção",
+            "genre_frequency": 0.00045,
+            "other_frequency": 7e-05,
+            "distinctiveness": 6.02
+          },
+          {
+            "word": "apaixonado",
+            "genre_frequency": 0.0004,
+            "other_frequency": 8e-05,
+            "distinctiveness": 4.77
+          },
+          {
+            "word": "valeu",
+            "genre_frequency": 0.00028,
+            "other_frequency": 6e-05,
+            "distinctiveness": 4.5
+          },
+          {
+            "word": "ladrão",
+            "genre_frequency": 0.00033,
+            "other_frequency": 7e-05,
+            "distinctiveness": 4.48
+          },
+          {
+            "word": "putaria",
+            "genre_frequency": 0.0003,
+            "other_frequency": 7e-05,
+            "distinctiveness": 4.42
+          },
+          {
+            "word": "provar",
+            "genre_frequency": 0.00028,
+            "other_frequency": 6e-05,
+            "distinctiveness": 4.36
+          },
+          {
+            "word": "abraçar",
+            "genre_frequency": 0.00026,
+            "other_frequency": 6e-05,
+            "distinctiveness": 4.22
+          },
+          {
+            "word": "entregar",
+            "genre_frequency": 0.00044,
+            "other_frequency": 0.00011,
+            "distinctiveness": 4.01
+          },
+          {
+            "word": "lutar",
+            "genre_frequency": 0.00024,
+            "other_frequency": 6e-05,
+            "distinctiveness": 4.0
+          },
+          {
+            "word": "paixão",
+            "genre_frequency": 0.00142,
+            "other_frequency": 0.00036,
+            "distinctiveness": 3.91
+          },
+          {
+            "word": "brincar",
+            "genre_frequency": 0.00026,
+            "other_frequency": 7e-05,
+            "distinctiveness": 3.85
+          },
+          {
+            "word": "continuar",
+            "genre_frequency": 0.00028,
+            "other_frequency": 7e-05,
+            "distinctiveness": 3.84
+          },
+          {
+            "word": "aconteceu",
+            "genre_frequency": 0.00039,
+            "other_frequency": 0.00011,
+            "distinctiveness": 3.75
+          },
+          {
+            "word": "arrepender",
+            "genre_frequency": 0.00026,
+            "other_frequency": 7e-05,
+            "distinctiveness": 3.74
+          },
+          {
+            "word": "acreditar",
+            "genre_frequency": 0.0005,
+            "other_frequency": 0.00014,
+            "distinctiveness": 3.7
+          },
+          {
+            "word": "namorar",
+            "genre_frequency": 0.00023,
+            "other_frequency": 6e-05,
+            "distinctiveness": 3.67
+          },
+          {
+            "word": "valer",
+            "genre_frequency": 0.00033,
+            "other_frequency": 9e-05,
+            "distinctiveness": 3.65
+          },
+          {
+            "word": "carinho",
+            "genre_frequency": 0.00061,
+            "other_frequency": 0.00017,
+            "distinctiveness": 3.6
+          },
+          {
+            "word": "senti",
+            "genre_frequency": 0.0004,
+            "other_frequency": 0.00011,
+            "distinctiveness": 3.56
+          },
+          {
+            "word": "namorado",
+            "genre_frequency": 0.00033,
+            "other_frequency": 9e-05,
+            "distinctiveness": 3.53
+          },
+          {
+            "word": "perdeu",
+            "genre_frequency": 0.00048,
+            "other_frequency": 0.00014,
+            "distinctiveness": 3.42
+          },
+          {
+            "word": "envolver",
+            "genre_frequency": 0.00024,
+            "other_frequency": 7e-05,
+            "distinctiveness": 3.4
+          },
+          {
+            "word": "terminar",
+            "genre_frequency": 0.00024,
+            "other_frequency": 7e-05,
+            "distinctiveness": 3.38
+          },
+          {
+            "word": "errei",
+            "genre_frequency": 0.0003,
+            "other_frequency": 9e-05,
+            "distinctiveness": 3.36
+          },
+          {
+            "word": "desejo",
+            "genre_frequency": 0.00086,
+            "other_frequency": 0.00026,
+            "distinctiveness": 3.3
+          },
+          {
+            "word": "loucura",
+            "genre_frequency": 0.00034,
+            "other_frequency": 0.00011,
+            "distinctiveness": 3.23
+          },
+          {
+            "word": "prazer",
+            "genre_frequency": 0.0008,
+            "other_frequency": 0.00025,
+            "distinctiveness": 3.22
+          },
+          {
+            "word": "tentei",
+            "genre_frequency": 0.00046,
+            "other_frequency": 0.00015,
+            "distinctiveness": 3.15
+          },
+          {
+            "word": "sentimento",
+            "genre_frequency": 0.00073,
+            "other_frequency": 0.00023,
+            "distinctiveness": 3.11
+          },
+          {
+            "word": "apaixonar",
+            "genre_frequency": 0.0003,
+            "other_frequency": 0.0001,
+            "distinctiveness": 3.04
+          },
+          {
+            "word": "achei",
+            "genre_frequency": 0.00023,
+            "other_frequency": 8e-05,
+            "distinctiveness": 2.91
+          },
+          {
+            "word": "aprender",
+            "genre_frequency": 0.00024,
+            "other_frequency": 9e-05,
+            "distinctiveness": 2.86
+          },
+          {
+            "word": "mudou",
+            "genre_frequency": 0.00034,
+            "other_frequency": 0.00012,
+            "distinctiveness": 2.84
+          },
+          {
+            "word": "felicidade",
+            "genre_frequency": 0.00045,
+            "other_frequency": 0.00016,
+            "distinctiveness": 2.83
+          },
+          {
+            "word": "vontade",
+            "genre_frequency": 0.00094,
+            "other_frequency": 0.00033,
+            "distinctiveness": 2.82
+          },
+          {
+            "word": "nosso",
+            "genre_frequency": 0.00224,
+            "other_frequency": 0.00082,
+            "distinctiveness": 2.75
+          },
+          {
+            "word": "tento",
+            "genre_frequency": 0.00023,
+            "other_frequency": 8e-05,
+            "distinctiveness": 2.75
+          },
+          {
+            "word": "perdão",
+            "genre_frequency": 0.00035,
+            "other_frequency": 0.00013,
+            "distinctiveness": 2.72
+          },
+          {
+            "word": "encontrar",
+            "genre_frequency": 0.00088,
+            "other_frequency": 0.00033,
+            "distinctiveness": 2.68
+          }
+        ]
+      },
+      "common_patterns": {
+        "structure_markers": {
+          "refrão": {
+            "count": 23,
+            "percentage": 2.3
+          },
+          "verso": {
+            "count": 18,
+            "percentage": 1.8
+          },
+          "verse": {
+            "count": 1,
+            "percentage": 0.1
+          },
+          "intro": {
+            "count": 1,
+            "percentage": 0.1
+          },
+          "ponte": {
+            "count": 1,
+            "percentage": 0.1
+          }
+        }
+      }
+    },
+    "MPB": {
+      "song_count": 1846,
+      "vocabulary": {
+        "total_words": 333041,
+        "unique_words": 19141,
+        "vocabulary_richness": 0.0575,
+        "avg_word_length": 3.99,
+        "top_100_words": [
+          {
+            "word": "que",
+            "count": 11160,
+            "frequency": 0.0335
+          },
+          {
+            "word": "o",
+            "count": 8968,
+            "frequency": 0.0269
+          },
+          {
+            "word": "de",
+            "count": 8507,
+            "frequency": 0.0255
+          },
+          {
+            "word": "e",
+            "count": 8477,
+            "frequency": 0.0255
+          },
+          {
+            "word": "a",
+            "count": 8410,
+            "frequency": 0.0253
+          },
+          {
+            "word": "eu",
+            "count": 7416,
+            "frequency": 0.0223
+          },
+          {
+            "word": "não",
+            "count": 5907,
+            "frequency": 0.0177
+          },
+          {
+            "word": "é",
+            "count": 5412,
+            "frequency": 0.0163
+          },
+          {
+            "word": "me",
+            "count": 4508,
+            "frequency": 0.0135
+          },
+          {
+            "word": "se",
+            "count": 3809,
+            "frequency": 0.0114
+          },
+          {
+            "word": "um",
+            "count": 3639,
+            "frequency": 0.0109
+          },
+          {
+            "word": "do",
+            "count": 3466,
+            "frequency": 0.0104
+          },
+          {
+            "word": "você",
+            "count": 3407,
+            "frequency": 0.0102
+          },
+          {
+            "word": "pra",
+            "count": 3360,
+            "frequency": 0.0101
+          },
+          {
+            "word": "meu",
+            "count": 2958,
+            "frequency": 0.0089
+          },
+          {
+            "word": "no",
+            "count": 2737,
+            "frequency": 0.0082
+          },
+          {
+            "word": "na",
+            "count": 2388,
+            "frequency": 0.0072
+          },
+          {
+            "word": "amor",
+            "count": 2204,
+            "frequency": 0.0066
+          },
+          {
+            "word": "da",
+            "count": 2158,
+            "frequency": 0.0065
+          },
+          {
+            "word": "te",
+            "count": 2138,
+            "frequency": 0.0064
+          },
+          {
+            "word": "em",
+            "count": 1973,
+            "frequency": 0.0059
+          },
+          {
+            "word": "mais",
+            "count": 1918,
+            "frequency": 0.0058
+          },
+          {
+            "word": "com",
+            "count": 1818,
+            "frequency": 0.0055
+          },
+          {
+            "word": "por",
+            "count": 1602,
+            "frequency": 0.0048
+          },
+          {
+            "word": "mas",
+            "count": 1567,
+            "frequency": 0.0047
+          },
+          {
+            "word": "só",
+            "count": 1559,
+            "frequency": 0.0047
+          },
+          {
+            "word": "vai",
+            "count": 1556,
+            "frequency": 0.0047
+          },
+          {
+            "word": "uma",
+            "count": 1474,
+            "frequency": 0.0044
+          },
+          {
+            "word": "como",
+            "count": 1388,
+            "frequency": 0.0042
+          },
+          {
+            "word": "seu",
+            "count": 1358,
+            "frequency": 0.0041
+          },
+          {
+            "word": "tem",
+            "count": 1329,
+            "frequency": 0.004
+          },
+          {
+            "word": "quero",
+            "count": 1285,
+            "frequency": 0.0039
+          },
+          {
+            "word": "minha",
+            "count": 1269,
+            "frequency": 0.0038
+          },
+          {
+            "word": "tudo",
+            "count": 1244,
+            "frequency": 0.0037
+          },
+          {
+            "word": "quem",
+            "count": 1217,
+            "frequency": 0.0037
+          },
+          {
+            "word": "os",
+            "count": 1168,
+            "frequency": 0.0035
+          },
+          {
+            "word": "quando",
+            "count": 1157,
+            "frequency": 0.0035
+          },
+          {
+            "word": "vou",
+            "count": 1151,
+            "frequency": 0.0035
+          },
+          {
+            "word": "vida",
+            "count": 1148,
+            "frequency": 0.0034
+          },
+          {
+            "word": "sem",
+            "count": 1129,
+            "frequency": 0.0034
+          },
+          {
+            "word": "sou",
+            "count": 1080,
+            "frequency": 0.0032
+          },
+          {
+            "word": "lá",
+            "count": 1067,
+            "frequency": 0.0032
+          },
+          {
+            "word": "gente",
+            "count": 1031,
+            "frequency": 0.0031
+          },
+          {
+            "word": "ser",
+            "count": 1004,
+            "frequency": 0.003
+          },
+          {
+            "word": "tempo",
+            "count": 998,
+            "frequency": 0.003
+          },
+          {
+            "word": "mim",
+            "count": 987,
+            "frequency": 0.003
+          },
+          {
+            "word": "sei",
+            "count": 941,
+            "frequency": 0.0028
+          },
+          {
+            "word": "ela",
+            "count": 937,
+            "frequency": 0.0028
+          },
+          {
+            "word": "bem",
+            "count": 934,
+            "frequency": 0.0028
+          },
+          {
+            "word": "nem",
+            "count": 925,
+            "frequency": 0.0028
+          },
+          {
+            "word": "já",
+            "count": 924,
+            "frequency": 0.0028
+          },
+          {
+            "word": "dia",
+            "count": 914,
+            "frequency": 0.0027
+          },
+          {
+            "word": "as",
+            "count": 912,
+            "frequency": 0.0027
+          },
+          {
+            "word": "coração",
+            "count": 797,
+            "frequency": 0.0024
+          },
+          {
+            "word": "tão",
+            "count": 794,
+            "frequency": 0.0024
+          },
+          {
+            "word": "assim",
+            "count": 783,
+            "frequency": 0.0024
+          },
+          {
+            "word": "vem",
+            "count": 768,
+            "frequency": 0.0023
+          },
+          {
+            "word": "ver",
+            "count": 752,
+            "frequency": 0.0023
+          },
+          {
+            "word": "para",
+            "count": 750,
+            "frequency": 0.0023
+          },
+          {
+            "word": "teu",
+            "count": 728,
+            "frequency": 0.0022
+          },
+          {
+            "word": "mar",
+            "count": 725,
+            "frequency": 0.0022
+          },
+          {
+            "word": "foi",
+            "count": 685,
+            "frequency": 0.0021
+          },
+          {
+            "word": "onde",
+            "count": 679,
+            "frequency": 0.002
+          },
+          {
+            "word": "nada",
+            "count": 668,
+            "frequency": 0.002
+          },
+          {
+            "word": "mundo",
+            "count": 663,
+            "frequency": 0.002
+          },
+          {
+            "word": "ou",
+            "count": 619,
+            "frequency": 0.0019
+          },
+          {
+            "word": "faz",
+            "count": 584,
+            "frequency": 0.0018
+          },
+          {
+            "word": "ao",
+            "count": 582,
+            "frequency": 0.0017
+          },
+          {
+            "word": "sempre",
+            "count": 580,
+            "frequency": 0.0017
+          },
+          {
+            "word": "nos",
+            "count": 571,
+            "frequency": 0.0017
+          },
+          {
+            "word": "oh",
+            "count": 567,
+            "frequency": 0.0017
+          },
+          {
+            "word": "ai",
+            "count": 566,
+            "frequency": 0.0017
+          },
+          {
+            "word": "todo",
+            "count": 546,
+            "frequency": 0.0016
+          },
+          {
+            "word": "la",
+            "count": 537,
+            "frequency": 0.0016
+          },
+          {
+            "word": "sol",
+            "count": 529,
+            "frequency": 0.0016
+          },
+          {
+            "word": "era",
+            "count": 526,
+            "frequency": 0.0016
+          },
+          {
+            "word": "deus",
+            "count": 524,
+            "frequency": 0.0016
+          },
+          {
+            "word": "até",
+            "count": 518,
+            "frequency": 0.0016
+          },
+          {
+            "word": "quer",
+            "count": 511,
+            "frequency": 0.0015
+          },
+          {
+            "word": "há",
+            "count": 502,
+            "frequency": 0.0015
+          },
+          {
+            "word": "sua",
+            "count": 487,
+            "frequency": 0.0015
+          },
+          {
+            "word": "dos",
+            "count": 482,
+            "frequency": 0.0014
+          },
+          {
+            "word": "noite",
+            "count": 477,
+            "frequency": 0.0014
+          },
+          {
+            "word": "ah",
+            "count": 470,
+            "frequency": 0.0014
+          },
+          {
+            "word": "será",
+            "count": 469,
+            "frequency": 0.0014
+          },
+          {
+            "word": "nunca",
+            "count": 467,
+            "frequency": 0.0014
+          },
+          {
+            "word": "viver",
+            "count": 466,
+            "frequency": 0.0014
+          },
+          {
+            "word": "bom",
+            "count": 463,
+            "frequency": 0.0014
+          },
+          {
+            "word": "tenho",
+            "count": 452,
+            "frequency": 0.0014
+          },
+          {
+            "word": "aqui",
+            "count": 446,
+            "frequency": 0.0013
+          },
+          {
+            "word": "ter",
+            "count": 446,
+            "frequency": 0.0013
+          },
+          {
+            "word": "pode",
+            "count": 444,
+            "frequency": 0.0013
+          },
+          {
+            "word": "ele",
+            "count": 444,
+            "frequency": 0.0013
+          },
+          {
+            "word": "diz",
+            "count": 443,
+            "frequency": 0.0013
+          },
+          {
+            "word": "ninguém",
+            "count": 440,
+            "frequency": 0.0013
+          },
+          {
+            "word": "essa",
+            "count": 440,
+            "frequency": 0.0013
+          },
+          {
+            "word": "está",
+            "count": 436,
+            "frequency": 0.0013
+          },
+          {
+            "word": "feliz",
+            "count": 435,
+            "frequency": 0.0013
+          },
+          {
+            "word": "mesmo",
+            "count": 425,
+            "frequency": 0.0013
+          },
+          {
+            "word": "muito",
+            "count": 421,
+            "frequency": 0.0013
+          }
+        ]
+      },
+      "themes": {
+        "natureza": {
+          "song_count": 1315,
+          "percentage": 71.24
+        },
+        "amor_romantico": {
+          "song_count": 1157,
+          "percentage": 62.68
+        },
+        "social": {
+          "song_count": 979,
+          "percentage": 53.03
+        },
+        "familia": {
+          "song_count": 864,
+          "percentage": 46.8
+        },
+        "religioso": {
+          "song_count": 836,
+          "percentage": 45.29
+        },
+        "sofrimento": {
+          "song_count": 829,
+          "percentage": 44.91
+        },
+        "sexualidade": {
+          "song_count": 436,
+          "percentage": 23.62
+        },
+        "traicao": {
+          "song_count": 357,
+          "percentage": 19.34
+        },
+        "festa": {
+          "song_count": 348,
+          "percentage": 18.85
+        },
+        "urbano": {
+          "song_count": 312,
+          "percentage": 16.9
+        },
+        "saudade": {
+          "song_count": 290,
+          "percentage": 15.71
+        },
+        "ostentacao": {
+          "song_count": 156,
+          "percentage": 8.45
+        }
+      },
+      "structure": {
+        "avg_lines": 35.1,
+        "avg_words": 178.9,
+        "avg_paragraphs": 6.8,
+        "avg_repetition": 0.254,
+        "line_range": [
+          1,
+          203
+        ],
+        "word_range": [
+          8,
+          831
+        ]
+      },
+      "distinctive_features": {
+        "top_distinctive_words": [
+          {
+            "word": "non",
+            "genre_frequency": 0.00042,
+            "other_frequency": 0.0,
+            "distinctiveness": 192.98
+          },
+          {
+            "word": "carolina",
+            "genre_frequency": 0.00038,
+            "other_frequency": 1e-05,
+            "distinctiveness": 69.47
+          },
+          {
+            "word": "mona",
+            "genre_frequency": 0.00024,
+            "other_frequency": 1e-05,
+            "distinctiveness": 22.33
+          },
+          {
+            "word": "carol",
+            "genre_frequency": 0.00027,
+            "other_frequency": 1e-05,
+            "distinctiveness": 20.45
+          },
+          {
+            "word": "beira",
+            "genre_frequency": 0.00029,
+            "other_frequency": 2e-05,
+            "distinctiveness": 12.16
+          },
+          {
+            "word": "mar",
+            "genre_frequency": 0.00218,
+            "other_frequency": 0.00025,
+            "distinctiveness": 8.84
+          },
+          {
+            "word": "carnaval",
+            "genre_frequency": 0.00031,
+            "other_frequency": 4e-05,
+            "distinctiveness": 8.43
+          },
+          {
+            "word": "terra",
+            "genre_frequency": 0.00063,
+            "other_frequency": 8e-05,
+            "distinctiveness": 8.12
+          },
+          {
+            "word": "canta",
+            "genre_frequency": 0.00038,
+            "other_frequency": 5e-05,
+            "distinctiveness": 7.72
+          },
+          {
+            "word": "queres",
+            "genre_frequency": 0.00028,
+            "other_frequency": 4e-05,
+            "distinctiveness": 7.62
+          },
+          {
+            "word": "maria",
+            "genre_frequency": 0.00053,
+            "other_frequency": 7e-05,
+            "distinctiveness": 7.54
+          },
+          {
+            "word": "rosa",
+            "genre_frequency": 0.00045,
+            "other_frequency": 6e-05,
+            "distinctiveness": 7.47
+          },
+          {
+            "word": "cantando",
+            "genre_frequency": 0.00038,
+            "other_frequency": 5e-05,
+            "distinctiveness": 7.15
+          },
+          {
+            "word": "lhe",
+            "genre_frequency": 0.00122,
+            "other_frequency": 0.00018,
+            "distinctiveness": 6.8
+          },
+          {
+            "word": "cantar",
+            "genre_frequency": 0.00081,
+            "other_frequency": 0.00012,
+            "distinctiveness": 6.79
+          },
+          {
+            "word": "natal",
+            "genre_frequency": 0.00028,
+            "other_frequency": 4e-05,
+            "distinctiveness": 6.64
+          },
+          {
+            "word": "areia",
+            "genre_frequency": 0.00029,
+            "other_frequency": 4e-05,
+            "distinctiveness": 6.46
+          },
+          {
+            "word": "rio",
+            "genre_frequency": 0.00065,
+            "other_frequency": 0.00011,
+            "distinctiveness": 5.7
+          },
+          {
+            "word": "viva",
+            "genre_frequency": 0.0003,
+            "other_frequency": 6e-05,
+            "distinctiveness": 5.3
+          },
+          {
+            "word": "moça",
+            "genre_frequency": 0.00031,
+            "other_frequency": 6e-05,
+            "distinctiveness": 5.26
+          },
+          {
+            "word": "brasil",
+            "genre_frequency": 0.00038,
+            "other_frequency": 7e-05,
+            "distinctiveness": 5.15
+          },
+          {
+            "word": "pés",
+            "genre_frequency": 0.00032,
+            "other_frequency": 6e-05,
+            "distinctiveness": 5.13
+          },
+          {
+            "word": "bonita",
+            "genre_frequency": 0.00033,
+            "other_frequency": 7e-05,
+            "distinctiveness": 4.89
+          },
+          {
+            "word": "beleza",
+            "genre_frequency": 0.00032,
+            "other_frequency": 7e-05,
+            "distinctiveness": 4.8
+          },
+          {
+            "word": "pão",
+            "genre_frequency": 0.00026,
+            "other_frequency": 5e-05,
+            "distinctiveness": 4.8
+          },
+          {
+            "word": "flor",
+            "genre_frequency": 0.0008,
+            "other_frequency": 0.00017,
+            "distinctiveness": 4.77
+          },
+          {
+            "word": "samba",
+            "genre_frequency": 0.00098,
+            "other_frequency": 0.00021,
+            "distinctiveness": 4.67
+          },
+          {
+            "word": "roda",
+            "genre_frequency": 0.00028,
+            "other_frequency": 6e-05,
+            "distinctiveness": 4.61
+          },
+          {
+            "word": "estrada",
+            "genre_frequency": 0.00047,
+            "other_frequency": 0.0001,
+            "distinctiveness": 4.59
+          },
+          {
+            "word": "alegria",
+            "genre_frequency": 0.00049,
+            "other_frequency": 0.00011,
+            "distinctiveness": 4.56
+          },
+          {
+            "word": "canção",
+            "genre_frequency": 0.00059,
+            "other_frequency": 0.00013,
+            "distinctiveness": 4.47
+          },
+          {
+            "word": "pedra",
+            "genre_frequency": 0.0003,
+            "other_frequency": 7e-05,
+            "distinctiveness": 4.47
+          },
+          {
+            "word": "janela",
+            "genre_frequency": 0.00035,
+            "other_frequency": 8e-05,
+            "distinctiveness": 4.36
+          },
+          {
+            "word": "estrela",
+            "genre_frequency": 0.00038,
+            "other_frequency": 9e-05,
+            "distinctiveness": 4.3
+          },
+          {
+            "word": "luar",
+            "genre_frequency": 0.00025,
+            "other_frequency": 6e-05,
+            "distinctiveness": 4.24
+          },
+          {
+            "word": "azul",
+            "genre_frequency": 0.0006,
+            "other_frequency": 0.00014,
+            "distinctiveness": 4.2
+          },
+          {
+            "word": "água",
+            "genre_frequency": 0.00061,
+            "other_frequency": 0.00015,
+            "distinctiveness": 4.05
+          },
+          {
+            "word": "verde",
+            "genre_frequency": 0.00024,
+            "other_frequency": 6e-05,
+            "distinctiveness": 4.01
+          },
+          {
+            "word": "enfim",
+            "genre_frequency": 0.00031,
+            "other_frequency": 8e-05,
+            "distinctiveness": 4.0
+          },
+          {
+            "word": "dançar",
+            "genre_frequency": 0.00033,
+            "other_frequency": 8e-05,
+            "distinctiveness": 3.99
+          },
+          {
+            "word": "senhor",
+            "genre_frequency": 0.0003,
+            "other_frequency": 8e-05,
+            "distinctiveness": 3.98
+          },
+          {
+            "word": "povo",
+            "genre_frequency": 0.00049,
+            "other_frequency": 0.00012,
+            "distinctiveness": 3.97
+          },
+          {
+            "word": "estrelas",
+            "genre_frequency": 0.00029,
+            "other_frequency": 8e-05,
+            "distinctiveness": 3.88
+          },
+          {
+            "word": "venha",
+            "genre_frequency": 0.00045,
+            "other_frequency": 0.00012,
+            "distinctiveness": 3.7
+          },
+          {
+            "word": "vento",
+            "genre_frequency": 0.00061,
+            "other_frequency": 0.00017,
+            "distinctiveness": 3.66
+          },
+          {
+            "word": "menino",
+            "genre_frequency": 0.00038,
+            "other_frequency": 0.00011,
+            "distinctiveness": 3.61
+          },
+          {
+            "word": "aos",
+            "genre_frequency": 0.00034,
+            "other_frequency": 0.0001,
+            "distinctiveness": 3.51
+          },
+          {
+            "word": "morena",
+            "genre_frequency": 0.00032,
+            "other_frequency": 9e-05,
+            "distinctiveness": 3.48
+          },
+          {
+            "word": "esperança",
+            "genre_frequency": 0.00024,
+            "other_frequency": 7e-05,
+            "distinctiveness": 3.44
+          },
+          {
+            "word": "teus",
+            "genre_frequency": 0.00046,
+            "other_frequency": 0.00014,
+            "distinctiveness": 3.42
+          }
+        ]
+      },
+      "common_patterns": {
+        "structure_markers": {
+          "refrão": {
+            "count": 7,
+            "percentage": 0.38
+          },
+          "verso": {
+            "count": 79,
+            "percentage": 4.28
+          },
+          "verse": {
+            "count": 3,
+            "percentage": 0.16
+          },
+          "intro": {
+            "count": 5,
+            "percentage": 0.27
+          },
+          "ponte": {
+            "count": 19,
+            "percentage": 1.03
+          }
+        }
+      }
+    },
+    "Arrocha": {
+      "song_count": 974,
+      "vocabulary": {
+        "total_words": 178260,
+        "unique_words": 7148,
+        "vocabulary_richness": 0.0401,
+        "avg_word_length": 3.9,
+        "top_100_words": [
+          {
+            "word": "que",
+            "count": 6620,
+            "frequency": 0.0371
+          },
+          {
+            "word": "eu",
+            "count": 6164,
+            "frequency": 0.0346
+          },
+          {
+            "word": "não",
+            "count": 4481,
+            "frequency": 0.0251
+          },
+          {
+            "word": "o",
+            "count": 4264,
+            "frequency": 0.0239
+          },
+          {
+            "word": "e",
+            "count": 3957,
+            "frequency": 0.0222
+          },
+          {
+            "word": "de",
+            "count": 3925,
+            "frequency": 0.022
+          },
+          {
+            "word": "você",
+            "count": 3526,
+            "frequency": 0.0198
+          },
+          {
+            "word": "a",
+            "count": 3485,
+            "frequency": 0.0196
+          },
+          {
+            "word": "me",
+            "count": 3110,
+            "frequency": 0.0174
+          },
+          {
+            "word": "é",
+            "count": 2868,
+            "frequency": 0.0161
+          },
+          {
+            "word": "pra",
+            "count": 2868,
+            "frequency": 0.0161
+          },
+          {
+            "word": "te",
+            "count": 2539,
+            "frequency": 0.0142
+          },
+          {
+            "word": "se",
+            "count": 2032,
+            "frequency": 0.0114
+          },
+          {
+            "word": "vai",
+            "count": 1756,
+            "frequency": 0.0099
+          },
+          {
+            "word": "meu",
+            "count": 1746,
+            "frequency": 0.0098
+          },
+          {
+            "word": "amor",
+            "count": 1713,
+            "frequency": 0.0096
+          },
+          {
+            "word": "um",
+            "count": 1587,
+            "frequency": 0.0089
+          },
+          {
+            "word": "na",
+            "count": 1471,
+            "frequency": 0.0083
+          },
+          {
+            "word": "só",
+            "count": 1418,
+            "frequency": 0.008
+          },
+          {
+            "word": "com",
+            "count": 1344,
+            "frequency": 0.0075
+          },
+          {
+            "word": "no",
+            "count": 1292,
+            "frequency": 0.0072
+          },
+          {
+            "word": "do",
+            "count": 1241,
+            "frequency": 0.007
+          },
+          {
+            "word": "vou",
+            "count": 1235,
+            "frequency": 0.0069
+          },
+          {
+            "word": "seu",
+            "count": 1183,
+            "frequency": 0.0066
+          },
+          {
+            "word": "mais",
+            "count": 1179,
+            "frequency": 0.0066
+          },
+          {
+            "word": "mas",
+            "count": 1125,
+            "frequency": 0.0063
+          },
+          {
+            "word": "minha",
+            "count": 1045,
+            "frequency": 0.0059
+          },
+          {
+            "word": "ela",
+            "count": 1041,
+            "frequency": 0.0058
+          },
+          {
+            "word": "em",
+            "count": 1039,
+            "frequency": 0.0058
+          },
+          {
+            "word": "tá",
+            "count": 990,
+            "frequency": 0.0056
+          },
+          {
+            "word": "por",
+            "count": 898,
+            "frequency": 0.005
+          },
+          {
+            "word": "da",
+            "count": 888,
+            "frequency": 0.005
+          },
+          {
+            "word": "tô",
+            "count": 883,
+            "frequency": 0.005
+          },
+          {
+            "word": "uma",
+            "count": 856,
+            "frequency": 0.0048
+          },
+          {
+            "word": "já",
+            "count": 795,
+            "frequency": 0.0045
+          },
+          {
+            "word": "mim",
+            "count": 794,
+            "frequency": 0.0045
+          },
+          {
+            "word": "tem",
+            "count": 769,
+            "frequency": 0.0043
+          },
+          {
+            "word": "coração",
+            "count": 756,
+            "frequency": 0.0042
+          },
+          {
+            "word": "sem",
+            "count": 685,
+            "frequency": 0.0038
+          },
+          {
+            "word": "quando",
+            "count": 651,
+            "frequency": 0.0037
+          },
+          {
+            "word": "ser",
+            "count": 643,
+            "frequency": 0.0036
+          },
+          {
+            "word": "sua",
+            "count": 634,
+            "frequency": 0.0036
+          },
+          {
+            "word": "quero",
+            "count": 634,
+            "frequency": 0.0036
+          },
+          {
+            "word": "vida",
+            "count": 614,
+            "frequency": 0.0034
+          },
+          {
+            "word": "foi",
+            "count": 613,
+            "frequency": 0.0034
+          },
+          {
+            "word": "gente",
+            "count": 591,
+            "frequency": 0.0033
+          },
+          {
+            "word": "faz",
+            "count": 589,
+            "frequency": 0.0033
+          },
+          {
+            "word": "tudo",
+            "count": 562,
+            "frequency": 0.0032
+          },
+          {
+            "word": "sei",
+            "count": 555,
+            "frequency": 0.0031
+          },
+          {
+            "word": "sou",
+            "count": 553,
+            "frequency": 0.0031
+          },
+          {
+            "word": "quem",
+            "count": 549,
+            "frequency": 0.0031
+          },
+          {
+            "word": "quer",
+            "count": 543,
+            "frequency": 0.003
+          },
+          {
+            "word": "vem",
+            "count": 530,
+            "frequency": 0.003
+          },
+          {
+            "word": "cê",
+            "count": 493,
+            "frequency": 0.0028
+          },
+          {
+            "word": "aqui",
+            "count": 477,
+            "frequency": 0.0027
+          },
+          {
+            "word": "agora",
+            "count": 474,
+            "frequency": 0.0027
+          },
+          {
+            "word": "como",
+            "count": 455,
+            "frequency": 0.0026
+          },
+          {
+            "word": "bem",
+            "count": 438,
+            "frequency": 0.0025
+          },
+          {
+            "word": "amar",
+            "count": 431,
+            "frequency": 0.0024
+          },
+          {
+            "word": "nem",
+            "count": 429,
+            "frequency": 0.0024
+          },
+          {
+            "word": "assim",
+            "count": 417,
+            "frequency": 0.0023
+          },
+          {
+            "word": "ver",
+            "count": 415,
+            "frequency": 0.0023
+          },
+          {
+            "word": "esse",
+            "count": 406,
+            "frequency": 0.0023
+          },
+          {
+            "word": "ele",
+            "count": 402,
+            "frequency": 0.0023
+          },
+          {
+            "word": "fazer",
+            "count": 394,
+            "frequency": 0.0022
+          },
+          {
+            "word": "aí",
+            "count": 393,
+            "frequency": 0.0022
+          },
+          {
+            "word": "essa",
+            "count": 382,
+            "frequency": 0.0021
+          },
+          {
+            "word": "era",
+            "count": 364,
+            "frequency": 0.002
+          },
+          {
+            "word": "tu",
+            "count": 363,
+            "frequency": 0.002
+          },
+          {
+            "word": "saudade",
+            "count": 363,
+            "frequency": 0.002
+          },
+          {
+            "word": "amo",
+            "count": 358,
+            "frequency": 0.002
+          },
+          {
+            "word": "as",
+            "count": 337,
+            "frequency": 0.0019
+          },
+          {
+            "word": "ai",
+            "count": 331,
+            "frequency": 0.0019
+          },
+          {
+            "word": "isso",
+            "count": 323,
+            "frequency": 0.0018
+          },
+          {
+            "word": "sabe",
+            "count": 321,
+            "frequency": 0.0018
+          },
+          {
+            "word": "sempre",
+            "count": 319,
+            "frequency": 0.0018
+          },
+          {
+            "word": "teu",
+            "count": 317,
+            "frequency": 0.0018
+          },
+          {
+            "word": "oh",
+            "count": 314,
+            "frequency": 0.0018
+          },
+          {
+            "word": "ter",
+            "count": 312,
+            "frequency": 0.0018
+          },
+          {
+            "word": "tempo",
+            "count": 307,
+            "frequency": 0.0017
+          },
+          {
+            "word": "deixa",
+            "count": 302,
+            "frequency": 0.0017
+          },
+          {
+            "word": "pro",
+            "count": 302,
+            "frequency": 0.0017
+          },
+          {
+            "word": "nunca",
+            "count": 298,
+            "frequency": 0.0017
+          },
+          {
+            "word": "nada",
+            "count": 297,
+            "frequency": 0.0017
+          },
+          {
+            "word": "porque",
+            "count": 295,
+            "frequency": 0.0017
+          },
+          {
+            "word": "vez",
+            "count": 294,
+            "frequency": 0.0016
+          },
+          {
+            "word": "dia",
+            "count": 294,
+            "frequency": 0.0016
+          },
+          {
+            "word": "ficar",
+            "count": 287,
+            "frequency": 0.0016
+          },
+          {
+            "word": "ou",
+            "count": 282,
+            "frequency": 0.0016
+          },
+          {
+            "word": "os",
+            "count": 282,
+            "frequency": 0.0016
+          },
+          {
+            "word": "pode",
+            "count": 282,
+            "frequency": 0.0016
+          },
+          {
+            "word": "boca",
+            "count": 278,
+            "frequency": 0.0016
+          },
+          {
+            "word": "mesmo",
+            "count": 272,
+            "frequency": 0.0015
+          },
+          {
+            "word": "beijo",
+            "count": 269,
+            "frequency": 0.0015
+          },
+          {
+            "word": "ainda",
+            "count": 259,
+            "frequency": 0.0015
+          },
+          {
+            "word": "diz",
+            "count": 259,
+            "frequency": 0.0015
+          },
+          {
+            "word": "até",
+            "count": 257,
+            "frequency": 0.0014
+          },
+          {
+            "word": "mundo",
+            "count": 256,
+            "frequency": 0.0014
+          },
+          {
+            "word": "dá",
+            "count": 256,
+            "frequency": 0.0014
+          },
+          {
+            "word": "tão",
+            "count": 251,
+            "frequency": 0.0014
+          }
+        ]
+      },
+      "themes": {
+        "amor_romantico": {
+          "song_count": 750,
+          "percentage": 77.0
+        },
+        "natureza": {
+          "song_count": 538,
+          "percentage": 55.24
+        },
+        "social": {
+          "song_count": 523,
+          "percentage": 53.7
+        },
+        "sofrimento": {
+          "song_count": 457,
+          "percentage": 46.92
+        },
+        "familia": {
+          "song_count": 456,
+          "percentage": 46.82
+        },
+        "religioso": {
+          "song_count": 450,
+          "percentage": 46.2
+        },
+        "sexualidade": {
+          "song_count": 325,
+          "percentage": 33.37
+        },
+        "saudade": {
+          "song_count": 278,
+          "percentage": 28.54
+        },
+        "traicao": {
+          "song_count": 249,
+          "percentage": 25.56
+        },
+        "urbano": {
+          "song_count": 147,
+          "percentage": 15.09
+        },
+        "festa": {
+          "song_count": 125,
+          "percentage": 12.83
+        },
+        "ostentacao": {
+          "song_count": 89,
+          "percentage": 9.14
+        }
+      },
+      "structure": {
+        "avg_lines": 30.0,
+        "avg_words": 182.1,
+        "avg_paragraphs": 6.6,
+        "avg_repetition": 0.345,
+        "line_range": [
+          2,
+          174
+        ],
+        "word_range": [
+          12,
+          1058
+        ]
+      },
+      "distinctive_features": {
+        "top_distinctive_words": [
+          {
+            "word": "bilu",
+            "genre_frequency": 0.00025,
+            "other_frequency": 0.0,
+            "distinctiveness": 264.83
+          },
+          {
+            "word": "soca",
+            "genre_frequency": 0.00024,
+            "other_frequency": 0.0,
+            "distinctiveness": 252.79
+          },
+          {
+            "word": "vuco",
+            "genre_frequency": 0.00025,
+            "other_frequency": 0.0,
+            "distinctiveness": 132.42
+          },
+          {
+            "word": "nattanzinho",
+            "genre_frequency": 0.00025,
+            "other_frequency": 0.0,
+            "distinctiveness": 132.42
+          },
+          {
+            "word": "cabaré",
+            "genre_frequency": 0.00038,
+            "other_frequency": 1e-05,
+            "distinctiveness": 67.21
+          },
+          {
+            "word": "naipe",
+            "genre_frequency": 0.00029,
+            "other_frequency": 1e-05,
+            "distinctiveness": 31.3
+          },
+          {
+            "word": "postar",
+            "genre_frequency": 0.00033,
+            "other_frequency": 1e-05,
+            "distinctiveness": 21.82
+          },
+          {
+            "word": "oito",
+            "genre_frequency": 0.00036,
+            "other_frequency": 2e-05,
+            "distinctiveness": 14.82
+          },
+          {
+            "word": "paredão",
+            "genre_frequency": 0.00029,
+            "other_frequency": 2e-05,
+            "distinctiveness": 12.79
+          },
+          {
+            "word": "espada",
+            "genre_frequency": 0.00025,
+            "other_frequency": 2e-05,
+            "distinctiveness": 11.51
+          },
+          {
+            "word": "coroa",
+            "genre_frequency": 0.00036,
+            "other_frequency": 4e-05,
+            "distinctiveness": 9.54
+          },
+          {
+            "word": "solteiro",
+            "genre_frequency": 0.00036,
+            "other_frequency": 4e-05,
+            "distinctiveness": 9.4
+          },
+          {
+            "word": "machuca",
+            "genre_frequency": 0.00031,
+            "other_frequency": 4e-05,
+            "distinctiveness": 8.64
+          },
+          {
+            "word": "bebendo",
+            "genre_frequency": 0.00041,
+            "other_frequency": 5e-05,
+            "distinctiveness": 7.99
+          },
+          {
+            "word": "descendo",
+            "genre_frequency": 0.00026,
+            "other_frequency": 3e-05,
+            "distinctiveness": 7.91
+          },
+          {
+            "word": "bumbum",
+            "genre_frequency": 0.00033,
+            "other_frequency": 4e-05,
+            "distinctiveness": 7.76
+          },
+          {
+            "word": "bebida",
+            "genre_frequency": 0.0003,
+            "other_frequency": 4e-05,
+            "distinctiveness": 7.25
+          },
+          {
+            "word": "volte",
+            "genre_frequency": 0.00029,
+            "other_frequency": 4e-05,
+            "distinctiveness": 7.11
+          },
+          {
+            "word": "daí",
+            "genre_frequency": 0.00029,
+            "other_frequency": 4e-05,
+            "distinctiveness": 6.53
+          },
+          {
+            "word": "novinha",
+            "genre_frequency": 0.00052,
+            "other_frequency": 8e-05,
+            "distinctiveness": 6.29
+          },
+          {
+            "word": "machucar",
+            "genre_frequency": 0.00052,
+            "other_frequency": 9e-05,
+            "distinctiveness": 5.77
+          },
+          {
+            "word": "seis",
+            "genre_frequency": 0.00031,
+            "other_frequency": 6e-05,
+            "distinctiveness": 5.25
+          },
+          {
+            "word": "bar",
+            "genre_frequency": 0.00037,
+            "other_frequency": 7e-05,
+            "distinctiveness": 5.09
+          },
+          {
+            "word": "perdoa",
+            "genre_frequency": 0.00043,
+            "other_frequency": 8e-05,
+            "distinctiveness": 5.03
+          },
+          {
+            "word": "raiva",
+            "genre_frequency": 0.00047,
+            "other_frequency": 9e-05,
+            "distinctiveness": 5.01
+          },
+          {
+            "word": "prometo",
+            "genre_frequency": 0.00035,
+            "other_frequency": 7e-05,
+            "distinctiveness": 4.98
+          },
+          {
+            "word": "doer",
+            "genre_frequency": 0.0004,
+            "other_frequency": 8e-05,
+            "distinctiveness": 4.92
+          },
+          {
+            "word": "pau",
+            "genre_frequency": 0.001,
+            "other_frequency": 0.0002,
+            "distinctiveness": 4.91
+          },
+          {
+            "word": "gostoso",
+            "genre_frequency": 0.00085,
+            "other_frequency": 0.00018,
+            "distinctiveness": 4.76
+          },
+          {
+            "word": "casal",
+            "genre_frequency": 0.00029,
+            "other_frequency": 7e-05,
+            "distinctiveness": 4.26
+          },
+          {
+            "word": "bebê",
+            "genre_frequency": 0.00066,
+            "other_frequency": 0.00016,
+            "distinctiveness": 4.05
+          },
+          {
+            "word": "boto",
+            "genre_frequency": 0.00024,
+            "other_frequency": 6e-05,
+            "distinctiveness": 4.04
+          },
+          {
+            "word": "pense",
+            "genre_frequency": 0.00024,
+            "other_frequency": 6e-05,
+            "distinctiveness": 3.98
+          },
+          {
+            "word": "chorando",
+            "genre_frequency": 0.00047,
+            "other_frequency": 0.00012,
+            "distinctiveness": 3.86
+          },
+          {
+            "word": "sete",
+            "genre_frequency": 0.00034,
+            "other_frequency": 0.0001,
+            "distinctiveness": 3.56
+          },
+          {
+            "word": "alô",
+            "genre_frequency": 0.00054,
+            "other_frequency": 0.00015,
+            "distinctiveness": 3.54
+          },
+          {
+            "word": "fotos",
+            "genre_frequency": 0.00024,
+            "other_frequency": 7e-05,
+            "distinctiveness": 3.51
+          },
+          {
+            "word": "beber",
+            "genre_frequency": 0.0005,
+            "other_frequency": 0.00014,
+            "distinctiveness": 3.46
+          },
+          {
+            "word": "chorei",
+            "genre_frequency": 0.00034,
+            "other_frequency": 0.0001,
+            "distinctiveness": 3.46
+          },
+          {
+            "word": "sofrendo",
+            "genre_frequency": 0.00044,
+            "other_frequency": 0.00013,
+            "distinctiveness": 3.3
+          },
+          {
+            "word": "chance",
+            "genre_frequency": 0.00036,
+            "other_frequency": 0.00011,
+            "distinctiveness": 3.26
+          },
+          {
+            "word": "choro",
+            "genre_frequency": 0.00057,
+            "other_frequency": 0.00018,
+            "distinctiveness": 3.15
+          },
+          {
+            "word": "acabou",
+            "genre_frequency": 0.00077,
+            "other_frequency": 0.00025,
+            "distinctiveness": 3.12
+          },
+          {
+            "word": "bandida",
+            "genre_frequency": 0.00024,
+            "other_frequency": 8e-05,
+            "distinctiveness": 3.08
+          },
+          {
+            "word": "amando",
+            "genre_frequency": 0.00029,
+            "other_frequency": 9e-05,
+            "distinctiveness": 3.07
+          },
+          {
+            "word": "celular",
+            "genre_frequency": 0.00041,
+            "other_frequency": 0.00013,
+            "distinctiveness": 3.05
+          },
+          {
+            "word": "terminar",
+            "genre_frequency": 0.00024,
+            "other_frequency": 8e-05,
+            "distinctiveness": 3.01
+          },
+          {
+            "word": "tomar",
+            "genre_frequency": 0.00048,
+            "other_frequency": 0.00016,
+            "distinctiveness": 2.94
+          },
+          {
+            "word": "pegar",
+            "genre_frequency": 0.00044,
+            "other_frequency": 0.00015,
+            "distinctiveness": 2.94
+          },
+          {
+            "word": "senta",
+            "genre_frequency": 0.00075,
+            "other_frequency": 0.00026,
+            "distinctiveness": 2.88
+          }
+        ]
+      },
+      "common_patterns": {
+        "structure_markers": {
+          "refrão": {
+            "count": 3,
+            "percentage": 0.31
+          },
+          "verso": {
+            "count": 9,
+            "percentage": 0.92
+          },
+          "ponte": {
+            "count": 2,
+            "percentage": 0.21
+          }
+        }
+      }
+    }
+  }
+}

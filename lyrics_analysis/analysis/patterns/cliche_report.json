@@ -1,0 +1,3079 @@
+{
+  "overview": {
+    "total_songs": 5159,
+    "ngram_sizes_analyzed": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "unique_ngrams": {
+      "2": 312439,
+      "3": 604522,
+      "4": 727577,
+      "5": 767076
+    }
+  },
+  "top_cliches_by_size": {
+    "2-grams": [
+      {
+        "phrase": "que eu",
+        "count": 7310,
+        "percentage": 141.69
+      },
+      {
+        "phrase": "o que",
+        "count": 4380,
+        "percentage": 84.9
+      },
+      {
+        "phrase": "eu não",
+        "count": 3800,
+        "percentage": 73.66
+      },
+      {
+        "phrase": "a gente",
+        "count": 2548,
+        "percentage": 49.39
+      },
+      {
+        "phrase": "eu vou",
+        "count": 2424,
+        "percentage": 46.99
+      },
+      {
+        "phrase": "o meu",
+        "count": 2239,
+        "percentage": 43.4
+      },
+      {
+        "phrase": "que não",
+        "count": 1991,
+        "percentage": 38.59
+      },
+      {
+        "phrase": "eu te",
+        "count": 1867,
+        "percentage": 36.19
+      },
+      {
+        "phrase": "que é",
+        "count": 1865,
+        "percentage": 36.15
+      },
+      {
+        "phrase": "que a",
+        "count": 1864,
+        "percentage": 36.13
+      },
+      {
+        "phrase": "eu tô",
+        "count": 1788,
+        "percentage": 34.66
+      },
+      {
+        "phrase": "que você",
+        "count": 1713,
+        "percentage": 33.2
+      },
+      {
+        "phrase": "é o",
+        "count": 1701,
+        "percentage": 32.97
+      },
+      {
+        "phrase": "que o",
+        "count": 1681,
+        "percentage": 32.58
+      },
+      {
+        "phrase": "e eu",
+        "count": 1656,
+        "percentage": 32.1
+      },
+      {
+        "phrase": "e o",
+        "count": 1635,
+        "percentage": 31.69
+      },
+      {
+        "phrase": "eu sou",
+        "count": 1543,
+        "percentage": 29.91
+      },
+      {
+        "phrase": "meu coração",
+        "count": 1535,
+        "percentage": 29.75
+      },
+      {
+        "phrase": "sei que",
+        "count": 1463,
+        "percentage": 28.36
+      },
+      {
+        "phrase": "é que",
+        "count": 1462,
+        "percentage": 28.34
+      },
+      {
+        "phrase": "pra mim",
+        "count": 1404,
+        "percentage": 27.21
+      },
+      {
+        "phrase": "se eu",
+        "count": 1325,
+        "percentage": 25.68
+      },
+      {
+        "phrase": "não tem",
+        "count": 1323,
+        "percentage": 25.64
+      },
+      {
+        "phrase": "de mim",
+        "count": 1292,
+        "percentage": 25.04
+      },
+      {
+        "phrase": "você não",
+        "count": 1280,
+        "percentage": 24.81
+      },
+      {
+        "phrase": "não me",
+        "count": 1277,
+        "percentage": 24.75
+      },
+      {
+        "phrase": "que me",
+        "count": 1274,
+        "percentage": 24.69
+      },
+      {
+        "phrase": "não é",
+        "count": 1253,
+        "percentage": 24.29
+      },
+      {
+        "phrase": "com a",
+        "count": 1213,
+        "percentage": 23.51
+      },
+      {
+        "phrase": "o seu",
+        "count": 1213,
+        "percentage": 23.51
+      },
+      {
+        "phrase": "eu quero",
+        "count": 1212,
+        "percentage": 23.49
+      },
+      {
+        "phrase": "eu sei",
+        "count": 1208,
+        "percentage": 23.42
+      },
+      {
+        "phrase": "a minha",
+        "count": 1203,
+        "percentage": 23.32
+      },
+      {
+        "phrase": "e a",
+        "count": 1169,
+        "percentage": 22.66
+      },
+      {
+        "phrase": "o amor",
+        "count": 1138,
+        "percentage": 22.06
+      },
+      {
+        "phrase": "a vida",
+        "count": 1108,
+        "percentage": 21.48
+      },
+      {
+        "phrase": "você me",
+        "count": 1105,
+        "percentage": 21.42
+      },
+      {
+        "phrase": "não sei",
+        "count": 1079,
+        "percentage": 20.91
+      },
+      {
+        "phrase": "oh oh",
+        "count": 1041,
+        "percentage": 20.18
+      },
+      {
+        "phrase": "do meu",
+        "count": 996,
+        "percentage": 19.31
+      },
+      {
+        "phrase": "ai ai",
+        "count": 987,
+        "percentage": 19.13
+      },
+      {
+        "phrase": "na minha",
+        "count": 976,
+        "percentage": 18.92
+      },
+      {
+        "phrase": "no meu",
+        "count": 969,
+        "percentage": 18.78
+      },
+      {
+        "phrase": "de amor",
+        "count": 948,
+        "percentage": 18.38
+      },
+      {
+        "phrase": "te amo",
+        "count": 919,
+        "percentage": 17.81
+      },
+      {
+        "phrase": "com o",
+        "count": 916,
+        "percentage": 17.76
+      },
+      {
+        "phrase": "e não",
+        "count": 911,
+        "percentage": 17.66
+      },
+      {
+        "phrase": "eu já",
+        "count": 895,
+        "percentage": 17.35
+      },
+      {
+        "phrase": "pra você",
+        "count": 890,
+        "percentage": 17.25
+      },
+      {
+        "phrase": "de um",
+        "count": 887,
+        "percentage": 17.19
+      }
+    ],
+    "3-grams": [
+      {
+        "phrase": "que eu não",
+        "count": 793,
+        "percentage": 15.37
+      },
+      {
+        "phrase": "ai ai ai",
+        "count": 736,
+        "percentage": 14.27
+      },
+      {
+        "phrase": "o que eu",
+        "count": 733,
+        "percentage": 14.21
+      },
+      {
+        "phrase": "que a gente",
+        "count": 679,
+        "percentage": 13.16
+      },
+      {
+        "phrase": "eu sei que",
+        "count": 652,
+        "percentage": 12.64
+      },
+      {
+        "phrase": "oh oh oh",
+        "count": 627,
+        "percentage": 12.15
+      },
+      {
+        "phrase": "o que é",
+        "count": 499,
+        "percentage": 9.67
+      },
+      {
+        "phrase": "que eu vou",
+        "count": 467,
+        "percentage": 9.05
+      },
+      {
+        "phrase": "é que eu",
+        "count": 419,
+        "percentage": 8.12
+      },
+      {
+        "phrase": "que eu tô",
+        "count": 418,
+        "percentage": 8.1
+      },
+      {
+        "phrase": "eu não sei",
+        "count": 403,
+        "percentage": 7.81
+      },
+      {
+        "phrase": "que eu te",
+        "count": 391,
+        "percentage": 7.58
+      },
+      {
+        "phrase": "a gente se",
+        "count": 374,
+        "percentage": 7.25
+      },
+      {
+        "phrase": "eu não vou",
+        "count": 372,
+        "percentage": 7.21
+      },
+      {
+        "phrase": "ah ah ah",
+        "count": 358,
+        "percentage": 6.94
+      },
+      {
+        "phrase": "eu vou te",
+        "count": 353,
+        "percentage": 6.84
+      },
+      {
+        "phrase": "que eu sou",
+        "count": 352,
+        "percentage": 6.82
+      },
+      {
+        "phrase": "yeah yeah yeah",
+        "count": 338,
+        "percentage": 6.55
+      },
+      {
+        "phrase": "eu te amo",
+        "count": 330,
+        "percentage": 6.4
+      },
+      {
+        "phrase": "lá lá lá",
+        "count": 330,
+        "percentage": 6.4
+      },
+      {
+        "phrase": "o meu coração",
+        "count": 329,
+        "percentage": 6.38
+      },
+      {
+        "phrase": "eu não sou",
+        "count": 324,
+        "percentage": 6.28
+      },
+      {
+        "phrase": "uh uh uh",
+        "count": 320,
+        "percentage": 6.2
+      },
+      {
+        "phrase": "ô ô ô",
+        "count": 275,
+        "percentage": 5.33
+      },
+      {
+        "phrase": "eu não quero",
+        "count": 262,
+        "percentage": 5.08
+      },
+      {
+        "phrase": "tudo que eu",
+        "count": 251,
+        "percentage": 4.87
+      },
+      {
+        "phrase": "na na na",
+        "count": 246,
+        "percentage": 4.77
+      },
+      {
+        "phrase": "o nosso amor",
+        "count": 240,
+        "percentage": 4.65
+      },
+      {
+        "phrase": "não sei se",
+        "count": 239,
+        "percentage": 4.63
+      },
+      {
+        "phrase": "que é que",
+        "count": 239,
+        "percentage": 4.63
+      },
+      {
+        "phrase": "e eu não",
+        "count": 234,
+        "percentage": 4.54
+      },
+      {
+        "phrase": "como é que",
+        "count": 230,
+        "percentage": 4.46
+      },
+      {
+        "phrase": "eu sou o",
+        "count": 221,
+        "percentage": 4.28
+      },
+      {
+        "phrase": "que o amor",
+        "count": 220,
+        "percentage": 4.26
+      },
+      {
+        "phrase": "não dá pra",
+        "count": 219,
+        "percentage": 4.25
+      },
+      {
+        "phrase": "que eu quero",
+        "count": 218,
+        "percentage": 4.23
+      },
+      {
+        "phrase": "o que você",
+        "count": 217,
+        "percentage": 4.21
+      },
+      {
+        "phrase": "o meu amor",
+        "count": 215,
+        "percentage": 4.17
+      },
+      {
+        "phrase": "a minha vida",
+        "count": 214,
+        "percentage": 4.15
+      },
+      {
+        "phrase": "tudo o que",
+        "count": 205,
+        "percentage": 3.97
+      },
+      {
+        "phrase": "a vida é",
+        "count": 205,
+        "percentage": 3.97
+      },
+      {
+        "phrase": "que não tem",
+        "count": 201,
+        "percentage": 3.9
+      },
+      {
+        "phrase": "não não não",
+        "count": 200,
+        "percentage": 3.88
+      },
+      {
+        "phrase": "mm mm mm",
+        "count": 200,
+        "percentage": 3.88
+      },
+      {
+        "phrase": "da minha vida",
+        "count": 199,
+        "percentage": 3.86
+      },
+      {
+        "phrase": "eu só quero",
+        "count": 198,
+        "percentage": 3.84
+      },
+      {
+        "phrase": "que eu tenho",
+        "count": 194,
+        "percentage": 3.76
+      },
+      {
+        "phrase": "la la la",
+        "count": 194,
+        "percentage": 3.76
+      },
+      {
+        "phrase": "te amo te",
+        "count": 193,
+        "percentage": 3.74
+      },
+      {
+        "phrase": "que a vida",
+        "count": 190,
+        "percentage": 3.68
+      }
+    ],
+    "4-grams": [
+      {
+        "phrase": "ai ai ai ai",
+        "count": 598,
+        "percentage": 11.59
+      },
+      {
+        "phrase": "oh oh oh oh",
+        "count": 385,
+        "percentage": 7.46
+      },
+      {
+        "phrase": "lá lá lá lá",
+        "count": 290,
+        "percentage": 5.62
+      },
+      {
+        "phrase": "ah ah ah ah",
+        "count": 219,
+        "percentage": 4.25
+      },
+      {
+        "phrase": "na na na na",
+        "count": 216,
+        "percentage": 4.19
+      },
+      {
+        "phrase": "uh uh uh uh",
+        "count": 212,
+        "percentage": 4.11
+      },
+      {
+        "phrase": "ô ô ô ô",
+        "count": 208,
+        "percentage": 4.03
+      },
+      {
+        "phrase": "o que é que",
+        "count": 197,
+        "percentage": 3.82
+      },
+      {
+        "phrase": "yeah yeah yeah yeah",
+        "count": 190,
+        "percentage": 3.68
+      },
+      {
+        "phrase": "mm mm mm mm",
+        "count": 188,
+        "percentage": 3.64
+      },
+      {
+        "phrase": "te amo te amo",
+        "count": 157,
+        "percentage": 3.04
+      },
+      {
+        "phrase": "la la la la",
+        "count": 148,
+        "percentage": 2.87
+      },
+      {
+        "phrase": "não sei o que",
+        "count": 120,
+        "percentage": 2.33
+      },
+      {
+        "phrase": "lê lê lê lê",
+        "count": 116,
+        "percentage": 2.25
+      },
+      {
+        "phrase": "bole bole bole bole",
+        "count": 107,
+        "percentage": 2.07
+      },
+      {
+        "phrase": "amo te amo te",
+        "count": 101,
+        "percentage": 1.96
+      },
+      {
+        "phrase": "que é que eu",
+        "count": 97,
+        "percentage": 1.88
+      },
+      {
+        "phrase": "não não não não",
+        "count": 97,
+        "percentage": 1.88
+      },
+      {
+        "phrase": "ahn ahn ahn ahn",
+        "count": 96,
+        "percentage": 1.86
+      },
+      {
+        "phrase": "eu não sei se",
+        "count": 83,
+        "percentage": 1.61
+      },
+      {
+        "phrase": "toda vez que eu",
+        "count": 82,
+        "percentage": 1.59
+      },
+      {
+        "phrase": "que a gente se",
+        "count": 81,
+        "percentage": 1.57
+      },
+      {
+        "phrase": "tempo tempo tempo tempo",
+        "count": 80,
+        "percentage": 1.55
+      },
+      {
+        "phrase": "pô pô pô pô",
+        "count": 79,
+        "percentage": 1.53
+      },
+      {
+        "phrase": "que eu não sei",
+        "count": 78,
+        "percentage": 1.51
+      },
+      {
+        "phrase": "que eu vou te",
+        "count": 75,
+        "percentage": 1.45
+      },
+      {
+        "phrase": "por isso que eu",
+        "count": 72,
+        "percentage": 1.4
+      },
+      {
+        "phrase": "não sabe o que",
+        "count": 70,
+        "percentage": 1.36
+      },
+      {
+        "phrase": "tão bom tão bom",
+        "count": 70,
+        "percentage": 1.36
+      },
+      {
+        "phrase": "eu sei que o",
+        "count": 69,
+        "percentage": 1.34
+      },
+      {
+        "phrase": "iê iê iê iê",
+        "count": 69,
+        "percentage": 1.34
+      },
+      {
+        "phrase": "tudo o que eu",
+        "count": 68,
+        "percentage": 1.32
+      },
+      {
+        "phrase": "o que eu quero",
+        "count": 68,
+        "percentage": 1.32
+      },
+      {
+        "phrase": "sabe o que é",
+        "count": 67,
+        "percentage": 1.3
+      },
+      {
+        "phrase": "que eu te amo",
+        "count": 65,
+        "percentage": 1.26
+      },
+      {
+        "phrase": "ਨ ਕਰ ਮ ਣ",
+        "count": 65,
+        "percentage": 1.26
+      },
+      {
+        "phrase": "ਕਰ ਮ ਣ ਰ",
+        "count": 65,
+        "percentage": 1.26
+      },
+      {
+        "phrase": "ਮ ਣ ਰ ਪਈਏ",
+        "count": 65,
+        "percentage": 1.26
+      },
+      {
+        "phrase": "ਣ ਰ ਪਈਏ ਵ",
+        "count": 65,
+        "percentage": 1.26
+      },
+      {
+        "phrase": "ਰ ਪਈਏ ਵ ਲ",
+        "count": 65,
+        "percentage": 1.26
+      },
+      {
+        "phrase": "que a vida é",
+        "count": 64,
+        "percentage": 1.24
+      },
+      {
+        "phrase": "vou varrendo vou varrendo",
+        "count": 64,
+        "percentage": 1.24
+      },
+      {
+        "phrase": "ਓ ਨ ਕਰ ਮ",
+        "count": 64,
+        "percentage": 1.24
+      },
+      {
+        "phrase": "eu sei que você",
+        "count": 63,
+        "percentage": 1.22
+      },
+      {
+        "phrase": "uau uau uau uau",
+        "count": 62,
+        "percentage": 1.2
+      },
+      {
+        "phrase": "que eu não tô",
+        "count": 62,
+        "percentage": 1.2
+      },
+      {
+        "phrase": "me diz o que",
+        "count": 61,
+        "percentage": 1.18
+      },
+      {
+        "phrase": "que eu não sou",
+        "count": 60,
+        "percentage": 1.16
+      },
+      {
+        "phrase": "que a gente não",
+        "count": 60,
+        "percentage": 1.16
+      },
+      {
+        "phrase": "biro biro biro biro",
+        "count": 60,
+        "percentage": 1.16
+      }
+    ],
+    "5-grams": [
+      {
+        "phrase": "ai ai ai ai ai",
+        "count": 512,
+        "percentage": 9.92
+      },
+      {
+        "phrase": "oh oh oh oh oh",
+        "count": 255,
+        "percentage": 4.94
+      },
+      {
+        "phrase": "lá lá lá lá lá",
+        "count": 251,
+        "percentage": 4.87
+      },
+      {
+        "phrase": "na na na na na",
+        "count": 189,
+        "percentage": 3.66
+      },
+      {
+        "phrase": "mm mm mm mm mm",
+        "count": 180,
+        "percentage": 3.49
+      },
+      {
+        "phrase": "uh uh uh uh uh",
+        "count": 156,
+        "percentage": 3.02
+      },
+      {
+        "phrase": "ô ô ô ô ô",
+        "count": 156,
+        "percentage": 3.02
+      },
+      {
+        "phrase": "ah ah ah ah ah",
+        "count": 139,
+        "percentage": 2.69
+      },
+      {
+        "phrase": "la la la la la",
+        "count": 120,
+        "percentage": 2.33
+      },
+      {
+        "phrase": "te amo te amo te",
+        "count": 101,
+        "percentage": 1.96
+      },
+      {
+        "phrase": "amo te amo te amo",
+        "count": 101,
+        "percentage": 1.96
+      },
+      {
+        "phrase": "yeah yeah yeah yeah yeah",
+        "count": 100,
+        "percentage": 1.94
+      },
+      {
+        "phrase": "lê lê lê lê lê",
+        "count": 92,
+        "percentage": 1.78
+      },
+      {
+        "phrase": "bole bole bole bole bole",
+        "count": 84,
+        "percentage": 1.63
+      },
+      {
+        "phrase": "o que é que eu",
+        "count": 83,
+        "percentage": 1.61
+      },
+      {
+        "phrase": "pô pô pô pô pô",
+        "count": 70,
+        "percentage": 1.36
+      },
+      {
+        "phrase": "ਨ ਕਰ ਮ ਣ ਰ",
+        "count": 65,
+        "percentage": 1.26
+      },
+      {
+        "phrase": "ਕਰ ਮ ਣ ਰ ਪਈਏ",
+        "count": 65,
+        "percentage": 1.26
+      },
+      {
+        "phrase": "ਮ ਣ ਰ ਪਈਏ ਵ",
+        "count": 65,
+        "percentage": 1.26
+      },
+      {
+        "phrase": "ਣ ਰ ਪਈਏ ਵ ਲ",
+        "count": 65,
+        "percentage": 1.26
+      },
+      {
+        "phrase": "ਓ ਨ ਕਰ ਮ ਣ",
+        "count": 64,
+        "percentage": 1.24
+      },
+      {
+        "phrase": "ahn ahn ahn ahn ahn",
+        "count": 62,
+        "percentage": 1.2
+      },
+      {
+        "phrase": "biro biro biro biro biro",
+        "count": 58,
+        "percentage": 1.12
+      },
+      {
+        "phrase": "uau uau uau uau uau",
+        "count": 56,
+        "percentage": 1.09
+      },
+      {
+        "phrase": "vou varrendo vou varrendo vou",
+        "count": 56,
+        "percentage": 1.09
+      },
+      {
+        "phrase": "varrendo vou varrendo vou varrendo",
+        "count": 56,
+        "percentage": 1.09
+      },
+      {
+        "phrase": "iê iê iê iê iê",
+        "count": 54,
+        "percentage": 1.05
+      },
+      {
+        "phrase": "bom tão bom tão bom",
+        "count": 52,
+        "percentage": 1.01
+      },
+      {
+        "phrase": "tão bom tão bom tão",
+        "count": 50,
+        "percentage": 0.97
+      },
+      {
+        "phrase": "iá iá iá iá iá",
+        "count": 44,
+        "percentage": 0.85
+      },
+      {
+        "phrase": "ie ie ie ie ie",
+        "count": 42,
+        "percentage": 0.81
+      },
+      {
+        "phrase": "não sabe o que é",
+        "count": 42,
+        "percentage": 0.81
+      },
+      {
+        "phrase": "não não não não não",
+        "count": 41,
+        "percentage": 0.79
+      },
+      {
+        "phrase": "minha vida por inteiro eu",
+        "count": 40,
+        "percentage": 0.78
+      },
+      {
+        "phrase": "vida por inteiro eu lhe",
+        "count": 40,
+        "percentage": 0.78
+      },
+      {
+        "phrase": "por inteiro eu lhe dou",
+        "count": 40,
+        "percentage": 0.78
+      },
+      {
+        "phrase": "ਰ ਪਈਏ ਵ ਲ ਬਣ",
+        "count": 39,
+        "percentage": 0.76
+      },
+      {
+        "phrase": "ਪਈਏ ਵ ਲ ਬਣ ਬਣ",
+        "count": 39,
+        "percentage": 0.76
+      },
+      {
+        "phrase": "seu nome seu nome seu",
+        "count": 39,
+        "percentage": 0.76
+      },
+      {
+        "phrase": "nome seu nome seu nome",
+        "count": 39,
+        "percentage": 0.76
+      },
+      {
+        "phrase": "quero ser seu quero ser",
+        "count": 38,
+        "percentage": 0.74
+      },
+      {
+        "phrase": "ser seu quero ser seu",
+        "count": 38,
+        "percentage": 0.74
+      },
+      {
+        "phrase": "ਵ ਲ ਬਣ ਬਣ ਬਹ",
+        "count": 38,
+        "percentage": 0.74
+      },
+      {
+        "phrase": "ਲ ਬਣ ਬਣ ਬਹ ਦ",
+        "count": 38,
+        "percentage": 0.74
+      },
+      {
+        "phrase": "ਬਣ ਬਣ ਬਹ ਦ ਅ",
+        "count": 38,
+        "percentage": 0.74
+      },
+      {
+        "phrase": "ਬਣ ਬਹ ਦ ਅ ਗ",
+        "count": 38,
+        "percentage": 0.74
+      },
+      {
+        "phrase": "yes you can yes you",
+        "count": 37,
+        "percentage": 0.72
+      },
+      {
+        "phrase": "you can yes you can",
+        "count": 37,
+        "percentage": 0.72
+      },
+      {
+        "phrase": "i walk i walk i",
+        "count": 37,
+        "percentage": 0.72
+      },
+      {
+        "phrase": "eu quero partilhar eu quero",
+        "count": 37,
+        "percentage": 0.72
+      }
+    ]
+  },
+  "genre_cliches": {
+    "Sertanejo": {
+      "2-grams": [
+        {
+          "phrase": "que eu",
+          "count": 592,
+          "percentage": 175.67
+        },
+        {
+          "phrase": "o que",
+          "count": 349,
+          "percentage": 103.56
+        },
+        {
+          "phrase": "eu não",
+          "count": 287,
+          "percentage": 85.16
+        },
+        {
+          "phrase": "a gente",
+          "count": 260,
+          "percentage": 77.15
+        },
+        {
+          "phrase": "que não",
+          "count": 226,
+          "percentage": 67.06
+        },
+        {
+          "phrase": "o seu",
+          "count": 168,
+          "percentage": 49.85
+        },
+        {
+          "phrase": "ai ai",
+          "count": 155,
+          "percentage": 45.99
+        },
+        {
+          "phrase": "que você",
+          "count": 149,
+          "percentage": 44.21
+        },
+        {
+          "phrase": "o meu",
+          "count": 148,
+          "percentage": 43.92
+        },
+        {
+          "phrase": "você não",
+          "count": 143,
+          "percentage": 42.43
+        },
+        {
+          "phrase": "eu tô",
+          "count": 142,
+          "percentage": 42.14
+        },
+        {
+          "phrase": "eu te",
+          "count": 141,
+          "percentage": 41.84
+        },
+        {
+          "phrase": "eu vou",
+          "count": 136,
+          "percentage": 40.36
+        },
+        {
+          "phrase": "meu coração",
+          "count": 130,
+          "percentage": 38.58
+        },
+        {
+          "phrase": "não tem",
+          "count": 124,
+          "percentage": 36.8
+        },
+        {
+          "phrase": "que é",
+          "count": 124,
+          "percentage": 36.8
+        },
+        {
+          "phrase": "sei que",
+          "count": 122,
+          "percentage": 36.2
+        },
+        {
+          "phrase": "você me",
+          "count": 120,
+          "percentage": 35.61
+        },
+        {
+          "phrase": "não me",
+          "count": 120,
+          "percentage": 35.61
+        },
+        {
+          "phrase": "pra você",
+          "count": 113,
+          "percentage": 33.53
+        }
+      ],
+      "3-grams": [
+        {
+          "phrase": "ai ai ai",
+          "count": 130,
+          "percentage": 38.58
+        },
+        {
+          "phrase": "que eu não",
+          "count": 84,
+          "percentage": 24.93
+        },
+        {
+          "phrase": "o que eu",
+          "count": 77,
+          "percentage": 22.85
+        },
+        {
+          "phrase": "que a gente",
+          "count": 56,
+          "percentage": 16.62
+        },
+        {
+          "phrase": "que eu tô",
+          "count": 51,
+          "percentage": 15.13
+        },
+        {
+          "phrase": "o que é",
+          "count": 49,
+          "percentage": 14.54
+        },
+        {
+          "phrase": "iê iê iê",
+          "count": 46,
+          "percentage": 13.65
+        },
+        {
+          "phrase": "a gente se",
+          "count": 45,
+          "percentage": 13.35
+        },
+        {
+          "phrase": "eu não vou",
+          "count": 42,
+          "percentage": 12.46
+        },
+        {
+          "phrase": "oh oh oh",
+          "count": 41,
+          "percentage": 12.17
+        },
+        {
+          "phrase": "eu sei que",
+          "count": 41,
+          "percentage": 12.17
+        },
+        {
+          "phrase": "ah ah ah",
+          "count": 37,
+          "percentage": 10.98
+        },
+        {
+          "phrase": "que eu te",
+          "count": 36,
+          "percentage": 10.68
+        },
+        {
+          "phrase": "eu não tô",
+          "count": 35,
+          "percentage": 10.39
+        },
+        {
+          "phrase": "yo no sé",
+          "count": 33,
+          "percentage": 9.79
+        },
+        {
+          "phrase": "é que eu",
+          "count": 31,
+          "percentage": 9.2
+        },
+        {
+          "phrase": "eu te amo",
+          "count": 31,
+          "percentage": 9.2
+        },
+        {
+          "phrase": "que você não",
+          "count": 29,
+          "percentage": 8.61
+        },
+        {
+          "phrase": "você me deixou",
+          "count": 29,
+          "percentage": 8.61
+        },
+        {
+          "phrase": "do jeito que",
+          "count": 28,
+          "percentage": 8.31
+        }
+      ],
+      "4-grams": [
+        {
+          "phrase": "ai ai ai ai",
+          "count": 113,
+          "percentage": 33.53
+        },
+        {
+          "phrase": "iê iê iê iê",
+          "count": 32,
+          "percentage": 9.5
+        },
+        {
+          "phrase": "lixo lixo você é",
+          "count": 28,
+          "percentage": 8.31
+        },
+        {
+          "phrase": "lixo você é prova",
+          "count": 28,
+          "percentage": 8.31
+        },
+        {
+          "phrase": "você é prova disso",
+          "count": 28,
+          "percentage": 8.31
+        },
+        {
+          "phrase": "ah ah ah ah",
+          "count": 28,
+          "percentage": 8.31
+        },
+        {
+          "phrase": "oh oh oh oh",
+          "count": 22,
+          "percentage": 6.53
+        },
+        {
+          "phrase": "a gente se entrega",
+          "count": 20,
+          "percentage": 5.93
+        },
+        {
+          "phrase": "todo mundo todo mundo",
+          "count": 20,
+          "percentage": 5.93
+        },
+        {
+          "phrase": "quién me va a",
+          "count": 20,
+          "percentage": 5.93
+        },
+        {
+          "phrase": "não sei o que",
+          "count": 19,
+          "percentage": 5.64
+        },
+        {
+          "phrase": "senta senta senta senta",
+          "count": 19,
+          "percentage": 5.64
+        },
+        {
+          "phrase": "o preço que eu",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "preço que eu pago",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "que eu pago é",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "eu pago é nunca",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "pago é nunca ser",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "é nunca ser amada",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "nunca ser amada de",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "ser amada de verdade",
+          "count": 18,
+          "percentage": 5.34
+        }
+      ],
+      "5-grams": [
+        {
+          "phrase": "ai ai ai ai ai",
+          "count": 100,
+          "percentage": 29.67
+        },
+        {
+          "phrase": "iê iê iê iê iê",
+          "count": 28,
+          "percentage": 8.31
+        },
+        {
+          "phrase": "lixo lixo você é prova",
+          "count": 28,
+          "percentage": 8.31
+        },
+        {
+          "phrase": "lixo você é prova disso",
+          "count": 28,
+          "percentage": 8.31
+        },
+        {
+          "phrase": "ah ah ah ah ah",
+          "count": 23,
+          "percentage": 6.82
+        },
+        {
+          "phrase": "o preço que eu pago",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "preço que eu pago é",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "que eu pago é nunca",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "eu pago é nunca ser",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "pago é nunca ser amada",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "é nunca ser amada de",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "nunca ser amada de verdade",
+          "count": 18,
+          "percentage": 5.34
+        },
+        {
+          "phrase": "e o preço que eu",
+          "count": 17,
+          "percentage": 5.04
+        },
+        {
+          "phrase": "ser amada de verdade ninguém",
+          "count": 17,
+          "percentage": 5.04
+        },
+        {
+          "phrase": "amada de verdade ninguém me",
+          "count": 17,
+          "percentage": 5.04
+        },
+        {
+          "phrase": "de verdade ninguém me respeita",
+          "count": 17,
+          "percentage": 5.04
+        },
+        {
+          "phrase": "verdade ninguém me respeita nessa",
+          "count": 17,
+          "percentage": 5.04
+        },
+        {
+          "phrase": "ninguém me respeita nessa cidade",
+          "count": 17,
+          "percentage": 5.04
+        },
+        {
+          "phrase": "me respeita nessa cidade amante",
+          "count": 17,
+          "percentage": 5.04
+        },
+        {
+          "phrase": "respeita nessa cidade amante não",
+          "count": 17,
+          "percentage": 5.04
+        }
+      ]
+    },
+    "Arrocha": {
+      "2-grams": [
+        {
+          "phrase": "que eu",
+          "count": 1240,
+          "percentage": 127.31
+        },
+        {
+          "phrase": "o que",
+          "count": 687,
+          "percentage": 70.53
+        },
+        {
+          "phrase": "eu não",
+          "count": 652,
+          "percentage": 66.94
+        },
+        {
+          "phrase": "eu vou",
+          "count": 576,
+          "percentage": 59.14
+        },
+        {
+          "phrase": "a gente",
+          "count": 474,
+          "percentage": 48.67
+        },
+        {
+          "phrase": "o meu",
+          "count": 460,
+          "percentage": 47.23
+        },
+        {
+          "phrase": "que você",
+          "count": 425,
+          "percentage": 43.63
+        },
+        {
+          "phrase": "eu te",
+          "count": 418,
+          "percentage": 42.92
+        },
+        {
+          "phrase": "meu coração",
+          "count": 389,
+          "percentage": 39.94
+        },
+        {
+          "phrase": "eu tô",
+          "count": 381,
+          "percentage": 39.12
+        },
+        {
+          "phrase": "e eu",
+          "count": 316,
+          "percentage": 32.44
+        },
+        {
+          "phrase": "que não",
+          "count": 316,
+          "percentage": 32.44
+        },
+        {
+          "phrase": "o seu",
+          "count": 314,
+          "percentage": 32.24
+        },
+        {
+          "phrase": "te amo",
+          "count": 294,
+          "percentage": 30.18
+        },
+        {
+          "phrase": "você não",
+          "count": 289,
+          "percentage": 29.67
+        },
+        {
+          "phrase": "e o",
+          "count": 288,
+          "percentage": 29.57
+        },
+        {
+          "phrase": "que a",
+          "count": 287,
+          "percentage": 29.47
+        },
+        {
+          "phrase": "pra mim",
+          "count": 277,
+          "percentage": 28.44
+        },
+        {
+          "phrase": "você me",
+          "count": 271,
+          "percentage": 27.82
+        },
+        {
+          "phrase": "que é",
+          "count": 267,
+          "percentage": 27.41
+        }
+      ],
+      "3-grams": [
+        {
+          "phrase": "que a gente",
+          "count": 142,
+          "percentage": 14.58
+        },
+        {
+          "phrase": "o que eu",
+          "count": 124,
+          "percentage": 12.73
+        },
+        {
+          "phrase": "eu sei que",
+          "count": 122,
+          "percentage": 12.53
+        },
+        {
+          "phrase": "ai ai ai",
+          "count": 116,
+          "percentage": 11.91
+        },
+        {
+          "phrase": "que eu vou",
+          "count": 112,
+          "percentage": 11.5
+        },
+        {
+          "phrase": "eu vou te",
+          "count": 110,
+          "percentage": 11.29
+        },
+        {
+          "phrase": "que eu não",
+          "count": 109,
+          "percentage": 11.19
+        },
+        {
+          "phrase": "o meu coração",
+          "count": 105,
+          "percentage": 10.78
+        },
+        {
+          "phrase": "a gente se",
+          "count": 95,
+          "percentage": 9.75
+        },
+        {
+          "phrase": "que eu tô",
+          "count": 94,
+          "percentage": 9.65
+        },
+        {
+          "phrase": "pô pô pô",
+          "count": 93,
+          "percentage": 9.55
+        },
+        {
+          "phrase": "o que é",
+          "count": 92,
+          "percentage": 9.45
+        },
+        {
+          "phrase": "oh oh oh",
+          "count": 90,
+          "percentage": 9.24
+        },
+        {
+          "phrase": "a minha vida",
+          "count": 85,
+          "percentage": 8.73
+        },
+        {
+          "phrase": "te amo te",
+          "count": 82,
+          "percentage": 8.42
+        },
+        {
+          "phrase": "eu te amo",
+          "count": 80,
+          "percentage": 8.21
+        },
+        {
+          "phrase": "eu não sou",
+          "count": 80,
+          "percentage": 8.21
+        },
+        {
+          "phrase": "na na na",
+          "count": 76,
+          "percentage": 7.8
+        },
+        {
+          "phrase": "é que eu",
+          "count": 75,
+          "percentage": 7.7
+        },
+        {
+          "phrase": "que eu te",
+          "count": 74,
+          "percentage": 7.6
+        }
+      ],
+      "4-grams": [
+        {
+          "phrase": "pô pô pô pô",
+          "count": 79,
+          "percentage": 8.11
+        },
+        {
+          "phrase": "ai ai ai ai",
+          "count": 79,
+          "percentage": 8.11
+        },
+        {
+          "phrase": "te amo te amo",
+          "count": 72,
+          "percentage": 7.39
+        },
+        {
+          "phrase": "oh oh oh oh",
+          "count": 69,
+          "percentage": 7.08
+        },
+        {
+          "phrase": "na na na na",
+          "count": 66,
+          "percentage": 6.78
+        },
+        {
+          "phrase": "amo te amo te",
+          "count": 54,
+          "percentage": 5.54
+        },
+        {
+          "phrase": "o que é que",
+          "count": 45,
+          "percentage": 4.62
+        },
+        {
+          "phrase": "cinco seis sete oito",
+          "count": 40,
+          "percentage": 4.11
+        },
+        {
+          "phrase": "sempre vai ser eu",
+          "count": 38,
+          "percentage": 3.9
+        },
+        {
+          "phrase": "quatro cinco seis sete",
+          "count": 32,
+          "percentage": 3.29
+        },
+        {
+          "phrase": "vai descendo vai descendo",
+          "count": 28,
+          "percentage": 2.87
+        },
+        {
+          "phrase": "é que eu vou",
+          "count": 27,
+          "percentage": 2.77
+        },
+        {
+          "phrase": "me dá um beijo",
+          "count": 27,
+          "percentage": 2.77
+        },
+        {
+          "phrase": "ela empina o bumbum",
+          "count": 26,
+          "percentage": 2.67
+        },
+        {
+          "phrase": "no coroa porra no",
+          "count": 26,
+          "percentage": 2.67
+        },
+        {
+          "phrase": "coroa porra no coroa",
+          "count": 26,
+          "percentage": 2.67
+        },
+        {
+          "phrase": "que eu vou te",
+          "count": 25,
+          "percentage": 2.57
+        },
+        {
+          "phrase": "não sei o que",
+          "count": 25,
+          "percentage": 2.57
+        },
+        {
+          "phrase": "eu quero só você",
+          "count": 25,
+          "percentage": 2.57
+        },
+        {
+          "phrase": "três quatro cinco seis",
+          "count": 24,
+          "percentage": 2.46
+        }
+      ],
+      "5-grams": [
+        {
+          "phrase": "pô pô pô pô pô",
+          "count": 70,
+          "percentage": 7.19
+        },
+        {
+          "phrase": "na na na na na",
+          "count": 56,
+          "percentage": 5.75
+        },
+        {
+          "phrase": "te amo te amo te",
+          "count": 54,
+          "percentage": 5.54
+        },
+        {
+          "phrase": "amo te amo te amo",
+          "count": 54,
+          "percentage": 5.54
+        },
+        {
+          "phrase": "ai ai ai ai ai",
+          "count": 54,
+          "percentage": 5.54
+        },
+        {
+          "phrase": "oh oh oh oh oh",
+          "count": 51,
+          "percentage": 5.24
+        },
+        {
+          "phrase": "quatro cinco seis sete oito",
+          "count": 32,
+          "percentage": 3.29
+        },
+        {
+          "phrase": "no coroa porra no coroa",
+          "count": 26,
+          "percentage": 2.67
+        },
+        {
+          "phrase": "três quatro cinco seis sete",
+          "count": 24,
+          "percentage": 2.46
+        },
+        {
+          "phrase": "me dá um beijo bom",
+          "count": 24,
+          "percentage": 2.46
+        },
+        {
+          "phrase": "eu prometo te fazer feliz",
+          "count": 24,
+          "percentage": 2.46
+        },
+        {
+          "phrase": "vai descendo vai descendo vai",
+          "count": 24,
+          "percentage": 2.46
+        },
+        {
+          "phrase": "descendo vai descendo vai descendo",
+          "count": 24,
+          "percentage": 2.46
+        },
+        {
+          "phrase": "me ajuda a te esquecer",
+          "count": 23,
+          "percentage": 2.36
+        },
+        {
+          "phrase": "empinadinha empinadinha empinadinha empinadinha empinadinha",
+          "count": 22,
+          "percentage": 2.26
+        },
+        {
+          "phrase": "pau na feia sem massagem",
+          "count": 22,
+          "percentage": 2.26
+        },
+        {
+          "phrase": "de quatro de quatro de",
+          "count": 22,
+          "percentage": 2.26
+        },
+        {
+          "phrase": "quatro de quatro de quatro",
+          "count": 22,
+          "percentage": 2.26
+        },
+        {
+          "phrase": "100 ela empina o bumbum",
+          "count": 21,
+          "percentage": 2.16
+        },
+        {
+          "phrase": "e o caba vai endoidar",
+          "count": 21,
+          "percentage": 2.16
+        }
+      ]
+    },
+    "Trap": {
+      "2-grams": [
+        {
+          "phrase": "que eu",
+          "count": 2353,
+          "percentage": 235.06
+        },
+        {
+          "phrase": "eu não",
+          "count": 1291,
+          "percentage": 128.97
+        },
+        {
+          "phrase": "o que",
+          "count": 1070,
+          "percentage": 106.89
+        },
+        {
+          "phrase": "eu tô",
+          "count": 837,
+          "percentage": 83.62
+        },
+        {
+          "phrase": "yeah yeah",
+          "count": 677,
+          "percentage": 67.63
+        },
+        {
+          "phrase": "eu vou",
+          "count": 671,
+          "percentage": 67.03
+        },
+        {
+          "phrase": "i m",
+          "count": 631,
+          "percentage": 63.04
+        },
+        {
+          "phrase": "é o",
+          "count": 592,
+          "percentage": 59.14
+        },
+        {
+          "phrase": "eu sou",
+          "count": 582,
+          "percentage": 58.14
+        },
+        {
+          "phrase": "com a",
+          "count": 540,
+          "percentage": 53.95
+        },
+        {
+          "phrase": "e eu",
+          "count": 515,
+          "percentage": 51.45
+        },
+        {
+          "phrase": "é que",
+          "count": 506,
+          "percentage": 50.55
+        },
+        {
+          "phrase": "não é",
+          "count": 502,
+          "percentage": 50.15
+        },
+        {
+          "phrase": "que é",
+          "count": 494,
+          "percentage": 49.35
+        },
+        {
+          "phrase": "sei que",
+          "count": 471,
+          "percentage": 47.05
+        },
+        {
+          "phrase": "que não",
+          "count": 467,
+          "percentage": 46.65
+        },
+        {
+          "phrase": "que o",
+          "count": 455,
+          "percentage": 45.45
+        },
+        {
+          "phrase": "na minha",
+          "count": 441,
+          "percentage": 44.06
+        },
+        {
+          "phrase": "se eu",
+          "count": 427,
+          "percentage": 42.66
+        },
+        {
+          "phrase": "no meu",
+          "count": 422,
+          "percentage": 42.16
+        }
+      ],
+      "3-grams": [
+        {
+          "phrase": "yeah yeah yeah",
+          "count": 317,
+          "percentage": 31.67
+        },
+        {
+          "phrase": "que eu não",
+          "count": 295,
+          "percentage": 29.47
+        },
+        {
+          "phrase": "eu sei que",
+          "count": 221,
+          "percentage": 22.08
+        },
+        {
+          "phrase": "oh oh oh",
+          "count": 220,
+          "percentage": 21.98
+        },
+        {
+          "phrase": "mm mm mm",
+          "count": 200,
+          "percentage": 19.98
+        },
+        {
+          "phrase": "o que eu",
+          "count": 192,
+          "percentage": 19.18
+        },
+        {
+          "phrase": "que eu sou",
+          "count": 173,
+          "percentage": 17.28
+        },
+        {
+          "phrase": "ah ah ah",
+          "count": 167,
+          "percentage": 16.68
+        },
+        {
+          "phrase": "ahn ahn ahn",
+          "count": 159,
+          "percentage": 15.88
+        },
+        {
+          "phrase": "que eu tô",
+          "count": 157,
+          "percentage": 15.68
+        },
+        {
+          "phrase": "eu não sou",
+          "count": 131,
+          "percentage": 13.09
+        },
+        {
+          "phrase": "i don t",
+          "count": 129,
+          "percentage": 12.89
+        },
+        {
+          "phrase": "é que eu",
+          "count": 128,
+          "percentage": 12.79
+        },
+        {
+          "phrase": "uh uh uh",
+          "count": 126,
+          "percentage": 12.59
+        },
+        {
+          "phrase": "eu não vou",
+          "count": 121,
+          "percentage": 12.09
+        },
+        {
+          "phrase": "eu não sei",
+          "count": 107,
+          "percentage": 10.69
+        },
+        {
+          "phrase": "que eu vou",
+          "count": 101,
+          "percentage": 10.09
+        },
+        {
+          "phrase": "eu vou te",
+          "count": 97,
+          "percentage": 9.69
+        },
+        {
+          "phrase": "não não não",
+          "count": 96,
+          "percentage": 9.59
+        },
+        {
+          "phrase": "tudo que eu",
+          "count": 93,
+          "percentage": 9.29
+        }
+      ],
+      "4-grams": [
+        {
+          "phrase": "mm mm mm mm",
+          "count": 188,
+          "percentage": 18.78
+        },
+        {
+          "phrase": "yeah yeah yeah yeah",
+          "count": 178,
+          "percentage": 17.78
+        },
+        {
+          "phrase": "oh oh oh oh",
+          "count": 133,
+          "percentage": 13.29
+        },
+        {
+          "phrase": "ahn ahn ahn ahn",
+          "count": 96,
+          "percentage": 9.59
+        },
+        {
+          "phrase": "ah ah ah ah",
+          "count": 92,
+          "percentage": 9.19
+        },
+        {
+          "phrase": "uh uh uh uh",
+          "count": 72,
+          "percentage": 7.19
+        },
+        {
+          "phrase": "ਨ ਕਰ ਮ ਣ",
+          "count": 65,
+          "percentage": 6.49
+        },
+        {
+          "phrase": "ਕਰ ਮ ਣ ਰ",
+          "count": 65,
+          "percentage": 6.49
+        },
+        {
+          "phrase": "ਮ ਣ ਰ ਪਈਏ",
+          "count": 65,
+          "percentage": 6.49
+        },
+        {
+          "phrase": "ਣ ਰ ਪਈਏ ਵ",
+          "count": 65,
+          "percentage": 6.49
+        },
+        {
+          "phrase": "ਰ ਪਈਏ ਵ ਲ",
+          "count": 65,
+          "percentage": 6.49
+        },
+        {
+          "phrase": "ਓ ਨ ਕਰ ਮ",
+          "count": 64,
+          "percentage": 6.39
+        },
+        {
+          "phrase": "uau uau uau uau",
+          "count": 62,
+          "percentage": 6.19
+        },
+        {
+          "phrase": "i feel i feel",
+          "count": 56,
+          "percentage": 5.59
+        },
+        {
+          "phrase": "não não não não",
+          "count": 53,
+          "percentage": 5.29
+        },
+        {
+          "phrase": "seu nome seu nome",
+          "count": 47,
+          "percentage": 4.7
+        },
+        {
+          "phrase": "dum dum dum dum",
+          "count": 45,
+          "percentage": 4.5
+        },
+        {
+          "phrase": "ride i wanna ride",
+          "count": 45,
+          "percentage": 4.5
+        },
+        {
+          "phrase": "por isso que eu",
+          "count": 43,
+          "percentage": 4.3
+        },
+        {
+          "phrase": "i walk i walk",
+          "count": 40,
+          "percentage": 4.0
+        }
+      ],
+      "5-grams": [
+        {
+          "phrase": "mm mm mm mm mm",
+          "count": 180,
+          "percentage": 17.98
+        },
+        {
+          "phrase": "yeah yeah yeah yeah yeah",
+          "count": 92,
+          "percentage": 9.19
+        },
+        {
+          "phrase": "oh oh oh oh oh",
+          "count": 92,
+          "percentage": 9.19
+        },
+        {
+          "phrase": "ਨ ਕਰ ਮ ਣ ਰ",
+          "count": 65,
+          "percentage": 6.49
+        },
+        {
+          "phrase": "ਕਰ ਮ ਣ ਰ ਪਈਏ",
+          "count": 65,
+          "percentage": 6.49
+        },
+        {
+          "phrase": "ਮ ਣ ਰ ਪਈਏ ਵ",
+          "count": 65,
+          "percentage": 6.49
+        },
+        {
+          "phrase": "ਣ ਰ ਪਈਏ ਵ ਲ",
+          "count": 65,
+          "percentage": 6.49
+        },
+        {
+          "phrase": "ਓ ਨ ਕਰ ਮ ਣ",
+          "count": 64,
+          "percentage": 6.39
+        },
+        {
+          "phrase": "ahn ahn ahn ahn ahn",
+          "count": 62,
+          "percentage": 6.19
+        },
+        {
+          "phrase": "uau uau uau uau uau",
+          "count": 56,
+          "percentage": 5.59
+        },
+        {
+          "phrase": "ah ah ah ah ah",
+          "count": 53,
+          "percentage": 5.29
+        },
+        {
+          "phrase": "uh uh uh uh uh",
+          "count": 42,
+          "percentage": 4.2
+        },
+        {
+          "phrase": "ਰ ਪਈਏ ਵ ਲ ਬਣ",
+          "count": 39,
+          "percentage": 3.9
+        },
+        {
+          "phrase": "ਪਈਏ ਵ ਲ ਬਣ ਬਣ",
+          "count": 39,
+          "percentage": 3.9
+        },
+        {
+          "phrase": "seu nome seu nome seu",
+          "count": 39,
+          "percentage": 3.9
+        },
+        {
+          "phrase": "nome seu nome seu nome",
+          "count": 39,
+          "percentage": 3.9
+        },
+        {
+          "phrase": "ਵ ਲ ਬਣ ਬਣ ਬਹ",
+          "count": 38,
+          "percentage": 3.8
+        },
+        {
+          "phrase": "ਲ ਬਣ ਬਣ ਬਹ ਦ",
+          "count": 38,
+          "percentage": 3.8
+        },
+        {
+          "phrase": "ਬਣ ਬਣ ਬਹ ਦ ਅ",
+          "count": 38,
+          "percentage": 3.8
+        },
+        {
+          "phrase": "ਬਣ ਬਹ ਦ ਅ ਗ",
+          "count": 38,
+          "percentage": 3.8
+        }
+      ]
+    },
+    "MPB": {
+      "2-grams": [
+        {
+          "phrase": "que eu",
+          "count": 1439,
+          "percentage": 77.95
+        },
+        {
+          "phrase": "o que",
+          "count": 1338,
+          "percentage": 72.48
+        },
+        {
+          "phrase": "o meu",
+          "count": 669,
+          "percentage": 36.24
+        },
+        {
+          "phrase": "que é",
+          "count": 617,
+          "percentage": 33.42
+        },
+        {
+          "phrase": "eu não",
+          "count": 601,
+          "percentage": 32.56
+        },
+        {
+          "phrase": "que a",
+          "count": 593,
+          "percentage": 32.12
+        },
+        {
+          "phrase": "e o",
+          "count": 590,
+          "percentage": 31.96
+        },
+        {
+          "phrase": "a gente",
+          "count": 576,
+          "percentage": 31.2
+        },
+        {
+          "phrase": "que não",
+          "count": 531,
+          "percentage": 28.76
+        },
+        {
+          "phrase": "que o",
+          "count": 527,
+          "percentage": 28.55
+        },
+        {
+          "phrase": "eu quero",
+          "count": 496,
+          "percentage": 26.87
+        },
+        {
+          "phrase": "e a",
+          "count": 450,
+          "percentage": 24.38
+        },
+        {
+          "phrase": "a vida",
+          "count": 444,
+          "percentage": 24.05
+        },
+        {
+          "phrase": "eu vou",
+          "count": 426,
+          "percentage": 23.08
+        },
+        {
+          "phrase": "eu sou",
+          "count": 424,
+          "percentage": 22.97
+        },
+        {
+          "phrase": "de mim",
+          "count": 420,
+          "percentage": 22.75
+        },
+        {
+          "phrase": "é o",
+          "count": 416,
+          "percentage": 22.54
+        },
+        {
+          "phrase": "o amor",
+          "count": 414,
+          "percentage": 22.43
+        },
+        {
+          "phrase": "que você",
+          "count": 406,
+          "percentage": 21.99
+        },
+        {
+          "phrase": "e eu",
+          "count": 390,
+          "percentage": 21.13
+        }
+      ],
+      "3-grams": [
+        {
+          "phrase": "lá lá lá",
+          "count": 267,
+          "percentage": 14.46
+        },
+        {
+          "phrase": "ai ai ai",
+          "count": 221,
+          "percentage": 11.97
+        },
+        {
+          "phrase": "o que é",
+          "count": 178,
+          "percentage": 9.64
+        },
+        {
+          "phrase": "la la la",
+          "count": 176,
+          "percentage": 9.53
+        },
+        {
+          "phrase": "o que eu",
+          "count": 174,
+          "percentage": 9.43
+        },
+        {
+          "phrase": "uh uh uh",
+          "count": 161,
+          "percentage": 8.72
+        },
+        {
+          "phrase": "tempo tempo tempo",
+          "count": 160,
+          "percentage": 8.67
+        },
+        {
+          "phrase": "oh oh oh",
+          "count": 150,
+          "percentage": 8.13
+        },
+        {
+          "phrase": "que a gente",
+          "count": 133,
+          "percentage": 7.2
+        },
+        {
+          "phrase": "na na na",
+          "count": 122,
+          "percentage": 6.61
+        },
+        {
+          "phrase": "o meu amor",
+          "count": 116,
+          "percentage": 6.28
+        },
+        {
+          "phrase": "que eu não",
+          "count": 115,
+          "percentage": 6.23
+        },
+        {
+          "phrase": "que não tem",
+          "count": 114,
+          "percentage": 6.18
+        },
+        {
+          "phrase": "ô ô ô",
+          "count": 112,
+          "percentage": 6.07
+        },
+        {
+          "phrase": "eu não sei",
+          "count": 100,
+          "percentage": 5.42
+        },
+        {
+          "phrase": "ah ah ah",
+          "count": 99,
+          "percentage": 5.36
+        },
+        {
+          "phrase": "o que não",
+          "count": 95,
+          "percentage": 5.15
+        },
+        {
+          "phrase": "que é que",
+          "count": 95,
+          "percentage": 5.15
+        },
+        {
+          "phrase": "eu sei que",
+          "count": 95,
+          "percentage": 5.15
+        },
+        {
+          "phrase": "a vida é",
+          "count": 94,
+          "percentage": 5.09
+        }
+      ],
+      "4-grams": [
+        {
+          "phrase": "lá lá lá lá",
+          "count": 233,
+          "percentage": 12.62
+        },
+        {
+          "phrase": "ai ai ai ai",
+          "count": 192,
+          "percentage": 10.4
+        },
+        {
+          "phrase": "la la la la",
+          "count": 147,
+          "percentage": 7.96
+        },
+        {
+          "phrase": "uh uh uh uh",
+          "count": 128,
+          "percentage": 6.93
+        },
+        {
+          "phrase": "na na na na",
+          "count": 115,
+          "percentage": 6.23
+        },
+        {
+          "phrase": "oh oh oh oh",
+          "count": 84,
+          "percentage": 4.55
+        },
+        {
+          "phrase": "ô ô ô ô",
+          "count": 82,
+          "percentage": 4.44
+        },
+        {
+          "phrase": "tempo tempo tempo tempo",
+          "count": 80,
+          "percentage": 4.33
+        },
+        {
+          "phrase": "o que é que",
+          "count": 76,
+          "percentage": 4.12
+        },
+        {
+          "phrase": "tão bom tão bom",
+          "count": 70,
+          "percentage": 3.79
+        },
+        {
+          "phrase": "ah ah ah ah",
+          "count": 67,
+          "percentage": 3.63
+        },
+        {
+          "phrase": "te amo te amo",
+          "count": 60,
+          "percentage": 3.25
+        },
+        {
+          "phrase": "o que não tem",
+          "count": 54,
+          "percentage": 2.93
+        },
+        {
+          "phrase": "bom tão bom tão",
+          "count": 52,
+          "percentage": 2.82
+        },
+        {
+          "phrase": "iá iá iá iá",
+          "count": 48,
+          "percentage": 2.6
+        },
+        {
+          "phrase": "vira vira vira vira",
+          "count": 42,
+          "percentage": 2.28
+        },
+        {
+          "phrase": "amo te amo te",
+          "count": 41,
+          "percentage": 2.22
+        },
+        {
+          "phrase": "minha vida por inteiro",
+          "count": 40,
+          "percentage": 2.17
+        },
+        {
+          "phrase": "vida por inteiro eu",
+          "count": 40,
+          "percentage": 2.17
+        },
+        {
+          "phrase": "por inteiro eu lhe",
+          "count": 40,
+          "percentage": 2.17
+        }
+      ],
+      "5-grams": [
+        {
+          "phrase": "lá lá lá lá lá",
+          "count": 200,
+          "percentage": 10.83
+        },
+        {
+          "phrase": "ai ai ai ai ai",
+          "count": 174,
+          "percentage": 9.43
+        },
+        {
+          "phrase": "la la la la la",
+          "count": 120,
+          "percentage": 6.5
+        },
+        {
+          "phrase": "na na na na na",
+          "count": 108,
+          "percentage": 5.85
+        },
+        {
+          "phrase": "uh uh uh uh uh",
+          "count": 108,
+          "percentage": 5.85
+        },
+        {
+          "phrase": "ô ô ô ô ô",
+          "count": 63,
+          "percentage": 3.41
+        },
+        {
+          "phrase": "oh oh oh oh oh",
+          "count": 53,
+          "percentage": 2.87
+        },
+        {
+          "phrase": "bom tão bom tão bom",
+          "count": 52,
+          "percentage": 2.82
+        },
+        {
+          "phrase": "tão bom tão bom tão",
+          "count": 50,
+          "percentage": 2.71
+        },
+        {
+          "phrase": "ah ah ah ah ah",
+          "count": 48,
+          "percentage": 2.6
+        },
+        {
+          "phrase": "iá iá iá iá iá",
+          "count": 44,
+          "percentage": 2.38
+        },
+        {
+          "phrase": "te amo te amo te",
+          "count": 41,
+          "percentage": 2.22
+        },
+        {
+          "phrase": "amo te amo te amo",
+          "count": 41,
+          "percentage": 2.22
+        },
+        {
+          "phrase": "minha vida por inteiro eu",
+          "count": 40,
+          "percentage": 2.17
+        },
+        {
+          "phrase": "vida por inteiro eu lhe",
+          "count": 40,
+          "percentage": 2.17
+        },
+        {
+          "phrase": "por inteiro eu lhe dou",
+          "count": 40,
+          "percentage": 2.17
+        },
+        {
+          "phrase": "eu quero partilhar eu quero",
+          "count": 37,
+          "percentage": 2.0
+        },
+        {
+          "phrase": "quero partilhar eu quero partilhar",
+          "count": 37,
+          "percentage": 2.0
+        },
+        {
+          "phrase": "partilhar eu quero partilhar a",
+          "count": 37,
+          "percentage": 2.0
+        },
+        {
+          "phrase": "eu quero partilhar a vida",
+          "count": 37,
+          "percentage": 2.0
+        }
+      ]
+    },
+    "Pagode": {
+      "2-grams": [
+        {
+          "phrase": "que eu",
+          "count": 1686,
+          "percentage": 168.43
+        },
+        {
+          "phrase": "eu não",
+          "count": 969,
+          "percentage": 96.8
+        },
+        {
+          "phrase": "o que",
+          "count": 936,
+          "percentage": 93.51
+        },
+        {
+          "phrase": "a gente",
+          "count": 916,
+          "percentage": 91.51
+        },
+        {
+          "phrase": "eu vou",
+          "count": 615,
+          "percentage": 61.44
+        },
+        {
+          "phrase": "eu te",
+          "count": 572,
+          "percentage": 57.14
+        },
+        {
+          "phrase": "o meu",
+          "count": 557,
+          "percentage": 55.64
+        },
+        {
+          "phrase": "meu coração",
+          "count": 543,
+          "percentage": 54.25
+        },
+        {
+          "phrase": "que a",
+          "count": 489,
+          "percentage": 48.85
+        },
+        {
+          "phrase": "que não",
+          "count": 451,
+          "percentage": 45.05
+        },
+        {
+          "phrase": "que você",
+          "count": 446,
+          "percentage": 44.56
+        },
+        {
+          "phrase": "você não",
+          "count": 433,
+          "percentage": 43.26
+        },
+        {
+          "phrase": "que o",
+          "count": 423,
+          "percentage": 42.26
+        },
+        {
+          "phrase": "o amor",
+          "count": 413,
+          "percentage": 41.26
+        },
+        {
+          "phrase": "pra mim",
+          "count": 411,
+          "percentage": 41.06
+        },
+        {
+          "phrase": "sei que",
+          "count": 371,
+          "percentage": 37.06
+        },
+        {
+          "phrase": "é o",
+          "count": 367,
+          "percentage": 36.66
+        },
+        {
+          "phrase": "que é",
+          "count": 363,
+          "percentage": 36.26
+        },
+        {
+          "phrase": "você me",
+          "count": 361,
+          "percentage": 36.06
+        },
+        {
+          "phrase": "não sei",
+          "count": 355,
+          "percentage": 35.46
+        }
+      ],
+      "3-grams": [
+        {
+          "phrase": "que a gente",
+          "count": 264,
+          "percentage": 26.37
+        },
+        {
+          "phrase": "ai ai ai",
+          "count": 240,
+          "percentage": 23.98
+        },
+        {
+          "phrase": "que eu não",
+          "count": 190,
+          "percentage": 18.98
+        },
+        {
+          "phrase": "que eu vou",
+          "count": 176,
+          "percentage": 17.58
+        },
+        {
+          "phrase": "eu sei que",
+          "count": 173,
+          "percentage": 17.28
+        },
+        {
+          "phrase": "o que eu",
+          "count": 166,
+          "percentage": 16.58
+        },
+        {
+          "phrase": "que eu te",
+          "count": 130,
+          "percentage": 12.99
+        },
+        {
+          "phrase": "ô ô ô",
+          "count": 130,
+          "percentage": 12.99
+        },
+        {
+          "phrase": "bole bole bole",
+          "count": 130,
+          "percentage": 12.99
+        },
+        {
+          "phrase": "a gente se",
+          "count": 128,
+          "percentage": 12.79
+        },
+        {
+          "phrase": "o nosso amor",
+          "count": 127,
+          "percentage": 12.69
+        },
+        {
+          "phrase": "oh oh oh",
+          "count": 126,
+          "percentage": 12.59
+        },
+        {
+          "phrase": "eu te amo",
+          "count": 123,
+          "percentage": 12.29
+        },
+        {
+          "phrase": "o meu coração",
+          "count": 121,
+          "percentage": 12.09
+        },
+        {
+          "phrase": "lê lê lê",
+          "count": 120,
+          "percentage": 11.99
+        },
+        {
+          "phrase": "eu não sei",
+          "count": 115,
+          "percentage": 11.49
+        },
+        {
+          "phrase": "que o amor",
+          "count": 114,
+          "percentage": 11.39
+        },
+        {
+          "phrase": "não dá pra",
+          "count": 108,
+          "percentage": 10.79
+        },
+        {
+          "phrase": "o que é",
+          "count": 107,
+          "percentage": 10.69
+        },
+        {
+          "phrase": "é que eu",
+          "count": 107,
+          "percentage": 10.69
+        }
+      ],
+      "4-grams": [
+        {
+          "phrase": "ai ai ai ai",
+          "count": 210,
+          "percentage": 20.98
+        },
+        {
+          "phrase": "ô ô ô ô",
+          "count": 108,
+          "percentage": 10.79
+        },
+        {
+          "phrase": "bole bole bole bole",
+          "count": 107,
+          "percentage": 10.69
+        },
+        {
+          "phrase": "lê lê lê lê",
+          "count": 103,
+          "percentage": 10.29
+        },
+        {
+          "phrase": "oh oh oh oh",
+          "count": 77,
+          "percentage": 7.69
+        },
+        {
+          "phrase": "vou varrendo vou varrendo",
+          "count": 64,
+          "percentage": 6.39
+        },
+        {
+          "phrase": "biro biro biro biro",
+          "count": 60,
+          "percentage": 5.99
+        },
+        {
+          "phrase": "lá lá lá lá",
+          "count": 57,
+          "percentage": 5.69
+        },
+        {
+          "phrase": "varrendo vou varrendo vou",
+          "count": 56,
+          "percentage": 5.59
+        },
+        {
+          "phrase": "toda vez que eu",
+          "count": 53,
+          "percentage": 5.29
+        },
+        {
+          "phrase": "ie ie ie ie",
+          "count": 45,
+          "percentage": 4.5
+        },
+        {
+          "phrase": "o que é que",
+          "count": 42,
+          "percentage": 4.2
+        },
+        {
+          "phrase": "que é que eu",
+          "count": 41,
+          "percentage": 4.1
+        },
+        {
+          "phrase": "e e e e",
+          "count": 39,
+          "percentage": 3.9
+        },
+        {
+          "phrase": "paracundê paracundê paracundê paracundê",
+          "count": 39,
+          "percentage": 3.9
+        },
+        {
+          "phrase": "não sei o que",
+          "count": 38,
+          "percentage": 3.8
+        },
+        {
+          "phrase": "deixa eu beber em",
+          "count": 36,
+          "percentage": 3.6
+        },
+        {
+          "phrase": "eu beber em paz",
+          "count": 36,
+          "percentage": 3.6
+        },
+        {
+          "phrase": "dim dim dim dim",
+          "count": 36,
+          "percentage": 3.6
+        },
+        {
+          "phrase": "me faz tão bem",
+          "count": 35,
+          "percentage": 3.5
+        }
+      ],
+      "5-grams": [
+        {
+          "phrase": "ai ai ai ai ai",
+          "count": 184,
+          "percentage": 18.38
+        },
+        {
+          "phrase": "ô ô ô ô ô",
+          "count": 89,
+          "percentage": 8.89
+        },
+        {
+          "phrase": "lê lê lê lê lê",
+          "count": 86,
+          "percentage": 8.59
+        },
+        {
+          "phrase": "bole bole bole bole bole",
+          "count": 84,
+          "percentage": 8.39
+        },
+        {
+          "phrase": "biro biro biro biro biro",
+          "count": 58,
+          "percentage": 5.79
+        },
+        {
+          "phrase": "vou varrendo vou varrendo vou",
+          "count": 56,
+          "percentage": 5.59
+        },
+        {
+          "phrase": "varrendo vou varrendo vou varrendo",
+          "count": 56,
+          "percentage": 5.59
+        },
+        {
+          "phrase": "lá lá lá lá lá",
+          "count": 51,
+          "percentage": 5.09
+        },
+        {
+          "phrase": "oh oh oh oh oh",
+          "count": 45,
+          "percentage": 4.5
+        },
+        {
+          "phrase": "ie ie ie ie ie",
+          "count": 42,
+          "percentage": 4.2
+        },
+        {
+          "phrase": "deixa eu beber em paz",
+          "count": 36,
+          "percentage": 3.6
+        },
+        {
+          "phrase": "o que é que eu",
+          "count": 32,
+          "percentage": 3.2
+        },
+        {
+          "phrase": "le le le le le",
+          "count": 29,
+          "percentage": 2.9
+        },
+        {
+          "phrase": "cilada cilada cilada cilada cilada",
+          "count": 28,
+          "percentage": 2.8
+        },
+        {
+          "phrase": "agora perdeu agora perdeu agora",
+          "count": 28,
+          "percentage": 2.8
+        },
+        {
+          "phrase": "perdeu agora perdeu agora perdeu",
+          "count": 28,
+          "percentage": 2.8
+        },
+        {
+          "phrase": "dim dim dim dim dim",
+          "count": 28,
+          "percentage": 2.8
+        },
+        {
+          "phrase": "e e e e e",
+          "count": 26,
+          "percentage": 2.6
+        },
+        {
+          "phrase": "de ladrão de ladrão de",
+          "count": 26,
+          "percentage": 2.6
+        },
+        {
+          "phrase": "ladrão de ladrão de ladrão",
+          "count": 26,
+          "percentage": 2.6
+        }
+      ]
+    }
+  }
+}

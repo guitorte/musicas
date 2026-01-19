@@ -1,0 +1,165 @@
+{
+  "description": "What makes each genre distinctive - the \"formula\" for each genre",
+  "genres": {
+    "Trap": {
+      "song_count": 1001,
+      "vocabulary_richness": 0.0568,
+      "avg_words_per_song": 418.4,
+      "repetition_level": 0.241,
+      "top_5_words": [
+        "que",
+        "eu",
+        "a",
+        "o",
+        "de"
+      ],
+      "top_5_themes": [
+        "natureza",
+        "familia",
+        "social",
+        "amor_romantico",
+        "ostentacao"
+      ],
+      "top_10_distinctive_words": [
+        "ahn",
+        "ayy",
+        "mami",
+        "uau",
+        "orochi",
+        "ride",
+        "shit",
+        "ain",
+        "big",
+        "got"
+      ]
+    },
+    "Sertanejo": {
+      "song_count": 337,
+      "vocabulary_richness": 0.0643,
+      "avg_words_per_song": 239.7,
+      "repetition_level": 0.413,
+      "top_5_words": [
+        "que",
+        "eu",
+        "não",
+        "de",
+        "e"
+      ],
+      "top_5_themes": [
+        "amor_romantico",
+        "natureza",
+        "social",
+        "familia",
+        "sofrimento"
+      ],
+      "top_10_distinctive_words": [
+        "sálvame",
+        "tum",
+        "infiel",
+        "marília",
+        "lixo",
+        "words",
+        "incapaz",
+        "cupido",
+        "because",
+        "roça"
+      ]
+    },
+    "Pagode": {
+      "song_count": 1001,
+      "vocabulary_richness": 0.0329,
+      "avg_words_per_song": 232.5,
+      "repetition_level": 0.342,
+      "top_5_words": [
+        "que",
+        "eu",
+        "não",
+        "o",
+        "de"
+      ],
+      "top_5_themes": [
+        "amor_romantico",
+        "natureza",
+        "social",
+        "religioso",
+        "familia"
+      ],
+      "top_10_distinctive_words": [
+        "varrendo",
+        "bole",
+        "biro",
+        "pagode",
+        "dim",
+        "laia",
+        "foge",
+        "ciúme",
+        "errar",
+        "separar"
+      ]
+    },
+    "MPB": {
+      "song_count": 1846,
+      "vocabulary_richness": 0.0575,
+      "avg_words_per_song": 178.9,
+      "repetition_level": 0.254,
+      "top_5_words": [
+        "que",
+        "o",
+        "de",
+        "e",
+        "a"
+      ],
+      "top_5_themes": [
+        "natureza",
+        "amor_romantico",
+        "social",
+        "familia",
+        "religioso"
+      ],
+      "top_10_distinctive_words": [
+        "non",
+        "carolina",
+        "mona",
+        "carol",
+        "beira",
+        "mar",
+        "carnaval",
+        "terra",
+        "canta",
+        "queres"
+      ]
+    },
+    "Arrocha": {
+      "song_count": 974,
+      "vocabulary_richness": 0.0401,
+      "avg_words_per_song": 182.1,
+      "repetition_level": 0.345,
+      "top_5_words": [
+        "que",
+        "eu",
+        "não",
+        "o",
+        "e"
+      ],
+      "top_5_themes": [
+        "amor_romantico",
+        "natureza",
+        "social",
+        "sofrimento",
+        "familia"
+      ],
+      "top_10_distinctive_words": [
+        "bilu",
+        "soca",
+        "vuco",
+        "nattanzinho",
+        "cabaré",
+        "naipe",
+        "postar",
+        "oito",
+        "paredão",
+        "espada"
+      ]
+    }
+  }
+}

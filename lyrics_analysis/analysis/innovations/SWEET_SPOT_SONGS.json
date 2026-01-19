@@ -1,0 +1,9 @@
+{
+  "description": "Songs that are BOTH innovative AND effective - learn from these!",
+  "criteria": {
+    "min_innovation": 60,
+    "min_effectiveness": 60
+  },
+  "count": 0,
+  "songs": []
+}

@@ -1,0 +1,135 @@
+{
+  "title": "Brazilian Lyrics Innovation Atlas",
+  "description": "Comprehensive analysis of innovations and what makes lyrics effective",
+  "corpus_stats": {
+    "total_songs": 5159,
+    "top_outliers_analyzed": 100,
+    "sweet_spot_songs": 0
+  },
+  "key_findings": {
+    "innovation_patterns": {
+      "top_artists": {
+        "Chico Buarque": 12,
+        "J. Eskine": 8,
+        "Marília Mendonça": 6,
+        "Djavan": 5,
+        "Grupo Menos É Mais": 4,
+        "Seu Jorge": 3,
+        "Lil Chainz": 3,
+        "ROA": 3,
+        "Costa Gold": 3,
+        "O REI DOS FAIXAS": 3
+      },
+      "genre_distribution": {
+        "MPB": 38,
+        "Trap": 26,
+        "Pagode": 17,
+        "Arrocha": 13,
+        "Sertanejo": 6
+      },
+      "average_scores": {
+        "vocabulary_uniqueness": 21.15,
+        "structural_deviation": 83.33,
+        "length_deviation": 81.64,
+        "repetition_deviation": 26.43,
+        "composite_innovation": 46.74
+      },
+      "innovation_drivers": {
+        "primary_innovation_drivers": {
+          "structure": 64,
+          "length": 32,
+          "repetition": 2,
+          "vocabulary": 2
+        },
+        "interpretation": {
+          "vocabulary": "Uses rare/unique words",
+          "structure": "Non-standard song structure",
+          "length": "Unusual length (very long or short)",
+          "repetition": "Unexpected repetition pattern"
+        }
+      }
+    },
+    "sweet_spot_characteristics": {},
+    "temporal_trends": {
+      "structural_trends": {
+        "length_change": {
+          "classic": 160.4,
+          "contemporary": 418.4,
+          "change": 258.0,
+          "interpretation": "Songs got longer"
+        },
+        "repetition_change": {
+          "classic": 0.181,
+          "contemporary": 0.241,
+          "change": 0.06,
+          "interpretation": "More repetitive"
+        }
+      },
+      "thematic_trends": {
+        "romantic_love": {
+          "classic": 56.4,
+          "contemporary": 41.3,
+          "change": -15.1,
+          "trend": "declining"
+        },
+        "suffering": {
+          "classic": 38.0,
+          "contemporary": 40.4,
+          "change": 2.4,
+          "trend": "stable"
+        },
+        "social_political": {
+          "classic": 39.6,
+          "contemporary": 60.5,
+          "change": 20.9,
+          "trend": "rising"
+        },
+        "urban": {
+          "classic": 15.7,
+          "contemporary": 28.5,
+          "change": 12.8,
+          "trend": "rising"
+        },
+        "party": {
+          "classic": 11.8,
+          "contemporary": 8.4,
+          "change": -3.4,
+          "trend": "stable"
+        },
+        "ostentation": {
+          "classic": 6.9,
+          "contemporary": 39.0,
+          "change": 32.1,
+          "trend": "rising"
+        }
+      }
+    }
+  },
+  "key_files": {
+    "sweet_spot_songs": {
+      "file": "SWEET_SPOT_SONGS.json",
+      "description": "Top songs that are BOTH innovative AND effective - study these!"
+    },
+    "outlier_report": {
+      "file": "outlier_report.json",
+      "description": "Statistical outliers and what makes them unique"
+    },
+    "innovation_metrics": {
+      "file": "innovation_metrics.json",
+      "description": "4D scoring (Innovation, Authenticity, Risk, Effectiveness)"
+    },
+    "effectiveness_report": {
+      "file": "effectiveness_report.json",
+      "description": "What makes lyrics effective vs ineffective"
+    },
+    "temporal_evolution": {
+      "file": "temporal_evolution.json",
+      "description": "How Brazilian lyrics evolved over time"
+    }
+  },
+  "usage": {
+    "for_writers": "Study SWEET_SPOT_SONGS.json to see what innovations work",
+    "for_analysis": "Use innovation_metrics.json to understand 4D scoring",
+    "for_generation": "Apply insights to balance innovation with effectiveness"
+  }
+}

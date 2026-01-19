@@ -1,0 +1,71 @@
+# Configuration for Brazilian Portuguese Lyrics Analysis Pipeline
+
+# Corpus settings
+corpus:
+  # Path to the raw lyrics files (relative to project root)
+  path: "../letras"
+
+  # File encoding
+  encoding: "utf-8"
+  fallback_encoding: "latin-1"
+
+# Output settings
+output:
+  # Directory for processed data
+  dir: "data/processed"
+
+  # Formats to generate (json, jsonl, sqlite, training_txt, all)
+  formats:
+    - json
+    - jsonl
+    - sqlite
+    - training_txt
+
+# Processing settings
+processing:
+  # Apply text cleaning
+  clean_text: true
+
+  # Remove bracketed content like [intro], [chorus]
+  remove_brackets: false
+
+  # Normalize unicode characters
+  normalize_unicode: true
+
+# Statistics settings
+statistics:
+  # Save statistics to JSON file
+  save_stats: true
+
+  # Print summary to console
+  print_summary: true
+
+  # Include detailed artist statistics
+  detailed_artists: 10
+
+  # Include detailed genre statistics
+  detailed_genres: true
+
+# Metadata extraction settings
+metadata:
+  # Extract themes from lyrics
+  extract_themes: true
+
+  # Extract structural information
+  extract_structure: true
+
+  # Detect language features
+  analyze_language: true
+
+  # Extract named entities (simple method)
+  extract_entities: false
+
+# Future features (Phase 2)
+nlp:
+  enabled: false
+  model: "pt_core_news_sm"  # spaCy model
+
+# Future features (Phase 3)
+generation:
+  enabled: false
+  model_type: "gpt2"

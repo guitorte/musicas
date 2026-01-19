@@ -1,0 +1,1286 @@
+{
+  "description": "Top 20 most distinctive songs in corpus",
+  "methodology": {
+    "slant_rhymes": "Detects imperfect rhymes (20% weight)",
+    "colloquialisms": "Counts Brazilian colloquial expressions (25% weight)",
+    "dialogue": "Identifies direct dialogue markers (25% weight)",
+    "irony": "Detects potential irony/sarcasm (15% weight)",
+    "vocabulary_uniqueness": "Measures word rarity in corpus (15% weight)"
+  },
+  "count": 20,
+  "songs": [
+    {
+      "title": "Brincadeira de Criança",
+      "artist": "Molejo",
+      "genre": "Pagode",
+      "distinctiveness": 79.56205900536804,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 100,
+        "vocabulary_uniqueness": 97.08039336912026
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 28,
+          "unique": 7,
+          "examples": [
+            [
+              "né",
+              2
+            ],
+            [
+              "ô",
+              1
+            ],
+            [
+              "galera",
+              1
+            ],
+            [
+              "tô",
+              1
+            ],
+            [
+              "hein",
+              3
+            ],
+            [
+              "tá",
+              16
+            ],
+            [
+              "pra",
+              4
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 37,
+          "examples": [
+            "Sabe que a brincadeira que eu mais gosto?",
+            "Acorda, criançada, tá na hora da gente brincar (oba!)",
+            "Poxa, até que enfim, hein"
+          ]
+        },
+        "irony": {
+          "score": 17,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "Carolina",
+      "artist": "Seu Jorge",
+      "genre": "MPB",
+      "distinctiveness": 71.99210888969152,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 50,
+        "vocabulary_uniqueness": 96.61405926461013
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 29,
+          "unique": 2,
+          "examples": [
+            [
+              "ô",
+              27
+            ],
+            [
+              "pra",
+              2
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 13,
+          "examples": [
+            "A princípio, no domingo, o que você quer fazer?",
+            "Olha aí, amigo, eu digo que ela só me dá prazer",
+            "Olha aí, amigo, eu digo que ela só me dá prazer"
+          ]
+        },
+        "irony": {
+          "score": 5,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "Panamera",
+      "artist": "MC Kako",
+      "genre": "Trap",
+      "distinctiveness": 70.77875080095413,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 40,
+        "vocabulary_uniqueness": 98.52500533969415
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 38,
+          "unique": 4,
+          "examples": [
+            [
+              "cara",
+              13
+            ],
+            [
+              "tô",
+              11
+            ],
+            [
+              "tá",
+              4
+            ],
+            [
+              "pra",
+              10
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 12,
+          "examples": [
+            "Perguntei pra Deus será que eu só merecedor",
+            "Ela me olha querendo sentar",
+            "Quem muito fala não tem disposição pra marchar"
+          ]
+        },
+        "irony": {
+          "score": 4,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "Resenha do Arrocha 3.0",
+      "artist": "J. Eskine",
+      "genre": "Arrocha",
+      "distinctiveness": 70.69627470954043,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 40,
+        "vocabulary_uniqueness": 97.97516473026951
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 50,
+          "unique": 12,
+          "examples": [
+            [
+              "cachaça",
+              1
+            ],
+            [
+              "né",
+              1
+            ],
+            [
+              "cê",
+              1
+            ],
+            [
+              "véi",
+              2
+            ],
+            [
+              "ô",
+              1
+            ],
+            [
+              "cara",
+              2
+            ],
+            [
+              "tô",
+              4
+            ],
+            [
+              "hein",
+              4
+            ],
+            [
+              "tá",
+              1
+            ],
+            [
+              "ó",
+              23
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 47,
+          "examples": [
+            "Ixi, ó, vou logo avisar, vu?",
+            "Hein, Ale? Pode ser tudo ou num pode ser nada, hein, Levi?",
+            "Cê já sabe o que vou falar, né, véi?"
+          ]
+        },
+        "irony": {
+          "score": 4,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "Fogo de Palha",
+      "artist": "Nesk Only",
+      "genre": "Trap",
+      "distinctiveness": 70.52469299300748,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 40,
+        "vocabulary_uniqueness": 96.83128662004988
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 34,
+          "unique": 6,
+          "examples": [
+            [
+              "mano",
+              6
+            ],
+            [
+              "né",
+              1
+            ],
+            [
+              "cê",
+              6
+            ],
+            [
+              "tô",
+              11
+            ],
+            [
+              "tá",
+              8
+            ],
+            [
+              "pra",
+              2
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 12,
+          "examples": [
+            "Acontecer nessa né casinha?",
+            "Acontecer nessa né casinha?",
+            "Só que fogo apaga da noite pro dia"
+          ]
+        },
+        "irony": {
+          "score": 4,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "Vizão de Cria 3",
+      "artist": "MC Cabelinho",
+      "genre": "Trap",
+      "distinctiveness": 69.31012116997752,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 30,
+        "vocabulary_uniqueness": 98.73414113318348
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 26,
+          "unique": 7,
+          "examples": [
+            [
+              "mano",
+              2
+            ],
+            [
+              "ô",
+              2
+            ],
+            [
+              "cara",
+              3
+            ],
+            [
+              "tô",
+              4
+            ],
+            [
+              "tá",
+              4
+            ],
+            [
+              "pra",
+              10
+            ],
+            [
+              "pô",
+              1
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 10,
+          "examples": [
+            "Como saber se eu tô perto de cumprir a missão? (Como?)",
+            "(Pô, isso lá na minha área era moda, menó)",
+            "Já te falei que é nóis que tá (PPG)"
+          ]
+        },
+        "irony": {
+          "score": 3,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "Nossa Vida Parou / Metade Vai, Metade Fica / Marra de Durão / Alucinado / Lance Livre / Meu Desapego / Instinto / Me Perdoa / Moça",
+      "artist": "Fabinho (Pagode)",
+      "genre": "Pagode",
+      "distinctiveness": 69.29362226103171,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 30,
+        "vocabulary_uniqueness": 98.62414840687805
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 51,
+          "unique": 6,
+          "examples": [
+            [
+              "né",
+              2
+            ],
+            [
+              "cê",
+              3
+            ],
+            [
+              "cara",
+              4
+            ],
+            [
+              "tô",
+              10
+            ],
+            [
+              "tá",
+              8
+            ],
+            [
+              "pra",
+              24
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 24,
+          "examples": [
+            "Oh, Deus, quem mais vou precisar esquecer?",
+            "É ruim né, assim que eu me sinto",
+            "No quarto só fica seu cheiro"
+          ]
+        },
+        "irony": {
+          "score": 3,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "CACHORRO SINCERO",
+      "artist": "CJota",
+      "genre": "Trap",
+      "distinctiveness": 69.27075072883774,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 85,
+        "dialogue": 80,
+        "irony": 90,
+        "vocabulary_uniqueness": 96.80500485891825
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 17,
+          "unique": 5,
+          "examples": [
+            [
+              "né",
+              1
+            ],
+            [
+              "cara",
+              2
+            ],
+            [
+              "tô",
+              4
+            ],
+            [
+              "tá",
+              8
+            ],
+            [
+              "pra",
+              2
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 8,
+          "examples": [
+            "(Mas pelo menos é sincero, né?)",
+            "(Mas pelo menos é sincero, né?)",
+            "(Eu não vou te iludir, só tô aqui porque eu tô com tesão)"
+          ]
+        },
+        "irony": {
+          "score": 9,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "Apita",
+      "artist": "Costa Gold",
+      "genre": "Trap",
+      "distinctiveness": 69.24642547442473,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 30,
+        "vocabulary_uniqueness": 98.30950316283155
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 31,
+          "unique": 8,
+          "examples": [
+            [
+              "né",
+              4
+            ],
+            [
+              "cê",
+              3
+            ],
+            [
+              "ô",
+              2
+            ],
+            [
+              "cara",
+              1
+            ],
+            [
+              "tô",
+              3
+            ],
+            [
+              "tá",
+              5
+            ],
+            [
+              "ó",
+              3
+            ],
+            [
+              "pra",
+              10
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 22,
+          "examples": [
+            "Todo dia alguém me liga, tipo, cadê o apito? (Né, meu sócio?",
+            "Eu prometi que eu ia parar com isso (mas né possível)",
+            "Eu tô vivendo esse ciclo só de segunda a domingo"
+          ]
+        },
+        "irony": {
+          "score": 3,
+          "examples": [
+            "Ressaca de domingo, mas lá fora o dia tá lindo"
+          ]
+        }
+      }
+    },
+    {
+      "title": "Mídio",
+      "artist": "Major RD",
+      "genre": "Trap",
+      "distinctiveness": 69.21063652248522,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 30,
+        "vocabulary_uniqueness": 98.07091014990148
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 28,
+          "unique": 6,
+          "examples": [
+            [
+              "mano",
+              5
+            ],
+            [
+              "ô",
+              3
+            ],
+            [
+              "cara",
+              5
+            ],
+            [
+              "tá",
+              6
+            ],
+            [
+              "pra",
+              8
+            ],
+            [
+              "pô",
+              1
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 12,
+          "examples": [
+            "Quer dizer então que teve mais uma partida impecável do home",
+            "Nóis Fura Mil, nóis bagunça a cena, eu sou o Taz-Mania, só w"
+          ]
+        },
+        "irony": {
+          "score": 3,
+          "examples": [
+            "Querendo dar os parabéns, só que batendo palma com a bunda"
+          ]
+        }
+      }
+    },
+    {
+      "title": "Dentro da Mala",
+      "artist": "MC PH",
+      "genre": "Trap",
+      "distinctiveness": 69.15297205453498,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 30,
+        "vocabulary_uniqueness": 97.68648036356657
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 28,
+          "unique": 5,
+          "examples": [
+            [
+              "mano",
+              4
+            ],
+            [
+              "cara",
+              2
+            ],
+            [
+              "tô",
+              7
+            ],
+            [
+              "tá",
+              8
+            ],
+            [
+              "pra",
+              7
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 10,
+          "examples": [
+            "Vai fazer o que?",
+            "Mala só faz por onde"
+          ]
+        },
+        "irony": {
+          "score": 3,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "SET DO BUZEIRA",
+      "artist": "Kadu",
+      "genre": "Trap",
+      "distinctiveness": 68.32723235212971,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 90,
+        "dialogue": 100,
+        "irony": 40,
+        "vocabulary_uniqueness": 98.84821568086474
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 18,
+          "unique": 4,
+          "examples": [
+            [
+              "cara",
+              2
+            ],
+            [
+              "tô",
+              3
+            ],
+            [
+              "tá",
+              1
+            ],
+            [
+              "pra",
+              12
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 18,
+          "examples": [
+            "Você já é um vencedor entendeu?",
+            "É só você querer fi, esquece",
+            "Olha os moleque com a codorna"
+          ]
+        },
+        "irony": {
+          "score": 4,
+          "examples": [
+            "Mas claro não é fácil é foco e marcha no corre"
+          ]
+        }
+      }
+    },
+    {
+      "title": "1% / Você Não Sabe o Que É Amor / Não Há Limites",
+      "artist": "Vitinho",
+      "genre": "Pagode",
+      "distinctiveness": 68.16825110078742,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 90,
+        "irony": 40,
+        "vocabulary_uniqueness": 97.7883406719161
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 27,
+          "unique": 3,
+          "examples": [
+            [
+              "tô",
+              7
+            ],
+            [
+              "tá",
+              2
+            ],
+            [
+              "pra",
+              18
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 9,
+          "examples": [
+            "Olha só pra mim",
+            "Olha só pra mim"
+          ]
+        },
+        "irony": {
+          "score": 4,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "Poesia Acústica #14",
+      "artist": "KayBlack",
+      "genre": "Trap",
+      "distinctiveness": 67.87719807172557,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 20,
+        "vocabulary_uniqueness": 99.18132047817052
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 64,
+          "unique": 10,
+          "examples": [
+            [
+              "mano",
+              1
+            ],
+            [
+              "né",
+              2
+            ],
+            [
+              "cê",
+              9
+            ],
+            [
+              "cara",
+              2
+            ],
+            [
+              "tô",
+              2
+            ],
+            [
+              "hein",
+              1
+            ],
+            [
+              "tá",
+              10
+            ],
+            [
+              "ó",
+              2
+            ],
+            [
+              "pra",
+              33
+            ],
+            [
+              "pô",
+              2
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 46,
+          "examples": [
+            "Quer namorar comigo?",
+            "Salve, Malak!",
+            "Ela disse: Talvez, eu falei: Brinca não, hein"
+          ]
+        },
+        "irony": {
+          "score": 2,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "SET DJ GM 6.0",
+      "artist": "GREGO (BR)",
+      "genre": "Trap",
+      "distinctiveness": 67.86207421063081,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 20,
+        "vocabulary_uniqueness": 99.0804947375387
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 103,
+          "unique": 6,
+          "examples": [
+            [
+              "cê",
+              24
+            ],
+            [
+              "ô",
+              2
+            ],
+            [
+              "cara",
+              2
+            ],
+            [
+              "tô",
+              11
+            ],
+            [
+              "tá",
+              19
+            ],
+            [
+              "pra",
+              45
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 27,
+          "examples": [
+            "Novin, porém, vivido, cê é malandro ou cê é mané?",
+            "Novin, porém, vivido, cê é malandro ou cê é mané?",
+            "Só assunto desenvolvido, sinistro"
+          ]
+        },
+        "irony": {
+          "score": 2,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "The Cypher Deffect 2",
+      "artist": "Costa Gold",
+      "genre": "Trap",
+      "distinctiveness": 67.85414478725394,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 20,
+        "vocabulary_uniqueness": 99.02763191502626
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 35,
+          "unique": 8,
+          "examples": [
+            [
+              "mano",
+              1
+            ],
+            [
+              "né",
+              1
+            ],
+            [
+              "cê",
+              9
+            ],
+            [
+              "cara",
+              2
+            ],
+            [
+              "tô",
+              9
+            ],
+            [
+              "tá",
+              4
+            ],
+            [
+              "ó",
+              1
+            ],
+            [
+              "pra",
+              8
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 20,
+          "examples": [
+            "E qual?",
+            "Rolling Stone lek! Tem cuidado quanto custou, lek",
+            "Diz que tô ébrio e acostumou, né?"
+          ]
+        },
+        "irony": {
+          "score": 2,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "American Pie",
+      "artist": "Lil Chainz",
+      "genre": "Trap",
+      "distinctiveness": 67.77088483700308,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 20,
+        "vocabulary_uniqueness": 98.47256558002056
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 32,
+          "unique": 5,
+          "examples": [
+            [
+              "mano",
+              4
+            ],
+            [
+              "cara",
+              2
+            ],
+            [
+              "tô",
+              11
+            ],
+            [
+              "tá",
+              7
+            ],
+            [
+              "pra",
+              8
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 66,
+          "examples": [
+            "Mano, o quê que tá rolando?",
+            "Convida a tropa pra afterparty!",
+            "Só esperar 10 minutos"
+          ]
+        },
+        "irony": {
+          "score": 2,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "Má Fase",
+      "artist": "J. Eskine",
+      "genre": "Arrocha",
+      "distinctiveness": 67.76802785136152,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 95,
+        "dialogue": 100,
+        "irony": 30,
+        "vocabulary_uniqueness": 96.78685234241014
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 19,
+          "unique": 7,
+          "examples": [
+            [
+              "né",
+              1
+            ],
+            [
+              "cê",
+              4
+            ],
+            [
+              "ô",
+              2
+            ],
+            [
+              "tô",
+              6
+            ],
+            [
+              "tá",
+              3
+            ],
+            [
+              "ó",
+              1
+            ],
+            [
+              "pra",
+              2
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 10,
+          "examples": [
+            "Essa daqui eu fiz revoltado, né?",
+            "Essa daqui eu fiz revoltado, né?",
+            "Tô sossego, só vou esvairecer"
+          ]
+        },
+        "irony": {
+          "score": 3,
+          "examples": [
+            "Fala sério, mas eu tô de lazer"
+          ]
+        }
+      }
+    },
+    {
+      "title": "Limitado 2",
+      "artist": "Nesk Only",
+      "genre": "Trap",
+      "distinctiveness": 67.74667223959068,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 20,
+        "vocabulary_uniqueness": 98.31114826393791
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 46,
+          "unique": 8,
+          "examples": [
+            [
+              "mano",
+              2
+            ],
+            [
+              "né",
+              5
+            ],
+            [
+              "cê",
+              19
+            ],
+            [
+              "ô",
+              1
+            ],
+            [
+              "tô",
+              3
+            ],
+            [
+              "hein",
+              3
+            ],
+            [
+              "tá",
+              10
+            ],
+            [
+              "pra",
+              3
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 98,
+          "examples": [
+            "Fiz certo, Nesk?",
+            "Aê, ou-ou-ou-ou-ou!",
+            "Nem vem falar que eu não avisei se foi você que falou: Não! "
+          ]
+        },
+        "irony": {
+          "score": 2,
+          "examples": []
+        }
+      }
+    },
+    {
+      "title": "Resenha do Arrocha 2.0",
+      "artist": "J. Eskine",
+      "genre": "Arrocha",
+      "distinctiveness": 67.67661403638907,
+      "breakdown": {
+        "slant_rhymes": 0.0,
+        "colloquialisms": 100,
+        "dialogue": 100,
+        "irony": 20,
+        "vocabulary_uniqueness": 97.84409357592715
+      },
+      "features": {
+        "slant_rhymes": {
+          "count": 0,
+          "ratio": 0.0,
+          "examples": []
+        },
+        "colloquialisms": {
+          "count": 108,
+          "unique": 10,
+          "examples": [
+            [
+              "né",
+              4
+            ],
+            [
+              "velho",
+              1
+            ],
+            [
+              "eita",
+              1
+            ],
+            [
+              "cara",
+              3
+            ],
+            [
+              "tô",
+              1
+            ],
+            [
+              "hein",
+              3
+            ],
+            [
+              "tá",
+              1
+            ],
+            [
+              "ó",
+              8
+            ],
+            [
+              "pra",
+              12
+            ],
+            [
+              "pô",
+              74
+            ]
+          ]
+        },
+        "dialogue": {
+          "score": 30,
+          "examples": [
+            "Ale?",
+            "A mãozinha!",
+            "Pode ser tudo ou não pode ser nada, hein"
+          ]
+        },
+        "irony": {
+          "score": 2,
+          "examples": []
+        }
+      }
+    }
+  ]
+}
