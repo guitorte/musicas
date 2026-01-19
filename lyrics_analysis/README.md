@@ -1,29 +1,42 @@
-# 🎵 Brazilian Portuguese Lyrics Analysis Pipeline
+# 🎵 Brazilian Portuguese Lyrics Analysis & Generation Pipeline
 
-A modular, extensible pipeline for analyzing Brazilian Portuguese song lyrics and generating new lyrics based on learned patterns.
+A modular, quality-aware pipeline for analyzing Brazilian Portuguese song lyrics and generating new lyrics with intelligent 4D control.
 
 ## 📋 Project Overview
 
-This project processes a corpus of Brazilian song lyrics across multiple genres (MPB, Sertanejo, Pagode, Trap, Arrocha, etc.) to:
+This project processes a corpus of **5,159 Brazilian songs** across multiple genres (MPB, Sertanejo, Pagode, Trap, Arrocha, etc.) to understand patterns, innovations, and generate high-quality lyrics.
 
-1. **Phase 1 (Current)**: Data processing and analysis
+**Key Philosophy**: Don't just learn what's average - learn what's DISTINCTIVE. Build systems that can generate innovative AND effective lyrics.
+
+### ✅ Completed Phases
+
+1. **Phase 1: Data Processing** ✓
    - Load and parse lyrics from various text formats
-   - Clean and normalize Brazilian Portuguese text
+   - Clean and normalize Brazilian Portuguese text (preserving diacritics)
    - Extract metadata and structural information
    - Generate comprehensive corpus statistics
    - Export to structured formats (JSON, JSONL, SQLite)
 
-2. **Phase 2 (Future)**: Advanced NLP analysis
-   - POS tagging and dependency parsing
-   - Named entity recognition
-   - Sentiment analysis
-   - Rhyme and meter detection
-   - Topic modeling
+2. **Phase 2A: Pattern Detection (Convention Atlas)** ✓
+   - Cliché detection: 150+ overused phrases to AVOID
+   - Genre formulas: Distinctive vocabulary for each genre
+   - Structural templates: 20 common song structures
+   - Pattern analysis: What makes each genre unique
 
-3. **Phase 3 (Future)**: Lyrics generation
-   - Fine-tune language models on Brazilian Portuguese lyrics
-   - Genre-specific text generation
-   - Conditional generation (by artist, genre, theme)
+3. **Phase 2B: Innovation Detection (Deviation Analysis)** ✓
+   - Outlier detection: Statistical uniqueness scoring (4 dimensions)
+   - Effectiveness analysis: What makes lyrics WORK (coherence, resonance, memorability)
+   - Innovation metrics: 4D scoring system (Innovation, Authenticity, Risk, Effectiveness)
+   - Temporal evolution: How vocabulary/structure changed across eras
+   - **Sweet spot identification**: 29 songs with high innovation + high effectiveness
+
+4. **Phase 4: Quality-Aware Lyrics Generator** ✓
+   - Template-based structure generation from Phase 2A patterns
+   - Vocabulary selector with cliché avoidance
+   - **Quality scorer**: Wraps Phase 2B analyzers to evaluate candidates
+   - **Innovation controller**: Maps 4D targets to generation parameters
+   - **Iterative refinement**: Generates multiple candidates, scores them, picks best
+   - CLI interface with 6 pre-defined profiles + custom 4D targets
 
 ## 🏗️ Project Structure
 
@@ -54,11 +67,11 @@ lyrics_analysis/
 ### Prerequisites
 
 - Python 3.8 or higher
-- The lyrics corpus in `../letras/` directory
+- The lyrics corpus in `../letras/` directory (5,159 songs analyzed)
 
 ### Installation
 
-1. Clone the repository:
+1. Navigate to the project:
 ```bash
 cd lyrics_analysis
 ```
@@ -74,30 +87,79 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Note: Phase 1 uses only Python standard library, so no external dependencies are strictly required yet.
+Note: Current implementation uses only Python standard library.
 
-### Running the Pipeline
+## 🎵 Generate Lyrics (Phase 4)
 
-Process the entire corpus with default settings:
+Generate Brazilian Portuguese lyrics with quality-aware AI:
+
+### Basic Usage
 
 ```bash
-cd scripts
-python process_corpus.py
+# Generate with default settings (balanced profile, MPB)
+python scripts/generate_lyrics.py
+
+# Generate specific genre with profile
+python scripts/generate_lyrics.py --genre Trap --profile sweet_spot
+
+# Generate with custom 4D targets
+python scripts/generate_lyrics.py --innovation 70 --effectiveness 80
+
+# Generate batch and save to file
+python scripts/generate_lyrics.py --count 5 --output results.json
 ```
 
-The script will:
-1. Load all lyrics from `../letras/`
-2. Clean and normalize the text
-3. Extract metadata
-4. Generate and display statistics
-5. Save processed data to `../lyrics_analysis/data/processed/`
+### Available Profiles
 
-### Command Line Options
+- **balanced** (default): 50 innovation, 70 effectiveness - Good mix
+- **safe**: 30 innovation, 80 effectiveness - Proven formulas
+- **experimental**: 80 innovation, 50 effectiveness - Push boundaries
+- **sweet_spot**: 70 innovation, 75 effectiveness - High innovation + quality
+- **traditional**: 20 innovation, 75 effectiveness - Classic Brazilian
+- **contemporary**: 60 innovation, 70 effectiveness - Modern trendy
+
+### 4D Control System
+
+Customize generation with four dimensions (0-100 scale):
+
+- **Innovation**: Vocabulary rarity, structure uniqueness
+- **Authenticity**: Brazilian Portuguese markers, genre vocabulary
+- **Risk**: Experimental level, candidate diversity
+- **Effectiveness**: Quality target, memorability features
 
 ```bash
-python process_corpus.py --help
+python scripts/generate_lyrics.py \
+  --innovation 70 \
+  --authenticity 85 \
+  --risk 60 \
+  --effectiveness 75
+```
 
-Options:
+### Available Genres
+
+MPB, Trap, Sertanejo, Pagode, Arrocha
+
+### List Options
+
+```bash
+# List available genres
+python scripts/generate_lyrics.py --list-genres
+
+# List available profiles
+python scripts/generate_lyrics.py --list-profiles
+
+# List available themes
+python scripts/generate_lyrics.py --list-themes
+```
+
+## 📊 Run Analysis
+
+Process corpus and generate pattern/innovation reports:
+
+### Phase 1: Process Corpus
+
+```bash
+python scripts/process_corpus.py
   --corpus-path PATH    Path to lyrics directory (default: ../letras)
   --output-dir PATH     Output directory (default: ../lyrics_analysis/data/processed)
   --format FORMAT       Output format: json, jsonl, sqlite, all (default: all)
