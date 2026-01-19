@@ -1,0 +1,1398 @@
+{
+  "overview": {
+    "total_songs_analyzed": 5159,
+    "top_outliers_count": 100,
+    "genres_analyzed": 5
+  },
+  "top_100_outliers": [
+    {
+      "rank": 1,
+      "title": "MERRY CHRISTMAS 1 (RIP Kris R.)",
+      "artist": "Pirlo",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 37.13,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 39.67,
+        "composite_innovation": 62.79
+      }
+    },
+    {
+      "rank": 2,
+      "title": "Amiga da Minha Mulher",
+      "artist": "Seu Jorge",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 15.53,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 51.45,
+        "composite_innovation": 56.5
+      }
+    },
+    {
+      "rank": 3,
+      "title": "Rio 40 Graus",
+      "artist": "Fernanda Abreu",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 30.56,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 20.11,
+        "composite_innovation": 56.25
+      }
+    },
+    {
+      "rank": 4,
+      "title": "Vida Loka, Pt. 1",
+      "artist": "Marília Mendonça",
+      "genre": "Sertanejo",
+      "scores": {
+        "vocabulary_uniqueness": 19.68,
+        "structural_deviation": 89.25,
+        "length_deviation": 100,
+        "repetition_deviation": 50.62,
+        "composite_innovation": 55.85
+      }
+    },
+    {
+      "rank": 5,
+      "title": "Partilhar",
+      "artist": "Rubel",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 15.66,
+        "structural_deviation": 94.77,
+        "length_deviation": 100,
+        "repetition_deviation": 52.49,
+        "composite_innovation": 55.71
+      }
+    },
+    {
+      "rank": 6,
+      "title": "Mona Ki Ngi Xica",
+      "artist": "Bonga",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 35.32,
+        "structural_deviation": 100,
+        "length_deviation": 35.89,
+        "repetition_deviation": 71.02,
+        "composite_innovation": 55.51
+      }
+    },
+    {
+      "rank": 7,
+      "title": "Flow Natalino 2",
+      "artist": "Lil Chainz",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 22.21,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 31.43,
+        "composite_innovation": 55.17
+      }
+    },
+    {
+      "rank": 8,
+      "title": "ETA RMX",
+      "artist": "ROA",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 31.92,
+        "structural_deviation": 77.62,
+        "length_deviation": 100,
+        "repetition_deviation": 33.04,
+        "composite_innovation": 54.9
+      }
+    },
+    {
+      "rank": 9,
+      "title": "Preta Pretinha",
+      "artist": "Novos Baianos",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 15.04,
+        "structural_deviation": 100,
+        "length_deviation": 78.53,
+        "repetition_deviation": 65.14,
+        "composite_innovation": 54.75
+      }
+    },
+    {
+      "rank": 10,
+      "title": "Filtro Solar (Everybody's Free) (To Feel Good)",
+      "artist": "Pedro Bial",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 23.44,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 25.04,
+        "composite_innovation": 54.39
+      }
+    },
+    {
+      "rank": 11,
+      "title": "10 MINUTOS FALANDO DE AMOR FREESTYLE",
+      "artist": "Oruam",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 18.58,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 34.21,
+        "composite_innovation": 54.28
+      }
+    },
+    {
+      "rank": 12,
+      "title": "Mina do Condomínio",
+      "artist": "Seu Jorge",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 15.95,
+        "structural_deviation": 100,
+        "length_deviation": 83.69,
+        "repetition_deviation": 53.05,
+        "composite_innovation": 53.73
+      }
+    },
+    {
+      "rank": 13,
+      "title": "Vai Passar",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 20.0,
+        "structural_deviation": 100,
+        "length_deviation": 83.69,
+        "repetition_deviation": 44.12,
+        "composite_innovation": 53.56
+      }
+    },
+    {
+      "rank": 14,
+      "title": "Vai Passar",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 20.0,
+        "structural_deviation": 100,
+        "length_deviation": 83.69,
+        "repetition_deviation": 44.12,
+        "composite_innovation": 53.56
+      }
+    },
+    {
+      "rank": 15,
+      "title": "Oh Novinha / Vai Embrazando / Roça Na Minha / Olha A Explosão",
+      "artist": "Marília Mendonça",
+      "genre": "Sertanejo",
+      "scores": {
+        "vocabulary_uniqueness": 16.51,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 34.62,
+        "composite_innovation": 53.53
+      }
+    },
+    {
+      "rank": 16,
+      "title": "Dinheiro Em Penca",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 24.33,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 18.79,
+        "composite_innovation": 53.49
+      }
+    },
+    {
+      "rank": 17,
+      "title": "Poesia Acústica #14",
+      "artist": "KayBlack",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 19.71,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 27.49,
+        "composite_innovation": 53.38
+      }
+    },
+    {
+      "rank": 18,
+      "title": "A Cara do Crime 5 (Passe Caro)",
+      "artist": "MC LUUKY",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 21.37,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 20.76,
+        "composite_innovation": 52.7
+      }
+    },
+    {
+      "rank": 19,
+      "title": "Ópera",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 24.97,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 7.58,
+        "composite_innovation": 51.5
+      }
+    },
+    {
+      "rank": 20,
+      "title": "SET DJ JAPA NK 2.0",
+      "artist": "Oruam",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 18.35,
+        "structural_deviation": 90.5,
+        "length_deviation": 95.64,
+        "repetition_deviation": 34.65,
+        "composite_innovation": 51.5
+      }
+    },
+    {
+      "rank": 21,
+      "title": "Amante Não Tem Lar / Meu Cupido É Gari / O Que Falta Em Você Sou Eu",
+      "artist": "Marília Mendonça",
+      "genre": "Sertanejo",
+      "scores": {
+        "vocabulary_uniqueness": 15.9,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 25.65,
+        "composite_innovation": 51.49
+      }
+    },
+    {
+      "rank": 22,
+      "title": "Irmão DQbrada",
+      "artist": "Costa Gold",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 23.34,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 10.23,
+        "composite_innovation": 51.38
+      }
+    },
+    {
+      "rank": 23,
+      "title": "Dança da Vassoura",
+      "artist": "Molejo",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 16.27,
+        "structural_deviation": 100,
+        "length_deviation": 69.63,
+        "repetition_deviation": 53.92,
+        "composite_innovation": 51.22
+      }
+    },
+    {
+      "rank": 24,
+      "title": "TATE QUIETA (remix)",
+      "artist": "ROA",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 31.85,
+        "structural_deviation": 78.48,
+        "length_deviation": 100,
+        "repetition_deviation": 13.3,
+        "composite_innovation": 51.1
+      }
+    },
+    {
+      "rank": 25,
+      "title": "Carta de Amor",
+      "artist": "Maria Bethânia",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 22.68,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 9.93,
+        "composite_innovation": 51.06
+      }
+    },
+    {
+      "rank": 26,
+      "title": "SET DJ GM 6.0",
+      "artist": "GREGO (BR)",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 21.61,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 11.41,
+        "composite_innovation": 50.92
+      }
+    },
+    {
+      "rank": 27,
+      "title": "Medley Bloquinho  [explícita]",
+      "artist": "NATTAN",
+      "genre": "Arrocha",
+      "scores": {
+        "vocabulary_uniqueness": 18.56,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 17.16,
+        "composite_innovation": 50.85
+      }
+    },
+    {
+      "rank": 28,
+      "title": "DONOS DA NOITE",
+      "artist": "TrapLaudo",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 21.1,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 10.99,
+        "composite_innovation": 50.64
+      }
+    },
+    {
+      "rank": 29,
+      "title": "Agora Viu Que Perdeu e Chora/ Mulher Não Manda Em Homem (pot-pourri)",
+      "artist": "Grupo Revelação",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 15.14,
+        "structural_deviation": 95.22,
+        "length_deviation": 100,
+        "repetition_deviation": 27.5,
+        "composite_innovation": 50.6
+      }
+    },
+    {
+      "rank": 30,
+      "title": "Desliga / Esperando Você Chegar / Na Hora do Adeus",
+      "artist": "Marília Mendonça",
+      "genre": "Sertanejo",
+      "scores": {
+        "vocabulary_uniqueness": 17.09,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 16.01,
+        "composite_innovation": 50.04
+      }
+    },
+    {
+      "rank": 31,
+      "title": "1% / Você Não Sabe o Que É Amor / Não Há Limites",
+      "artist": "Vitinho",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 16.28,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 17.39,
+        "composite_innovation": 49.99
+      }
+    },
+    {
+      "rank": 32,
+      "title": "Pop 100",
+      "artist": "O Rei da Cacimbinha",
+      "genre": "Arrocha",
+      "scores": {
+        "vocabulary_uniqueness": 19.66,
+        "structural_deviation": 93.31,
+        "length_deviation": 94.33,
+        "repetition_deviation": 22.89,
+        "composite_innovation": 49.97
+      }
+    },
+    {
+      "rank": 33,
+      "title": "Drip da Roça",
+      "artist": "Reid",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 20.06,
+        "structural_deviation": 100,
+        "length_deviation": 94.09,
+        "repetition_deviation": 14.31,
+        "composite_innovation": 49.71
+      }
+    },
+    {
+      "rank": 34,
+      "title": "Hit Dos Paredões [explícita]",
+      "artist": "O REI DOS FAIXAS",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 20.73,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 6.33,
+        "composite_innovation": 49.56
+      }
+    },
+    {
+      "rank": 35,
+      "title": "Kátia Flávia, a Godiva do Irajá",
+      "artist": "Fernanda Abreu",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 23.36,
+        "structural_deviation": 96.21,
+        "length_deviation": 73.91,
+        "repetition_deviation": 30.41,
+        "composite_innovation": 49.45
+      }
+    },
+    {
+      "rank": 36,
+      "title": "Solta a Carta Tigrinho",
+      "artist": "J. Eskine",
+      "genre": "Arrocha",
+      "scores": {
+        "vocabulary_uniqueness": 18.38,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 10.19,
+        "composite_innovation": 49.39
+      }
+    },
+    {
+      "rank": 37,
+      "title": "BLOQUINHO DOS FAIXAS 3.0",
+      "artist": "O REI DOS FAIXAS",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 19.65,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 6.86,
+        "composite_innovation": 49.23
+      }
+    },
+    {
+      "rank": 38,
+      "title": "Bloquinho dos Faixas 2.0",
+      "artist": "O REI DOS FAIXAS",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 20.87,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 3.59,
+        "composite_innovation": 49.07
+      }
+    },
+    {
+      "rank": 39,
+      "title": "Partilhar",
+      "artist": "Rubel",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 15.61,
+        "structural_deviation": 73.19,
+        "length_deviation": 92.11,
+        "repetition_deviation": 48.1,
+        "composite_innovation": 48.92
+      }
+    },
+    {
+      "rank": 40,
+      "title": "Resenha do Arrocha 3.0",
+      "artist": "J. Eskine",
+      "genre": "Arrocha",
+      "scores": {
+        "vocabulary_uniqueness": 19.55,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 5.01,
+        "composite_innovation": 48.82
+      }
+    },
+    {
+      "rank": 41,
+      "title": "Flow Natalino 3",
+      "artist": "Lil Chainz",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 23.08,
+        "structural_deviation": 100,
+        "length_deviation": 71.98,
+        "repetition_deviation": 25.69,
+        "composite_innovation": 48.77
+      }
+    },
+    {
+      "rank": 42,
+      "title": "Resenha do Arrocha",
+      "artist": "J. Eskine",
+      "genre": "Arrocha",
+      "scores": {
+        "vocabulary_uniqueness": 18.81,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 5.99,
+        "composite_innovation": 48.72
+      }
+    },
+    {
+      "rank": 43,
+      "title": "Cota Não É Esmola",
+      "artist": "Bia Ferreira",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 19.43,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 4.45,
+        "composite_innovation": 48.66
+      }
+    },
+    {
+      "rank": 44,
+      "title": "RESENHA JUNINA",
+      "artist": "J. Eskine",
+      "genre": "Arrocha",
+      "scores": {
+        "vocabulary_uniqueness": 18.91,
+        "structural_deviation": 87.19,
+        "length_deviation": 95.6,
+        "repetition_deviation": 22.25,
+        "composite_innovation": 48.57
+      }
+    },
+    {
+      "rank": 45,
+      "title": "Resenha do Arrocha 4.0",
+      "artist": "J. Eskine",
+      "genre": "Arrocha",
+      "scores": {
+        "vocabulary_uniqueness": 19.71,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 1.75,
+        "composite_innovation": 48.23
+      }
+    },
+    {
+      "rank": 46,
+      "title": "Resenha do Arrocha 4.0",
+      "artist": "J. Eskine",
+      "genre": "Arrocha",
+      "scores": {
+        "vocabulary_uniqueness": 19.71,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 1.75,
+        "composite_innovation": 48.23
+      }
+    },
+    {
+      "rank": 47,
+      "title": "Geni Y El Zepelin",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 33.89,
+        "structural_deviation": 87.57,
+        "length_deviation": 65.76,
+        "repetition_deviation": 18.26,
+        "composite_innovation": 47.88
+      }
+    },
+    {
+      "rank": 48,
+      "title": "Flow Natalino",
+      "artist": "Lil Chainz",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 20.39,
+        "structural_deviation": 100,
+        "length_deviation": 81.02,
+        "repetition_deviation": 17.19,
+        "composite_innovation": 47.8
+      }
+    },
+    {
+      "rank": 49,
+      "title": "Assault (Carro Bicho)",
+      "artist": "Orochi",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 20.13,
+        "structural_deviation": 100,
+        "length_deviation": 78.64,
+        "repetition_deviation": 19.79,
+        "composite_innovation": 47.74
+      }
+    },
+    {
+      "rank": 50,
+      "title": "Resenha do Arrocha 2.0",
+      "artist": "J. Eskine",
+      "genre": "Arrocha",
+      "scores": {
+        "vocabulary_uniqueness": 18.51,
+        "structural_deviation": 100,
+        "length_deviation": 94.33,
+        "repetition_deviation": 6.19,
+        "composite_innovation": 47.51
+      }
+    },
+    {
+      "rank": 51,
+      "title": "Xerecard",
+      "artist": "Jeff Costa",
+      "genre": "Arrocha",
+      "scores": {
+        "vocabulary_uniqueness": 19.09,
+        "structural_deviation": 100,
+        "length_deviation": 60.5,
+        "repetition_deviation": 38.89,
+        "composite_innovation": 47.51
+      }
+    },
+    {
+      "rank": 52,
+      "title": "Nossa Vida Parou / Metade Vai, Metade Fica / Marra de Durão / Alucinado / Lance Livre / Meu Desapego / Instinto / Me Perdoa / Moça",
+      "artist": "Fabinho (Pagode)",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 16.67,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 3.7,
+        "composite_innovation": 47.41
+      }
+    },
+    {
+      "rank": 53,
+      "title": "Chefinha",
+      "artist": "Pedrin",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 20.41,
+        "structural_deviation": 80.34,
+        "length_deviation": 96.09,
+        "repetition_deviation": 18.74,
+        "composite_innovation": 47.2
+      }
+    },
+    {
+      "rank": 54,
+      "title": "Quem Tava Lá",
+      "artist": "Costa Gold",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 22.96,
+        "structural_deviation": 79.34,
+        "length_deviation": 77.45,
+        "repetition_deviation": 32.03,
+        "composite_innovation": 46.95
+      }
+    },
+    {
+      "rank": 55,
+      "title": "The Cypher Deffect 2",
+      "artist": "Costa Gold",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 23.74,
+        "structural_deviation": 63.03,
+        "length_deviation": 84.35,
+        "repetition_deviation": 39.67,
+        "composite_innovation": 46.91
+      }
+    },
+    {
+      "rank": 56,
+      "title": "SET DO BUZEIRA",
+      "artist": "Kadu",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 21.09,
+        "structural_deviation": 79.34,
+        "length_deviation": 77.93,
+        "repetition_deviation": 34.21,
+        "composite_innovation": 46.73
+      }
+    },
+    {
+      "rank": 57,
+      "title": "Telegrama",
+      "artist": "Zeca Baleiro",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 16.94,
+        "structural_deviation": 60.24,
+        "length_deviation": 98.63,
+        "repetition_deviation": 39.3,
+        "composite_innovation": 46.41
+      }
+    },
+    {
+      "rank": 58,
+      "title": "Melhor Eu Ir / Ligando Os Fatos / Sonho de Amor / Deixa Eu Te Querer",
+      "artist": "Grupo Menos É Mais",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 14.93,
+        "structural_deviation": 100,
+        "length_deviation": 100,
+        "repetition_deviation": 0.08,
+        "composite_innovation": 45.99
+      }
+    },
+    {
+      "rank": 59,
+      "title": "Resenha 1 a 8",
+      "artist": "J. Eskine",
+      "genre": "Arrocha",
+      "scores": {
+        "vocabulary_uniqueness": 15.75,
+        "structural_deviation": 90.25,
+        "length_deviation": 84.41,
+        "repetition_deviation": 23.34,
+        "composite_innovation": 45.9
+      }
+    },
+    {
+      "rank": 60,
+      "title": "Vermelho",
+      "artist": "Fafá de Belém",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 20.05,
+        "structural_deviation": 54.49,
+        "length_deviation": 80.43,
+        "repetition_deviation": 54.0,
+        "composite_innovation": 45.8
+      }
+    },
+    {
+      "rank": 61,
+      "title": "Riding Round In a Rover (Fire In The Booth)",
+      "artist": "Unknown P",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 33.94,
+        "structural_deviation": 39.86,
+        "length_deviation": 81.49,
+        "repetition_deviation": 34.96,
+        "composite_innovation": 44.84
+      }
+    },
+    {
+      "rank": 62,
+      "title": "Geni e o Zepelim",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 20.78,
+        "structural_deviation": 96.21,
+        "length_deviation": 72.28,
+        "repetition_deviation": 13.29,
+        "composite_innovation": 44.67
+      }
+    },
+    {
+      "rank": 63,
+      "title": "Geni e o Zepelim",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 20.78,
+        "structural_deviation": 96.21,
+        "length_deviation": 72.28,
+        "repetition_deviation": 13.29,
+        "composite_innovation": 44.67
+      }
+    },
+    {
+      "rank": 64,
+      "title": "Geni e o Zepelim",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 20.78,
+        "structural_deviation": 96.21,
+        "length_deviation": 72.28,
+        "repetition_deviation": 13.29,
+        "composite_innovation": 44.67
+      }
+    },
+    {
+      "rank": 65,
+      "title": "La Câlin",
+      "artist": "Serhat Durmus",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 34.3,
+        "structural_deviation": 33.09,
+        "length_deviation": 29.29,
+        "repetition_deviation": 92.2,
+        "composite_innovation": 44.64
+      }
+    },
+    {
+      "rank": 66,
+      "title": "W / Brasil (Chama o síndico)",
+      "artist": "Jorge Ben Jor",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 21.02,
+        "structural_deviation": 84.7,
+        "length_deviation": 56.8,
+        "repetition_deviation": 39.11,
+        "composite_innovation": 44.53
+      }
+    },
+    {
+      "rank": 67,
+      "title": "Pelas Tabelas",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 16.68,
+        "structural_deviation": 44.42,
+        "length_deviation": 88.03,
+        "repetition_deviation": 54.14,
+        "composite_innovation": 43.99
+      }
+    },
+    {
+      "rank": 68,
+      "title": "Fuscão Preto / Amor Distante / Vou Tomar Um Pingão / Como Eu Chorei",
+      "artist": "Marília Mendonça",
+      "genre": "Sertanejo",
+      "scores": {
+        "vocabulary_uniqueness": 16.56,
+        "structural_deviation": 100,
+        "length_deviation": 64.57,
+        "repetition_deviation": 22.18,
+        "composite_innovation": 43.97
+      }
+    },
+    {
+      "rank": 69,
+      "title": "Biscate",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 19.67,
+        "structural_deviation": 58.8,
+        "length_deviation": 97.27,
+        "repetition_deviation": 23.65,
+        "composite_innovation": 43.81
+      }
+    },
+    {
+      "rank": 70,
+      "title": "Nvula",
+      "artist": "Djavan",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 49.5,
+        "structural_deviation": 43.34,
+        "length_deviation": 43.96,
+        "repetition_deviation": 28.98,
+        "composite_innovation": 43.06
+      }
+    },
+    {
+      "rank": 71,
+      "title": "Desacato",
+      "artist": "MC LUUKY",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 20.31,
+        "structural_deviation": 93.07,
+        "length_deviation": 74.84,
+        "repetition_deviation": 5.73,
+        "composite_innovation": 42.85
+      }
+    },
+    {
+      "rank": 72,
+      "title": "A Balada de Tim Bernardes",
+      "artist": "Tim Bernardes",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 17.63,
+        "structural_deviation": 67.43,
+        "length_deviation": 100,
+        "repetition_deviation": 8.65,
+        "composite_innovation": 42.27
+      }
+    },
+    {
+      "rank": 73,
+      "title": "Boa Noite",
+      "artist": "Djavan",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 15.6,
+        "structural_deviation": 60.24,
+        "length_deviation": 80.7,
+        "repetition_deviation": 37.81,
+        "composite_innovation": 41.99
+      }
+    },
+    {
+      "rank": 74,
+      "title": "Boa Noite",
+      "artist": "Djavan",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 15.6,
+        "structural_deviation": 60.24,
+        "length_deviation": 80.7,
+        "repetition_deviation": 37.81,
+        "composite_innovation": 41.99
+      }
+    },
+    {
+      "rank": 75,
+      "title": "Patricinha do Olho Azul / Corpo Nu",
+      "artist": "Thiaguinho",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 18.1,
+        "structural_deviation": 58.02,
+        "length_deviation": 99.19,
+        "repetition_deviation": 16.35,
+        "composite_innovation": 41.95
+      }
+    },
+    {
+      "rank": 76,
+      "title": "Pout-pourri de Pagonejo",
+      "artist": "Grupo Menos É Mais",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 16.43,
+        "structural_deviation": 84.59,
+        "length_deviation": 87.15,
+        "repetition_deviation": 4.19,
+        "composite_innovation": 41.76
+      }
+    },
+    {
+      "rank": 77,
+      "title": "Até Que Durou / Tu Mandas No Meu Coração / Deixa Tudo Como Tá",
+      "artist": "Grupo Menos É Mais",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 14.34,
+        "structural_deviation": 73.96,
+        "length_deviation": 88.79,
+        "repetition_deviation": 14.99,
+        "composite_innovation": 41.29
+      }
+    },
+    {
+      "rank": 78,
+      "title": "MI CHIMBITA",
+      "artist": "ROA",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 31.75,
+        "structural_deviation": 50.16,
+        "length_deviation": 79.71,
+        "repetition_deviation": 11.49,
+        "composite_innovation": 40.97
+      }
+    },
+    {
+      "rank": 79,
+      "title": "Paparico",
+      "artist": "Molejo",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 16.04,
+        "structural_deviation": 76.09,
+        "length_deviation": 47.73,
+        "repetition_deviation": 45.51,
+        "composite_innovation": 40.28
+      }
+    },
+    {
+      "rank": 80,
+      "title": "Cabeça Vazia",
+      "artist": "Djavan",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 16.04,
+        "structural_deviation": 91.89,
+        "length_deviation": 38.06,
+        "repetition_deviation": 37.98,
+        "composite_innovation": 40.0
+      }
+    },
+    {
+      "rank": 81,
+      "title": "Crazy Story, Pt. 3",
+      "artist": "King Von",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 28.26,
+        "structural_deviation": 74.19,
+        "length_deviation": 29.55,
+        "repetition_deviation": 39.67,
+        "composite_innovation": 39.99
+      }
+    },
+    {
+      "rank": 82,
+      "title": "Última Vez",
+      "artist": "Tim Bernardes",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 17.97,
+        "structural_deviation": 35.78,
+        "length_deviation": 100,
+        "repetition_deviation": 27.07,
+        "composite_innovation": 39.76
+      }
+    },
+    {
+      "rank": 83,
+      "title": "HUMBIUMBI",
+      "artist": "Djavan",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 51.38,
+        "structural_deviation": 41.9,
+        "length_deviation": 43.69,
+        "repetition_deviation": 9.93,
+        "composite_innovation": 39.66
+      }
+    },
+    {
+      "rank": 84,
+      "title": "Ive Brussel",
+      "artist": "Jorge Ben Jor",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 16.54,
+        "structural_deviation": 63.12,
+        "length_deviation": 54.09,
+        "repetition_deviation": 47.7,
+        "composite_innovation": 39.6
+      }
+    },
+    {
+      "rank": 85,
+      "title": "Até Que Durou / Tu Mandas No Meu Coração / Adorei / Supera",
+      "artist": "Grupo Menos É Mais",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 15.3,
+        "structural_deviation": 86.72,
+        "length_deviation": 75.1,
+        "repetition_deviation": 3.03,
+        "composite_innovation": 39.09
+      }
+    },
+    {
+      "rank": 86,
+      "title": "País Tropical",
+      "artist": "Jorge Ben Jor",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 22.05,
+        "structural_deviation": 48.73,
+        "length_deviation": 76.9,
+        "repetition_deviation": 25.68,
+        "composite_innovation": 39.08
+      }
+    },
+    {
+      "rank": 87,
+      "title": "That's My Way",
+      "artist": "Seu Jorge",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 18.75,
+        "structural_deviation": 50.17,
+        "length_deviation": 96.45,
+        "repetition_deviation": 11.02,
+        "composite_innovation": 39.03
+      }
+    },
+    {
+      "rank": 88,
+      "title": "Morena de Angola",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 24.75,
+        "structural_deviation": 55.92,
+        "length_deviation": 58.43,
+        "repetition_deviation": 31.25,
+        "composite_innovation": 39.02
+      }
+    },
+    {
+      "rank": 89,
+      "title": "Lábios Divididos / Diga Sim Pra Mim / Louca",
+      "artist": "Márcia Fellipe",
+      "genre": "Arrocha",
+      "scores": {
+        "vocabulary_uniqueness": 16.96,
+        "structural_deviation": 61.19,
+        "length_deviation": 67.11,
+        "repetition_deviation": 30.92,
+        "composite_innovation": 38.63
+      }
+    },
+    {
+      "rank": 90,
+      "title": "Habibi (Albanian Remix)",
+      "artist": "Ricky Rich",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 28.57,
+        "structural_deviation": 38.24,
+        "length_deviation": 42.49,
+        "repetition_deviation": 54.52,
+        "composite_innovation": 38.48
+      }
+    },
+    {
+      "rank": 91,
+      "title": "Marra de Durão / Instinto / É Natural / Dorme Com Deus",
+      "artist": "Yan (Pagode)",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 15.77,
+        "structural_deviation": 80.34,
+        "length_deviation": 75.1,
+        "repetition_deviation": 4.88,
+        "composite_innovation": 38.37
+      }
+    },
+    {
+      "rank": 92,
+      "title": "4 e 15 / Silêncio",
+      "artist": "Marília Mendonça",
+      "genre": "Sertanejo",
+      "scores": {
+        "vocabulary_uniqueness": 14.66,
+        "structural_deviation": 70.01,
+        "length_deviation": 70.47,
+        "repetition_deviation": 21.65,
+        "composite_innovation": 38.29
+      }
+    },
+    {
+      "rank": 93,
+      "title": "Ventos de Doutrina",
+      "artist": "Kami Kam",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 25.88,
+        "structural_deviation": 87.06,
+        "length_deviation": 30.86,
+        "repetition_deviation": 20.1,
+        "composite_innovation": 37.96
+      }
+    },
+    {
+      "rank": 94,
+      "title": "A Mulher do Aníbal",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 18.33,
+        "structural_deviation": 35.78,
+        "length_deviation": 71.74,
+        "repetition_deviation": 45.31,
+        "composite_innovation": 37.9
+      }
+    },
+    {
+      "rank": 95,
+      "title": "Mama África",
+      "artist": "Chico César",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 16.84,
+        "structural_deviation": 81.82,
+        "length_deviation": 24.48,
+        "repetition_deviation": 49.28,
+        "composite_innovation": 37.85
+      }
+    },
+    {
+      "rank": 96,
+      "title": "40 Graus / Gamei / Azul Sem Fim / Até o Sol Quis Ver / A Carta",
+      "artist": "Péricles",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 15.72,
+        "structural_deviation": 71.83,
+        "length_deviation": 55.21,
+        "repetition_deviation": 30.61,
+        "composite_innovation": 37.82
+      }
+    },
+    {
+      "rank": 97,
+      "title": "Safadinha",
+      "artist": "UCLÃ",
+      "genre": "Trap",
+      "scores": {
+        "vocabulary_uniqueness": 19.66,
+        "structural_deviation": 96.5,
+        "length_deviation": 36.2,
+        "repetition_deviation": 16.24,
+        "composite_innovation": 37.65
+      }
+    },
+    {
+      "rank": 98,
+      "title": "Silvano Salles",
+      "artist": "Silvanno Salles",
+      "genre": "Arrocha",
+      "scores": {
+        "vocabulary_uniqueness": 32.44,
+        "structural_deviation": 42.84,
+        "length_deviation": 43.27,
+        "repetition_deviation": 37.06,
+        "composite_innovation": 37.61
+      }
+    },
+    {
+      "rank": 99,
+      "title": "Cara Valente",
+      "artist": "Maria Rita",
+      "genre": "MPB",
+      "scores": {
+        "vocabulary_uniqueness": 14.94,
+        "structural_deviation": 76.06,
+        "length_deviation": 39.96,
+        "repetition_deviation": 41.15,
+        "composite_innovation": 37.41
+      }
+    },
+    {
+      "rank": 100,
+      "title": "Sinto Sua Falta/ É Natural/ Pra Você Acreditar/ Pirata e Tesouro (pot-pourri)",
+      "artist": "Ferrugem",
+      "genre": "Pagode",
+      "scores": {
+        "vocabulary_uniqueness": 16.45,
+        "structural_deviation": 55.89,
+        "length_deviation": 85.14,
+        "repetition_deviation": 12.72,
+        "composite_innovation": 37.33
+      }
+    }
+  ],
+  "patterns": {
+    "top_artists": {
+      "Chico Buarque": 12,
+      "J. Eskine": 8,
+      "Marília Mendonça": 6,
+      "Djavan": 5,
+      "Grupo Menos É Mais": 4,
+      "Seu Jorge": 3,
+      "Lil Chainz": 3,
+      "ROA": 3,
+      "Costa Gold": 3,
+      "O REI DOS FAIXAS": 3
+    },
+    "genre_distribution": {
+      "MPB": 38,
+      "Trap": 26,
+      "Pagode": 17,
+      "Arrocha": 13,
+      "Sertanejo": 6
+    },
+    "average_scores": {
+      "vocabulary_uniqueness": 21.15,
+      "structural_deviation": 83.33,
+      "length_deviation": 81.64,
+      "repetition_deviation": 26.43,
+      "composite_innovation": 46.74
+    },
+    "innovation_drivers": {
+      "primary_innovation_drivers": {
+        "structure": 64,
+        "length": 32,
+        "repetition": 2,
+        "vocabulary": 2
+      },
+      "interpretation": {
+        "vocabulary": "Uses rare/unique words",
+        "structure": "Non-standard song structure",
+        "length": "Unusual length (very long or short)",
+        "repetition": "Unexpected repetition pattern"
+      }
+    }
+  },
+  "genre_baselines": {
+    "Trap": {
+      "avg_words": 418.42657342657344,
+      "std_words": 210.31485566795385,
+      "avg_lines": 58.55944055944056,
+      "std_lines": 29.12834106216281,
+      "avg_repetition": 0.2406678186645762,
+      "std_repetition": 0.1516562922747267,
+      "song_count": 1001
+    },
+    "Sertanejo": {
+      "avg_words": 239.6587537091988,
+      "std_words": 114.35479897881558,
+      "avg_lines": 40.40652818991098,
+      "std_lines": 19.494753584577296,
+      "avg_repetition": 0.41286453596284994,
+      "std_repetition": 0.20390009077190263,
+      "song_count": 337
+    },
+    "Pagode": {
+      "avg_words": 232.48751248751248,
+      "std_words": 136.98665172619903,
+      "avg_lines": 40.41958041958042,
+      "std_lines": 23.519664147732936,
+      "avg_repetition": 0.34166159418170616,
+      "std_repetition": 0.24883354529160315,
+      "song_count": 1001
+    },
+    "MPB": {
+      "avg_words": 178.85915492957747,
+      "std_words": 92.04908654542459,
+      "avg_lines": 35.12513542795233,
+      "std_lines": 17.37821100154973,
+      "avg_repetition": 0.2535487896772693,
+      "std_repetition": 0.2187522421034586,
+      "song_count": 1846
+    },
+    "Arrocha": {
+      "avg_words": 182.11909650924025,
+      "std_words": 98.29522322281974,
+      "avg_lines": 30.00205338809035,
+      "std_lines": 16.34264762231662,
+      "avg_repetition": 0.3447404529815651,
+      "std_repetition": 0.232528185141876,
+      "song_count": 974
+    }
+  }
+}

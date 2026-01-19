@@ -1,0 +1,404 @@
+{
+  "overview": {
+    "total_songs": 100,
+    "average_scores": {
+      "innovation": 46.75,
+      "authenticity": 80.29,
+      "risk": 83.41,
+      "effectiveness": 66.62,
+      "quality": 56.68
+    }
+  },
+  "quadrant_distribution": {
+    "sweet_spot": 29,
+    "experimental": 3,
+    "safe_formulaic": 64,
+    "needs_improvement": 4
+  },
+  "sweet_spot_songs": [
+    {
+      "title": "Mina do Condomínio",
+      "artist": "Seu Jorge",
+      "genre": "MPB",
+      "scores": {
+        "innovation": 53.7,
+        "authenticity": 55,
+        "risk": 91.8,
+        "effectiveness": 77.0,
+        "quality": 65.4,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Amiga da Minha Mulher",
+      "artist": "Seu Jorge",
+      "genre": "MPB",
+      "scores": {
+        "innovation": 56.5,
+        "authenticity": 73,
+        "risk": 100.0,
+        "effectiveness": 74.1,
+        "quality": 65.3,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Preta Pretinha",
+      "artist": "Novos Baianos",
+      "genre": "MPB",
+      "scores": {
+        "innovation": 54.8,
+        "authenticity": 64,
+        "risk": 89.3,
+        "effectiveness": 74.4,
+        "quality": 64.6,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Rio 40 Graus",
+      "artist": "Fernanda Abreu",
+      "genre": "MPB",
+      "scores": {
+        "innovation": 56.2,
+        "authenticity": 84,
+        "risk": 100.0,
+        "effectiveness": 72.4,
+        "quality": 64.3,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Oh Novinha / Vai Embrazando / Roça Na Minha / Olha A Explosão",
+      "artist": "Marília Mendonça",
+      "genre": "Sertanejo",
+      "scores": {
+        "innovation": 53.5,
+        "authenticity": 88,
+        "risk": 100.0,
+        "effectiveness": 73.2,
+        "quality": 63.4,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Medley Bloquinho  [explícita]",
+      "artist": "NATTAN",
+      "genre": "Arrocha",
+      "scores": {
+        "innovation": 50.9,
+        "authenticity": 73,
+        "risk": 100.0,
+        "effectiveness": 75.1,
+        "quality": 63.0,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Agora Viu Que Perdeu e Chora/ Mulher Não Manda Em Homem (pot-pourri)",
+      "artist": "Grupo Revelação",
+      "genre": "Pagode",
+      "scores": {
+        "innovation": 50.6,
+        "authenticity": 82,
+        "risk": 97.6,
+        "effectiveness": 75.3,
+        "quality": 63.0,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Vai Passar",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "innovation": 53.6,
+        "authenticity": 79,
+        "risk": 91.8,
+        "effectiveness": 70.2,
+        "quality": 61.9,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Vai Passar",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "innovation": 53.6,
+        "authenticity": 79,
+        "risk": 91.8,
+        "effectiveness": 70.2,
+        "quality": 61.9,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Partilhar",
+      "artist": "Rubel",
+      "genre": "MPB",
+      "scores": {
+        "innovation": 55.7,
+        "authenticity": 100,
+        "risk": 97.4,
+        "effectiveness": 67.3,
+        "quality": 61.5,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "TATE QUIETA (remix)",
+      "artist": "ROA",
+      "genre": "Trap",
+      "scores": {
+        "innovation": 51.1,
+        "authenticity": 69,
+        "risk": 89.2,
+        "effectiveness": 71.7,
+        "quality": 61.4,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Amante Não Tem Lar / Meu Cupido É Gari / O Que Falta Em Você Sou Eu",
+      "artist": "Marília Mendonça",
+      "genre": "Sertanejo",
+      "scores": {
+        "innovation": 51.5,
+        "authenticity": 86,
+        "risk": 100.0,
+        "effectiveness": 69.0,
+        "quality": 60.3,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Pop 100",
+      "artist": "O Rei da Cacimbinha",
+      "genre": "Arrocha",
+      "scores": {
+        "innovation": 50.0,
+        "authenticity": 74,
+        "risk": 93.8,
+        "effectiveness": 70.4,
+        "quality": 60.2,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Flow Natalino 2",
+      "artist": "Lil Chainz",
+      "genre": "Trap",
+      "scores": {
+        "innovation": 55.2,
+        "authenticity": 88,
+        "risk": 100.0,
+        "effectiveness": 64.7,
+        "quality": 60.0,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "ETA RMX",
+      "artist": "ROA",
+      "genre": "Trap",
+      "scores": {
+        "innovation": 54.9,
+        "authenticity": 69,
+        "risk": 88.8,
+        "effectiveness": 65.0,
+        "quality": 60.0,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Dinheiro Em Penca",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "innovation": 53.5,
+        "authenticity": 100,
+        "risk": 100.0,
+        "effectiveness": 65.9,
+        "quality": 59.7,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Ópera",
+      "artist": "Chico Buarque",
+      "genre": "MPB",
+      "scores": {
+        "innovation": 51.5,
+        "authenticity": 100,
+        "risk": 100.0,
+        "effectiveness": 67.0,
+        "quality": 59.3,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Mona Ki Ngi Xica",
+      "artist": "Bonga",
+      "genre": "MPB",
+      "scores": {
+        "innovation": 55.5,
+        "authenticity": 50,
+        "risk": 85.5,
+        "effectiveness": 62.2,
+        "quality": 58.9,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Desliga / Esperando Você Chegar / Na Hora do Adeus",
+      "artist": "Marília Mendonça",
+      "genre": "Sertanejo",
+      "scores": {
+        "innovation": 50.0,
+        "authenticity": 92,
+        "risk": 100.0,
+        "effectiveness": 65.2,
+        "quality": 57.6,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Filtro Solar (Everybody's Free) (To Feel Good)",
+      "artist": "Pedro Bial",
+      "genre": "MPB",
+      "scores": {
+        "innovation": 54.4,
+        "authenticity": 92,
+        "risk": 100.0,
+        "effectiveness": 60.6,
+        "quality": 57.5,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "10 MINUTOS FALANDO DE AMOR FREESTYLE",
+      "artist": "Oruam",
+      "genre": "Trap",
+      "scores": {
+        "innovation": 54.3,
+        "authenticity": 92,
+        "risk": 100.0,
+        "effectiveness": 60.0,
+        "quality": 57.1,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Dança da Vassoura",
+      "artist": "Molejo",
+      "genre": "Pagode",
+      "scores": {
+        "innovation": 51.2,
+        "authenticity": 68,
+        "risk": 84.8,
+        "effectiveness": 62.5,
+        "quality": 56.9,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Carta de Amor",
+      "artist": "Maria Bethânia",
+      "genre": "MPB",
+      "scores": {
+        "innovation": 51.1,
+        "authenticity": 92,
+        "risk": 100.0,
+        "effectiveness": 62.3,
+        "quality": 56.7,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "Irmão DQbrada",
+      "artist": "Costa Gold",
+      "genre": "Trap",
+      "scores": {
+        "innovation": 51.4,
+        "authenticity": 88,
+        "risk": 100.0,
+        "effectiveness": 61.2,
+        "quality": 56.3,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "A Cara do Crime 5 (Passe Caro)",
+      "artist": "MC LUUKY",
+      "genre": "Trap",
+      "scores": {
+        "innovation": 52.7,
+        "authenticity": 88,
+        "risk": 100.0,
+        "effectiveness": 59.6,
+        "quality": 56.1,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "DONOS DA NOITE",
+      "artist": "TrapLaudo",
+      "genre": "Trap",
+      "scores": {
+        "innovation": 50.6,
+        "authenticity": 88,
+        "risk": 100.0,
+        "effectiveness": 60.6,
+        "quality": 55.6,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "1% / Você Não Sabe o Que É Amor / Não Há Limites",
+      "artist": "Vitinho",
+      "genre": "Pagode",
+      "scores": {
+        "innovation": 50.0,
+        "authenticity": 86,
+        "risk": 100.0,
+        "effectiveness": 58.9,
+        "quality": 54.4,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "SET DJ GM 6.0",
+      "artist": "GREGO (BR)",
+      "genre": "Trap",
+      "scores": {
+        "innovation": 50.9,
+        "authenticity": 88,
+        "risk": 100.0,
+        "effectiveness": 55.0,
+        "quality": 53.0,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    },
+    {
+      "title": "SET DJ JAPA NK 2.0",
+      "artist": "Oruam",
+      "genre": "Trap",
+      "scores": {
+        "innovation": 51.5,
+        "authenticity": 96,
+        "risk": 93.1,
+        "effectiveness": 50.8,
+        "quality": 51.1,
+        "assessment": "Balanced: Moderate innovation and effectiveness"
+      }
+    }
+  ],
+  "methodology": {
+    "innovation": "Vocabulary uniqueness + structural deviation + length + repetition patterns",
+    "authenticity": "Brazilian Portuguese markers + cultural references + language structures",
+    "risk": "Degree of experimental deviation from norms",
+    "effectiveness": "Coherence + consistency + resonance + memorability",
+    "quality": "Composite of innovation + effectiveness (the sweet spot measure)"
+  }
+}
