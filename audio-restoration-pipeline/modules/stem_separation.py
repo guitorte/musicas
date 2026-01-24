@@ -96,26 +96,73 @@ class StemSeparator:
 
                 print("✓ Demucs + torchcodec instalados!")
 
-            # VERIFICAR E INSTALAR TORCHCODEC se não estiver presente
-            # (Necessário para Demucs salvar os arquivos WAV)
+            # VERIFICAR E INSTALAR FFMPEG + TORCHCODEC
+            # (Necessários para Demucs salvar os arquivos WAV)
+
+            # Primeiro, verificar/instalar FFmpeg
+            print("🔍 Verificando FFmpeg...")
+            ffmpeg_check = subprocess.run(
+                ['ffmpeg', '-version'],
+                capture_output=True,
+                text=True,
+                timeout=5
+            )
+
+            if ffmpeg_check.returncode != 0:
+                print("⚠️ FFmpeg não encontrado!")
+                print("   Tentando instalar FFmpeg...")
+
+                # Tentar instalar via apt-get (Colab/Linux)
+                try:
+                    subprocess.run(['apt-get', 'update'], capture_output=True, timeout=30, check=False)
+                    ffmpeg_install = subprocess.run(
+                        ['apt-get', 'install', '-y', 'ffmpeg'],
+                        capture_output=True,
+                        text=True,
+                        timeout=120
+                    )
+
+                    if ffmpeg_install.returncode == 0:
+                        print("   ✓ FFmpeg instalado!")
+                    else:
+                        print("   ✗ Não foi possível instalar FFmpeg automaticamente")
+                        print("   ")
+                        print("   ⚠️ SOLUÇÃO:")
+                        print("   Execute esta célula ANTES de rodar o processamento:")
+                        print("   !apt-get update && apt-get install -y ffmpeg")
+                        print("   ")
+                except Exception as e:
+                    print(f"   ✗ Erro ao tentar instalar FFmpeg: {e}")
+                    print("   ")
+                    print("   ⚠️ SOLUÇÃO MANUAL:")
+                    print("   No Google Colab, execute em uma célula:")
+                    print("   !apt-get update && apt-get install -y ffmpeg")
+                    print("   ")
+            else:
+                print("✓ FFmpeg já instalado!")
+
+            # Verificar TorchCodec
             try:
                 import torchcodec
+                # Verificar se torchcodec pode realmente carregar
                 print("✓ TorchCodec verificado!")
-            except ImportError:
-                print("⚠️ TorchCodec não encontrado (necessário para Demucs salvar arquivos)")
+            except (ImportError, RuntimeError) as e:
+                print("⚠️ TorchCodec não disponível")
                 print("   Instalando TorchCodec...")
+
                 install_result = subprocess.run(
                     ['pip', 'install', '-U', 'torchcodec'],
                     capture_output=True,
                     text=True,
                     timeout=120
                 )
+
                 if install_result.returncode == 0:
                     print("✓ TorchCodec instalado!")
+                    print("   IMPORTANTE: Se Demucs falhar, execute em uma célula:")
+                    print("   !apt-get update && apt-get install -y ffmpeg")
                 else:
                     print(f"⚠️ Falha ao instalar torchcodec")
-                    print(f"   Erro: {install_result.stderr[:200]}")
-                    print("   Demucs pode falhar ao salvar arquivos sem ele")
 
             # Detectar dispositivo (GPU/CPU)
             device = 'cuda' if torch.cuda.is_available() else 'cpu'
