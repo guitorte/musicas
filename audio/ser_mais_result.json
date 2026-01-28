@@ -1,0 +1,114 @@
+{
+  "input_path": "/home/user/musicas/audio/Ser_mais_Edit_1.mp3",
+  "output_dir": "/home/user/musicas/audio/output_ser_mais/Ser_mais_Edit_1/20260128_041153",
+  "timestamp": "2026-01-28T04:11:53.034575",
+  "config": {
+    "remove_clicks": true,
+    "reduce_noise": true,
+    "noise_reduction_strength": 0.3,
+    "restore_frequencies": true,
+    "freq_restoration_method": "harmonic_synthesis",
+    "restoration_strength": 0.8,
+    "enhance_bass": false,
+    "bass_enhancement_amount": 1.0,
+    "psychoacoustic_enhancement": true,
+    "separate_stems": false,
+    "target_lufs": -14.0,
+    "master_eq": {
+      "sub_bass": -1.5,
+      "bass": -1.0,
+      "low_mid": 0.5,
+      "mid": 1.5,
+      "high_mid": 2.0,
+      "presence": 3.0,
+      "treble": 3.5,
+      "air": 4.0
+    },
+    "add_presence": true,
+    "presence_freq": 3000,
+    "presence_q": 1.5,
+    "presence_gain": 2.5,
+    "compression_ratio": 2.5,
+    "compression_threshold": -18,
+    "limiter_threshold": -1.5,
+    "limiter_release": 0.05
+  },
+  "stages": {
+    "analysis": {
+      "file_path": "/home/user/musicas/audio/Ser_mais_Edit_1.mp3",
+      "sample_rate": 44100,
+      "duration": 161.88,
+      "spectral_features": {
+        "centroid_mean": 2947.6733950409402,
+        "centroid_std": 1212.597487128592,
+        "rolloff_mean": 6567.28567100433,
+        "rolloff_std": 2508.761315790728,
+        "bandwidth_mean": 3358.0018116364945,
+        "bandwidth_std": 692.6691545167923,
+        "contrast_mean": 24.475848178228578,
+        "zcr_mean": 0.055630165752294895,
+        "zcr_std": 0.05082692212400881
+      },
+      "frequency_analysis": {
+        "band_energy": {
+          "sub_bass": 0.011030357475776435,
+          "bass": 0.11751483828964511,
+          "low_mid": 0.10267694637338552,
+          "mid": 0.33733548593188284,
+          "high_mid": 0.14620023419481165,
+          "presence": 0.08658917309973947,
+          "brilliance": 0.19865296463475896
+        },
+        "dominant_frequency": 65.36323202372128,
+        "high_freq_cutoff": 14800.0,
+        "high_freq_loss": true,
+        "nyquist_frequency": 22050.0
+      },
+      "dynamic_range": {
+        "peak_amplitude": 0.8726123571395874,
+        "rms_mean": 0.15004871785640717,
+        "rms_std": 0.067225880920887,
+        "crest_factor": 5.815526962280273,
+        "lufs_estimate": -39.47535705566406,
+        "headroom_db": 1.1835724115371704
+      },
+      "noise_profile": {
+        "snr_db": 14.548063278198242,
+        "noise_floor_mean": 0.021943576633930206,
+        "has_noise": true,
+        "noise_severity": "high"
+      },
+      "clipping_detection": {
+        "clipped_samples": 0,
+        "clip_percentage": 0.0,
+        "has_clipping": false
+      },
+      "recommendations": [
+        {
+          "type": "frequency_restoration",
+          "severity": "medium",
+          "message": "Perda de frequ\u00eancias altas detectada (corte em 14800Hz). Recomenda-se restaura\u00e7\u00e3o espectral."
+        },
+        {
+          "type": "noise_reduction",
+          "severity": "high",
+          "message": "Ru\u00eddo detectado (SNR: 14.5dB). Recomenda-se redu\u00e7\u00e3o de ru\u00eddo."
+        },
+        {
+          "type": "gain",
+          "severity": "medium",
+          "message": "\u00c1udio muito silencioso (LUFS: -39.5). Recomenda-se normaliza\u00e7\u00e3o."
+        }
+      ]
+    },
+    "cleanup": {
+      "output": "/home/user/musicas/audio/output_ser_mais/Ser_mais_Edit_1/20260128_041153/01_cleaned.wav"
+    },
+    "frequency_restoration": {
+      "output": "/home/user/musicas/audio/output_ser_mais/Ser_mais_Edit_1/20260128_041153/02_frequency_restored.wav"
+    },
+    "mastering": {
+      "output": "/home/user/musicas/audio/output_ser_mais/Ser_mais_Edit_1/20260128_041153/99_mastered_FINAL.wav"
+    }
+  }
+}
