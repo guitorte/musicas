@@ -1,0 +1,49 @@
+{
+  "pronoun_analysis": {
+    "total_lines": 259437,
+    "explicit_eu": 22050,
+    "implicit_eu": 20800,
+    "explicit_percentage": 51.4585764294049,
+    "implicit_percentage": 48.5414235705951,
+    "verb_tense_distribution": {
+      "preterite": {
+        "explicit": 3111,
+        "implicit": 3174
+      },
+      "present": {
+        "explicit": 17262,
+        "implicit": 14058
+      },
+      "imperfect": {
+        "explicit": 1488,
+        "implicit": 3160
+      },
+      "conditional": {
+        "explicit": 140,
+        "implicit": 269
+      },
+      "future": {
+        "explicit": 49,
+        "implicit": 139
+      }
+    },
+    "word_order": {
+      "eu_verb": 21544,
+      "verb_eu": 466
+    },
+    "other_pronouns": {
+      "nós": 2630,
+      "você": 20300,
+      "ela": 6401,
+      "ele": 2134,
+      "vocês": 260,
+      "elas": 281,
+      "tu": 2157,
+      "eles": 601
+    }
+  },
+  "structure_analysis": {
+    "svo": 174,
+    "vo": 815
+  }
+}
