@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0A0A0A">
+<title>Letras - Busca e Estudo</title>
+<link rel="manifest" href="manifest.json">
+<style>
+:root {
+  --bg: #0A0A0A;
+  --surface: #141414;
+  --card: #1A1A1A;
+  --border: #2a2a2a;
+  --text: #F0F0F0;
+  --text2: #888;
+  --accent: #6C5CE7;
+  --accent2: #a29bfe;
+  --fav: #fdcb6e;
+  --danger: #e17055;
+  --radius: 12px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:var(--bg);color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -webkit-tap-highlight-color:transparent;
+}
+
+/* === NAV TABS === */
+.nav{
+  position:fixed;bottom:0;left:0;right:0;
+  background:var(--surface);
+  border-top:1px solid var(--border);
+  display:flex;z-index:100;
+  padding-bottom:var(--safe-bottom);
+}
+.nav button{
+  flex:1;padding:10px 0 8px;border:none;background:none;
+  color:var(--text2);font-size:11px;font-weight:500;
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  cursor:pointer;transition:color .2s;
+}
+.nav button.active{color:var(--accent2)}
+.nav button svg{width:22px;height:22px}
+
+/* === MAIN LAYOUT === */
+.view{
+  position:absolute;top:0;left:0;right:0;
+  bottom:56px;overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  display:none;
+}
+.view.active{display:flex;flex-direction:column}
+
+/* === SEARCH VIEW === */
+#searchView{padding:0}
+.search-header{
+  position:sticky;top:0;z-index:10;
+  background:var(--bg);padding:16px 16px 0;
+}
+.search-header h1{font-size:24px;font-weight:700;margin-bottom:12px;letter-spacing:-0.5px}
+.search-box{
+  display:flex;align-items:center;gap:8px;
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:0 12px;
+  margin-bottom:8px;
+}
+.search-box svg{width:18px;height:18px;color:var(--text2);flex-shrink:0}
+.search-box input{
+  flex:1;background:none;border:none;outline:none;
+  color:var(--text);font-size:16px;padding:12px 0;
+  font-family:inherit;
+}
+.search-box input::placeholder{color:var(--text2)}
+.search-box .clear-btn{
+  background:none;border:none;color:var(--text2);cursor:pointer;
+  padding:4px;display:none;
+}
+.search-box .clear-btn.show{display:block}
+
+.filters{
+  display:flex;gap:6px;padding:8px 0 12px;
+  overflow-x:auto;-webkit-overflow-scrolling:touch;
+}
+.filters::-webkit-scrollbar{display:none}
+.filter-chip{
+  flex-shrink:0;padding:6px 14px;border-radius:20px;
+  background:var(--card);border:1px solid var(--border);
+  color:var(--text2);font-size:13px;cursor:pointer;
+  transition:all .2s;white-space:nowrap;
+}
+.filter-chip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+.search-results{padding:0 16px 16px;flex:1}
+.search-meta{color:var(--text2);font-size:13px;padding:4px 0 12px}
+
+.result-item{
+  padding:14px;margin-bottom:8px;
+  background:var(--card);border-radius:var(--radius);
+  border:1px solid var(--border);cursor:pointer;
+  transition:background .15s;
+}
+.result-item:active{background:#222}
+.result-title{font-size:15px;font-weight:600;margin-bottom:2px}
+.result-artist{font-size:13px;color:var(--text2);margin-bottom:6px}
+.result-genre{
+  display:inline-block;font-size:11px;
+  padding:2px 8px;border-radius:10px;
+  background:var(--surface);color:var(--accent2);
+}
+.result-excerpt{
+  font-size:13px;color:var(--text2);margin-top:8px;
+  line-height:1.5;white-space:pre-line;
+}
+.result-excerpt mark{color:var(--accent2);background:none;font-weight:600}
+
+.empty-state{
+  text-align:center;padding:60px 20px;color:var(--text2);
+}
+.empty-state svg{width:48px;height:48px;margin-bottom:12px;opacity:.4}
+.empty-state p{font-size:15px;line-height:1.5}
+
+/* === EXPLORE VIEW === */
+#exploreView{padding:0;overflow:hidden}
+.explore-header{
+  padding:16px;display:flex;align-items:center;
+  justify-content:space-between;flex-shrink:0;
+}
+.explore-header h1{font-size:24px;font-weight:700;letter-spacing:-0.5px}
+.explore-controls{display:flex;gap:8px}
+.explore-btn{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:8px 12px;
+  color:var(--text);cursor:pointer;font-size:13px;
+  display:flex;align-items:center;gap:4px;
+  transition:all .2s;
+}
+.explore-btn:active{background:#222}
+.explore-btn svg{width:16px;height:16px}
+
+.explore-filters{
+  display:flex;gap:6px;padding:0 16px 12px;
+  overflow-x:auto;flex-shrink:0;
+}
+.explore-filters::-webkit-scrollbar{display:none}
+
+.card-container{
+  flex:1;position:relative;overflow:hidden;
+  padding:0 16px;
+}
+.lyric-card{
+  position:absolute;top:0;left:16px;right:16px;bottom:0;
+  background:var(--card);border-radius:var(--radius);
+  border:1px solid var(--border);
+  display:flex;flex-direction:column;
+  transition:transform .3s ease,opacity .3s ease;
+  will-change:transform,opacity;
+}
+.lyric-card.exit-left{transform:translateX(-110%);opacity:0}
+.lyric-card.exit-right{transform:translateX(110%);opacity:0}
+.lyric-card.enter-left{transform:translateX(-110%);opacity:0}
+.lyric-card.enter-right{transform:translateX(110%);opacity:0}
+
+.card-header{
+  padding:16px 16px 12px;border-bottom:1px solid var(--border);
+  flex-shrink:0;
+}
+.card-title{font-size:18px;font-weight:700;margin-bottom:2px}
+.card-artist{font-size:14px;color:var(--text2)}
+.card-genre{
+  display:inline-block;font-size:11px;margin-top:6px;
+  padding:2px 8px;border-radius:10px;
+  background:var(--surface);color:var(--accent2);
+}
+.card-lyrics{
+  flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;
+  padding:16px;font-size:15px;line-height:1.8;
+  white-space:pre-line;color:#ddd;
+}
+.card-footer{
+  padding:12px 16px;border-top:1px solid var(--border);
+  display:flex;justify-content:space-between;align-items:center;
+  flex-shrink:0;
+}
+.card-nav{display:flex;gap:12px}
+.card-nav button{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:50%;width:44px;height:44px;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--text);cursor:pointer;transition:all .15s;
+}
+.card-nav button:active{background:var(--accent);border-color:var(--accent)}
+.card-nav button svg{width:20px;height:20px}
+.fav-btn{
+  background:none;border:1px solid var(--border);
+  border-radius:50%;width:44px;height:44px;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:all .2s;
+}
+.fav-btn svg{width:22px;height:22px;color:var(--text2);transition:all .2s}
+.fav-btn.active{border-color:var(--fav);background:rgba(253,203,110,.1)}
+.fav-btn.active svg{color:var(--fav);fill:var(--fav)}
+.card-counter{font-size:12px;color:var(--text2)}
+
+/* === FAVORITES VIEW === */
+#favsView{padding:0}
+.favs-header{
+  position:sticky;top:0;z-index:10;
+  background:var(--bg);padding:16px;
+}
+.favs-header h1{font-size:24px;font-weight:700;letter-spacing:-0.5px}
+.favs-header .count{color:var(--text2);font-size:14px;font-weight:400}
+.favs-actions{display:flex;gap:8px;margin-top:12px}
+.favs-actions button{
+  padding:8px 16px;border-radius:var(--radius);
+  background:var(--card);border:1px solid var(--border);
+  color:var(--text);font-size:13px;cursor:pointer;
+  display:flex;align-items:center;gap:6px;
+  transition:all .2s;
+}
+.favs-actions button:active{background:#222}
+.favs-actions button svg{width:14px;height:14px}
+.favs-actions button.danger{color:var(--danger);border-color:var(--danger)}
+
+.favs-list{padding:0 16px 16px}
+.fav-item{
+  padding:14px;margin-bottom:8px;
+  background:var(--card);border-radius:var(--radius);
+  border:1px solid var(--border);
+  display:flex;align-items:center;gap:12px;
+  cursor:pointer;transition:background .15s;
+}
+.fav-item:active{background:#222}
+.fav-item-info{flex:1;min-width:0}
+.fav-item-title{font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fav-item-artist{font-size:13px;color:var(--text2)}
+.fav-item-genre{
+  display:inline-block;font-size:11px;margin-top:4px;
+  padding:2px 8px;border-radius:10px;
+  background:var(--surface);color:var(--accent2);
+}
+.fav-remove{
+  background:none;border:none;color:var(--text2);
+  cursor:pointer;padding:8px;flex-shrink:0;
+}
+.fav-remove:active{color:var(--danger)}
+.fav-remove svg{width:18px;height:18px}
+
+/* === LYRICS MODAL (full screen) === */
+.lyrics-modal{
+  position:fixed;top:0;left:0;right:0;bottom:0;
+  background:var(--bg);z-index:200;
+  display:none;flex-direction:column;
+}
+.lyrics-modal.active{display:flex}
+.modal-header{
+  display:flex;align-items:center;gap:12px;
+  padding:16px;border-bottom:1px solid var(--border);
+  flex-shrink:0;
+}
+.modal-back{
+  background:none;border:none;color:var(--text);
+  cursor:pointer;padding:4px;
+}
+.modal-back svg{width:24px;height:24px}
+.modal-title-wrap{flex:1;min-width:0}
+.modal-title{font-size:16px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.modal-artist{font-size:13px;color:var(--text2)}
+.modal-fav{
+  background:none;border:none;cursor:pointer;padding:4px;
+}
+.modal-fav svg{width:24px;height:24px;color:var(--text2);transition:all .2s}
+.modal-fav.active svg{color:var(--fav);fill:var(--fav)}
+.modal-body{
+  flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;
+  padding:20px;font-size:16px;line-height:1.9;
+  white-space:pre-line;color:#ddd;
+}
+.modal-body mark{color:var(--accent2);background:none;font-weight:600}
+
+/* === LOADING === */
+.loading{
+  display:flex;flex-direction:column;align-items:center;
+  justify-content:center;height:100%;gap:16px;
+}
+.spinner{
+  width:32px;height:32px;border:3px solid var(--border);
+  border-top-color:var(--accent);border-radius:50%;
+  animation:spin .8s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading p{color:var(--text2);font-size:14px}
+
+/* === TOAST === */
+.toast{
+  position:fixed;bottom:70px;left:50%;transform:translateX(-50%);
+  background:var(--card);border:1px solid var(--border);
+  color:var(--text);padding:10px 20px;border-radius:var(--radius);
+  font-size:14px;z-index:300;opacity:0;transition:opacity .3s;
+  pointer-events:none;
+}
+.toast.show{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <button id="navSearch" class="active" data-view="searchView">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    Buscar
+  </button>
+  <button id="navExplore" data-view="exploreView">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+    Explorar
+  </button>
+  <button id="navFavs" data-view="favsView">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+    Favoritos
+  </button>
+</nav>
+
+<!-- SEARCH VIEW -->
+<div id="searchView" class="view active">
+  <div class="search-header">
+    <h1>Buscar Letras</h1>
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="Título, artista ou trecho..." autocomplete="off" autocorrect="off" spellcheck="false">
+      <button class="clear-btn" id="clearSearch">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="filters" id="searchFilters"></div>
+  </div>
+  <div class="search-results" id="searchResults">
+    <div class="empty-state">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <p>Digite para buscar entre<br><strong id="totalCount">0</strong> letras</p>
+    </div>
+  </div>
+</div>
+
+<!-- EXPLORE VIEW -->
+<div id="exploreView" class="view">
+  <div class="explore-header">
+    <h1>Explorar</h1>
+    <div class="explore-controls">
+      <button class="explore-btn" id="shuffleBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+        Aleatório
+      </button>
+    </div>
+  </div>
+  <div class="explore-filters" id="exploreFilters"></div>
+  <div class="card-container" id="cardContainer">
+    <div class="loading" id="exploreLoading">
+      <div class="spinner"></div>
+      <p>Carregando letras...</p>
+    </div>
+  </div>
+</div>
+
+<!-- FAVORITES VIEW -->
+<div id="favsView" class="view">
+  <div class="favs-header">
+    <h1>Favoritos <span class="count" id="favsCount"></span></h1>
+    <div class="favs-actions">
+      <button id="exportFavs">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Exportar
+      </button>
+      <button id="clearFavs" class="danger">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+        Limpar
+      </button>
+    </div>
+  </div>
+  <div class="favs-list" id="favsList"></div>
+</div>
+
+<!-- LYRICS MODAL -->
+<div class="lyrics-modal" id="lyricsModal">
+  <div class="modal-header">
+    <button class="modal-back" id="modalBack">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+    </button>
+    <div class="modal-title-wrap">
+      <div class="modal-title" id="modalTitle"></div>
+      <div class="modal-artist" id="modalArtist"></div>
+    </div>
+    <button class="modal-fav" id="modalFav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+    </button>
+  </div>
+  <div class="modal-body" id="modalBody"></div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+'use strict';
+
+// ============ STATE ============
+let allSongs = [];
+let filteredSongs = [];
+let exploreList = [];
+let exploreIdx = 0;
+let favorites = new Set();
+let activeGenre = 'Todos';
+let exploreGenre = 'Todos';
+let searchTimeout = null;
+let currentModalSong = null;
+let currentQuery = '';
+const GENRES = ['Todos','MPB','Pagode','Trap','Arrocha','Sertanejo'];
+
+// ============ UTILS ============
+function normalize(str) {
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+}
+
+function escapeHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 2000);
+}
+
+function loadFavorites() {
+  try {
+    const stored = localStorage.getItem('letras_favs');
+    if (stored) favorites = new Set(JSON.parse(stored));
+  } catch(e) {}
+}
+
+function saveFavorites() {
+  localStorage.setItem('letras_favs', JSON.stringify([...favorites]));
+}
+
+function toggleFav(id) {
+  if (favorites.has(id)) favorites.delete(id);
+  else favorites.add(id);
+  saveFavorites();
+}
+
+function isFav(id) { return favorites.has(id); }
+
+// ============ DATA LOADING ============
+async function loadData() {
+  try {
+    const resp = await fetch('letras_search.json');
+    allSongs = await resp.json();
+    // Pre-compute normalized search fields
+    for (const s of allSongs) {
+      s._n = normalize(s.t + ' ' + s.a + ' ' + s.l);
+      s._nt = normalize(s.t);
+      s._na = normalize(s.a);
+    }
+    document.getElementById('totalCount').textContent = allSongs.length.toLocaleString('pt-BR');
+    document.getElementById('exploreLoading').style.display = 'none';
+    initExplore();
+  } catch(e) {
+    document.getElementById('exploreLoading').innerHTML =
+      '<p style="color:var(--danger)">Erro ao carregar dados</p>';
+  }
+}
+
+// ============ SEARCH ============
+function doSearch(query) {
+  currentQuery = query;
+  const container = document.getElementById('searchResults');
+  if (!query.trim()) {
+    container.innerHTML = `<div class="empty-state">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <p>Digite para buscar entre<br><strong>${allSongs.length.toLocaleString('pt-BR')}</strong> letras</p>
+    </div>`;
+    return;
+  }
+
+  const terms = normalize(query).split(/\s+/).filter(t => t.length > 0);
+  if (terms.length === 0) return;
+
+  let results = allSongs;
+
+  // Filter by genre
+  if (activeGenre !== 'Todos') {
+    results = results.filter(s => s.g === activeGenre);
+  }
+
+  // Score and filter
+  const scored = [];
+  for (const s of results) {
+    let score = 0;
+    let matched = true;
+    for (const term of terms) {
+      if (s._n.indexOf(term) === -1) { matched = false; break; }
+      // Boost title matches
+      if (s._nt.indexOf(term) !== -1) score += 10;
+      // Boost artist matches
+      if (s._na.indexOf(term) !== -1) score += 5;
+      score += 1;
+    }
+    if (matched) scored.push({ s, score });
+  }
+
+  scored.sort((a, b) => b.score - a.score);
+  const top = scored.slice(0, 50);
+
+  if (top.length === 0) {
+    container.innerHTML = `<div class="empty-state">
+      <p>Nenhuma letra encontrada para<br>"<strong>${escapeHtml(query)}</strong>"</p>
+    </div>`;
+    return;
+  }
+
+  const meta = `<div class="search-meta">${scored.length} resultado${scored.length!==1?'s':''} ${scored.length>50?'(mostrando 50)':''}</div>`;
+
+  const html = top.map(({s}) => {
+    const excerpt = getExcerpt(s.l, terms);
+    return `<div class="result-item" data-id="${s.id}">
+      <div class="result-title">${highlight(escapeHtml(s.t), terms)}</div>
+      <div class="result-artist">${highlight(escapeHtml(s.a), terms)}</div>
+      <span class="result-genre">${escapeHtml(s.g)}</span>
+      ${excerpt ? `<div class="result-excerpt">${excerpt}</div>` : ''}
+    </div>`;
+  }).join('');
+
+  container.innerHTML = meta + html;
+}
+
+function getExcerpt(lyrics, terms) {
+  const lines = lyrics.split('\n');
+  const normLines = lines.map(l => normalize(l));
+  // Find first line containing any term
+  for (let i = 0; i < normLines.length; i++) {
+    for (const term of terms) {
+      if (normLines[i].indexOf(term) !== -1) {
+        const start = Math.max(0, i - 1);
+        const end = Math.min(lines.length, i + 3);
+        const slice = lines.slice(start, end).map(l => escapeHtml(l));
+        return highlight(slice.join('\n'), terms);
+      }
+    }
+  }
+  // Fallback: first 3 lines
+  return escapeHtml(lines.slice(0, 3).join('\n'));
+}
+
+function highlight(html, terms) {
+  for (const term of terms) {
+    // Case-insensitive, accent-insensitive highlight
+    const regex = new RegExp('(' + term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')', 'gi');
+    // Simple approach: highlight in the visible text
+    html = html.replace(regex, '<mark>$1</mark>');
+  }
+  return html;
+}
+
+// ============ EXPLORE ============
+function initExplore() {
+  buildExploreList();
+  if (exploreList.length > 0) showCard(0);
+}
+
+function buildExploreList() {
+  if (exploreGenre === 'Todos') {
+    exploreList = [...allSongs];
+  } else {
+    exploreList = allSongs.filter(s => s.g === exploreGenre);
+  }
+  exploreIdx = 0;
+}
+
+function shuffleExplore() {
+  // Fisher-Yates
+  for (let i = exploreList.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [exploreList[i], exploreList[j]] = [exploreList[j], exploreList[i]];
+  }
+  exploreIdx = 0;
+  showCard(0);
+  toast('Lista embaralhada');
+}
+
+function showCard(idx, direction) {
+  if (exploreList.length === 0) return;
+  idx = ((idx % exploreList.length) + exploreList.length) % exploreList.length;
+  exploreIdx = idx;
+  const song = exploreList[idx];
+  const container = document.getElementById('cardContainer');
+
+  const card = document.createElement('div');
+  card.className = 'lyric-card';
+  if (direction) card.classList.add(direction === 'left' ? 'enter-right' : 'enter-left');
+
+  card.innerHTML = `
+    <div class="card-header">
+      <div class="card-title">${escapeHtml(song.t)}</div>
+      <div class="card-artist">${escapeHtml(song.a)}</div>
+      <span class="card-genre">${escapeHtml(song.g)}</span>
+    </div>
+    <div class="card-lyrics">${escapeHtml(song.l)}</div>
+    <div class="card-footer">
+      <div class="card-nav">
+        <button id="cardPrev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></button>
+        <button id="cardNext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+      </div>
+      <span class="card-counter">${idx+1} / ${exploreList.length.toLocaleString('pt-BR')}</span>
+      <button class="fav-btn ${isFav(song.id)?'active':''}" id="cardFav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+    </div>`;
+
+  // Remove old card with animation
+  const oldCard = container.querySelector('.lyric-card');
+  if (oldCard && direction) {
+    oldCard.classList.add(direction === 'left' ? 'exit-left' : 'exit-right');
+    setTimeout(() => oldCard.remove(), 300);
+  } else if (oldCard) {
+    oldCard.remove();
+  }
+
+  container.appendChild(card);
+
+  // Trigger enter animation
+  if (direction) {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        card.classList.remove('enter-left', 'enter-right');
+      });
+    });
+  }
+
+  // Card button events
+  card.querySelector('#cardPrev').addEventListener('click', () => showCard(idx - 1, 'right'));
+  card.querySelector('#cardNext').addEventListener('click', () => showCard(idx + 1, 'left'));
+  card.querySelector('#cardFav').addEventListener('click', function() {
+    toggleFav(song.id);
+    this.classList.toggle('active');
+  });
+
+  // Touch swipe on card lyrics
+  setupSwipe(card.querySelector('.card-lyrics'), () => showCard(idx + 1, 'left'), () => showCard(idx - 1, 'right'));
+}
+
+function setupSwipe(el, onLeft, onRight) {
+  let startX = 0, startY = 0, diffX = 0;
+  el.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  }, {passive: true});
+  el.addEventListener('touchend', e => {
+    diffX = e.changedTouches[0].clientX - startX;
+    const diffY = Math.abs(e.changedTouches[0].clientY - startY);
+    if (Math.abs(diffX) > 60 && Math.abs(diffX) > diffY) {
+      if (diffX < 0) onLeft();
+      else onRight();
+    }
+  }, {passive: true});
+}
+
+// ============ FAVORITES VIEW ============
+function renderFavorites() {
+  const list = document.getElementById('favsList');
+  const count = document.getElementById('favsCount');
+  const favSongs = allSongs.filter(s => favorites.has(s.id));
+  count.textContent = `(${favSongs.length})`;
+
+  if (favSongs.length === 0) {
+    list.innerHTML = `<div class="empty-state">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <p>Nenhuma favorita ainda.<br>Explore e marque as que gostar.</p>
+    </div>`;
+    return;
+  }
+
+  list.innerHTML = favSongs.map(s => `
+    <div class="fav-item" data-id="${s.id}">
+      <div class="fav-item-info">
+        <div class="fav-item-title">${escapeHtml(s.t)}</div>
+        <div class="fav-item-artist">${escapeHtml(s.a)}</div>
+        <span class="fav-item-genre">${escapeHtml(s.g)}</span>
+      </div>
+      <button class="fav-remove" data-id="${s.id}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>`).join('');
+}
+
+function exportFavorites() {
+  const favSongs = allSongs.filter(s => favorites.has(s.id));
+  if (favSongs.length === 0) { toast('Nenhuma favorita para exportar'); return; }
+
+  let text = `LETRAS FAVORITAS\nExportado em ${new Date().toLocaleDateString('pt-BR')}\n${'='.repeat(40)}\n\n`;
+  for (const s of favSongs) {
+    text += `TITULO: ${s.t}\nARTISTA: ${s.a}\nGENERO: ${s.g}\n--- LETRA ---\n${s.l}\n${'='.repeat(40)}\n\n`;
+  }
+
+  // Use share API if available (better for Android)
+  if (navigator.share) {
+    const file = new File([text], 'favoritas.txt', {type: 'text/plain'});
+    navigator.share({
+      title: 'Minhas Letras Favoritas',
+      files: [file]
+    }).catch(() => downloadFile(text));
+  } else {
+    downloadFile(text);
+  }
+}
+
+function downloadFile(text) {
+  const blob = new Blob([text], {type: 'text/plain;charset=utf-8'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'favoritas.txt';
+  a.click();
+  URL.revokeObjectURL(url);
+  toast('Arquivo baixado');
+}
+
+// ============ LYRICS MODAL ============
+function openModal(songId, searchTerms) {
+  const song = allSongs.find(s => s.id === songId);
+  if (!song) return;
+  currentModalSong = song;
+
+  document.getElementById('modalTitle').textContent = song.t;
+  document.getElementById('modalArtist').textContent = song.a + ' · ' + song.g;
+
+  let bodyHtml = escapeHtml(song.l);
+  if (searchTerms && searchTerms.length > 0) {
+    bodyHtml = highlight(bodyHtml, searchTerms);
+  }
+  document.getElementById('modalBody').innerHTML = bodyHtml;
+
+  const favBtn = document.getElementById('modalFav');
+  favBtn.classList.toggle('active', isFav(song.id));
+
+  document.getElementById('lyricsModal').classList.add('active');
+  document.getElementById('modalBody').scrollTop = 0;
+}
+
+function closeModal() {
+  document.getElementById('lyricsModal').classList.remove('active');
+  currentModalSong = null;
+}
+
+// ============ FILTER CHIPS ============
+function renderFilters(containerId, activeVal, onChange) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = GENRES.map(g =>
+    `<span class="filter-chip ${g===activeVal?'active':''}" data-genre="${g}">${g}</span>`
+  ).join('');
+  container.addEventListener('click', e => {
+    const chip = e.target.closest('.filter-chip');
+    if (chip) onChange(chip.dataset.genre);
+  });
+}
+
+// ============ NAVIGATION ============
+function switchView(viewId) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById(viewId).classList.add('active');
+  document.querySelector(`[data-view="${viewId}"]`).classList.add('active');
+  if (viewId === 'favsView') renderFavorites();
+}
+
+// ============ INIT ============
+function init() {
+  loadFavorites();
+
+  // Navigation
+  document.querySelectorAll('.nav button').forEach(btn => {
+    btn.addEventListener('click', () => switchView(btn.dataset.view));
+  });
+
+  // Search
+  const searchInput = document.getElementById('searchInput');
+  const clearBtn = document.getElementById('clearSearch');
+
+  searchInput.addEventListener('input', () => {
+    clearBtn.classList.toggle('show', searchInput.value.length > 0);
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => doSearch(searchInput.value), 150);
+  });
+
+  clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    clearBtn.classList.remove('show');
+    doSearch('');
+    searchInput.focus();
+  });
+
+  // Search filters
+  renderFilters('searchFilters', activeGenre, genre => {
+    activeGenre = genre;
+    renderFilters('searchFilters', activeGenre, arguments.callee);
+    doSearch(searchInput.value);
+  });
+
+  // Explore filters
+  renderFilters('exploreFilters', exploreGenre, genre => {
+    exploreGenre = genre;
+    renderFilters('exploreFilters', exploreGenre, arguments.callee);
+    buildExploreList();
+    showCard(0);
+  });
+
+  // Search filter click handler (re-register since renderFilters replaces innerHTML)
+  function setupSearchFilters() {
+    renderFilters('searchFilters', activeGenre, genre => {
+      activeGenre = genre;
+      setupSearchFilters();
+      if (searchInput.value) doSearch(searchInput.value);
+    });
+  }
+  setupSearchFilters();
+
+  function setupExploreFilters() {
+    renderFilters('exploreFilters', exploreGenre, genre => {
+      exploreGenre = genre;
+      setupExploreFilters();
+      buildExploreList();
+      showCard(0);
+    });
+  }
+  setupExploreFilters();
+
+  // Shuffle
+  document.getElementById('shuffleBtn').addEventListener('click', shuffleExplore);
+
+  // Search result click -> open modal
+  document.getElementById('searchResults').addEventListener('click', e => {
+    const item = e.target.closest('.result-item');
+    if (item) {
+      const terms = normalize(currentQuery).split(/\s+/).filter(t => t.length > 0);
+      openModal(parseInt(item.dataset.id), terms);
+    }
+  });
+
+  // Favorites list click -> open modal
+  document.getElementById('favsList').addEventListener('click', e => {
+    const removeBtn = e.target.closest('.fav-remove');
+    if (removeBtn) {
+      toggleFav(parseInt(removeBtn.dataset.id));
+      renderFavorites();
+      return;
+    }
+    const item = e.target.closest('.fav-item');
+    if (item) openModal(parseInt(item.dataset.id));
+  });
+
+  // Modal
+  document.getElementById('modalBack').addEventListener('click', closeModal);
+  document.getElementById('modalFav').addEventListener('click', function() {
+    if (!currentModalSong) return;
+    toggleFav(currentModalSong.id);
+    this.classList.toggle('active');
+  });
+
+  // Export/Clear favorites
+  document.getElementById('exportFavs').addEventListener('click', exportFavorites);
+  document.getElementById('clearFavs').addEventListener('click', () => {
+    if (favorites.size === 0) { toast('Nenhuma favorita para limpar'); return; }
+    if (confirm('Limpar todas as favoritas?')) {
+      favorites.clear();
+      saveFavorites();
+      renderFavorites();
+      toast('Favoritos limpos');
+    }
+  });
+
+  // Keyboard nav for explore
+  document.addEventListener('keydown', e => {
+    if (document.getElementById('lyricsModal').classList.contains('active')) {
+      if (e.key === 'Escape') closeModal();
+      return;
+    }
+    if (document.activeElement === searchInput) return;
+    if (e.key === 'ArrowLeft') showCard(exploreIdx - 1, 'right');
+    if (e.key === 'ArrowRight') showCard(exploreIdx + 1, 'left');
+  });
+
+  // Back button closes modal
+  window.addEventListener('popstate', () => {
+    if (document.getElementById('lyricsModal').classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  // Load data
+  loadData();
+}
+
+// Register service worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw-letras.js').catch(() => {});
+}
+
+init();
+})();
+</script>
+</body>
+</html>
