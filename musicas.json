@@ -1,77 +1,29 @@
 {
-  "playlists": {
-    "selecao_especial": [
-      "Eu esperei",
-      "Manequim",
-      "Golpe",
-      "Azul"
-    ],
-    "agitadas": [
-      "Que nem eu a máquina",
-      "Tox",
-      "Manequim"
-    ]
-  },
+  "playlists": {},
   "musicas": [
     {
-      "titulo": "Eu esperei",
-      "arquivo": "audios/eu-esperei-v3.mp3",
-      "genero": "post punk, trip hop, dub",
-      "tags": ["reflexivo", "noite", "calmo"]
+      "titulo": "Você tem aquele",
+      "arquivo": "audios/Você tem aquele.mp3",
+      "genero": "",
+      "tags": []
     },
     {
-      "titulo": "Que nem eu a máquina",
-      "arquivo": "audios/que-nem-eu-a-maquina.mp3",
-      "genero": "latin, rock, disco",
-      "tags": ["dançante", "alegre", "verão"]
+      "titulo": "Bandido Herói",
+      "arquivo": "audios/+ Bandido Herói.mp3",
+      "genero": "",
+      "tags": []
     },
     {
-      "titulo": "Golpe",
-      "arquivo": "audios/golpe.mp3",
-      "genero": "MPB",
-      "tags": ["acústico", "calmo", "poético"]
+      "titulo": "Distance",
+      "arquivo": "audios/+ Distance.mp3",
+      "genero": "",
+      "tags": []
     },
     {
-      "titulo": "Tô fumando pedra",
-      "arquivo": "audios/to-fumando-pedra-blues.mp3",
-      "genero": "blues",
-      "tags": ["intenso", "noite"]
-    },
-    {
-      "titulo": "Cupido de Wall Street",
-      "arquivo": "audios/cupido-ws-blues.mp3",
-      "genero": "blues, folk",
-      "tags": ["acústico", "narrativa"]
-    },
-    {
-      "titulo": "Azul",
-      "arquivo": "audios/azul64.mp3",
-      "genero": "milonga",
-      "tags": ["regional", "calmo", "poético"]
-    },
-    {
-      "titulo": "fucking Love drogas",
-      "arquivo": "audios/fucking-love-drogas-v5.mp3",
-      "genero": "Alt R&B",
-      "tags": ["intenso", "noite", "moderno"]
-    },
-    {
-      "titulo": "Se der errado",
-      "arquivo": "audios/se-der-errado.mp3",
-      "genero": "Alt R&B",
-      "tags": ["moderno", "reflexivo"]
-    },
-    {
-      "titulo": "Tox",
-      "arquivo": "audios/tox.mp3",
-      "genero": "Alt Rock",
-      "tags": ["intenso", "rock"]
-    },
-    {
-      "titulo": "Manequim",
-      "arquivo": "audios/manequim.mp3",
-      "genero": "city pop, retro funk, eletronica",
-      "tags": ["dançante", "verão", "retrô"]
+      "titulo": "Castelo de Areia",
+      "arquivo": "audios/Castelo de Areia-2.mp3",
+      "genero": "",
+      "tags": []
     }
   ]
 }
