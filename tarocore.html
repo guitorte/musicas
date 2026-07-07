@@ -286,7 +286,7 @@ const songs = [
                 });
             }
             
-            function togglePlay() {
+    function togglePlay() {
                 if (state.currentIndex === -1) {
                     // Se nenhuma música estiver selecionada, toca a primeira por padrão
                     playTrack(0);
@@ -382,4 +382,90 @@ const songs = [
                         </div>
                     </li>`).join('');
                 
-                // Carrega as durações de tod
+                // Carrega as durações de todas as faixas em segundo plano
+                loadTrackDurations();
+
+                // Adiciona o event listener para os itens da lista (para tocar a música)
+                DOMElements.musicList.addEventListener('click', e => {
+                    const item = e.target.closest('.music-list-item');
+                    // Verifica se o clique não foi no botão de compartilhar
+                    if (item && !e.target.closest('.share-btn')) { 
+                        playTrack(parseInt(item.dataset.index));
+                    }
+                });
+
+                // Adiciona o event listener para os botões de compartilhar
+                document.querySelectorAll('.share-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Impede que o clique no botão ative o clique do item da lista pai
+                        const songIdToShare = btn.dataset.songId;
+                        const shareLink = `${window.location.origin}${window.location.pathname}?songId=${songIdToShare}`;
+                        
+                        if (navigator.clipboard && navigator.clipboard.writeText) {
+                            navigator.clipboard.writeText(shareLink).then(() => {
+                                showToast("Link copiado!");
+                            }).catch(err => {
+                                console.error('Falha ao copiar o link:', err);
+                                showToast("Erro ao copiar o link.");
+                            });
+                        } else {
+                            // Fallback para navegadores mais antigos
+                            const textArea = document.createElement("textarea");
+                            textArea.value = shareLink;
+                            textArea.style.position = "fixed"; 
+                            textArea.style.left = "-9999px";
+                            document.body.appendChild(textArea);
+                            textArea.focus();
+                            textArea.select();
+                            try {
+                                document.execCommand('copy');
+                                showToast("Link copiado! (Método fallback)");
+                            } catch (err) {
+                                console.error('Falha ao copiar o link (fallback):', err);
+                                showToast("Erro ao copiar o link. Por favor, copie manualmente: " + shareLink);
+                            }
+                            document.body.removeChild(textArea);
+                        }
+                    });
+                });
+
+                // Listeners para os controles do player
+                DOMElements.playBtn.addEventListener('click', togglePlay);
+                DOMElements.prevBtn.addEventListener('click', () => changeTrack(-1));
+                DOMElements.nextBtn.addEventListener('click', () => changeTrack(1));
+                
+                DOMElements.repeatBtn.addEventListener('click', () => {
+                    state.isRepeating = !state.isRepeating;
+                    DOMElements.repeatBtn.classList.toggle('active', state.isRepeating);
+                });
+                
+                // Os event listeners do audioPlayer agora chamam as funções separadas de atualização de UI
+                DOMElements.audioPlayer.addEventListener('play', () => updatePlayingStateUI(true));
+                DOMElements.audioPlayer.addEventListener('pause', () => updatePlayingStateUI(false));
+                DOMElements.audioPlayer.addEventListener('timeupdate', updateProgress);
+                DOMElements.audioPlayer.addEventListener('ended', () => {
+                    state.isRepeating ? playTrack(state.currentIndex) : changeTrack(1);
+                });
+
+                DOMElements.progressContainer.addEventListener('click', setProgress);
+                DOMElements.volumeBtn.addEventListener('click', e => {
+                    e.stopPropagation();
+                    DOMElements.volumePopup.classList.toggle('active');
+                });
+                DOMElements.volumeSlider.addEventListener('input', e => DOMElements.audioPlayer.volume = e.target.value / 100);
+                document.addEventListener('click', e => {
+                    if (!DOMElements.volumeControl.contains(e.target)) DOMElements.volumePopup.classList.remove('active');
+                });
+
+                DOMElements.audioPlayer.volume = 0.7;
+
+                // CHAMA A FUNÇÃO PARA VERIFICAR O PARÂMETRO DA URL AO INICIAR
+                handleURLParams();
+            }
+
+            init();
+        });
+    </script>
+</body>
+</html>
+
