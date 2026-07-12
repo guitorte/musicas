@@ -1,0 +1,62 @@
+{
+  "file_path": "/home/user/musicas/temp_processing/Job_job.mp3",
+  "sample_rate": 44100,
+  "duration": 145.68,
+  "spectral_features": {
+    "centroid_mean": 4875.239146911043,
+    "centroid_std": 1253.212302215862,
+    "rolloff_mean": 10559.302438791292,
+    "rolloff_std": 1828.4310792805518,
+    "bandwidth_mean": 4574.579513434385,
+    "bandwidth_std": 507.83904324563025,
+    "contrast_mean": 23.80446266429088,
+    "zcr_mean": 0.11543551667845474,
+    "zcr_std": 0.06610159623814837
+  },
+  "frequency_analysis": {
+    "band_energy": {
+      "sub_bass": 0.019071428230011858,
+      "bass": 0.084728317050019,
+      "low_mid": 0.05956990261084282,
+      "mid": 0.2654186929668405,
+      "high_mid": 0.14728142582114992,
+      "presence": 0.08939986520868148,
+      "brilliance": 0.3345303681124544
+    },
+    "dominant_frequency": 60.81823174080175,
+    "high_freq_cutoff": 17750.0,
+    "high_freq_loss": false,
+    "nyquist_frequency": 22050.0
+  },
+  "dynamic_range": {
+    "peak_amplitude": 0.9192986488342285,
+    "rms_mean": 0.15807756781578064,
+    "rms_std": 0.06697024405002594,
+    "crest_factor": 5.81549072265625,
+    "lufs_estimate": -39.0225944519043,
+    "headroom_db": 0.7308679819107056
+  },
+  "noise_profile": {
+    "snr_db": 10.636702537536621,
+    "noise_floor_mean": 0.103420689702034,
+    "has_noise": true,
+    "noise_severity": "high"
+  },
+  "clipping_detection": {
+    "clipped_samples": 0,
+    "clip_percentage": 0.0,
+    "has_clipping": false
+  },
+  "recommendations": [
+    {
+      "type": "noise_reduction",
+      "severity": "high",
+      "message": "Ruído detectado (SNR: 10.6dB). Recomenda-se redução de ruído."
+    },
+    {
+      "type": "gain",
+      "severity": "medium",
+      "message": "Áudio muito silencioso (LUFS: -39.0). Recomenda-se normalização."
+    }
+  ]
+}

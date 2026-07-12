@@ -76,80 +76,210 @@ class StemSeparator:
 
             # Verificar se demucs está instalado
             try:
-                result = subprocess.run(['demucs', '--help'], capture_output=True, check=True, text=True)
+                result = subprocess.run(['demucs', '--help'], capture_output=True, check=True, text=True, timeout=10)
+                print("✓ Demucs já instalado!")
             except (subprocess.CalledProcessError, FileNotFoundError):
                 print("⚠️ Demucs não encontrado. Instalando...")
-                subprocess.run(['pip', 'install', '-U', 'demucs'], check=True)
-                print("✓ Demucs instalado!")
+                print("   Instalando Demucs + torchcodec (dependência)...")
+
+                # Instalar Demucs E torchcodec (necessário para salvar arquivos)
+                install_result = subprocess.run(
+                    ['pip', 'install', '-U', 'demucs', 'torchcodec'],
+                    capture_output=True,
+                    text=True,
+                    timeout=300
+                )
+
+                if install_result.returncode != 0:
+                    print(f"⚠️ Erro na instalação: {install_result.stderr}")
+                    raise Exception("Falha ao instalar Demucs")
+
+                print("✓ Demucs + torchcodec instalados!")
+
+            # VERIFICAR E INSTALAR FFMPEG + TORCHCODEC
+            # (Necessários para Demucs salvar os arquivos WAV)
+
+            # Primeiro, verificar/instalar FFmpeg
+            print("🔍 Verificando FFmpeg...")
+            ffmpeg_check = subprocess.run(
+                ['ffmpeg', '-version'],
+                capture_output=True,
+                text=True,
+                timeout=5
+            )
+
+            if ffmpeg_check.returncode != 0:
+                print("⚠️ FFmpeg não encontrado!")
+                print("   Tentando instalar FFmpeg...")
+
+                # Tentar instalar via apt-get (Colab/Linux)
+                try:
+                    subprocess.run(['apt-get', 'update'], capture_output=True, timeout=30, check=False)
+                    ffmpeg_install = subprocess.run(
+                        ['apt-get', 'install', '-y', 'ffmpeg'],
+                        capture_output=True,
+                        text=True,
+                        timeout=120
+                    )
+
+                    if ffmpeg_install.returncode == 0:
+                        print("   ✓ FFmpeg instalado!")
+                    else:
+                        print("   ✗ Não foi possível instalar FFmpeg automaticamente")
+                        print("   ")
+                        print("   ⚠️ SOLUÇÃO:")
+                        print("   Execute esta célula ANTES de rodar o processamento:")
+                        print("   !apt-get update && apt-get install -y ffmpeg")
+                        print("   ")
+                except Exception as e:
+                    print(f"   ✗ Erro ao tentar instalar FFmpeg: {e}")
+                    print("   ")
+                    print("   ⚠️ SOLUÇÃO MANUAL:")
+                    print("   No Google Colab, execute em uma célula:")
+                    print("   !apt-get update && apt-get install -y ffmpeg")
+                    print("   ")
+            else:
+                print("✓ FFmpeg já instalado!")
+
+            # Verificar TorchCodec
+            try:
+                import torchcodec
+                # Verificar se torchcodec pode realmente carregar
+                print("✓ TorchCodec verificado!")
+            except (ImportError, RuntimeError) as e:
+                print("⚠️ TorchCodec não disponível")
+                print("   Instalando TorchCodec...")
+
+                install_result = subprocess.run(
+                    ['pip', 'install', '-U', 'torchcodec'],
+                    capture_output=True,
+                    text=True,
+                    timeout=120
+                )
+
+                if install_result.returncode == 0:
+                    print("✓ TorchCodec instalado!")
+                    print("   IMPORTANTE: Se Demucs falhar, execute em uma célula:")
+                    print("   !apt-get update && apt-get install -y ffmpeg")
+                else:
+                    print(f"⚠️ Falha ao instalar torchcodec")
 
             # Detectar dispositivo (GPU/CPU)
             device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-            # Configurar comando Demucs com melhores parâmetros
+            # COMANDO SIMPLIFICADO E ROBUSTO
+            # Usar htdemucs (modelo padrão e confiável) ao invés de htdemucs_ft
+            # Não usar --float32 para evitar problemas de compatibilidade
             cmd = [
                 'demucs',
                 '--device', device,
-                '--two-stems', 'vocals',  # Começar com 2 stems (mais rápido)
-                '-n', 'htdemucs',  # Modelo de alta qualidade
-                '--float32',  # Melhor qualidade
-                '--out', output_dir,
+                '-n', 'htdemucs',  # Modelo padrão (4 stems: vocals, drums, bass, other)
+                '-o', output_dir,  # Output directory
                 audio_path
             ]
 
-            # Se não especificar stems, usar modelo completo de 4 stems
-            if stems is None or (isinstance(stems, list) and len(stems) > 2):
-                cmd = [
-                    'demucs',
-                    '--device', device,
-                    '-n', 'htdemucs_ft',  # Modelo fine-tuned completo (4 stems)
-                    '--float32',
-                    '--out', output_dir,
-                    audio_path
-                ]
-
             print(f"🎵 Executando Demucs...")
-            print(f"   Modelo: {'htdemucs_ft (4 stems)' if len(cmd) > 10 else 'htdemucs (2 stems)'}")
+            print(f"   Modelo: htdemucs (4 stems)")
             print(f"   Dispositivo: {device.upper()}")
             if device == 'cuda':
-                print(f"   GPU: {torch.cuda.get_device_name(0)}")
+                gpu_name = torch.cuda.get_device_name(0)
+                gpu_mem = torch.cuda.get_device_properties(0).total_memory / (1024**3)
+                print(f"   GPU: {gpu_name} ({gpu_mem:.1f} GB)")
+            print(f"   Input: {Path(audio_path).name}")
             print(f"   Comando: {' '.join(cmd)}")
 
-            # Executar com output visível
-            result = subprocess.run(cmd, check=True, capture_output=False, text=True)
+            # Executar COM CAPTURA DE STDERR para ver erros reais
+            print("   Processando... (pode demorar 5-15 minutos)\n")
+            result = subprocess.run(
+                cmd,
+                capture_output=True,  # CAPTURAR output para ver erros
+                text=True,
+                timeout=900  # Timeout de 15 minutos
+            )
+
+            # Mostrar output se houver
+            if result.stdout:
+                print("📋 Output do Demucs:")
+                for line in result.stdout.split('\n'):
+                    if line.strip():
+                        print(f"   {line}")
+
+            # VERIFICAR SE HOUVE ERRO
+            if result.returncode != 0:
+                error_msg = f"Demucs falhou com código de erro {result.returncode}"
+                if result.stderr:
+                    error_msg += f"\n\n❌ MENSAGEM DE ERRO DO DEMUCS:\n{result.stderr}"
+                    # Mostrar stderr também
+                    print("\n❌ STDERR do Demucs:")
+                    for line in result.stderr.split('\n'):
+                        if line.strip():
+                            print(f"   {line}")
+                raise Exception(error_msg)
+
+            print("\n✓ Demucs executado com sucesso!")
 
             # Encontrar arquivos de saída
             # Demucs salva em: output_dir / model_name / audio_name / *.wav
             audio_name = Path(audio_path).stem
 
             # Tentar diferentes nomes de modelo
-            possible_model_names = ['htdemucs_ft', 'htdemucs', 'mdx_extra', 'mdx']
+            possible_model_names = ['htdemucs_ft', 'htdemucs', 'htdemucs_6s', 'mdx_extra', 'mdx']
             demucs_output = None
 
+            print(f"\n🔍 Procurando stems gerados...")
             for model_name in possible_model_names:
                 test_path = Path(output_dir) / model_name / audio_name
+                print(f"   Testando: {model_name}/{audio_name}")
                 if test_path.exists():
                     demucs_output = test_path
-                    print(f"✓ Encontrado output em: {model_name}/{audio_name}")
+                    print(f"   ✓ Encontrado em: {model_name}/{audio_name}")
                     break
 
             if demucs_output is None:
-                raise Exception(f"Não foi possível encontrar output do Demucs em {output_dir}")
+                # DEBUG: Listar o que realmente existe
+                print(f"\n⚠️ Stems não encontrados nos locais esperados!")
+                print(f"   Listando conteúdo de: {output_dir}\n")
+                try:
+                    for item in Path(output_dir).iterdir():
+                        print(f"   📁 {item.name}")
+                        if item.is_dir():
+                            for subitem in item.iterdir():
+                                print(f"      📁 {subitem.name}")
+                                if subitem.is_dir():
+                                    for file in subitem.iterdir():
+                                        print(f"         📄 {file.name}")
+                except Exception as list_error:
+                    print(f"   Erro ao listar: {list_error}")
+
+                raise Exception(f"Output do Demucs não encontrado em nenhum local esperado")
 
             # Coletar stems
             stem_paths = {}
+            print(f"\n✓ Coletando stems:")
             for stem_file in demucs_output.glob('*.wav'):
                 stem_name = stem_file.stem
                 stem_paths[stem_name] = str(stem_file)
-                print(f"  ✓ {stem_name}: {stem_file.name}")
+                file_size_mb = stem_file.stat().st_size / (1024 * 1024)
+                print(f"   ✓ {stem_name:8s}: {stem_file.name} ({file_size_mb:.2f} MB)")
 
             if not stem_paths:
-                raise Exception("Demucs não gerou nenhum arquivo de saída")
+                raise Exception("Demucs executou mas não gerou arquivos WAV")
 
+            print(f"\n✓ Separação com Demucs completa! {len(stem_paths)} stems.")
             return stem_paths
 
+        except subprocess.TimeoutExpired:
+            print(f"\n✗ TIMEOUT: Demucs demorou mais de 15 minutos!")
+            print("   Possíveis causas:")
+            print("   - Arquivo muito grande")
+            print("   - GPU sem memória suficiente")
+            print("   - Problema de performance")
+            print("\n⚠️ Fallback: Usando método básico...")
+            return self._separate_basic(audio_path, output_dir)
+
         except Exception as e:
-            print(f"✗ Erro ao usar Demucs: {e}")
-            print("  Detalhes do erro:", str(e))
+            print(f"\n✗ ERRO ao usar Demucs:")
+            print(f"   {str(e)}")
             print("\n⚠️ Fallback: Usando método básico de separação...")
             return self._separate_basic(audio_path, output_dir)
 
