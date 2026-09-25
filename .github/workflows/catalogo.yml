@@ -1,0 +1,39 @@
+name: Catálogo de músicas
+
+# Roda depois de cada upload em audio/ (ou edição de musicas.json) na main:
+# renomeia arquivos novos para o padrão e cadastra no musicas.json.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "audio/**"
+      - "musicas.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalogo
+  cancel-in-progress: false
+
+jobs:
+  catalogo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Organizar audio/ e musicas.json
+        run: python3 .github/scripts/catalogo.py
+
+      - name: Salvar mudanças
+        run: |
+          git add -A audio musicas.json
+          if git diff --cached --quiet; then
+            echo "Nada a mudar."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Catálogo: organizar novos áudios"
+          git push

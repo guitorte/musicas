@@ -186,18 +186,19 @@
     <audio id="audioPlayer" preload="metadata"></audio>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-const songs = [
-    { id: 'song1', title: "Não é fraco", src: "audio/Não é fraco.mp3" },
-    { id: 'song2', title: "Queima", src: "audios/Queima.mp3" },
-    { id: 'song3', title: "Volta", src: "audio/volta.mp3" },
-    { id: 'song4', title: "A gente", src: "audio/a gente.mp3" },
-    { id: 'song5', title: "Colete à prova de papinho", src: "audio/colete.mp3" },
-    { id: 'song6', title: "Deixa", src: "audio/deixa.mp3" },
-    { id: 'song7', title: "Absolvição", src: "audio/absolvicao.mp3" },
-    { id: 'song8', title: "Bandido, herói", src: "audio/Bandido 0002.mp3" },
-    { id: 'song9', title: "Arma de vingança", src: "audio/arma de vinganca.mp3" }
-];
+        document.addEventListener('DOMContentLoaded', async () => {
+            // A lista vem de musicas.json: "index" define quais músicas aparecem e em que ordem.
+            let songs = [];
+            try {
+                const res = await fetch('musicas.json', { cache: 'no-cache' });
+                const catalogo = await res.json();
+                const porId = Object.fromEntries(catalogo.musicas.map(m => [m.id, m]));
+                songs = catalogo.index
+                    .filter(id => porId[id])
+                    .map(id => ({ id, title: porId[id].titulo, src: porId[id].arquivo }));
+            } catch (err) {
+                console.error('Falha ao carregar musicas.json:', err);
+            }
 
             const DOMElements = {
                 audioPlayer: document.getElementById('audioPlayer'),
@@ -342,7 +343,10 @@ const songs = [
                 const songId = urlParams.get('songId');
 
                 if (songId) {
-                    const songIndex = songs.findIndex(song => song.id === songId);
+                    let songIndex = songs.findIndex(song => song.id === songId);
+                    // Links antigos usavam a posição na lista (?songId=song3)
+                    const legado = /^song(\d+)$/.exec(songId);
+                    if (songIndex === -1 && legado) songIndex = parseInt(legado[1]) - 1;
                     if (songIndex !== -1) {
                         // Toca a música encontrada. A lógica de autoplay será tratada dentro de playTrack.
                         playTrack(songIndex); 
