@@ -52,8 +52,7 @@
       "titulo": "Absolvição",
       "arquivo": "audio/absolvicao.mp3",
       "genero": "",
-      "tags": [],
-      "obs": "VERIFICAR: arquivo idêntico a arma-de-vinganca.mp3"
+      "tags": []
     },
     {
       "id": "apanhar",
@@ -67,8 +66,7 @@
       "titulo": "Arma de vingança",
       "arquivo": "audio/arma-de-vinganca.mp3",
       "genero": "",
-      "tags": [],
-      "obs": "VERIFICAR: arquivo idêntico a absolvicao.mp3"
+      "tags": []
     },
     {
       "id": "azul64",
