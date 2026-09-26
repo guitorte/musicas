@@ -11,6 +11,8 @@ Site: https://guitorte.github.io/musicas/
   { "id": "nao-e-fraco", "titulo": "Não é fraco", "arquivo": "audio/nao-e-fraco.mp3", "genero": "", "tags": [] }
   ```
 
+  `duracao` (em segundos) é preenchida sozinha pela automação — não precisa mexer.
+
   No topo do arquivo, a lista **`index`** diz quais músicas aparecem na página principal, e em que ordem.
 - **`index.html`** — o player. Lê o `musicas.json`; não precisa ser editado para trocar músicas.
 
