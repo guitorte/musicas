@@ -9,7 +9,9 @@ O que ele faz:
      "Não é fraco.mp3" -> "nao-e-fraco.mp3". Se o nome já existir, vira "nao-e-fraco--2.mp3".
   2. Cadastra em musicas.json todo áudio que ainda não está lá, com o título
      tirado do nome original. Música nova NÃO entra no index sozinha.
-  3. Verifica: arquivo faltando, id repetido, id do index que não existe, arquivos idênticos.
+  3. Guarda a duração de cada áudio em "duracao" (segundos), para a página
+     não precisar abrir os arquivos só para mostrar o tempo.
+  4. Verifica: arquivo faltando, id repetido, id do index que não existe, arquivos idênticos.
 """
 import hashlib
 import json
@@ -17,6 +19,8 @@ import re
 import sys
 import unicodedata
 from pathlib import Path
+
+from mutagen import File as AudioFile  # pip install mutagen
 
 RAIZ = Path(__file__).resolve().parents[2]
 PASTA = RAIZ / "audio"
@@ -80,7 +84,21 @@ def main():
                             "arquivo": f"audio/{p.name}", "genero": "", "tags": []})
             mudancas.append(f"cadastrar {p.stem}")
 
-    # 3. verificar
+    # 3. duração (também atualiza quando um arquivo é substituído pelo mesmo nome)
+    for m in musicas:
+        caminho = RAIZ / m["arquivo"]
+        if m["arquivo"] in pendentes and check or not caminho.exists():
+            continue
+        audio = AudioFile(caminho)
+        if audio is None or not audio.info.length:
+            avisos.append(f"{m['id']}: não consegui ler a duração")
+            continue
+        duracao = round(audio.info.length)
+        if m.get("duracao") != duracao:
+            m["duracao"] = duracao
+            mudancas.append(f"duração de {m['id']}: {duracao // 60}:{duracao % 60:02d}")
+
+    # 4. verificar
     ids = [m["id"] for m in musicas]
     for i in sorted({i for i in ids if ids.count(i) > 1}):
         erros.append(f"id repetido no catálogo: {i}")

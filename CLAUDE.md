@@ -6,6 +6,7 @@ The owner writes in Portuguese; the site and docs are in Portuguese.
 
 - All audio lives flat in `audio/`. Names: lowercase ASCII, hyphens, versions as `name--label.mp3`.
 - `musicas.json` is the single source of truth: `index` (ordered ids shown on `index.html`), `musicas` (one entry per file), `playlists` (used only by the old `index6.html`/`script.js`).
+- Each entry's `duracao` (seconds) is filled by `catalogo.py`; `index.html` shows it without touching the audio, so the page downloads no audio until play.
 - `id` = file name without extension; share links use it (`?songId=<id>`). `index.html` still resolves legacy `?songId=songN` by position.
 - Entries with `obs: "VERIFICAR: ..."` are byte-identical duplicates awaiting the owner's review.
 - `.github/scripts/catalogo.py` renames non-conforming uploads and catalogs new files; the `catalogo.yml` Action runs it on pushes to `main`. Run `python3 .github/scripts/catalogo.py --check` after touching audio or the catalog.

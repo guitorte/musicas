@@ -195,7 +195,7 @@
                 const porId = Object.fromEntries(catalogo.musicas.map(m => [m.id, m]));
                 songs = catalogo.index
                     .filter(id => porId[id])
-                    .map(id => ({ id, title: porId[id].titulo, src: porId[id].arquivo }));
+                    .map(id => ({ id, title: porId[id].titulo, src: porId[id].arquivo, duracao: porId[id].duracao }));
             } catch (err) {
                 console.error('Falha ao carregar musicas.json:', err);
             }
@@ -225,17 +225,27 @@
                 isRepeating: false,
             };
 
+            function formatDuration(seconds) {
+                return `${Math.floor(seconds / 60)}:${Math.floor(seconds % 60).toString().padStart(2, '0')}`;
+            }
+
+            // A duração vem do musicas.json. Só abre o arquivo (e só os metadados) se ela faltar.
             function loadTrackDurations() {
                 songs.forEach(song => {
-                    const tempAudio = new Audio(song.src);
+                    const durationEl = document.querySelector(`.song-duration[data-song-id="${song.id}"]`);
+                    if (!durationEl) return;
+                    if (song.duracao) {
+                        durationEl.textContent = formatDuration(song.duracao);
+                        return;
+                    }
+                    const tempAudio = new Audio();
+                    tempAudio.preload = 'metadata';
                     tempAudio.addEventListener('loadedmetadata', () => {
-                        const durationEl = document.querySelector(`.song-duration[data-song-id="${song.id}"]`);
-                        if (durationEl && !isNaN(tempAudio.duration)) {
-                            const minutes = Math.floor(tempAudio.duration / 60);
-                            const seconds = Math.floor(tempAudio.duration % 60);
-                            durationEl.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
-                        }
+                        if (!isNaN(tempAudio.duration)) durationEl.textContent = formatDuration(tempAudio.duration);
+                        tempAudio.removeAttribute('src');
+                        tempAudio.load(); // encerra o download
                     });
+                    tempAudio.src = song.src;
                 });
             }
 

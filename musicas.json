@@ -18,154 +18,176 @@
       "titulo": "A gente",
       "arquivo": "audio/a-gente.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 152
     },
     {
       "id": "a-gente-se-pega",
       "titulo": "A gente se pega",
       "arquivo": "audio/a-gente-se-pega.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 130
     },
     {
       "id": "a-prima",
       "titulo": "A prima",
       "arquivo": "audio/a-prima.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 197
     },
     {
       "id": "a-prima--v2",
       "titulo": "A prima (v2)",
       "arquivo": "audio/a-prima--v2.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 176
     },
     {
       "id": "a-prima--v5",
       "titulo": "A prima (v5)",
       "arquivo": "audio/a-prima--v5.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 176
     },
     {
       "id": "absolvicao",
       "titulo": "Absolvição",
       "arquivo": "audio/absolvicao.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 265
     },
     {
       "id": "apanhar",
       "titulo": "Apanhar",
       "arquivo": "audio/apanhar.mp3",
       "genero": "samba",
-      "tags": []
+      "tags": [],
+      "duracao": 121
     },
     {
       "id": "arma-de-vinganca",
       "titulo": "Arma de vingança",
       "arquivo": "audio/arma-de-vinganca.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 230
     },
     {
       "id": "azul64",
       "titulo": "Azul64",
       "arquivo": "audio/azul64.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 170
     },
     {
       "id": "bandido-heroi",
       "titulo": "Bandido, herói",
       "arquivo": "audio/bandido-heroi.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 228
     },
     {
       "id": "bandido-heroi--alt",
       "titulo": "Bandido Herói (outra versão)",
       "arquivo": "audio/bandido-heroi--alt.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 238
     },
     {
       "id": "castelo-de-areia",
       "titulo": "Castelo de Areia",
       "arquivo": "audio/castelo-de-areia.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 213
     },
     {
       "id": "colete-a-prova-de-papinho",
       "titulo": "Colete à prova de papinho",
       "arquivo": "audio/colete-a-prova-de-papinho.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 172
     },
     {
       "id": "cupido-ws-blues",
       "titulo": "Cupido (blues)",
       "arquivo": "audio/cupido-ws-blues.mp3",
       "genero": "blues",
-      "tags": []
+      "tags": [],
+      "duracao": 338
     },
     {
       "id": "deixa",
       "titulo": "Deixa",
       "arquivo": "audio/deixa.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 132
     },
     {
       "id": "desculpa-ai--v3",
       "titulo": "Desculpa aí (v3)",
       "arquivo": "audio/desculpa-ai--v3.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 206
     },
     {
       "id": "desculpa-ai--v4",
       "titulo": "Desculpa aí (v4)",
       "arquivo": "audio/desculpa-ai--v4.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 198
     },
     {
       "id": "distance",
       "titulo": "Distance",
       "arquivo": "audio/distance.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 221
     },
     {
       "id": "doutor",
       "titulo": "Doutor",
       "arquivo": "audio/doutor.mp3",
       "genero": "samba",
-      "tags": []
+      "tags": [],
+      "duracao": 174
     },
     {
       "id": "ela-so-mama",
       "titulo": "Ela só mama",
       "arquivo": "audio/ela-so-mama.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 160
     },
     {
       "id": "entao-bate",
       "titulo": "Então bate",
       "arquivo": "audio/entao-bate.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 85
     },
     {
       "id": "esperei--v3",
       "titulo": "Esperei (v3)",
       "arquivo": "audio/esperei--v3.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 248
     },
     {
       "id": "esperei--v3-copia",
@@ -173,42 +195,48 @@
       "arquivo": "audio/esperei--v3-copia.mp3",
       "genero": "",
       "tags": [],
-      "obs": "VERIFICAR: arquivo idêntico a esperei--v3.mp3"
+      "obs": "VERIFICAR: arquivo idêntico a esperei--v3.mp3",
+      "duracao": 248
     },
     {
       "id": "estilo-cachorro",
       "titulo": "Estilo cachorro",
       "arquivo": "audio/estilo-cachorro.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 327
     },
     {
       "id": "eu-sou-incendio",
       "titulo": "Eu sou incêndio",
       "arquivo": "audio/eu-sou-incendio.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 166
     },
     {
       "id": "filosofia",
       "titulo": "Filosofia",
       "arquivo": "audio/filosofia.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 196
     },
     {
       "id": "filosofia-de-um-playsson",
       "titulo": "Filosofia de um playsson",
       "arquivo": "audio/filosofia-de-um-playsson.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 167
     },
     {
       "id": "finalmente",
       "titulo": "Finalmente",
       "arquivo": "audio/finalmente.mp3",
       "genero": "samba",
-      "tags": []
+      "tags": [],
+      "duracao": 173
     },
     {
       "id": "finalmente--copia",
@@ -216,189 +244,216 @@
       "arquivo": "audio/finalmente--copia.mp3",
       "genero": "samba",
       "tags": [],
-      "obs": "VERIFICAR: arquivo idêntico a finalmente.mp3"
+      "obs": "VERIFICAR: arquivo idêntico a finalmente.mp3",
+      "duracao": 173
     },
     {
       "id": "fucking-love-drogas",
       "titulo": "Fucking love drogas",
       "arquivo": "audio/fucking-love-drogas.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 286
     },
     {
       "id": "fucking-love-drogas--v5",
       "titulo": "Fucking love drogas (v5)",
       "arquivo": "audio/fucking-love-drogas--v5.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 275
     },
     {
       "id": "golpe",
       "titulo": "Golpe",
       "arquivo": "audio/golpe.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 170
     },
     {
       "id": "golpe--samba",
       "titulo": "Golpe (samba)",
       "arquivo": "audio/golpe--samba.mp3",
       "genero": "samba",
-      "tags": []
+      "tags": [],
+      "duracao": 192
     },
     {
       "id": "golpe--v2",
       "titulo": "Golpe (v2)",
       "arquivo": "audio/golpe--v2.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 192
     },
     {
       "id": "ja-perdi-mulheres",
       "titulo": "Já perdi mulheres",
       "arquivo": "audio/ja-perdi-mulheres.mp3",
       "genero": "samba",
-      "tags": []
+      "tags": [],
+      "duracao": 134
     },
     {
       "id": "job-job",
       "titulo": "Job job",
       "arquivo": "audio/job-job.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 146
     },
     {
       "id": "mandinga",
       "titulo": "Mandinga",
       "arquivo": "audio/mandinga.mp3",
       "genero": "samba",
-      "tags": []
+      "tags": [],
+      "duracao": 150
     },
     {
       "id": "manequim",
       "titulo": "Manequim",
       "arquivo": "audio/manequim.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 144
     },
     {
       "id": "mansao",
       "titulo": "Mansão",
       "arquivo": "audio/mansao.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 347
     },
     {
       "id": "me-amarrou",
       "titulo": "Me amarrou",
       "arquivo": "audio/me-amarrou.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 225
     },
     {
       "id": "meio-inimigo",
       "titulo": "Meio inimigo",
       "arquivo": "audio/meio-inimigo.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 213
     },
     {
       "id": "meu-filho-vai-ser-playsson",
       "titulo": "Meu filho vai ser playsson",
       "arquivo": "audio/meu-filho-vai-ser-playsson.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 122
     },
     {
       "id": "motoboy-do-ifood",
       "titulo": "Motoboy do iFood",
       "arquivo": "audio/motoboy-do-ifood.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 142
     },
     {
       "id": "mulheres--cover",
       "titulo": "Mulheres (cover)",
       "arquivo": "audio/mulheres--cover.mp3",
       "genero": "samba",
-      "tags": []
+      "tags": [],
+      "duracao": 129
     },
     {
       "id": "nao-compra-nao",
       "titulo": "Não compra não",
       "arquivo": "audio/nao-compra-nao.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 138
     },
     {
       "id": "nao-e-fraco",
       "titulo": "Não é fraco",
       "arquivo": "audio/nao-e-fraco.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 243
     },
     {
       "id": "negao-organizado--livemix",
       "titulo": "Negão organizado (live mix)",
       "arquivo": "audio/negao-organizado--livemix.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 133
     },
     {
       "id": "o-mercadinho",
       "titulo": "O mercadinho",
       "arquivo": "audio/o-mercadinho.mp3",
       "genero": "sertanejo",
-      "tags": []
+      "tags": [],
+      "duracao": 177
     },
     {
       "id": "o-morto-ta-de-lancha",
       "titulo": "O morto tá de lancha",
       "arquivo": "audio/o-morto-ta-de-lancha.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 214
     },
     {
       "id": "oh-azar",
       "titulo": "Oh azar",
       "arquivo": "audio/oh-azar.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 181
     },
     {
       "id": "os-vizinhos",
       "titulo": "Os vizinhos (fado)",
       "arquivo": "audio/os-vizinhos.mp3",
       "genero": "fado",
-      "tags": []
+      "tags": [],
+      "duracao": 199
     },
     {
       "id": "pacto-zona",
       "titulo": "Pacto zona",
       "arquivo": "audio/pacto-zona.mp3",
       "genero": "samba",
-      "tags": []
+      "tags": [],
+      "duracao": 139
     },
     {
       "id": "que-nem-eu-a-maquina",
       "titulo": "Que nem eu, a máquina",
       "arquivo": "audio/que-nem-eu-a-maquina.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 155
     },
     {
       "id": "queima",
       "titulo": "Queima",
       "arquivo": "audio/queima.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 190
     },
     {
       "id": "queima--v5",
       "titulo": "Queima (v5)",
       "arquivo": "audio/queima--v5.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 157
     },
     {
       "id": "queima--v5-copia",
@@ -406,182 +461,208 @@
       "arquivo": "audio/queima--v5-copia.mp3",
       "genero": "",
       "tags": [],
-      "obs": "VERIFICAR: arquivo idêntico a queima--v5.mp3"
+      "obs": "VERIFICAR: arquivo idêntico a queima--v5.mp3",
+      "duracao": 157
     },
     {
       "id": "red-pilado",
       "titulo": "Red pilado",
       "arquivo": "audio/red-pilado.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 157
     },
     {
       "id": "relaxa-nessa-vibe",
       "titulo": "Relaxa nessa vibe",
       "arquivo": "audio/relaxa-nessa-vibe.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 152
     },
     {
       "id": "santo-de-estuque",
       "titulo": "Santo de estuque",
       "arquivo": "audio/santo-de-estuque.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 220
     },
     {
       "id": "se-der-errado",
       "titulo": "Se der errado",
       "arquivo": "audio/se-der-errado.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 170
     },
     {
       "id": "sei-la",
       "titulo": "Sei lá",
       "arquivo": "audio/sei-la.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 158
     },
     {
       "id": "ser-mais",
       "titulo": "Ser mais",
       "arquivo": "audio/ser-mais.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 162
     },
     {
       "id": "shelton-cigarro",
       "titulo": "Shelton, que é cigarro",
       "arquivo": "audio/shelton-cigarro.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 141
     },
     {
       "id": "sumi-de-fininho",
       "titulo": "Sumi de fininho",
       "arquivo": "audio/sumi-de-fininho.mp3",
       "genero": "sertanejo",
-      "tags": []
+      "tags": [],
+      "duracao": 144
     },
     {
       "id": "tarocore",
       "titulo": "Tarocore",
       "arquivo": "audio/tarocore.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 252
     },
     {
       "id": "tilanga",
       "titulo": "Tilanga",
       "arquivo": "audio/tilanga.mp3",
       "genero": "sertanejo",
-      "tags": []
+      "tags": [],
+      "duracao": 131
     },
     {
       "id": "to-fazendo-um-tox",
       "titulo": "Tô fazendo um tox",
       "arquivo": "audio/to-fazendo-um-tox.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 190
     },
     {
       "id": "to-fumando-pedra",
       "titulo": "Tô fumando pedra",
       "arquivo": "audio/to-fumando-pedra.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 158
     },
     {
       "id": "to-fumando-pedra--blues",
       "titulo": "Tô fumando pedra (blues)",
       "arquivo": "audio/to-fumando-pedra--blues.mp3",
       "genero": "blues",
-      "tags": []
+      "tags": [],
+      "duracao": 228
     },
     {
       "id": "tox",
       "titulo": "Tox",
       "arquivo": "audio/tox.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 190
     },
     {
       "id": "troquei-bem",
       "titulo": "Troquei bem",
       "arquivo": "audio/troquei-bem.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 172
     },
     {
       "id": "ultimo-gas",
       "titulo": "Último gás",
       "arquivo": "audio/ultimo-gas.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 152
     },
     {
       "id": "um-ciclo-foda",
       "titulo": "Um ciclo foda",
       "arquivo": "audio/um-ciclo-foda.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 218
     },
     {
       "id": "um-ciclo-foda--rr",
       "titulo": "Um ciclo foda (RR)",
       "arquivo": "audio/um-ciclo-foda--rr.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 217
     },
     {
       "id": "vamo-strondar",
       "titulo": "Vamo strondar",
       "arquivo": "audio/vamo-strondar.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 214
     },
     {
       "id": "vamo-strondar--rr",
       "titulo": "Vamo strondar (RR)",
       "arquivo": "audio/vamo-strondar--rr.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 190
     },
     {
       "id": "vem-com-tudo-pisa",
       "titulo": "Vem com tudo, pisa",
       "arquivo": "audio/vem-com-tudo-pisa.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 86
     },
     {
       "id": "voce-tem-aquele",
       "titulo": "Você tem aquele",
       "arquivo": "audio/voce-tem-aquele.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 195
     },
     {
       "id": "volta",
       "titulo": "Volta",
       "arquivo": "audio/volta.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 179
     },
     {
       "id": "volta--alt",
       "titulo": "Volta (outra versão)",
       "arquivo": "audio/volta--alt.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 180
     },
     {
       "id": "zero-ou-um",
       "titulo": "Zero ou um",
       "arquivo": "audio/zero-ou-um.mp3",
       "genero": "",
-      "tags": []
+      "tags": [],
+      "duracao": 304
     }
   ]
 }
